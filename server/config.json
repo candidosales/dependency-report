@@ -1,0 +1,24 @@
+{
+    "repositories" : [
+        {
+           "url": "https://github.com/vendasta/listing-builder-client",
+           "type": "project"
+        },
+        {
+            "url": "https://github.com/vendasta/business-center-client",
+            "type": "project"
+        },
+        {
+            "url": "https://github.com/vendasta/reputation-client",
+            "type": "project"
+        },
+        {
+            "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/billing-ui",
+            "type": "component"
+        },
+        {
+            "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/forms",
+            "type": "component"
+        }
+    ]
+}

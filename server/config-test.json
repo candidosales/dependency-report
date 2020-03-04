@@ -1,0 +1,8 @@
+{
+    "repositories" : [
+        {
+           "url": "https://github.com/vendasta/listing-builder-client",
+           "type": "project"
+        }
+    ]
+}
