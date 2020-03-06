@@ -1,0 +1,44 @@
+{
+    "filters" : {
+        "@angular/core_8" : {
+            "name": "Angular 8v",
+            "color": "#ccc"
+        }, 
+        "@angular/core_9" : {
+            "name": "Angular 9v",
+            "color": "#ddd"
+        }
+    },
+    "projects" : [
+        {
+            "name" : "listing-builder-client",
+            "version" : "3.4.5",
+            "filter": "@angular/core_8"
+        },
+        {
+            "name" : "business-center-client",
+            "version" : "3.4.5",
+            "filter": "@angular/core_9"
+        }
+    ],
+    "components" : [
+        {
+            "name" : "listing-builder-client",
+            "version" : "3.4.5",
+            "filter": "@angular/core_8"
+        },
+        {
+            "name" : "business-center-client",
+            "version" : "3.4.5",
+            "filter": "@angular/core_9"
+        }
+    ],
+    "graphData" :[
+        {
+            "currentGlobalAdoption" : {
+                "labels": ["ok"],
+                "data": ["ok"]
+            }
+        }
+    ]
+}

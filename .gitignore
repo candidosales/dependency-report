@@ -1,0 +1,30 @@
+### Angular ###
+## Angular ##
+# compiled output
+client/dist/
+client/tmp/
+client/app/**/*.js
+client/app/**/*.js.map
+
+# dependencies
+client/node_modules/
+client/bower_components/
+
+# IDEs and editors
+client/.idea/
+
+# misc
+client/.sass-cache/
+client/connect.lock/
+client/coverage/
+client/libpeerconnection.log/
+client/npm-debug.log
+client/testem.log
+client/typings/
+
+# e2e
+client/e2e/*.js
+client/e2e/*.map
+
+#System Files
+client/.DS_Store/

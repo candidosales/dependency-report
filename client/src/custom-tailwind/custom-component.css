@@ -1,0 +1,12 @@
+.btn {
+    @apply px-4;
+    @apply py-2;
+    @apply rounded;
+    @apply bg-indigo-500;
+    @apply text-white;
+    transition: 200ms;
+  }
+  
+  .btn:hover {
+    @apply bg-indigo-600;
+  }
