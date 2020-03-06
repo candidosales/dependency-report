@@ -5,7 +5,6 @@
 - Get repositories: ok
 - Get the package.json; ok
 - Get dependencies from the package.json; ok
-- 
 
 ## Stats
 

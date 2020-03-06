@@ -1,4 +1,5 @@
 {
+    "keywords": ["angular-9", "angular-8"],
     "repositories" : [
         {
            "url": "https://github.com/vendasta/listing-builder-client",
@@ -13,11 +14,23 @@
             "type": "project"
         },
         {
+            "url": "https://github.com/vendasta/customer-voice-client",
+            "type": "project"
+        },
+        {
+            "url": "https://github.com/vendasta/snapshot-client",
+            "type": "project"
+        },
+        {
             "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/billing-ui",
             "type": "component"
         },
         {
             "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/forms",
+            "type": "component"
+        },
+        {
+            "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/uikit",
             "type": "component"
         }
     ]
