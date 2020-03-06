@@ -1,0 +1,15 @@
+.card {
+    border: 1px solid $color-gray-400;
+    border-radius: .6rem;
+}
+
+.card-header, .card-header:first-child {
+    background-color: $color-white;
+    border-radius: calc(0.6rem - 1px) calc(0.6rem - 1px) 0 0;
+    h2 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: $color-gray-900;
+        margin-bottom: 0;
+    }
+}

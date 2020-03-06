@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "dependency-report": {
@@ -28,9 +28,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/frappe-charts/dist/frappe-charts.min.iife.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,7 +94,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss"
             ],
             "scripts": []
           }
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "dependency-report"
+    }
+  },
+  "defaultProject": "dependency-report",
+  "cli": {
+    "analytics": false
+  }
 }

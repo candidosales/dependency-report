@@ -1,0 +1,15 @@
+:root {
+    --color-code-green: $color-green;
+    --color-code-yellow: $color-yellow;
+    --color-code-purple: $color-purple;
+    --color-code-red: $color-red;
+    --color-code-blue: $color-blue;
+    --color-code-white: $color-white;
+}
+
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color-gray-700;
+    background-color: $color-gray-light;
+}

@@ -1,0 +1,31 @@
+.repositories {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.repository{
+    border-radius: .5rem;
+    border: 1px solid $color-gray-400;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 1rem;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    width: auto;
+    p {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+.repository__name {
+    padding-right: .5rem;
+}
+.repository__badge {
+    font-size: .7rem;
+    img {
+        width: .7rem;
+    }
+}
