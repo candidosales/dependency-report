@@ -1,5 +1,5 @@
 {
-    "keywords": ["angular-9", "angular-8"],
+    "filters": ["@angular/core_7", "@angular/core_8", "@angular/core_9"],
     "repositories" : [
         {
            "url": "https://github.com/vendasta/listing-builder-client",

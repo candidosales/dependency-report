@@ -13,6 +13,7 @@ import (
 )
 
 type App struct {
+	config       Config
 	githubClient *github.Client
 }
 
@@ -20,13 +21,14 @@ func main() {
 
 	ctx := context.Background()
 
-	app := &App{
-		githubClient: githubClient(ctx),
-	}
-
 	config, err := readConfig(pathFile)
 	if err != nil {
 		fmt.Errorf("error", err)
+	}
+
+	app := &App{
+		config:       config,
+		githubClient: githubClient(ctx),
 	}
 
 	for i := 0; i < len(config.Repositories); i++ {
@@ -39,10 +41,11 @@ func main() {
 		config.Repositories[i].Topics = app.fetchTopics(ctx, info)
 	}
 
-	projects, _ := app.splitProjectsComponents(config.Repositories)
+	projects, components := app.splitProjectsComponents(config.Repositories)
 
-	// statsCountComponentsByProject(projects, components)
-	statsCountComponentsByVersionAllProjects(projects)
+	statsCountComponentsByProject(projects, components)
+	// statsCountComponentsByVersionAllProjects(projects)
+	// app.statsCountProjectsByFilters(projects)
 }
 
 func githubClient(ctx context.Context) *github.Client {
@@ -54,13 +57,6 @@ func githubClient(ctx context.Context) *github.Client {
 }
 
 func splitRepositoryURL(repository Repository) (map[string]string, error) {
-
-	// r, err := regexp.Compile(`https:\/\/github\.com\/([\D\d]+)\/([\D\d]+)`)
-	// if err != nil {
-	// 	return nil, err
-	// }
-
-	// values := r.FindStringSubmatch(url)
 
 	values := strings.Split(repository.URL, "/")
 	packageJSON := "package.json"
@@ -153,7 +149,7 @@ func (app *App) splitProjectsComponents(repositories []Repository) ([]Repository
 }
 
 func statsCountComponentsByProject(projects []Repository, components []Repository) {
-	statsData := &StatsData{}
+	statsData := &StatsDataFrappe{}
 
 	statsData.Datasets = append(statsData.Datasets, StatsDataset{
 		Values: make([]int, len(components)),
@@ -164,6 +160,7 @@ func statsCountComponentsByProject(projects []Repository, components []Repositor
 		for _, p := range projects {
 			if p.PackageJSON.Dependencies[c.PackageJSON.Name] == c.PackageJSON.Version {
 				statsData.Datasets[0].Values[i] = statsData.Datasets[0].Values[i] + 1
+				continue
 			}
 		}
 	}
@@ -173,7 +170,7 @@ func statsCountComponentsByProject(projects []Repository, components []Repositor
 
 func statsCountComponentsByVersionAllProjects(projects []Repository) {
 	dependencies := map[string]string{}
-	statsData := StatsData{}
+	statsData := StatsDataFrappe{}
 
 	statsData.Datasets = append(statsData.Datasets, StatsDataset{
 		Values: []int{},
@@ -183,8 +180,6 @@ func statsCountComponentsByVersionAllProjects(projects []Repository) {
 		index := 0
 		for name, version := range p.PackageJSON.Dependencies {
 			label := name + "_" + version
-			// fmt.Printf("label[%#v] \n", label)
-
 			if dependencies[label] == "" {
 				dependencies[label] = version
 				statsData.Labels = append(statsData.Labels, label)
@@ -192,6 +187,29 @@ func statsCountComponentsByVersionAllProjects(projects []Repository) {
 				index = index + 1
 			} else {
 				statsData.Datasets[0].Values[index] = statsData.Datasets[0].Values[index] + 1
+			}
+		}
+	}
+
+	statsDataJSON, _ := json.Marshal(statsData)
+	fmt.Println(string(statsDataJSON))
+}
+
+func (app *App) statsCountProjectsByFilters(projects []Repository) {
+	statsData := &StatsDataFrappe{}
+
+	statsData.Datasets = append(statsData.Datasets, StatsDataset{
+		Values: make([]int, len(app.config.Filters)),
+	})
+
+	for i, f := range app.config.Filters {
+		statsData.Labels = append(statsData.Labels, f)
+		for _, p := range projects {
+			for key, value := range p.PackageJSON.Dependencies {
+				if strings.Contains(GetAlias(key, value), f) {
+					statsData.Datasets[0].Values[i] = statsData.Datasets[0].Values[i] + 1
+					continue
+				}
 			}
 		}
 	}

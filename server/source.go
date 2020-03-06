@@ -9,6 +9,7 @@ const (
 )
 
 type Config struct {
+	Filters      []string     `json:"filters"`
 	Repositories []Repository `json:"repositories"`
 }
 
@@ -55,10 +56,14 @@ func (p *PackageJSON) clearDependenciesVersions() error {
 	return nil
 }
 func (p *PackageJSON) getAlias() string {
-	return p.Name + "_" + p.Version
+	return GetAlias(p.Name, p.Version)
 }
 
-type StatsData struct {
+func GetAlias(name string, version string) string {
+	return name + "_" + version
+}
+
+type StatsDataFrappe struct {
 	Labels   []string       `json:"labels"`
 	Datasets []StatsDataset `json:"datasets"`
 }
