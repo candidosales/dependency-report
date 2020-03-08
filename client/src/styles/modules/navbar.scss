@@ -1,4 +1,7 @@
 .navbar {
-    background: $color-white;
+    background: $color-blue-dark;
     border-bottom: 1px solid $color-gray-400;
+    a.navbar-brand, a {
+        color: $color-white;
+    }
 }

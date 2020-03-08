@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "dependency-report": {
+      "hosting": {
+        "dependency-report": [
+          "dependency-report"
+        ]
+      }
+    }
+  }
+}

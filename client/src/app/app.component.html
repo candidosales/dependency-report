@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="#">Vendasta</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +16,7 @@
 <div class="main container-fluid">
   <h3 class="mt-0">Projects</h3>
   <div class="row">
-    <div class="col-6">
+    <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card">
         <div class="card-header">
           <h2>Current Global Adoption</h2>
@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card card__repositories">
         <div class="card-header">
           <h2>{{ projects.length }} Projects</h2>
@@ -36,7 +36,7 @@
           <ul class="repositories">
             <li class="repository" *ngFor="let p of projects">
               <p class="repository__name">
-                <a href="{{ p.url }}" target="_blank">
+                <a href="{{ p.url }}" title="{{ p.name }}" target="_blank">
                   {{ p.name }}
                 </a>
               </p>
@@ -52,7 +52,7 @@
   </div>
   <h3>Components</h3>
   <div class="row">
-    <div class="col-6">
+    <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card">
         <div class="card-header">
           <h2>Current Global Adoption</h2>
@@ -63,7 +63,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card card__repositories">
         <div class="card-header">
           <h2>{{ components.length }} Components</h2>
@@ -72,7 +72,7 @@
           <ul class="repositories">
             <li class="repository" *ngFor="let c of components">
               <p class="repository__name">
-                <a href="{{ c.url }}" target="_blank">
+                <a href="{{ c.url }}" title="{{ c.name }}" target="_blank">
                   {{ c.name }}
                 </a>
               </p>
@@ -85,7 +85,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card">
         <div class="card-header">
           <h2>Current Version X Adoption</h2>
