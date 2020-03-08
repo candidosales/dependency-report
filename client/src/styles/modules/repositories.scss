@@ -11,10 +11,10 @@
     float: left;
     display: flex;
     flex-direction: column;
-    padding: .5rem 1rem;
+    padding: .5rem;
     margin-bottom: .5rem;
     margin-right: .5rem;
-    width: auto;
+    width: 150px;
     p {
         padding-bottom: 0;
         margin-bottom: 0;
@@ -22,10 +22,32 @@
 }
 .repository__name {
     padding-right: .5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .repository__badge {
     font-size: .7rem;
     img {
         width: .7rem;
+    }
+}
+
+.component_versions {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    .component__frequency {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-right: .5rem;
+    }
+    .component__version {
+        font-size: 1rem;
     }
 }

@@ -1,59 +1,52 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { DataService } from './providers/data.service';
+import { GraphData } from './interface/data.interface';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'dependency-report';
+export class AppComponent implements OnInit {
 
-  dataSet = {
-      labels: ['@angular/7', '@angular/8', '@angular/9'],
-      datasets: [
-        {
-          values: [5, 34, 10]
+    graphData: GraphData = {
+        projectsByFilters: {
+            labels: [],
+            datasets: {
+                values: []
+            }
         },
-      ]
-  };
+        componentsByFilters: {
+            labels: [],
+            datasets: {
+                values: []
+            }
+        },
+        componentsByProject: {
+            labels: [],
+            datasets: {
+                values: []
+            }
+        },
+        componentsByVersionAllProjects: {
+            labels: [],
+            datasets: {
+                values: []
+            }
+        }
+    }
 
-  projects = [
-              {
-                  'name' : 'listing-builder-client',
-                  'version' : '3.4.5',
-                  'filter': '@angular/core_8'
-              },
-              {
-                  'name' : 'business-center-client',
-                  'version' : '3.4.5',
-                  'filter': '@angular/core_8'
-              },
-              {
-                  'name' : 'reputation-client',
-                  'version' : '3.4.5',
-                  'filter': '@angular/core_9'
-              },
-              {
-                  'name' : 'customer-voice-client',
-                  'version' : '3.4.5',
-                  'filter': '@angular/core_9'
-              }
-          ];
-          components = [
-            {
-                'name' : 'uikit',
-                'version' : '3.4.5',
-                'filter': '@angular/core_8'
-            },
-            {
-                'name' : 'forms',
-                'version' : '8.0.15',
-                'filter': '@angular/core_8'
-            },
-            {
-                'name' : 'core',
-                'version' : '9.0.5',
-                'filter': '@angular/core_9'
-            },
-        ];
+    projects = [];
+    components = []
+
+    constructor(private dataService: DataService) {}
+
+    ngOnInit() {
+        this.dataService.getDataInServer()
+        .subscribe(value => {
+            this.graphData = value.graphData;
+            this.projects = value.projects;
+            this.components = value.components;
+        });
+    }
 }

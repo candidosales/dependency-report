@@ -33,12 +33,10 @@
             "filter": "@angular/core_9"
         }
     ],
-    "graphData" :[
-        {
+    "graphData" : {
             "currentGlobalAdoption" : {
                 "labels": ["ok"],
                 "data": ["ok"]
             }
         }
-    ]
 }

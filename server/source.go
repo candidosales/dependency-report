@@ -21,6 +21,15 @@ type Repository struct {
 	Alias       string       `json:"alias"`
 }
 
+func (r *Repository) getRepositoryClientData() *RepositoryClientData {
+	// TODO add filters
+	return &RepositoryClientData{
+		Name:    r.PackageJSON.Name,
+		Version: r.PackageJSON.Version,
+		URL:     r.URL,
+	}
+}
+
 type PackageJSON struct {
 	Name             string            `json:"name"`
 	Version          string            `json:"version"`
@@ -70,4 +79,17 @@ type StatsDataFrappe struct {
 
 type StatsDataset struct {
 	Values []int `json:"values"`
+}
+
+type ClientData struct {
+	Projects   *[]RepositoryClientData     `json:"projects"`
+	Components *[]RepositoryClientData     `json:"components"`
+	GraphData  map[string]*StatsDataFrappe `json:"graphData"`
+}
+
+type RepositoryClientData struct {
+	Name    string `json:"name"`
+	Version string `json:"version"`
+	Filter  string `json:"filter"`
+	URL     string `json:"url"`
 }

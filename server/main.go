@@ -37,15 +37,36 @@ func main() {
 			fmt.Errorf("error[%#v]", err)
 			continue
 		}
-		config.Repositories[i].PackageJSON = app.fetchPackageJson(ctx, info)
-		config.Repositories[i].Topics = app.fetchTopics(ctx, info)
+		packageJSON := app.fetchPackageJson(ctx, info)
+
+		if packageJSON != nil {
+			config.Repositories[i].PackageJSON = packageJSON
+			config.Repositories[i].Topics = app.fetchTopics(ctx, info)
+		}
 	}
 
-	projects, components := app.splitProjectsComponents(config.Repositories)
+	projects, components, projectsClientData, componentsClientData := app.splitProjectsComponents(config.Repositories)
 
-	statsCountComponentsByProject(projects, components)
-	// statsCountComponentsByVersionAllProjects(projects)
-	// app.statsCountProjectsByFilters(projects)
+	countComponentsByProject := statsCountComponentsByProject(*projects, *components)
+	countComponentsByVersionAllProjects := statsCountComponentsByVersionAllProjects(*projects)
+	countProjectsByFilters := app.statsCountProjectsByFilters(*projects)
+	countComponentsByFilters := app.statsCountComponentsByFilters(*components)
+
+	clientData := &ClientData{
+		Projects:   projectsClientData,
+		Components: componentsClientData,
+		GraphData: map[string]*StatsDataFrappe{
+			"componentsByProject":            countComponentsByProject,
+			"componentsByVersionAllProjects": countComponentsByVersionAllProjects,
+			"projectsByFilters":              countProjectsByFilters,
+			"componentsByFilters":            countComponentsByFilters,
+		},
+	}
+
+	clientDataJSON, _ := json.MarshalIndent(clientData, "", " ")
+	fmt.Println(string(clientDataJSON))
+	_ = ioutil.WriteFile("../client/src/assets/config/data-test.json", clientDataJSON, 0644)
+
 }
 
 func githubClient(ctx context.Context) *github.Client {
@@ -131,24 +152,32 @@ func (app *App) fetchTopics(ctx context.Context, info map[string]string) []strin
 
 // Stats
 
-func (app *App) splitProjectsComponents(repositories []Repository) ([]Repository, []Repository) {
-	projects := []Repository{}
-	components := []Repository{}
+func (app *App) splitProjectsComponents(repositories []Repository) (*[]Repository, *[]Repository, *[]RepositoryClientData, *[]RepositoryClientData) {
+	projects := &[]Repository{}
+	components := &[]Repository{}
+
+	projectsClienteData := &[]RepositoryClientData{}
+	componentsClientData := &[]RepositoryClientData{}
 
 	for _, r := range repositories {
 		if r.Type == TypeProject {
-			projects = append(projects, r)
+			*projects = append(*projects, r)
+			projectClientData := r.getRepositoryClientData()
+			*projectsClienteData = append(*projectsClienteData, *projectClientData)
+
 		}
 
 		if r.Type == TypeComponent {
-			components = append(components, r)
+			*components = append(*components, r)
+			componentClientData := r.getRepositoryClientData()
+			*componentsClientData = append(*componentsClientData, *componentClientData)
 		}
 	}
 
-	return projects, components
+	return projects, components, projectsClienteData, componentsClientData
 }
 
-func statsCountComponentsByProject(projects []Repository, components []Repository) {
+func statsCountComponentsByProject(projects []Repository, components []Repository) *StatsDataFrappe {
 	statsData := &StatsDataFrappe{}
 
 	statsData.Datasets = append(statsData.Datasets, StatsDataset{
@@ -164,13 +193,12 @@ func statsCountComponentsByProject(projects []Repository, components []Repositor
 			}
 		}
 	}
-	statsDataJSON, _ := json.Marshal(statsData)
-	fmt.Println(string(statsDataJSON))
+	return statsData
 }
 
-func statsCountComponentsByVersionAllProjects(projects []Repository) {
+func statsCountComponentsByVersionAllProjects(projects []Repository) *StatsDataFrappe {
 	dependencies := map[string]string{}
-	statsData := StatsDataFrappe{}
+	statsData := &StatsDataFrappe{}
 
 	statsData.Datasets = append(statsData.Datasets, StatsDataset{
 		Values: []int{},
@@ -190,12 +218,10 @@ func statsCountComponentsByVersionAllProjects(projects []Repository) {
 			}
 		}
 	}
-
-	statsDataJSON, _ := json.Marshal(statsData)
-	fmt.Println(string(statsDataJSON))
+	return statsData
 }
 
-func (app *App) statsCountProjectsByFilters(projects []Repository) {
+func (app *App) statsCountProjectsByFilters(repositories []Repository) *StatsDataFrappe {
 	statsData := &StatsDataFrappe{}
 
 	statsData.Datasets = append(statsData.Datasets, StatsDataset{
@@ -204,8 +230,8 @@ func (app *App) statsCountProjectsByFilters(projects []Repository) {
 
 	for i, f := range app.config.Filters {
 		statsData.Labels = append(statsData.Labels, f)
-		for _, p := range projects {
-			for key, value := range p.PackageJSON.Dependencies {
+		for _, r := range repositories {
+			for key, value := range r.PackageJSON.Dependencies {
 				if strings.Contains(GetAlias(key, value), f) {
 					statsData.Datasets[0].Values[i] = statsData.Datasets[0].Values[i] + 1
 					continue
@@ -213,7 +239,26 @@ func (app *App) statsCountProjectsByFilters(projects []Repository) {
 			}
 		}
 	}
+	return statsData
+}
 
-	statsDataJSON, _ := json.Marshal(statsData)
-	fmt.Println(string(statsDataJSON))
+func (app *App) statsCountComponentsByFilters(repositories []Repository) *StatsDataFrappe {
+	statsData := &StatsDataFrappe{}
+
+	statsData.Datasets = append(statsData.Datasets, StatsDataset{
+		Values: make([]int, len(app.config.Filters)),
+	})
+
+	for i, f := range app.config.Filters {
+		statsData.Labels = append(statsData.Labels, f)
+		for _, r := range repositories {
+			for key, value := range r.PackageJSON.PeerDependencies {
+				if strings.Contains(GetAlias(key, value), f) {
+					statsData.Datasets[0].Values[i] = statsData.Datasets[0].Values[i] + 1
+					continue
+				}
+			}
+		}
+	}
+	return statsData
 }
