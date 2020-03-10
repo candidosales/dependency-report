@@ -7,23 +7,14 @@
 .tooltip:hover:after {
     display: flex;
     justify-content: center;
-    background: rgba(68, 68, 68, 0.9);
+    background: #444444;
     border-radius: 8px;
     color: $color-white;
-    content: attr(tooltip);
+    content: attr(data-tooltip);
     position: absolute;
     margin: 0px 0 0 80px;
     font-size: 16px;
     padding: 13px;
     width: 320px;
+    z-index: 99;
 }
-
-// .tooltip:hover:before {
-//     border: solid;
-//     border-color: #444 transparent;
-//     border-width: 12px 6px 0 6px;
-//     content: "";
-//     left: 45%;
-//     bottom: 30px;
-//     position: absolute;
-// }

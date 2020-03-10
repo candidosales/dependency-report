@@ -113,45 +113,16 @@
           <h2>How often the same library and version is used in different projects? (in soon ...)</h2>
         </div>
         <div class="card-body">
-          <div class="repository component">
+          <div class="repository component" *ngFor="let c of componentsUsedByVersion" >
             <p class="repository__name">
-              <a href="">
-                @vendasta/uikit
+              <a href="{{ c.repository.url }}" target="_blank">
+                {{ c.repository.name }}
               </a>
             </p>
             <ul class="component_versions">
-              <li>
-                <p class="component__frequency">10</p>
-                <p class="component__version">8.0.0v</p>
-              </li>
-              <li>
-                <p class="component__frequency">7</p>
-                <p class="component__version">7.0.0v</p>
-              </li>
-              <li>
-                <p class="component__frequency">2</p>
-                <p class="component__version">9.0.0v</p>
-              </li>
-            </ul>
-          </div>
-          <div class="repository component">
-            <p class="repository__name">
-              <a href="">
-                @vendasta/forms
-              </a>
-            </p>
-            <ul class="component_versions">
-              <li class="tooltip" tooltip="listing-builder-client / customer-voice-client / concierge-cliet / reputation-client / iam-client / snapshot-client">
-                <p class="component__frequency">8</p>
-                <p class="component__version">9.0.0v</p>
-              </li>
-              <li>
-                <p class="component__frequency">7</p>
-                <p class="component__version">8.0.0v</p>
-              </li>
-              <li>
-                <p class="component__frequency">2</p>
-                <p class="component__version">7.0.0v</p>
+              <li class="tooltip" *ngFor="let v of c.versions" [attr.data-tooltip]="getProjectsTooltip(v.projects)" >
+                <p class="component__frequency">{{ v.quantity }}</p>
+                <p class="component__version">{{ v.version }}v</p>
               </li>
             </ul>
           </div>
