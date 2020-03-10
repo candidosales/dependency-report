@@ -40,10 +40,15 @@
                   {{ p.name }}
                 </a>
               </p>
-              <p class="repository__badge">
-                <img src="https://coryrylan.com/assets/images/posts/types/angular.svg" alt="">
-                {{ p.version }}
-              </p>
+              <div class="repository__footer">
+                <p class="repository__badge">
+                  <img src="{{ getIconByFilter(p.filter) }}" alt="">
+                  {{ getVersionByFilter(p.filter) }}
+                </p>
+                <p class="repository__version">
+                  {{ p.version }}
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -76,10 +81,15 @@
                   {{ c.name }}
                 </a>
               </p>
-              <p class="repository__badge">
-                <img src="https://coryrylan.com/assets/images/posts/types/angular.svg" alt="">
-                {{ c.version }}
-              </p>
+              <div class="repository__footer">
+                <p class="repository__badge">
+                  <img src="{{ getIconByFilter(c.filter) }}" alt="">
+                  {{ getVersionByFilter(c.filter) }}
+                </p>
+                <p class="repository__version">
+                  {{ c.version }}
+                </p>
+              </div>
             </li>
           </ul>
         </div>

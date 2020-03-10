@@ -32,11 +32,17 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.repository__badge {
+.repository__badge, .repository__version {
     font-size: .7rem;
     img {
         width: .7rem;
     }
+}
+
+.repository__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .component_versions {
