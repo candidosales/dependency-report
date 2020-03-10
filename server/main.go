@@ -3,38 +3,47 @@ package main
 import (
 	"context"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"os"
 	"strings"
 
 	"github.com/google/go-github/v29/github"
+	"github.com/sirupsen/logrus"
 	"golang.org/x/oauth2"
 )
 
 type App struct {
 	config       Config
 	githubClient *github.Client
+	log          *logrus.Logger
 }
 
 func main() {
+	log := logrus.New()
+	log.SetOutput(os.Stdout)
+	log.SetFormatter(&logrus.TextFormatter{
+		FullTimestamp: true,
+	})
 
+	log.Info("Start ... \n")
 	ctx := context.Background()
 
-	config, err := readConfig(pathFile)
+	config, err := readConfig(pathFileInput)
 	if err != nil {
-		fmt.Errorf("error", err)
+		log.Error("error", err)
 	}
 
 	app := &App{
 		config:       config,
 		githubClient: githubClient(ctx),
+		log:          log,
 	}
 
+	app.log.Printf("Get the package.json for the %d repositories ... \n", len(config.Repositories))
 	for i := 0; i < len(config.Repositories); i++ {
 		info, err := splitRepositoryURL(config.Repositories[i])
 		if err != nil {
-			fmt.Errorf("error[%#v]", err)
+			app.log.Error("error[%#v]", err)
 			continue
 		}
 		packageJSON := app.fetchPackageJson(ctx, info)
@@ -47,10 +56,11 @@ func main() {
 
 	projects, components, projectsClientData, componentsClientData := app.splitProjectsComponents(config.Repositories)
 
+	app.log.Info("Generate data to graphs ... \n")
 	countComponentsByProject := statsCountComponentsByProject(*projects, *components)
 	countComponentsByVersionAllProjects := statsCountComponentsByVersionAllProjects(*projects)
-	countProjectsByFilters := app.statsCountProjectsByFilters(*projects)
-	countComponentsByFilters := app.statsCountComponentsByFilters(*components)
+	countProjectsByFilters := app.statsCountProjectsByFilters(*projects, *projectsClientData)
+	countComponentsByFilters := app.statsCountComponentsByFilters(*components, *componentsClientData)
 
 	clientData := &ClientData{
 		Projects:   projectsClientData,
@@ -64,9 +74,14 @@ func main() {
 	}
 
 	clientDataJSON, _ := json.MarshalIndent(clientData, "", " ")
-	fmt.Println(string(clientDataJSON))
-	_ = ioutil.WriteFile("../client/src/assets/config/data-test.json", clientDataJSON, 0644)
+	// app.log.Info(string(clientDataJSON))
+	err = ioutil.WriteFile(pathFileOutput, clientDataJSON, 0644)
 
+	if err != nil {
+		app.log.Error("error[%#v]", err)
+	} else {
+		app.log.Info("Output file generated and sent to " + pathFileOutput)
+	}
 }
 
 func githubClient(ctx context.Context) *github.Client {
@@ -122,7 +137,7 @@ func (app *App) fetchPackageJson(ctx context.Context, info map[string]string) *P
 		&github.RepositoryContentGetOptions{Ref: "master"},
 	)
 	if err != nil {
-		fmt.Errorf("error[%#v]", err)
+		app.log.Error("error[%#v]", err)
 	}
 
 	if repContent == nil {
@@ -144,7 +159,7 @@ func (app *App) fetchTopics(ctx context.Context, info map[string]string) []strin
 		info["repo"],
 	)
 	if err != nil {
-		fmt.Errorf("error[%#v]", err)
+		app.log.Error("error[%#v]", err)
 	}
 
 	return topics
@@ -221,7 +236,7 @@ func statsCountComponentsByVersionAllProjects(projects []Repository) *StatsDataF
 	return statsData
 }
 
-func (app *App) statsCountProjectsByFilters(repositories []Repository) *StatsDataFrappe {
+func (app *App) statsCountProjectsByFilters(projects []Repository, projectsClientData []RepositoryClientData) *StatsDataFrappe {
 	statsData := &StatsDataFrappe{}
 
 	statsData.Datasets = append(statsData.Datasets, StatsDataset{
@@ -230,10 +245,11 @@ func (app *App) statsCountProjectsByFilters(repositories []Repository) *StatsDat
 
 	for i, f := range app.config.Filters {
 		statsData.Labels = append(statsData.Labels, f)
-		for _, r := range repositories {
-			for key, value := range r.PackageJSON.Dependencies {
+		for j, p := range projects {
+			for key, value := range p.PackageJSON.Dependencies {
 				if strings.Contains(GetAlias(key, value), f) {
 					statsData.Datasets[0].Values[i] = statsData.Datasets[0].Values[i] + 1
+					projectsClientData[j].Filter = f
 					continue
 				}
 			}
@@ -242,7 +258,7 @@ func (app *App) statsCountProjectsByFilters(repositories []Repository) *StatsDat
 	return statsData
 }
 
-func (app *App) statsCountComponentsByFilters(repositories []Repository) *StatsDataFrappe {
+func (app *App) statsCountComponentsByFilters(components []Repository, componentsClientData []RepositoryClientData) *StatsDataFrappe {
 	statsData := &StatsDataFrappe{}
 
 	statsData.Datasets = append(statsData.Datasets, StatsDataset{
@@ -251,10 +267,11 @@ func (app *App) statsCountComponentsByFilters(repositories []Repository) *StatsD
 
 	for i, f := range app.config.Filters {
 		statsData.Labels = append(statsData.Labels, f)
-		for _, r := range repositories {
-			for key, value := range r.PackageJSON.PeerDependencies {
+		for j, c := range components {
+			for key, value := range c.PackageJSON.PeerDependencies {
 				if strings.Contains(GetAlias(key, value), f) {
 					statsData.Datasets[0].Values[i] = statsData.Datasets[0].Values[i] + 1
+					componentsClientData[j].Filter = f
 					continue
 				}
 			}
