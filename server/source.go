@@ -3,9 +3,10 @@ package main
 import "regexp"
 
 const (
-	TypeProject   = "project"
-	TypeComponent = "component"
-	pathFile      = "./config.json"
+	TypeProject    = "project"
+	TypeComponent  = "component"
+	pathFileInput  = "./config.json"
+	pathFileOutput = "../client/src/assets/config/data-test.json"
 )
 
 type Config struct {

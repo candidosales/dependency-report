@@ -30,7 +30,7 @@
     <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card card__repositories">
         <div class="card-header">
-          <h2>{{ projects.length }} Projects</h2>
+          <h2>{{ projects.length }} Frontend projects</h2>
         </div>
         <div class="card-body">
           <ul class="repositories">
@@ -96,19 +96,8 @@
         </div>
       </div>
     </div>
-    <div class="col-12">
-      <div class="card">
-        <div class="card-header">
-          <h2>All libraries and versions X Adoption</h2>
-        </div>
-        <div class="card-body">
-          <div appFrappe [title]="" [data]="graphData.componentsByVersionAllProjects" [type]="'bar'">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="card">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="card card__in-soon">
         <div class="card-header">
           <h2>How often the same library and version is used in different projects? (in soon ...)</h2>
         </div>
@@ -125,6 +114,17 @@
                 <p class="component__version">{{ v.version }}v</p>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h2>Libraries usage (bug)</h2>
+        </div>
+        <div class="card-body">
+          <div appFrappe [title]="" [data]="graphData.componentsByVersionAllProjects" [type]="'bar'">
           </div>
         </div>
       </div>

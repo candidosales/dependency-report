@@ -1,5 +1,5 @@
 {
-    "filters": ["@angular/core_7", "@angular/core_8", "@angular/core_9"],
+    "filters": ["@angular/core_4", "@angular/core_7", "@angular/core_8", "@angular/core_9"],
     "repositories" : [
         {
            "url": "https://github.com/vendasta/listing-builder-client",
@@ -143,10 +143,6 @@
         },
         {
             "url": "https://github.com/vendasta/social-marketing-client",
-            "type": "project"
-        },
-        {
-            "url": "https://github.com/vendasta/medical-compare-client",
             "type": "project"
         },
         {
