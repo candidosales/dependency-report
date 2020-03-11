@@ -112,16 +112,16 @@
           <h2>How often the same library and version is used in different projects? (in soon ...)</h2>
         </div>
         <div class="card-body">
-          <div class="repository component" *ngFor="let c of componentsUsedByVersion" >
+          <div class="repository component" *ngFor="let key of objectKeys(componentsUsedByVersion)" >
             <p class="repository__name">
-              <a href="{{ c.repository.url }}" target="_blank">
-                {{ c.repository.name }}
+              <a href="" target="_blank">
+                {{ key }}
               </a>
             </p>
             <ul class="component_versions">
-              <li class="tooltip" *ngFor="let v of c.versions" [attr.data-tooltip]="getProjectsTooltip(v.projects)" >
-                <p class="component__frequency">{{ v.quantity }}</p>
-                <p class="component__version">{{ v.version }}v</p>
+              <li class="tooltip" *ngFor="let v of objectKeys(componentsUsedByVersion[key])" [attr.data-tooltip]="getProjectsTooltip(componentsUsedByVersion[key][v].projects)" >
+                <p class="component__frequency">{{ componentsUsedByVersion[key][v].quantity }}</p>
+                <p class="component__version">{{ v }}v</p>
               </li>
             </ul>
           </div>

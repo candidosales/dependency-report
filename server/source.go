@@ -5,7 +5,7 @@ import "regexp"
 const (
 	TypeProject    = "project"
 	TypeComponent  = "component"
-	pathFileInput  = "./config.json"
+	pathFileInput  = "./config-test.json"
 	pathFileOutput = "../client/src/assets/config/data-test.json"
 )
 
@@ -93,4 +93,13 @@ type RepositoryClientData struct {
 	Version string `json:"version"`
 	Filter  string `json:"filter"`
 	URL     string `json:"url"`
+}
+
+// type StatsComponentsByVersion struct {
+// 	Repository RepositoryClientData  `json:"repository"`
+// 	Versions   StatsComponentVersion `json:"versions"`
+// }
+type StatsComponentVersion struct {
+	Quantity int      `json:"quantity"`
+	Projects []string `json:"projects"`
 }

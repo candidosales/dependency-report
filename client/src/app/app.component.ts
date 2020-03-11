@@ -39,53 +39,70 @@ export class AppComponent implements OnInit {
     projects = [];
     components = [];
 
-    componentsUsedByVersion = [
-        {
-            repository: {
-                name: '@vendasta/uikit'
-            },
-            versions: [
-                {
-                    version: '8.0.1',
-                    quantity: 10,
-                    projects: ['listing-builder-client', 'customer-voice-client', 'concierge-cliet',
-                    'reputation-client', 'iam-client', 'snapshot-client']
-                },
-                {
-                    version: '9.0.1',
-                    quantity: 2,
-                    projects: ['snapshot-client', 'salesforce-client']
-                },
-                {
-                    version: '7.0.1',
-                    quantity: 1,
-                    projects: ['vetl-client']
-                }
-            ]
-        }, {
-            repository: {
-                name: '@vendasta/forms'
-            },
-            versions: [
-                {
-                    version: '8.0.1',
-                    quantity: 10,
-                    projects: ['listing-builder-client', 'customer-voice-client', 'concierge-cliet',
-                    'reputation-client', 'iam-client', 'snapshot-client']
-                },
-                {
-                    version: '9.0.1',
-                    quantity: 2,
-                    projects: ['snapshot-client', 'salesforce-client']
-                },
-                {
-                    version: '7.0.1',
-                    quantity: 1,
-                    projects: ['vetl-client']
-                }
-            ]
+    // componentsUsedByVersion = [
+    //     {
+    //         repository: {
+    //             name: '@vendasta/uikit'
+    //         },
+    //         versions: [
+    //             {
+    //                 version: '8.0.1',
+    //                 quantity: 10,
+    //                 projects: ['listing-builder-client', 'customer-voice-client', 'concierge-cliet',
+    //                 'reputation-client', 'iam-client', 'snapshot-client']
+    //             },
+    //             {
+    //                 version: '9.0.1',
+    //                 quantity: 2,
+    //                 projects: ['snapshot-client', 'salesforce-client']
+    //             },
+    //             {
+    //                 version: '7.0.1',
+    //                 quantity: 1,
+    //                 projects: ['vetl-client']
+    //             }
+    //         ]
+    //     }, {
+    //         repository: {
+    //             name: '@vendasta/forms'
+    //         },
+    //         versions: [
+    //             {
+    //                 version: '8.0.1',
+    //                 quantity: 10,
+    //                 projects: ['listing-builder-client', 'customer-voice-client', 'concierge-cliet',
+    //                 'reputation-client', 'iam-client', 'snapshot-client']
+    //             },
+    //             {
+    //                 version: '9.0.1',
+    //                 quantity: 2,
+    //                 projects: ['snapshot-client', 'salesforce-client']
+    //             },
+    //             {
+    //                 version: '7.0.1',
+    //                 quantity: 1,
+    //                 projects: ['vetl-client']
+    //             }
+    //         ]
+    //     }
+    // ]
+
+    objectKeys = Object.keys;
+
+    componentsUsedByVersion = {
+        '@vendasta/forms': {
+            '8.0.1': {
+                quantity: 10,
+                projects: ['listing-builder-client', 'customer-voice-client', 'concierge-cliet',
+                'reputation-client', 'iam-client', 'snapshot-client']
+                    },
+            '7.0.1': {
+                quantity: 10,
+                projects: ['listing-builder-client', 'customer-voice-client', 'concierge-cliet',
+                'reputation-client', 'iam-client', 'snapshot-client']
+            }
         }
-    ]
+    };
 
     constructor(private dataService: DataService) {}
 

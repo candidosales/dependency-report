@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"os"
 	"strings"
@@ -54,27 +55,27 @@ func main() {
 		}
 	}
 
-	projects, components, projectsClientData, componentsClientData := app.splitProjectsComponents(config.Repositories)
+	projects, components, _, _ := app.splitProjectsComponents(config.Repositories)
 
 	app.log.Info("Generate data to graphs ... \n")
-	countComponentsByProject := statsCountComponentsByProject(*projects, *components)
-	countComponentsByVersionAllProjects := statsCountComponentsByVersionAllProjects(*projects)
-	countProjectsByFilters := app.statsCountProjectsByFilters(*projects, *projectsClientData)
-	countComponentsByFilters := app.statsCountComponentsByFilters(*components, *componentsClientData)
+	test := app.statsCountComponentsByVersions(*projects, *components)
+	// countComponentsByProject := statsCountComponentsByProject(*projects, *components)
+	// countComponentsByVersionAllProjects := statsCountComponentsByVersionAllProjects(*projects)
+	// countProjectsByFilters := app.statsCountProjectsByFilters(*projects, *projectsClientData)
+	// countComponentsByFilters := app.statsCountComponentsByFilters(*components, *componentsClientData)
 
-	clientData := &ClientData{
-		Projects:   projectsClientData,
-		Components: componentsClientData,
-		GraphData: map[string]*StatsDataFrappe{
-			"componentsByProject":            countComponentsByProject,
-			"componentsByVersionAllProjects": countComponentsByVersionAllProjects,
-			"projectsByFilters":              countProjectsByFilters,
-			"componentsByFilters":            countComponentsByFilters,
-		},
-	}
+	// clientData := &ClientData{
+	// 	Projects:   projectsClientData,
+	// 	Components: componentsClientData,
+	// 	GraphData: map[string]*StatsDataFrappe{
+	// 		"componentsByProject":            countComponentsByProject,
+	// 		"componentsByVersionAllProjects": countComponentsByVersionAllProjects,
+	// 		"projectsByFilters":              countProjectsByFilters,
+	// 		"componentsByFilters":            countComponentsByFilters,
+	// 	},
+	// }
 
-	clientDataJSON, _ := json.MarshalIndent(clientData, "", " ")
-	// app.log.Info(string(clientDataJSON))
+	clientDataJSON, _ := json.MarshalIndent(test, "", " ")
 	err = ioutil.WriteFile(pathFileOutput, clientDataJSON, 0644)
 
 	if err != nil {
@@ -278,4 +279,70 @@ func (app *App) statsCountComponentsByFilters(components []Repository, component
 		}
 	}
 	return statsData
+}
+
+func (app *App) statsCountComponentsByVersions(projects []Repository, components []Repository) map[string]map[string]StatsComponentVersion {
+	var statsComponentsByVersion = map[string]map[string]StatsComponentVersion{}
+
+	// map[string]map[string]
+	// }
+	// 	'@vendasta/forms': {
+	// 		'8.0.1': {
+	// 			quantity: 10,
+	// 			projects: ['listing-builder-client', 'customer-voice-client', 'concierge-cliet',
+	// 			'reputation-client', 'iam-client', 'snapshot-client']
+	// 				},
+	// 		'7.0.1': {
+	// 			quantity: 10,
+	// 			projects: ['listing-builder-client', 'customer-voice-client', 'concierge-cliet',
+	// 			'reputation-client', 'iam-client', 'snapshot-client']
+	// 		}
+	// 	}
+	// }
+	for _, project := range projects {
+		for key, value := range project.PackageJSON.Dependencies {
+			// fmt.Printf("key[%#v] value[%#v] \n", key, value)
+			// fmt.Println("")
+
+			if statsComponentsByVersion[key] == nil && len(statsComponentsByVersion[key][value].Projects) == 0 && statsComponentsByVersion[key][value].Quantity == 0 {
+				statsComponentsByVersion[key] = map[string]StatsComponentVersion{}
+				statsComponentsByVersion[key][value] = StatsComponentVersion{
+					Quantity: 1,
+					Projects: []string{project.PackageJSON.Name},
+				}
+			} else {
+
+				projects := []string{}
+				projects = statsComponentsByVersion[key][value].Projects
+
+				if len(statsComponentsByVersion[key][value].Projects) != 0 && !contains(statsComponentsByVersion[key][value].Projects, project.PackageJSON.Name) {
+					for _, p := range statsComponentsByVersion[key][value].Projects {
+						projects = append(projects, p)
+					}
+					projects = append(projects, project.PackageJSON.Name)
+				}
+
+				quantity := statsComponentsByVersion[key][value].Quantity + 1
+
+				statsComponentsByVersion[key][value] = StatsComponentVersion{
+					Quantity: quantity,
+					Projects: projects,
+				}
+			}
+		}
+	}
+	dataJSON, _ := json.MarshalIndent(statsComponentsByVersion, "", " ")
+	fmt.Printf("dataJSON[%s]", dataJSON)
+	return statsComponentsByVersion
+}
+
+func contains(s []string, e string) bool {
+	fmt.Printf("s[%#v] e[%#v] \n", s, e)
+
+	for _, a := range s {
+		if a == e {
+			return true
+		}
+	}
+	return false
 }
