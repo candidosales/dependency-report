@@ -17,7 +17,7 @@ export class FrappeDirective implements OnChanges {
     private el: ElementRef
   ) {
     this.type = this.type || 'bar';
-    this.height = this.height || 300;
+    this.height = this.height || 250;
   }
 
   ngOnChanges() {
