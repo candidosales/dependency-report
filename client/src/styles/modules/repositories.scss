@@ -45,9 +45,15 @@
     flex-direction: row;
 }
 
+.component {
+    width: 220px;
+}
+
 .component_versions {
     padding: 0;
     margin: 0;
+    height: 120px;
+    overflow: auto;
     list-style: none;
     p {
         color: $color-gray-600;

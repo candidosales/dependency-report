@@ -30,9 +30,7 @@
             "styles": [
               "src/styles/styles.scss"
             ],
-            "scripts": [
-              "./node_modules/frappe-charts/dist/frappe-charts.min.iife.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

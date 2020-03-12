@@ -22,8 +22,7 @@
           <h2>Current Global Adoption</h2>
         </div>
         <div class="card-body">
-          <div appFrappe [title]="" [data]="graphData.projectsByFilters" [type]="'pie'">
-          </div>
+          <app-pie-chart [data]="graphDataGoogle?.projectsByFilters"></app-pie-chart>
         </div>
       </div>
     </div>
@@ -63,8 +62,7 @@
           <h2>Current Global Adoption</h2>
         </div>
         <div class="card-body">
-          <div appFrappe [title]="" [data]="graphData.componentsByFilters" [type]="'pie'">
-          </div>
+          <app-pie-chart [data]="graphDataGoogle?.componentsByFilters"></app-pie-chart>
         </div>
       </div>
     </div>
@@ -95,32 +93,22 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-12">
+    
+    <div class="col-lg-12 col-md-12 col-sm-12" *ngIf="componentsByVersions" >
       <div class="card">
         <div class="card-header">
-          <h2>Current Version X Adoption</h2>
+          <h2>How often the same library and version is used in different projects?</h2>
         </div>
         <div class="card-body">
-          <div appFrappe [title]="" [data]="graphData.componentsByProject" [type]="'bar'">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 col-md-6 col-sm-12">
-      <div class="card card__in-soon">
-        <div class="card-header">
-          <h2>How often the same library and version is used in different projects? (in soon ...)</h2>
-        </div>
-        <div class="card-body">
-          <div class="repository component" *ngFor="let key of objectKeys(componentsUsedByVersion)" >
+          <div class="repository component" *ngFor="let key of objectKeys(componentsByVersions)" >
             <p class="repository__name">
               <a href="" target="_blank">
                 {{ key }}
               </a>
             </p>
             <ul class="component_versions">
-              <li class="tooltip" *ngFor="let v of objectKeys(componentsUsedByVersion[key])" [attr.data-tooltip]="getProjectsTooltip(componentsUsedByVersion[key][v].projects)" >
-                <p class="component__frequency">{{ componentsUsedByVersion[key][v].quantity }}</p>
+              <li *ngFor="let v of objectKeys(componentsByVersions[key])" matTooltip="{{getProjectsTooltip(componentsByVersions[key][v].projects)}}" >
+                <p class="component__frequency">{{ componentsByVersions[key][v].quantity }}</p>
                 <p class="component__version">{{ v }}v</p>
               </li>
             </ul>
@@ -128,16 +116,25 @@
         </div>
       </div>
     </div>
-    <div class="col-12">
+    <!-- <div class="col-lg-12 col-md-12 col-sm-12">
       <div class="card">
+        <div class="card-header">
+          <h2>Current Version X Adoption</h2>
+        </div>
+        <div class="card-body">
+          <div appFrappe [title]="" [data]="graphData.componentsByProject" [type]="'bar'"></div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="col-12">
+      <div class="card card__in-soon">
         <div class="card-header">
           <h2>Libraries usage (bug)</h2>
         </div>
         <div class="card-body">
-          <div appFrappe [title]="" [data]="graphData.componentsByVersionAllProjects" [type]="'bar'">
-          </div>
+          <div appFrappe [title]="" [data]="graphData.componentsByVersionAllProjects" [type]="'bar'"></div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>

@@ -1,612 +1,5825 @@
 {
- "@agm/core": {
-  "1.0.0-beta.3": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "@angular/animations": {
-  "8.2.14": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@angular/cdk": {
-  "8.2.3": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@angular/common": {
-  "8.2.14": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@angular/compiler": {
-  "8.2.14": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@angular/core": {
-  "8.2.14": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@angular/elements": {
-  "8.2.14": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@angular/fire": {
-  "5.1.2": {
-   "quantity": 1,
-   "projects": null
+ "projects": [
+  {
+   "name": "listing-builder-client",
+   "version": "1.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/listing-builder-client"
   },
-  "5.4.2": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "@angular/flex-layout": {
-  "8.0.0-beta.27": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@angular/forms": {
-  "8.2.14": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@angular/http": {
-  "7.2.0": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "@angular/material": {
-  "8.2.3": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@angular/material-moment-adapter": {
-  "8.2.3": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@angular/platform-browser": {
-  "8.2.14": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@angular/platform-browser-dynamic": {
-  "8.2.14": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@angular/router": {
-  "8.2.14": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@ngx-translate/core": {
-  "11.0.1": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@swimlane/ngx-charts": {
-  "12.0.1": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "@tinymce/tinymce-angular": {
-  "2.4.1": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "@types/jest": {
-  "23.3.12": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "@types/lodash": {
-  "4.14.119": {
-   "quantity": 1,
-   "projects": null
+  {
+   "name": "customer-voice-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/customer-voice-client"
   },
-  "4.14.149": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "@types/node": {
-  "10.12.30": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "@types/papaparse": {
-  "4.5.6": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "@vendasta/address": {
-  "1.1.0": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
+  {
+   "name": "snapshot-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_6",
+   "url": "https://github.com/vendasta/snapshot-client"
   },
-  "1.1.1": {
-   "quantity": 1,
-   "projects": null
-  }
- },
- "@vendasta/atlas": {
-  "1.26.0": {
-   "quantity": 1,
-   "projects": null
+  {
+   "name": "iam-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_7",
+   "url": "https://github.com/vendasta/iam-client"
   },
-  "1.31.1": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "@vendasta/business-nav": {
-  "1.26.0": {
-   "quantity": 1,
-   "projects": null
+  {
+   "name": "invoice-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/invoice-client"
   },
-  "1.26.4": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "@vendasta/businesses": {
-  "4.19.2": {
-   "quantity": 1,
-   "projects": null
+  {
+   "name": "concierge-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/concierge-client"
   },
-  "6.7.0": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "@vendasta/core": {
-  "31.0.1": {
-   "quantity": 1,
-   "projects": null
+  {
+   "name": "salesforce-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_4",
+   "url": "https://github.com/vendasta/salesforce-client"
   },
-  "39.0.0": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "@vendasta/devtools": {
-  "0.5.0": {
-   "quantity": 1,
-   "projects": null
+  {
+   "name": "vstore-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_7",
+   "url": "https://github.com/vendasta/vstore-client"
   },
-  "1.0.0": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "@vendasta/forms": {
-  "4.10.1": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
+  {
+   "name": "codex-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/codex-client"
   },
-  "4.3.0": {
-   "quantity": 1,
-   "projects": null
-  }
- },
- "@vendasta/partner": {
-  "0.0.4": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
+  {
+   "name": "vetl-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_6",
+   "url": "https://github.com/vendasta/vetl-client"
   },
-  "0.0.6": {
-   "quantity": 1,
-   "projects": null
-  }
- },
- "@vendasta/rx-utils": {
-  "1.4.0": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "@vendasta/sales": {
-  "3.2.1": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "@vendasta/sales-orders": {
-  "1.59.0": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "@vendasta/uikit": {
-  "13.0.0": {
-   "quantity": 1,
-   "projects": null
+  {
+   "name": "reputation-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/reputation-client"
   },
-  "14.4.0": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "@vendasta/va-filter2": {
-  "2.1.0": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "@vendasta/va-filter2-table": {
-  "2.1.0": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "brace": {
-  "0.11.1": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "classlist.js": {
-  "1.1.20150312": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "core-js": {
-  "2.6.1": {
-   "quantity": 1,
-   "projects": null
+  {
+   "name": "heimdall-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/heimdall-client"
   },
-  "3.3.3": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "cross-env": {
-  "5.2.0": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "css-vars-ponyfill": {
-  "2.1.2": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "document-register-element": {
-  "1.8.1": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "elements-zone-strategy": {
-  "7.0.0": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
+  {
+   "name": "godaddy-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_6",
+   "url": "https://github.com/vendasta/godaddy-client"
   },
-  "8.0.0": {
-   "quantity": 1,
-   "projects": null
-  }
- },
- "fingerprintjs2": {
-  "2.0.6": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "firebase": {
-  "5.8.6": {
-   "quantity": 1,
-   "projects": null
+  {
+   "name": "atlas",
+   "version": "0.0.0",
+   "filter": "@angular/core_7",
+   "url": "https://github.com/vendasta/atlas-client"
   },
-  "7.9.3": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "google-libphonenumber": {
-  "3.2.6": {
-   "quantity": 1,
-   "projects": null
+  {
+   "name": "translation-manager",
+   "version": "0.0.0",
+   "filter": "@angular/core_6",
+   "url": "https://github.com/vendasta/cms-client"
   },
-  "3.2.7": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "highcharts": {
-  "7.2.0": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "jsonfile": {
-  "5.0.0": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "libphonenumber-js": {
-  "1.7.44": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
+  {
+   "name": "billing-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_7",
+   "url": "https://github.com/vendasta/billing-client"
   },
-  "1.7.7": {
-   "quantity": 1,
-   "projects": null
-  }
- },
- "lodash": {
-  "4.17.11": {
-   "quantity": 1,
-   "projects": null
+  {
+   "name": "wsp-portal-client",
+   "version": "2.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/wsp-portal-client"
   },
-  "4.17.15": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "moment": {
-  "2.24.0": {
-   "quantity": 2,
-   "projects": [
-    "listing-builder-client",
-    "listing-builder-client",
-    "customer-voice-client"
-   ]
-  }
- },
- "ngx-clipboard": {
-  "12.2.1": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "ngx-color-picker": {
-  "8.1.0": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "papaparse": {
-  "4.6.3": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "rxjs": {
-  "6.4.0": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
+  {
+   "name": "g-suite-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_6",
+   "url": "https://github.com/vendasta/g-suite-client"
   },
-  "6.5.4": {
-   "quantity": 1,
-   "projects": null
-  }
- },
- "rxjs-compat": {
-  "6.3.3": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "source-map": {
-  "0.7.3": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "tinymce": {
-  "4.9.2": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "tslib": {
-  "1.11.0": {
-   "quantity": 1,
-   "projects": [
-    "customer-voice-client"
-   ]
-  }
- },
- "web-animations-js": {
-  "2.3.1": {
-   "quantity": 1,
-   "projects": null
+  {
+   "name": "partner-center",
+   "version": "0.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/partner-center-client"
   },
-  "2.3.2": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
-  }
- },
- "zone.js": {
-  "0.10.2": {
-   "quantity": 1,
-   "projects": [
-    "listing-builder-client"
-   ]
+  {
+   "name": "employee-center-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_7",
+   "url": "https://github.com/vendasta/employee-center-client"
   },
-  "0.9.1": {
-   "quantity": 1,
-   "projects": null
+  {
+   "name": "brand-analytics-client",
+   "version": "0.0.0",
+   "filter": "",
+   "url": "https://github.com/vendasta/brand-analytics-client"
+  },
+  {
+   "name": "vendasta-center-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_7",
+   "url": "https://github.com/vendasta/vendasta-center-client"
+  },
+  {
+   "name": "vendor-center",
+   "version": "1.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/vendor-center-client"
+  },
+  {
+   "name": "sre-reporting-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/sre-reporting-client"
+  },
+  {
+   "name": "business-center-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/business-center-client"
+  },
+  {
+   "name": "sales-center-client",
+   "version": "1.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/sales-center-client"
+  },
+  {
+   "name": "mission-control",
+   "version": "0.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/mission-control-client"
+  },
+  {
+   "name": "ms-office-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/ms-office-client"
+  },
+  {
+   "name": "rd-center",
+   "version": "0.0.0",
+   "filter": "@angular/core_7",
+   "url": "https://github.com/vendasta/rd-center-client"
+  },
+  {
+   "name": "digital-ads-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_7",
+   "url": "https://github.com/vendasta/digital-ads-client"
+  },
+  {
+   "name": "listing-builder-client",
+   "version": "1.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/listing-builder-client"
+  },
+  {
+   "name": "constant-contact-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_7",
+   "url": "https://github.com/vendasta/constant-contact-client"
+  },
+  {
+   "name": "developer-center-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/developer-center-client"
+  },
+  {
+   "name": "mission-control",
+   "version": "0.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/mission-control-client"
+  },
+  {
+   "name": "web-crawler-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_7",
+   "url": "https://github.com/vendasta/web-crawler-client"
+  },
+  {
+   "name": "angular-social-marketing",
+   "version": "0.1.0",
+   "filter": "@angular/core_7",
+   "url": "https://github.com/vendasta/social-marketing-client"
+  },
+  {
+   "name": "medical-compare-client",
+   "version": "0.0.0",
+   "filter": "@angular/core_4",
+   "url": "https://github.com/vendasta/medical-compare-client"
+  }
+ ],
+ "components": [
+  {
+   "name": "@vendasta/billing-ui",
+   "version": "3.0.2",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/billing-ui"
+  },
+  {
+   "name": "@vendasta/business-categories",
+   "version": "3.0.1",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/business-categories"
+  },
+  {
+   "name": "@vendasta/businesses",
+   "version": "7.1.0",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/businesses"
+  },
+  {
+   "name": "@vendasta/core",
+   "version": "40.4.2",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/core"
+  },
+  {
+   "name": "@vendasta/devtools",
+   "version": "3.1.0",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/devtools"
+  },
+  {
+   "name": "@vendasta/forms",
+   "version": "6.0.2",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/forms"
+  },
+  {
+   "name": "@vendasta/global-brands",
+   "version": "4.0.1",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/global-brands"
+  },
+  {
+   "name": "@vendasta/hot-module-replacement",
+   "version": "2.0.0",
+   "filter": "@angular/core_8",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/hot-module-replacement"
+  },
+  {
+   "name": "@vendasta/reviews",
+   "version": "3.1.0",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/reviews"
+  },
+  {
+   "name": "@vendasta/rx-utils",
+   "version": "3.1.0",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/rx-utils"
+  },
+  {
+   "name": "@vendasta/sales-common",
+   "version": "2.0.1",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/sales-common"
+  },
+  {
+   "name": "@vendasta/sales-ui",
+   "version": "8.1.1",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/sales-ui"
+  },
+  {
+   "name": "@vendasta/smb-invoicing",
+   "version": "2.1.0",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/smb-invoicing"
+  },
+  {
+   "name": "@vendasta/social-posts",
+   "version": "3.0.1",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/social-posts"
+  },
+  {
+   "name": "@vendasta/spinner-tracking",
+   "version": "3.0.0",
+   "filter": "",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/spinner-tracking"
+  },
+  {
+   "name": "@vendasta/store",
+   "version": "18.0.2",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/store"
+  },
+  {
+   "name": "@vendasta/uikit",
+   "version": "16.4.0",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/uikit"
+  },
+  {
+   "name": "@vendasta/url-shortener",
+   "version": "4.0.1",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/url-shortener"
+  },
+  {
+   "name": "@vendasta/va-filter2-table",
+   "version": "2.1.0",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/va-filter2-table"
+  },
+  {
+   "name": "@vendasta/va-filter2",
+   "version": "3.0.1",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/va-filter2"
+  },
+  {
+   "name": "@vendasta/vform",
+   "version": "3.0.1",
+   "filter": "@angular/core_9",
+   "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/vform"
+  }
+ ],
+ "graphData": {
+  "componentsByFilters": [
+   [
+    "@angular/core_4",
+    0
+   ],
+   [
+    "@angular/core_6",
+    0
+   ],
+   [
+    "@angular/core_7",
+    0
+   ],
+   [
+    "@angular/core_8",
+    1
+   ],
+   [
+    "@angular/core_9",
+    19
+   ]
+  ],
+  "projectsByFilters": [
+   [
+    "@angular/core_4",
+    2
+   ],
+   [
+    "@angular/core_6",
+    5
+   ],
+   [
+    "@angular/core_7",
+    11
+   ],
+   [
+    "@angular/core_8",
+    16
+   ],
+   [
+    "@angular/core_9",
+    2
+   ]
+  ]
+ },
+ "componentsByVersions": {
+  "@agm/core": {
+   "1.0.0-beta.2": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "1.0.0-beta.3": {
+    "quantity": 3,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "1.0.0-beta.5": {
+    "quantity": 4,
+    "projects": [
+     "snapshot-client",
+     "concierge-client",
+     "reputation-client",
+     "business-center-client"
+    ]
+   },
+   "1.1.0": {
+    "quantity": 3,
+    "projects": [
+     "partner-center",
+     "vendor-center",
+     "sales-center-client"
+    ]
+   }
+  },
+  "@agm/js-marker-clusterer": {
+   "1.0.0-beta.2": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   }
+  },
+  "@agm/snazzy-info-window": {
+   "1.0.0-beta.2": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   }
+  },
+  "@angular-builders/custom-webpack": {
+   "8.2.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "@angular-devkit/build-angular": {
+   "0.13.5": {
+    "quantity": 1,
+    "projects": [
+     "vstore-client"
+    ]
+   },
+   "0.803.23": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "@angular-devkit/core": {
+   "7.3.9": {
+    "quantity": 2,
+    "projects": [
+     "partner-center",
+     "vendor-center"
+    ]
+   }
+  },
+  "@angular/animations": {
+   "4.2.4": {
+    "quantity": 1,
+    "projects": [
+     "salesforce-client"
+    ]
+   },
+   "4.4.6": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "5.2.7": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "6.0.2": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.0.3": {
+    "quantity": 1,
+    "projects": [
+     "g-suite-client"
+    ]
+   },
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "6.1.10": {
+    "quantity": 1,
+    "projects": [
+     "godaddy-client"
+    ]
+   },
+   "6.1.7": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.0.1": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.2.0": {
+    "quantity": 2,
+    "projects": [
+     "rd-center",
+     "web-crawler-client"
+    ]
+   },
+   "7.2.11": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "7.2.15": {
+    "quantity": 4,
+    "projects": [
+     "iam-client",
+     "billing-client",
+     "vendasta-center-client",
+     "angular-social-marketing"
+    ]
+   },
+   "7.2.3": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   },
+   "7.2.8": {
+    "quantity": 2,
+    "projects": [
+     "vstore-client",
+     "digital-ads-client"
+    ]
+   },
+   "8.0.0": {
+    "quantity": 2,
+    "projects": []
+   },
+   "8.1.1": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "8.2.12": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "8.2.13": {
+    "quantity": 2,
+    "projects": [
+     "business-center-client",
+     "ms-office-client"
+    ]
+   },
+   "8.2.14": {
+    "quantity": 9,
+    "projects": []
+   },
+   "8.2.7": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "9.0.0": {
+    "quantity": 2,
+    "projects": [
+     "invoice-client",
+     "developer-center-client"
+    ]
+   }
+  },
+  "@angular/cdk": {
+   "2.0.0-beta.12": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "5.2.3": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.2.1": {
+    "quantity": 1,
+    "projects": [
+     "g-suite-client"
+    ]
+   },
+   "6.4.2": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "6.4.7": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.0.1": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.2.0": {
+    "quantity": 2,
+    "projects": [
+     "godaddy-client",
+     "rd-center"
+    ]
+   },
+   "7.3.3": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   },
+   "7.3.6": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "7.3.7": {
+    "quantity": 7,
+    "projects": [
+     "iam-client",
+     "vstore-client",
+     "codex-client",
+     "atlas",
+     "billing-client",
+     "vendasta-center-client",
+     "angular-social-marketing"
+    ]
+   },
+   "8.0.0": {
+    "quantity": 2,
+    "projects": []
+   },
+   "8.0.2": {
+    "quantity": 2,
+    "projects": [
+     "sre-reporting-client",
+     "sales-center-client"
+    ]
+   },
+   "8.2.3": {
+    "quantity": 11,
+    "projects": []
+   },
+   "9.0.0": {
+    "quantity": 2,
+    "projects": [
+     "invoice-client",
+     "developer-center-client"
+    ]
+   }
+  },
+  "@angular/cli": {
+   "8.3.23": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "@angular/common": {
+   "4.2.4": {
+    "quantity": 1,
+    "projects": [
+     "salesforce-client"
+    ]
+   },
+   "4.4.6": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "5.2.7": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "6.0.2": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.0.3": {
+    "quantity": 2,
+    "projects": [
+     "godaddy-client",
+     "g-suite-client"
+    ]
+   },
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "6.1.7": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.0.1": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.2.0": {
+    "quantity": 2,
+    "projects": [
+     "rd-center",
+     "web-crawler-client"
+    ]
+   },
+   "7.2.11": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "7.2.15": {
+    "quantity": 4,
+    "projects": [
+     "iam-client",
+     "billing-client",
+     "vendasta-center-client",
+     "angular-social-marketing"
+    ]
+   },
+   "7.2.3": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   },
+   "7.2.8": {
+    "quantity": 2,
+    "projects": [
+     "vstore-client",
+     "digital-ads-client"
+    ]
+   },
+   "8.0.0": {
+    "quantity": 2,
+    "projects": []
+   },
+   "8.1.1": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "8.2.12": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "8.2.13": {
+    "quantity": 2,
+    "projects": [
+     "business-center-client",
+     "ms-office-client"
+    ]
+   },
+   "8.2.14": {
+    "quantity": 10,
+    "projects": []
+   },
+   "9.0.0": {
+    "quantity": 2,
+    "projects": [
+     "invoice-client",
+     "developer-center-client"
+    ]
+   }
+  },
+  "@angular/compiler": {
+   "4.2.4": {
+    "quantity": 1,
+    "projects": [
+     "salesforce-client"
+    ]
+   },
+   "4.4.6": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "5.2.7": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "6.0.2": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.0.3": {
+    "quantity": 2,
+    "projects": [
+     "godaddy-client",
+     "g-suite-client"
+    ]
+   },
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "6.1.7": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.0.1": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.2.0": {
+    "quantity": 2,
+    "projects": [
+     "rd-center",
+     "web-crawler-client"
+    ]
+   },
+   "7.2.11": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "7.2.15": {
+    "quantity": 4,
+    "projects": [
+     "iam-client",
+     "billing-client",
+     "vendasta-center-client",
+     "angular-social-marketing"
+    ]
+   },
+   "7.2.3": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   },
+   "7.2.8": {
+    "quantity": 2,
+    "projects": [
+     "vstore-client",
+     "digital-ads-client"
+    ]
+   },
+   "8.0.0": {
+    "quantity": 2,
+    "projects": []
+   },
+   "8.1.1": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "8.2.12": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "8.2.13": {
+    "quantity": 2,
+    "projects": [
+     "business-center-client",
+     "ms-office-client"
+    ]
+   },
+   "8.2.14": {
+    "quantity": 10,
+    "projects": []
+   },
+   "9.0.0": {
+    "quantity": 2,
+    "projects": [
+     "invoice-client",
+     "developer-center-client"
+    ]
+   }
+  },
+  "@angular/core": {
+   "4.2.4": {
+    "quantity": 1,
+    "projects": [
+     "salesforce-client"
+    ]
+   },
+   "4.4.6": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "5.2.7": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "6.0.2": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.0.3": {
+    "quantity": 2,
+    "projects": [
+     "godaddy-client",
+     "g-suite-client"
+    ]
+   },
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "6.1.7": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.0.1": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.2.0": {
+    "quantity": 2,
+    "projects": [
+     "rd-center",
+     "web-crawler-client"
+    ]
+   },
+   "7.2.11": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "7.2.15": {
+    "quantity": 4,
+    "projects": [
+     "iam-client",
+     "billing-client",
+     "vendasta-center-client",
+     "angular-social-marketing"
+    ]
+   },
+   "7.2.3": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   },
+   "7.2.8": {
+    "quantity": 2,
+    "projects": [
+     "vstore-client",
+     "digital-ads-client"
+    ]
+   },
+   "8.0.0": {
+    "quantity": 2,
+    "projects": []
+   },
+   "8.1.1": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "8.2.12": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "8.2.13": {
+    "quantity": 2,
+    "projects": [
+     "business-center-client",
+     "ms-office-client"
+    ]
+   },
+   "8.2.14": {
+    "quantity": 10,
+    "projects": []
+   },
+   "9.0.0": {
+    "quantity": 2,
+    "projects": [
+     "invoice-client",
+     "developer-center-client"
+    ]
+   }
+  },
+  "@angular/elements": {
+   "7.0.0": {
+    "quantity": 1,
+    "projects": [
+     "vendasta-center-client"
+    ]
+   },
+   "7.2.15": {
+    "quantity": 2,
+    "projects": [
+     "iam-client",
+     "angular-social-marketing"
+    ]
+   },
+   "7.2.3": {
+    "quantity": 2,
+    "projects": [
+     "atlas",
+     "billing-client"
+    ]
+   },
+   "7.2.8": {
+    "quantity": 1,
+    "projects": [
+     "vstore-client"
+    ]
+   },
+   "8.0.0": {
+    "quantity": 2,
+    "projects": []
+   },
+   "8.1.1": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "8.2.12": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "8.2.13": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "8.2.14": {
+    "quantity": 7,
+    "projects": []
+   },
+   "8.2.7": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   }
+  },
+  "@angular/fire": {
+   "5.1.0": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "5.1.2": {
+    "quantity": 5,
+    "projects": [
+     "customer-voice-client",
+     "iam-client",
+     "vstore-client",
+     "reputation-client",
+     "angular-social-marketing"
+    ]
+   },
+   "5.1.3": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "5.2.1": {
+    "quantity": 5,
+    "projects": [
+     "concierge-client",
+     "atlas",
+     "vendasta-center-client",
+     "vendor-center",
+     "ms-office-client"
+    ]
+   },
+   "5.2.3": {
+    "quantity": 2,
+    "projects": [
+     "billing-client",
+     "sre-reporting-client"
+    ]
+   },
+   "5.4.2": {
+    "quantity": 7,
+    "projects": [
+     "mission-control"
+    ]
+   }
+  },
+  "@angular/flex-layout": {
+   "2.0.0-beta.10-4905443": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "5.0.0-beta.13": {
+    "quantity": 2,
+    "projects": [
+     "snapshot-client",
+     "brand-analytics-client"
+    ]
+   },
+   "6.0.0-beta.16": {
+    "quantity": 1,
+    "projects": [
+     "g-suite-client"
+    ]
+   },
+   "6.0.0-beta.18": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.0.0-beta.23": {
+    "quantity": 4,
+    "projects": [
+     "iam-client",
+     "vstore-client",
+     "atlas",
+     "digital-ads-client"
+    ]
+   },
+   "7.0.0-beta.24": {
+    "quantity": 5,
+    "projects": [
+     "codex-client",
+     "billing-client",
+     "vendasta-center-client",
+     "constant-contact-client",
+     "angular-social-marketing"
+    ]
+   },
+   "8.0.0-beta.26": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "8.0.0-beta.27": {
+    "quantity": 13,
+    "projects": [
+     "mission-control"
+    ]
+   },
+   "9.0.0-beta.28": {
+    "quantity": 1,
+    "projects": [
+     "developer-center-client"
+    ]
+   },
+   "9.0.0-beta.29": {
+    "quantity": 1,
+    "projects": [
+     "invoice-client"
+    ]
+   }
+  },
+  "@angular/forms": {
+   "4.2.4": {
+    "quantity": 1,
+    "projects": [
+     "salesforce-client"
+    ]
+   },
+   "4.4.6": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "5.2.7": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "6.0.2": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.0.3": {
+    "quantity": 2,
+    "projects": [
+     "godaddy-client",
+     "g-suite-client"
+    ]
+   },
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "6.1.7": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.0.1": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.2.0": {
+    "quantity": 2,
+    "projects": [
+     "rd-center",
+     "web-crawler-client"
+    ]
+   },
+   "7.2.11": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "7.2.15": {
+    "quantity": 4,
+    "projects": [
+     "iam-client",
+     "billing-client",
+     "vendasta-center-client",
+     "angular-social-marketing"
+    ]
+   },
+   "7.2.3": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   },
+   "7.2.8": {
+    "quantity": 2,
+    "projects": [
+     "vstore-client",
+     "digital-ads-client"
+    ]
+   },
+   "8.0.0": {
+    "quantity": 2,
+    "projects": []
+   },
+   "8.1.1": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "8.2.12": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "8.2.13": {
+    "quantity": 2,
+    "projects": [
+     "business-center-client",
+     "ms-office-client"
+    ]
+   },
+   "8.2.14": {
+    "quantity": 9,
+    "projects": []
+   },
+   "8.2.7": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "9.0.0": {
+    "quantity": 2,
+    "projects": [
+     "invoice-client",
+     "developer-center-client"
+    ]
+   }
+  },
+  "@angular/http": {
+   "4.2.4": {
+    "quantity": 1,
+    "projects": [
+     "salesforce-client"
+    ]
+   },
+   "4.4.6": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "5.2.7": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "6.0.3": {
+    "quantity": 2,
+    "projects": [
+     "godaddy-client",
+     "g-suite-client"
+    ]
+   },
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "6.1.7": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.0.1": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.2.0": {
+    "quantity": 2,
+    "projects": [
+     "customer-voice-client",
+     "sales-center-client"
+    ]
+   },
+   "7.2.11": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "7.2.15": {
+    "quantity": 4,
+    "projects": [
+     "iam-client",
+     "billing-client",
+     "business-center-client",
+     "angular-social-marketing"
+    ]
+   },
+   "7.2.3": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   },
+   "7.2.8": {
+    "quantity": 2,
+    "projects": [
+     "vstore-client",
+     "digital-ads-client"
+    ]
+   },
+   "8.0.0-beta.10": {
+    "quantity": 1,
+    "projects": [
+     "ms-office-client"
+    ]
+   }
+  },
+  "@angular/material": {
+   "2.0.0-beta.12": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "5.2.3": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.2.1": {
+    "quantity": 1,
+    "projects": [
+     "g-suite-client"
+    ]
+   },
+   "6.4.2": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "6.4.7": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.0.1": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.2.0": {
+    "quantity": 2,
+    "projects": [
+     "godaddy-client",
+     "rd-center"
+    ]
+   },
+   "7.2.1": {
+    "quantity": 2,
+    "projects": [
+     "iam-client",
+     "vstore-client"
+    ]
+   },
+   "7.2.15": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "7.2.2": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   },
+   "7.3.2": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   },
+   "7.3.3": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   },
+   "7.3.6": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "7.3.7": {
+    "quantity": 2,
+    "projects": [
+     "codex-client",
+     "vendasta-center-client"
+    ]
+   },
+   "8.0.0": {
+    "quantity": 2,
+    "projects": []
+   },
+   "8.0.2": {
+    "quantity": 2,
+    "projects": [
+     "sre-reporting-client",
+     "sales-center-client"
+    ]
+   },
+   "8.2.3": {
+    "quantity": 11,
+    "projects": []
+   },
+   "9.0.0": {
+    "quantity": 2,
+    "projects": [
+     "invoice-client",
+     "developer-center-client"
+    ]
+   }
+  },
+  "@angular/material-moment-adapter": {
+   "6.0.0": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.4.2": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "6.4.7": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.2.15": {
+    "quantity": 2,
+    "projects": [
+     "iam-client",
+     "angular-social-marketing"
+    ]
+   },
+   "7.2.2": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   },
+   "7.2.3": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   },
+   "7.2.8": {
+    "quantity": 1,
+    "projects": [
+     "vstore-client"
+    ]
+   },
+   "7.3.3": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   },
+   "7.3.6": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "7.3.7": {
+    "quantity": 2,
+    "projects": [
+     "codex-client",
+     "vendasta-center-client"
+    ]
+   },
+   "8.0.0": {
+    "quantity": 2,
+    "projects": []
+   },
+   "8.0.2": {
+    "quantity": 2,
+    "projects": [
+     "sre-reporting-client",
+     "sales-center-client"
+    ]
+   },
+   "8.2.0": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "8.2.3": {
+    "quantity": 9,
+    "projects": []
+   },
+   "9.0.0-rc.5": {
+    "quantity": 1,
+    "projects": [
+     "developer-center-client"
+    ]
+   }
+  },
+  "@angular/platform-browser": {
+   "4.2.4": {
+    "quantity": 1,
+    "projects": [
+     "salesforce-client"
+    ]
+   },
+   "4.4.6": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "5.2.7": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "6.0.2": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.0.3": {
+    "quantity": 2,
+    "projects": [
+     "godaddy-client",
+     "g-suite-client"
+    ]
+   },
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "6.1.7": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.0.1": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.2.0": {
+    "quantity": 2,
+    "projects": [
+     "rd-center",
+     "web-crawler-client"
+    ]
+   },
+   "7.2.11": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "7.2.15": {
+    "quantity": 4,
+    "projects": [
+     "iam-client",
+     "billing-client",
+     "vendasta-center-client",
+     "angular-social-marketing"
+    ]
+   },
+   "7.2.3": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   },
+   "7.2.8": {
+    "quantity": 2,
+    "projects": [
+     "vstore-client",
+     "digital-ads-client"
+    ]
+   },
+   "8.0.0": {
+    "quantity": 2,
+    "projects": []
+   },
+   "8.1.1": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "8.2.12": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "8.2.13": {
+    "quantity": 2,
+    "projects": [
+     "business-center-client",
+     "ms-office-client"
+    ]
+   },
+   "8.2.14": {
+    "quantity": 9,
+    "projects": []
+   },
+   "8.2.7": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "9.0.0": {
+    "quantity": 2,
+    "projects": [
+     "invoice-client",
+     "developer-center-client"
+    ]
+   }
+  },
+  "@angular/platform-browser-dynamic": {
+   "4.2.4": {
+    "quantity": 1,
+    "projects": [
+     "salesforce-client"
+    ]
+   },
+   "4.4.6": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "5.2.7": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "6.0.2": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.0.3": {
+    "quantity": 2,
+    "projects": [
+     "godaddy-client",
+     "g-suite-client"
+    ]
+   },
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "6.1.7": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.0.1": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.2.0": {
+    "quantity": 2,
+    "projects": [
+     "rd-center",
+     "web-crawler-client"
+    ]
+   },
+   "7.2.11": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "7.2.15": {
+    "quantity": 6,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "7.2.3": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   },
+   "7.2.8": {
+    "quantity": 2,
+    "projects": [
+     "vstore-client",
+     "digital-ads-client"
+    ]
+   },
+   "8.1.1": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "8.2.12": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "8.2.13": {
+    "quantity": 2,
+    "projects": [
+     "business-center-client",
+     "ms-office-client"
+    ]
+   },
+   "8.2.14": {
+    "quantity": 9,
+    "projects": []
+   },
+   "8.2.7": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "9.0.0": {
+    "quantity": 2,
+    "projects": [
+     "invoice-client",
+     "developer-center-client"
+    ]
+   }
+  },
+  "@angular/pwa": {
+   "0.10.6": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "0.7.5": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   }
+  },
+  "@angular/router": {
+   "4.2.4": {
+    "quantity": 1,
+    "projects": [
+     "salesforce-client"
+    ]
+   },
+   "4.4.6": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "5.2.7": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "6.0.2": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.0.3": {
+    "quantity": 2,
+    "projects": [
+     "godaddy-client",
+     "g-suite-client"
+    ]
+   },
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "6.1.7": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.0.1": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.2.0": {
+    "quantity": 2,
+    "projects": [
+     "rd-center",
+     "web-crawler-client"
+    ]
+   },
+   "7.2.11": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "7.2.15": {
+    "quantity": 4,
+    "projects": [
+     "iam-client",
+     "billing-client",
+     "vendasta-center-client",
+     "angular-social-marketing"
+    ]
+   },
+   "7.2.3": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   },
+   "7.2.8": {
+    "quantity": 2,
+    "projects": [
+     "vstore-client",
+     "digital-ads-client"
+    ]
+   },
+   "8.0.0": {
+    "quantity": 2,
+    "projects": []
+   },
+   "8.1.1": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "8.2.12": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "8.2.13": {
+    "quantity": 2,
+    "projects": [
+     "business-center-client",
+     "ms-office-client"
+    ]
+   },
+   "8.2.14": {
+    "quantity": 9,
+    "projects": []
+   },
+   "8.2.7": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "9.0.0": {
+    "quantity": 2,
+    "projects": [
+     "invoice-client",
+     "developer-center-client"
+    ]
+   }
+  },
+  "@angular/service-worker": {
+   "6.1.7": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.0.1": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.2.8": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   }
+  },
+  "@babel/preset-env": {
+   "7.8.4": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   }
+  },
+  "@bit/vendasta.planets.chart": {
+   "1.2.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "2.0.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@bit/vendasta.satellites.stencil-shimmer": {
+   "1.0.0": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   }
+  },
+  "@briebug/jest-schematic": {
+   "2.1.1": {
+    "quantity": 1,
+    "projects": [
+     "developer-center-client"
+    ]
+   }
+  },
+  "@ctrl/ngx-codemirror": {
+   "2.2.1": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "@ctrl/ngx-csv": {
+   "1.1.5": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "@ctrl/ngx-emoji-mart": {
+   "1.0.5": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   }
+  },
+  "@google-cloud/storage": {
+   "2.2.0": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "@ngrx/core": {
+   "1.2.0": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   }
+  },
+  "@ngrx/effects": {
+   "6.1.2": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.3.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "8.2.0": {
+    "quantity": 1,
+    "projects": [
+     "developer-center-client"
+    ]
+   }
+  },
+  "@ngrx/router-store": {
+   "6.1.2": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   }
+  },
+  "@ngrx/store": {
+   "6.1.2": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.3.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "8.2.0": {
+    "quantity": 1,
+    "projects": [
+     "developer-center-client"
+    ]
+   }
+  },
+  "@ngrx/store-devtools": {
+   "6.1.2": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "7.3.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "8.2.0": {
+    "quantity": 1,
+    "projects": [
+     "developer-center-client"
+    ]
+   }
+  },
+  "@ngx-translate/core": {
+   "10.0.2": {
+    "quantity": 9,
+    "projects": [
+     "vetl-client",
+     "reputation-client",
+     "translation-manager",
+     "billing-client",
+     "g-suite-client",
+     "sales-center-client",
+     "ms-office-client",
+     "constant-contact-client",
+     "angular-social-marketing"
+    ]
+   },
+   "11.0.1": {
+    "quantity": 15,
+    "projects": [
+     "mission-control"
+    ]
+   },
+   "12.0.0": {
+    "quantity": 1,
+    "projects": [
+     "developer-center-client"
+    ]
+   },
+   "12.1.1": {
+    "quantity": 2,
+    "projects": [
+     "vendor-center",
+     "business-center-client"
+    ]
+   },
+   "12.1.2": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "9.1.1": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   }
+  },
+  "@ngx-translate/http-loader": {
+   "2.0.0": {
+    "quantity": 2,
+    "projects": [
+     "wsp-portal-client",
+     "business-center-client"
+    ]
+   },
+   "3.0.1": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "4.0.0": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   }
+  },
+  "@swimlane/ngx-charts": {
+   "11.0.0": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "11.1.0": {
+    "quantity": 2,
+    "projects": [
+     "reputation-client",
+     "business-center-client"
+    ]
+   },
+   "12.0.1": {
+    "quantity": 4,
+    "projects": []
+   },
+   "12.1.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@tinymce/tinymce-angular": {
+   "2.4.1": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   },
+   "3.4.0": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   }
+  },
+  "@turf/bbox": {
+   "6.0.1": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "@turf/voronoi": {
+   "5.1.5": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "@types/core-js": {
+   "2.5.2": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   }
+  },
+  "@types/country-list": {
+   "2.1.0": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   }
+  },
+  "@types/dhtmlxgantt": {
+   "4.0.34": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   }
+  },
+  "@types/dompurify": {
+   "0.0.33": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "@types/faker": {
+   "4.1.8": {
+    "quantity": 1,
+    "projects": [
+     "developer-center-client"
+    ]
+   }
+  },
+  "@types/file-saver": {
+   "1.3.0": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   },
+   "2.0.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "2.0.1": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "@types/fingerprintjs2": {
+   "2.0.0": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   }
+  },
+  "@types/googlemaps": {
+   "3.30.19": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "3.39.3": {
+    "quantity": 2,
+    "projects": [
+     "partner-center",
+     "sales-center-client"
+    ]
+   }
+  },
+  "@types/jasmine": {
+   "2.8.9": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "3.5.8": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@types/jest": {
+   "23.3.12": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   },
+   "24.0.13": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@types/jquery": {
+   "3.3.31": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   }
+  },
+  "@types/jwt-decode": {
+   "2.2.1": {
+    "quantity": 4,
+    "projects": [
+     "godaddy-client",
+     "g-suite-client",
+     "digital-ads-client",
+     "constant-contact-client"
+    ]
+   }
+  },
+  "@types/lodash": {
+   "4.14.118": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   },
+   "4.14.119": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   },
+   "4.14.149": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "@types/mocha": {
+   "5.2.6": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   }
+  },
+  "@types/node": {
+   "10.12.2": {
+    "quantity": 5,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "10.12.30": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   },
+   "10.14.22": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "13.7.6": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "@types/papaparse": {
+   "4.5.6": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   }
+  },
+  "@types/uuid": {
+   "3.4.5": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "3.4.6": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   }
+  },
+  "@vendasta/address": {
+   "1.1.0": {
+    "quantity": 3,
+    "projects": []
+   },
+   "1.1.1": {
+    "quantity": 4,
+    "projects": [
+     "customer-voice-client",
+     "concierge-client",
+     "reputation-client",
+     "angular-social-marketing"
+    ]
+   },
+   "1.2.1": {
+    "quantity": 3,
+    "projects": [
+     "partner-center",
+     "business-center-client",
+     "sales-center-client"
+    ]
+   }
+  },
+  "@vendasta/angular": {
+   "1.0.0": {
+    "quantity": 1,
+    "projects": [
+     "wsp-portal-client"
+    ]
+   }
+  },
+  "@vendasta/atlas": {
+   "1.24.0": {
+    "quantity": 2,
+    "projects": [
+     "iam-client",
+     "sre-reporting-client"
+    ]
+   },
+   "1.25.1": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   },
+   "1.26.0": {
+    "quantity": 2,
+    "projects": [
+     "customer-voice-client",
+     "atlas"
+    ]
+   },
+   "1.29.2": {
+    "quantity": 5,
+    "projects": []
+   },
+   "1.30.1": {
+    "quantity": 2,
+    "projects": [
+     "vstore-client",
+     "sales-center-client"
+    ]
+   },
+   "1.31.1": {
+    "quantity": 3,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "1.32.0": {
+    "quantity": 4,
+    "projects": [
+     "concierge-client",
+     "partner-center",
+     "vendasta-center-client",
+     "business-center-client"
+    ]
+   }
+  },
+  "@vendasta/billing": {
+   "1.25.0": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   },
+   "1.40.0": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "1.42.1": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "1.44.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "1.46.0": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   }
+  },
+  "@vendasta/billing-ui": {
+   "1.18.13": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "1.27.0": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   },
+   "3.0.2": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@vendasta/bulk-actions": {
+   "0.0.8": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@vendasta/business-nav": {
+   "1.0.0": {
+    "quantity": 1,
+    "projects": [
+     "vendasta-center-client"
+    ]
+   },
+   "1.26.0": {
+    "quantity": 3,
+    "projects": [
+     "customer-voice-client",
+     "reputation-client",
+     "angular-social-marketing"
+    ]
+   },
+   "1.26.4": {
+    "quantity": 3,
+    "projects": []
+   }
+  },
+  "@vendasta/businesses": {
+   "4.1.3": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "4.19.2": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   },
+   "4.24.0": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   },
+   "4.28.1": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "4.30.0": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   },
+   "6.3.0": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.7.0": {
+    "quantity": 3,
+    "projects": []
+   },
+   "7.0.2": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "7.1.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "@vendasta/codex": {
+   "1.4.1": {
+    "quantity": 1,
+    "projects": [
+     "codex-client"
+    ]
+   }
+  },
+  "@vendasta/core": {
+   "15.11.0": {
+    "quantity": 1,
+    "projects": [
+     "g-suite-client"
+    ]
+   },
+   "16.5.1": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "17.18.1": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "17.49.1": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   },
+   "18.12.0": {
+    "quantity": 1,
+    "projects": [
+     "godaddy-client"
+    ]
+   },
+   "18.57.1": {
+    "quantity": 1,
+    "projects": [
+     "vstore-client"
+    ]
+   },
+   "20.3.0": {
+    "quantity": 1,
+    "projects": [
+     "rd-center"
+    ]
+   },
+   "21.1.0": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   },
+   "21.22.3": {
+    "quantity": 1,
+    "projects": [
+     "ms-office-client"
+    ]
+   },
+   "22.3.0": {
+    "quantity": 1,
+    "projects": [
+     "wsp-portal-client"
+    ]
+   },
+   "24.15.1": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "24.31.0": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "30.4.1": {
+    "quantity": 2,
+    "projects": []
+   },
+   "31.0.1": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   },
+   "32.0.0": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "32.10.0": {
+    "quantity": 2,
+    "projects": [
+     "heimdall-client",
+     "vendasta-center-client"
+    ]
+   },
+   "32.2.0": {
+    "quantity": 1,
+    "projects": [
+     "iam-client"
+    ]
+   },
+   "32.2.1": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "32.9.1": {
+    "quantity": 1,
+    "projects": [
+     "invoice-client"
+    ]
+   },
+   "33.0.0": {
+    "quantity": 2,
+    "projects": [
+     "billing-client",
+     "developer-center-client"
+    ]
+   },
+   "35.2.0": {
+    "quantity": 2,
+    "projects": [
+     "codex-client",
+     "reputation-client"
+    ]
+   },
+   "37.0.0": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "38.0.1": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "39.0.0": {
+    "quantity": 3,
+    "projects": []
+   },
+   "4.0.1": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "40.0.0": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "40.3.0": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   },
+   "8.5.0": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   }
+  },
+  "@vendasta/devtools": {
+   "0.1.1": {
+    "quantity": 1,
+    "projects": [
+     "g-suite-client"
+    ]
+   },
+   "0.2.0": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   },
+   "0.3.0": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "0.5.0": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   },
+   "1.0.0": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "@vendasta/email": {
+   "2.0.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "2.3.1": {
+    "quantity": 2,
+    "projects": [
+     "partner-center",
+     "vendasta-center-client"
+    ]
+   }
+  },
+  "@vendasta/executive-report": {
+   "1.0.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "@vendasta/forms": {
+   "2.10.0": {
+    "quantity": 1,
+    "projects": [
+     "g-suite-client"
+    ]
+   },
+   "2.8.0": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "4.10.0": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   },
+   "4.10.1": {
+    "quantity": 2,
+    "projects": []
+   },
+   "4.14.0": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "4.2.0": {
+    "quantity": 1,
+    "projects": [
+     "godaddy-client"
+    ]
+   },
+   "4.3.0": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   },
+   "4.3.1": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "4.5.0": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   },
+   "4.7.0": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "5.1.0": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   },
+   "5.3.1": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "6.0.2": {
+    "quantity": 2,
+    "projects": [
+     "business-center-client",
+     "sales-center-client"
+    ]
+   }
+  },
+  "@vendasta/global-brands": {
+   "2.2.1": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "3.0.1": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@vendasta/google-analytics": {
+   "1.0.1": {
+    "quantity": 1,
+    "projects": [
+     "wsp-portal-client"
+    ]
+   }
+  },
+  "@vendasta/google-my-business": {
+   "1.2.1": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   }
+  },
+  "@vendasta/heimdall": {
+   "0.10.1": {
+    "quantity": 2,
+    "projects": []
+   },
+   "1.0.0": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "1.11.1": {
+    "quantity": 2,
+    "projects": [
+     "reputation-client",
+     "vendasta-center-client"
+    ]
+   },
+   "1.12.1": {
+    "quantity": 1,
+    "projects": [
+     "heimdall-client"
+    ]
+   },
+   "1.14.0": {
+    "quantity": 3,
+    "projects": []
+   },
+   "1.15.1": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "1.8.5": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "1.9.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "@vendasta/hot-module-replacement": {
+   "0.0.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@vendasta/iam": {
+   "1.3.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@vendasta/marketplace-apps": {
+   "0.11.0": {
+    "quantity": 4,
+    "projects": [
+     "partner-center",
+     "vendor-center",
+     "business-center-client",
+     "sales-center-client"
+    ]
+   }
+  },
+  "@vendasta/mission-control-v2": {
+   "1.8.0": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "@vendasta/multi-location": {
+   "1.7.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@vendasta/notifications": {
+   "1.2.0": {
+    "quantity": 1,
+    "projects": [
+     "vendasta-center-client"
+    ]
+   }
+  },
+  "@vendasta/notifications-sdk": {
+   "0.0.1": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "0.2.2": {
+    "quantity": 1,
+    "projects": [
+     "vendasta-center-client"
+    ]
+   }
+  },
+  "@vendasta/order-fulfillment": {
+   "1.3.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "1.4.1": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@vendasta/partner": {
+   "0.0.13": {
+    "quantity": 1,
+    "projects": [
+     "vendasta-center-client"
+    ]
+   },
+   "0.0.14": {
+    "quantity": 2,
+    "projects": [
+     "snapshot-client",
+     "sales-center-client"
+    ]
+   },
+   "0.0.4": {
+    "quantity": 4,
+    "projects": []
+   },
+   "0.0.6": {
+    "quantity": 3,
+    "projects": [
+     "customer-voice-client",
+     "reputation-client",
+     "angular-social-marketing"
+    ]
+   },
+   "0.0.8": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "0.5.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@vendasta/reputation": {
+   "1.1.0": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "1.4.0": {
+    "quantity": 2,
+    "projects": [
+     "reputation-client",
+     "business-center-client"
+    ]
+   }
+  },
+  "@vendasta/reviews": {
+   "2.1.2": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   }
+  },
+  "@vendasta/rx-utils": {
+   "1.0.0": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   },
+   "1.4.0": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   },
+   "1.5.0": {
+    "quantity": 2,
+    "projects": [
+     "business-center-client",
+     "sales-center-client"
+    ]
+   },
+   "2.0.0": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   },
+   "3.1.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@vendasta/sales": {
+   "3.2.1": {
+    "quantity": 3,
+    "projects": []
+   },
+   "4.0.0": {
+    "quantity": 2,
+    "projects": [
+     "partner-center",
+     "sales-center-client"
+    ]
+   }
+  },
+  "@vendasta/sales-common": {
+   "1.1.1": {
+    "quantity": 2,
+    "projects": [
+     "partner-center",
+     "sales-center-client"
+    ]
+   }
+  },
+  "@vendasta/sales-opportunities": {
+   "1.12.0": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "@vendasta/sales-orders": {
+   "1.53.0": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   },
+   "1.59.0": {
+    "quantity": 3,
+    "projects": []
+   },
+   "1.61.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "1.62.0": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "@vendasta/sales-ui": {
+   "8.1.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "8.1.1": {
+    "quantity": 2,
+    "projects": [
+     "partner-center",
+     "sales-center-client"
+    ]
+   }
+  },
+  "@vendasta/smb-invoicing": {
+   "2.1.0": {
+    "quantity": 2,
+    "projects": [
+     "partner-center",
+     "business-center-client"
+    ]
+   }
+  },
+  "@vendasta/snapshot": {
+   "0.0.3": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "0.0.5": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   }
+  },
+  "@vendasta/social-drafts": {
+   "1.0.1": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "@vendasta/social-posts": {
+   "1.8.1": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "1.9.2": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "@vendasta/spinner-tracking": {
+   "1.0.2": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "@vendasta/sre-reporting": {
+   "1.2.0": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   }
+  },
+  "@vendasta/store": {
+   "17.14.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "17.5.0": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   },
+   "18.0.2": {
+    "quantity": 2,
+    "projects": [
+     "business-center-client",
+     "sales-center-client"
+    ]
+   },
+   "8.18.0": {
+    "quantity": 1,
+    "projects": [
+     "g-suite-client"
+    ]
+   }
+  },
+  "@vendasta/task": {
+   "1.8.1": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "1.9.0": {
+    "quantity": 3,
+    "projects": [
+     "partner-center",
+     "business-center-client",
+     "sales-center-client"
+    ]
+   }
+  },
+  "@vendasta/task-manager": {
+   "0.3.0": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   }
+  },
+  "@vendasta/templates": {
+   "2.0.0": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   },
+   "2.1.0": {
+    "quantity": 1,
+    "projects": [
+     "vendasta-center-client"
+    ]
+   }
+  },
+  "@vendasta/uikit": {
+   "10.6.1": {
+    "quantity": 1,
+    "projects": [
+     "ms-office-client"
+    ]
+   },
+   "11.1.0": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "11.2.2": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   },
+   "12.5.2": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   },
+   "13.0.0": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   },
+   "13.0.1": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "14.2.0": {
+    "quantity": 1,
+    "projects": [
+     "wsp-portal-client"
+    ]
+   },
+   "14.4.0": {
+    "quantity": 3,
+    "projects": []
+   },
+   "15.0.2": {
+    "quantity": 2,
+    "projects": [
+     "vendor-center",
+     "sales-center-client"
+    ]
+   },
+   "16.0.1": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "16.2.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "16.3.0": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   },
+   "16.4.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "3.5.3": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "4.1.0": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "4.8.0": {
+    "quantity": 2,
+    "projects": [
+     "godaddy-client",
+     "g-suite-client"
+    ]
+   },
+   "7.0.0": {
+    "quantity": 1,
+    "projects": [
+     "vetl-client"
+    ]
+   },
+   "7.15.0": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "7.40.0": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "7.45.0": {
+    "quantity": 2,
+    "projects": [
+     "iam-client",
+     "vstore-client"
+    ]
+   },
+   "7.50.0": {
+    "quantity": 1,
+    "projects": [
+     "constant-contact-client"
+    ]
+   },
+   "8.10.1": {
+    "quantity": 2,
+    "projects": []
+   },
+   "8.26.1": {
+    "quantity": 1,
+    "projects": [
+     "codex-client"
+    ]
+   },
+   "8.5.0": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   }
+  },
+  "@vendasta/url-shortener": {
+   "2.0.0": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "@vendasta/va-filter2": {
+   "1.10.3": {
+    "quantity": 2,
+    "projects": [
+     "concierge-client",
+     "business-center-client"
+    ]
+   },
+   "1.4.1": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   },
+   "2.0.1": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "2.1.0": {
+    "quantity": 2,
+    "projects": [
+     "customer-voice-client",
+     "partner-center"
+    ]
+   },
+   "3.0.1": {
+    "quantity": 1,
+    "projects": [
+     "wsp-portal-client"
+    ]
+   }
+  },
+  "@vendasta/va-filter2-table": {
+   "1.5.2": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "1.6.0": {
+    "quantity": 2,
+    "projects": [
+     "partner-center",
+     "business-center-client"
+    ]
+   },
+   "2.1.0": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   }
+  },
+  "@vendasta/vform": {
+   "0.7.3": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "1.5.2": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "2.2.4": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "@webcomponents/webcomponentsjs": {
+   "2.2.10": {
+    "quantity": 1,
+    "projects": [
+     "atlas"
+    ]
+   },
+   "2.2.7": {
+    "quantity": 2,
+    "projects": [
+     "vstore-client",
+     "vendor-center"
+    ]
+   },
+   "2.4.1": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "ajv": {
+   "6.0.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "anchorme": {
+   "1.1.2": {
+    "quantity": 2,
+    "projects": [
+     "partner-center",
+     "sales-center-client"
+    ]
+   }
+  },
+  "angular": {
+   "1.7.5": {
+    "quantity": 1,
+    "projects": [
+     "godaddy-client"
+    ]
+   }
+  },
+  "angular-calendar": {
+   "0.26.4": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "angular-draggable-droppable": {
+   "4.0.2": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "angular-google-charts": {
+   "0.1.3": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   }
+  },
+  "angular-linky": {
+   "1.2.2": {
+    "quantity": 2,
+    "projects": [
+     "sales-center-client",
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "angular-material-fileupload": {
+   "2.0.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "angular-oauth2-oidc": {
+   "8.0.4": {
+    "quantity": 1,
+    "projects": [
+     "vendasta-center-client"
+    ]
+   }
+  },
+  "angular-star-rating": {
+   "3.0.8": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   }
+  },
+  "angular-tag-cloud-module": {
+   "3.0.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "3.5.1": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   }
+  },
+  "angular2-google-login": {
+   "1.0.9": {
+    "quantity": 1,
+    "projects": [
+     "salesforce-client"
+    ]
+   }
+  },
+  "angular2-highcharts": {
+   "0.5.5": {
+    "quantity": 1,
+    "projects": [
+     "wsp-portal-client"
+    ]
+   }
+  },
+  "angular2-moment": {
+   "1.8.0": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   }
+  },
+  "angular2-prettyjson": {
+   "2.0.6": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   }
+  },
+  "angular2-uuid": {
+   "1.1.1": {
+    "quantity": 1,
+    "projects": [
+     "g-suite-client"
+    ]
+   }
+  },
+  "angular2-websocket": {
+   "0.9.8": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "apexcharts": {
+   "3.15.6": {
+    "quantity": 2,
+    "projects": []
+   },
+   "3.8.2": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   }
+  },
+  "assert-never": {
+   "1.2.0": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "autoprefixer": {
+   "9.7.2": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   }
+  },
+  "babel-preset-env": {
+   "1.6.1": {
+    "quantity": 2,
+    "projects": [
+     "snapshot-client",
+     "business-center-client"
+    ]
+   },
+   "1.7.0": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "blockadblock": {
+   "3.2.1": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   }
+  },
+  "bootstrap": {
+   "4.1.3": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   }
+  },
+  "brace": {
+   "0.10.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "0.11.1": {
+    "quantity": 2,
+    "projects": [
+     "customer-voice-client",
+     "vendasta-center-client"
+    ]
+   }
+  },
+  "chart.js": {
+   "2.7.1": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "classlist.js": {
+   "1.1.20150312": {
+    "quantity": 15,
+    "projects": [
+     "mission-control",
+     "angular-social-marketing"
+    ]
+   },
+   "github": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "codelyzer": {
+   "5.2.1": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "codemirror": {
+   "5.51.0": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "core-js": {
+   "2.4.1": {
+    "quantity": 7,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "2.5.4": {
+    "quantity": 12,
+    "projects": [
+     "iam-client",
+     "concierge-client",
+     "vetl-client",
+     "godaddy-client",
+     "atlas",
+     "translation-manager",
+     "g-suite-client",
+     "employee-center-client",
+     "ms-office-client",
+     "rd-center",
+     "constant-contact-client",
+     "web-crawler-client"
+    ]
+   },
+   "2.5.5": {
+    "quantity": 2,
+    "projects": [
+     "snapshot-client",
+     "billing-client"
+    ]
+   },
+   "2.5.6": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "2.5.7": {
+    "quantity": 2,
+    "projects": [
+     "digital-ads-client",
+     "angular-social-marketing"
+    ]
+   },
+   "2.6.1": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   },
+   "2.6.11": {
+    "quantity": 2,
+    "projects": [
+     "codex-client",
+     "vendor-center"
+    ]
+   },
+   "2.6.5": {
+    "quantity": 3,
+    "projects": [
+     "vstore-client",
+     "wsp-portal-client",
+     "partner-center"
+    ]
+   },
+   "2.6.7": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   },
+   "3.3.3": {
+    "quantity": 2,
+    "projects": []
+   },
+   "3.5.0": {
+    "quantity": 1,
+    "projects": [
+     "developer-center-client"
+    ]
+   }
+  },
+  "country-list": {
+   "1.1.1": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   },
+   "2.2.0": {
+    "quantity": 2,
+    "projects": [
+     "sales-center-client",
+     "digital-ads-client"
+    ]
+   }
+  },
+  "cross-env": {
+   "5.1.3": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "5.1.4": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   },
+   "5.2.0": {
+    "quantity": 3,
+    "projects": []
+   }
+  },
+  "css-vars-ponyfill": {
+   "2.1.2": {
+    "quantity": 8,
+    "projects": [
+     "customer-voice-client",
+     "concierge-client",
+     "reputation-client",
+     "atlas",
+     "vendor-center",
+     "business-center-client",
+     "sales-center-client",
+     "angular-social-marketing"
+    ]
+   },
+   "2.2.1": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "d3": {
+   "4.10.2": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "d3-array": {
+   "1.2.1": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "d3-brush": {
+   "1.0.4": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "d3-color": {
+   "1.0.3": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "d3-force": {
+   "1.1.0": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "d3-format": {
+   "1.2.0": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "d3-hierarchy": {
+   "1.1.5": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "d3-interpolate": {
+   "1.1.5": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "d3-scale": {
+   "1.0.6": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "d3-selection": {
+   "1.1.0": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "d3-shape": {
+   "1.2.0": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "d3-time-format": {
+   "2.1.0": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "2.1.3": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "d3-voronoi": {
+   "1.1.4": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "date-fns": {
+   "1.28.5": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "dhtmlx-gantt": {
+   "5.2.0": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   }
+  },
+  "document-register-element": {
+   "1.8.1": {
+    "quantity": 3,
+    "projects": [
+     "customer-voice-client",
+     "concierge-client",
+     "atlas"
+    ]
+   }
+  },
+  "dom-autoscroller": {
+   "2.3.4": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "dompurify": {
+   "2.0.7": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "dragula": {
+   "3.7.2": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "elements-zone-strategy": {
+   "7.0.0": {
+    "quantity": 17,
+    "projects": [
+     "mission-control",
+     "angular-social-marketing"
+    ]
+   },
+   "8.0.0": {
+    "quantity": 2,
+    "projects": [
+     "customer-voice-client",
+     "sre-reporting-client"
+    ]
+   }
+  },
+  "enhanced-resolve": {
+   "4.0.0-beta.4": {
+    "quantity": 1,
+    "projects": [
+     "wsp-portal-client"
+    ]
+   }
+  },
+  "es6-shim": {
+   "0.35.4": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "export-to-csv": {
+   "0.2.1": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "faker": {
+   "4.1.0": {
+    "quantity": 1,
+    "projects": [
+     "developer-center-client"
+    ]
+   }
+  },
+  "file-loader": {
+   "1.1.6": {
+    "quantity": 1,
+    "projects": [
+     "wsp-portal-client"
+    ]
+   }
+  },
+  "file-saver": {
+   "1.3.3": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "1.3.8": {
+    "quantity": 2,
+    "projects": [
+     "billing-client",
+     "partner-center"
+    ]
+   },
+   "2.0.2": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "fingerprintjs2": {
+   "2.0.6": {
+    "quantity": 7,
+    "projects": [
+     "customer-voice-client",
+     "iam-client",
+     "concierge-client",
+     "vstore-client",
+     "reputation-client",
+     "atlas",
+     "angular-social-marketing"
+    ]
+   },
+   "2.1.0": {
+    "quantity": 3,
+    "projects": []
+   }
+  },
+  "firebase": {
+   "5.11.1": {
+    "quantity": 2,
+    "projects": []
+   },
+   "5.5.6": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   },
+   "5.8.6": {
+    "quantity": 6,
+    "projects": [
+     "customer-voice-client",
+     "iam-client",
+     "vstore-client",
+     "reputation-client",
+     "atlas",
+     "angular-social-marketing"
+    ]
+   },
+   "6": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "6.1.1": {
+    "quantity": 1,
+    "projects": [
+     "vendasta-center-client"
+    ]
+   },
+   "6.2.4": {
+    "quantity": 1,
+    "projects": [
+     "ms-office-client"
+    ]
+   },
+   "7.10.0": {
+    "quantity": 2,
+    "projects": [
+     "concierge-client",
+     "partner-center"
+    ]
+   },
+   "7.5.0": {
+    "quantity": 2,
+    "projects": [
+     "billing-client",
+     "sre-reporting-client"
+    ]
+   },
+   "7.8.1": {
+    "quantity": 1,
+    "projects": [
+     "codex-client"
+    ]
+   },
+   "7.8.2": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   },
+   "7.9.1": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "7.9.3": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "flag-icon-css": {
+   "2.9.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "3.2.1": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   }
+  },
+  "fuzzy": {
+   "0.1.3": {
+    "quantity": 2,
+    "projects": [
+     "partner-center",
+     "developer-center-client"
+    ]
+   }
+  },
+  "google-libphonenumber": {
+   "2.0.18": {
+    "quantity": 2,
+    "projects": [
+     "vendor-center",
+     "sales-center-client"
+    ]
+   },
+   "3.2.6": {
+    "quantity": 5,
+    "projects": [
+     "customer-voice-client",
+     "concierge-client",
+     "reputation-client",
+     "business-center-client",
+     "angular-social-marketing"
+    ]
+   },
+   "3.2.7": {
+    "quantity": 3,
+    "projects": []
+   }
+  },
+  "gritter": {
+   "1.7.4": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   }
+  },
+  "grpc": {
+   "1.24.2": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "hammerjs": {
+   "2.0.8": {
+    "quantity": 10,
+    "projects": [
+     "reputation-client",
+     "wsp-portal-client",
+     "partner-center",
+     "employee-center-client",
+     "vendor-center",
+     "sre-reporting-client",
+     "business-center-client",
+     "digital-ads-client",
+     "angular-social-marketing",
+     "medical-compare-client"
+    ]
+   }
+  },
+  "he": {
+   "1.2.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "highcharts": {
+   "5.0.15": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "7.2.0": {
+    "quantity": 2,
+    "projects": []
+   },
+   "8.0.0": {
+    "quantity": 1,
+    "projects": [
+     "wsp-portal-client"
+    ]
+   }
+  },
+  "immutable": {
+   "3.8.2": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   }
+  },
+  "intersection-observer": {
+   "0.5.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "intl": {
+   "1.2.5": {
+    "quantity": 3,
+    "projects": [
+     "partner-center",
+     "sales-center-client",
+     "digital-ads-client"
+    ]
+   }
+  },
+  "iso-3166-country-list": {
+   "0.1.2": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "jasmine": {
+   "2.9.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "3.2.0": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "3.3.0": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   }
+  },
+  "jest": {
+   "24.8.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "jest-jasmine2": {
+   "24.8.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "jest-preset-angular": {
+   "7.1.1": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "jest-zone-patch": {
+   "0.0.8": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "jquery": {
+   "3.4.1": {
+    "quantity": 2,
+    "projects": [
+     "concierge-client",
+     "partner-center"
+    ]
+   }
+  },
+  "js-cookie": {
+   "2.2.1": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   }
+  },
+  "js-marker-clusterer": {
+   "1.0.0": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   }
+  },
+  "jsonfile": {
+   "5.0.0": {
+    "quantity": 3,
+    "projects": [
+     "customer-voice-client",
+     "concierge-client",
+     "atlas"
+    ]
+   }
+  },
+  "jsonwebtoken": {
+   "8.5.1": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "jszip": {
+   "3.1.5": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   }
+  },
+  "jwt-decode": {
+   "2.2.0": {
+    "quantity": 12,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "karma": {
+   "4.1.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "karma-coverage-istanbul-reporter": {
+   "1.2.1": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "libphonenumber-js": {
+   "1.1.3": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "1.1.5": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "1.2.15": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   },
+   "1.4.2": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   },
+   "1.6.8": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   },
+   "1.7.16": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   },
+   "1.7.18": {
+    "quantity": 4,
+    "projects": [
+     "concierge-client",
+     "billing-client",
+     "vendasta-center-client",
+     "ms-office-client"
+    ]
+   },
+   "1.7.19": {
+    "quantity": 1,
+    "projects": [
+     "wsp-portal-client"
+    ]
+   },
+   "1.7.20": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "1.7.31": {
+    "quantity": 2,
+    "projects": []
+   },
+   "1.7.38": {
+    "quantity": 2,
+    "projects": [
+     "codex-client",
+     "developer-center-client"
+    ]
+   },
+   "1.7.44": {
+    "quantity": 3,
+    "projects": []
+   },
+   "1.7.46": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "1.7.7": {
+    "quantity": 5,
+    "projects": [
+     "customer-voice-client",
+     "iam-client",
+     "vstore-client",
+     "atlas",
+     "constant-contact-client"
+    ]
+   }
+  },
+  "lodash": {
+   "4.17.11": {
+    "quantity": 2,
+    "projects": [
+     "customer-voice-client",
+     "digital-ads-client"
+    ]
+   },
+   "4.17.15": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "lodash.isequal": {
+   "4.5.0": {
+    "quantity": 3,
+    "projects": [
+     "reputation-client",
+     "partner-center",
+     "business-center-client"
+    ]
+   }
+  },
+  "lodash.sortby": {
+   "4.7.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "lodash.union": {
+   "4.6.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "mapbox-gl": {
+   "0.52.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "mapbox-gl-controls": {
+   "1.0.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "markdown-it": {
+   "8.4.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "md5": {
+   "2.2.1": {
+    "quantity": 1,
+    "projects": [
+     "iam-client"
+    ]
+   }
+  },
+  "mermaid": {
+   "8.4.6": {
+    "quantity": 1,
+    "projects": [
+     "developer-center-client"
+    ]
+   }
+  },
+  "moment": {
+   "2.18.1": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "2.19.0": {
+    "quantity": 1,
+    "projects": [
+     "g-suite-client"
+    ]
+   },
+   "2.19.2": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   },
+   "2.19.3": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   },
+   "2.20.1": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "2.21.0": {
+    "quantity": 2,
+    "projects": [
+     "godaddy-client",
+     "constant-contact-client"
+    ]
+   },
+   "2.22.1": {
+    "quantity": 1,
+    "projects": [
+     "vendasta-center-client"
+    ]
+   },
+   "2.22.2": {
+    "quantity": 4,
+    "projects": [
+     "vetl-client",
+     "employee-center-client",
+     "business-center-client",
+     "ms-office-client"
+    ]
+   },
+   "2.23.0": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "2.24.0": {
+    "quantity": 19,
+    "projects": [
+     "developer-center-client",
+     "mission-control",
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "moment-range": {
+   "4.0.1": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "moment-timezone": {
+   "0.5.25": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "0.5.26": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   }
+  },
+  "nan": {
+   "2.14.0": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "ng-apexcharts": {
+   "1.0.5": {
+    "quantity": 1,
+    "projects": [
+     "sre-reporting-client"
+    ]
+   },
+   "1.2.0": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "ng-click-outside": {
+   "4.0.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "ng-in-viewport": {
+   "6.0.2": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "6.0.3": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "ng-pick-datetime": {
+   "7.0.0": {
+    "quantity": 1,
+    "projects": [
+     "iam-client"
+    ]
+   }
+  },
+  "ng-recaptcha": {
+   "5.0.0": {
+    "quantity": 2,
+    "projects": [
+     "billing-client",
+     "partner-center"
+    ]
+   }
+  },
+  "ng2-charts": {
+   "1.6.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "ng2-cookies": {
+   "1.0.12": {
+    "quantity": 2,
+    "projects": [
+     "snapshot-client",
+     "medical-compare-client"
+    ]
+   }
+  },
+  "ng2-dragula": {
+   "1.5.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "2.1.0": {
+    "quantity": 1,
+    "projects": [
+     "employee-center-client"
+    ]
+   }
+  },
+  "ng2-google-charts": {
+   "3.3.0": {
+    "quantity": 2,
+    "projects": [
+     "brand-analytics-client",
+     "medical-compare-client"
+    ]
+   },
+   "3.4.0": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   }
+  },
+  "ngx-ace-wrapper": {
+   "7.3.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "8.0.0": {
+    "quantity": 1,
+    "projects": [
+     "vendasta-center-client"
+    ]
+   }
+  },
+  "ngx-bootstrap": {
+   "1.8.1": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   },
+   "3.0.1": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   }
+  },
+  "ngx-clipboard": {
+   "11.1.1": {
+    "quantity": 1,
+    "projects": [
+     "iam-client"
+    ]
+   },
+   "12.2.1": {
+    "quantity": 2,
+    "projects": []
+   },
+   "12.3.0": {
+    "quantity": 2,
+    "projects": [
+     "codex-client",
+     "vendasta-center-client"
+    ]
+   },
+   "12.3.1": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   }
+  },
+  "ngx-color-picker": {
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   },
+   "8.1.0": {
+    "quantity": 4,
+    "projects": [
+     "customer-voice-client",
+     "concierge-client",
+     "atlas",
+     "partner-center"
+    ]
+   }
+  },
+  "ngx-image-cropper": {
+   "1.3.10": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "ngx-infinite-scroll": {
+   "6.0.1": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "ngx-mapbox-gl": {
+   "3.0.1": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "ngx-markdown": {
+   "7.1.5": {
+    "quantity": 1,
+    "projects": [
+     "codex-client"
+    ]
+   },
+   "8.2.1": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "8.2.2": {
+    "quantity": 1,
+    "projects": [
+     "developer-center-client"
+    ]
+   },
+   "9.0.0": {
+    "quantity": 3,
+    "projects": [
+     "reputation-client",
+     "partner-center",
+     "business-center-client"
+    ]
+   }
+  },
+  "ngx-mat-select-search": {
+   "1.7.4": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "ngx-material-file-input": {
+   "1.1.1": {
+    "quantity": 2,
+    "projects": [
+     "partner-center",
+     "vendasta-center-client"
+    ]
+   }
+  },
+  "ngx-moment": {
+   "3.1.0": {
+    "quantity": 1,
+    "projects": [
+     "digital-ads-client"
+    ]
+   }
+  },
+  "ngx-pagination": {
+   "5.0.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "ngx-papaparse": {
+   "3.0.2": {
+    "quantity": 1,
+    "projects": [
+     "vendasta-center-client"
+    ]
+   },
+   "3.0.3": {
+    "quantity": 2,
+    "projects": [
+     "partner-center",
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "ngx-progressbar": {
+   "2.1.1": {
+    "quantity": 1,
+    "projects": [
+     "medical-compare-client"
+    ]
+   }
+  },
+  "ngx-webstorage": {
+   "2.0.1": {
+    "quantity": 4,
+    "projects": [
+     "snapshot-client",
+     "concierge-client",
+     "translation-manager",
+     "vendasta-center-client"
+    ]
+   },
+   "4.0.0": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   }
+  },
+  "node-sass": {
+   "4.12.0": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   }
+  },
+  "npm": {
+   "5.8.0": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   },
+   "6.13.7": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   }
+  },
+  "npm-check-updates": {
+   "2.15.0": {
+    "quantity": 1,
+    "projects": [
+     "iam-client"
+    ]
+   }
+  },
+  "observable-input": {
+   "2.0.1": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "papaparse": {
+   "4.3.7": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "4.6.3": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   }
+  },
+  "prettier": {
+   "1.19.1": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "pretty-ms": {
+   "5.1.0": {
+    "quantity": 2,
+    "projects": []
+   }
+  },
+  "prism": {
+   "4.1.2": {
+    "quantity": 1,
+    "projects": [
+     "codex-client"
+    ]
+   }
+  },
+  "psl": {
+   "1.1.22": {
+    "quantity": 1,
+    "projects": [
+     "wsp-portal-client"
+    ]
+   }
+  },
+  "punycode": {
+   "1.4.1": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "raven-js": {
+   "3.27.2": {
+    "quantity": 7,
+    "projects": []
+   }
+  },
+  "reflect-metadata": {
+   "0.1.3": {
+    "quantity": 2,
+    "projects": [
+     "partner-center",
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "resize-observer-polyfill": {
+   "1.5.1": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "rxjs": {
+   "5.4.2": {
+    "quantity": 2,
+    "projects": [
+     "salesforce-client",
+     "medical-compare-client"
+    ]
+   },
+   "5.5.2": {
+    "quantity": 1,
+    "projects": [
+     "brand-analytics-client"
+    ]
+   },
+   "6.0.0": {
+    "quantity": 3,
+    "projects": [
+     "vetl-client",
+     "godaddy-client",
+     "ms-office-client"
+    ]
+   },
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.2.1": {
+    "quantity": 2,
+    "projects": [
+     "g-suite-client",
+     "constant-contact-client"
+    ]
+   },
+   "6.3.2": {
+    "quantity": 1,
+    "projects": [
+     "translation-manager"
+    ]
+   },
+   "6.3.3": {
+    "quantity": 5,
+    "projects": [
+     "atlas",
+     "employee-center-client",
+     "rd-center",
+     "web-crawler-client",
+     "angular-social-marketing"
+    ]
+   },
+   "6.4.0": {
+    "quantity": 5,
+    "projects": []
+   },
+   "6.5.2": {
+    "quantity": 5,
+    "projects": [
+     "iam-client",
+     "reputation-client",
+     "billing-client",
+     "vendasta-center-client",
+     "business-center-client"
+    ]
+   },
+   "6.5.3": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   },
+   "6.5.4": {
+    "quantity": 10,
+    "projects": []
+   },
+   "7.0.0-alpha.0": {
+    "quantity": 1,
+    "projects": [
+     "developer-center-client"
+    ]
+   }
+  },
+  "rxjs-compat": {
+   "6.1.0": {
+    "quantity": 1,
+    "projects": [
+     "snapshot-client"
+    ]
+   },
+   "6.2.1": {
+    "quantity": 1,
+    "projects": [
+     "g-suite-client"
+    ]
+   },
+   "6.3.3": {
+    "quantity": 2,
+    "projects": [
+     "customer-voice-client",
+     "godaddy-client"
+    ]
+   },
+   "6.5.0": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   },
+   "6.5.2": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   },
+   "6.5.4": {
+    "quantity": 1,
+    "projects": [
+     "wsp-portal-client"
+    ]
+   }
+  },
+  "rxjs-tslint": {
+   "0.1.7": {
+    "quantity": 3,
+    "projects": []
+   }
+  },
+  "sass-lint": {
+   "1.12.1": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   }
+  },
+  "snazzy-info-window": {
+   "1.1.1": {
+    "quantity": 2,
+    "projects": [
+     "brand-analytics-client",
+     "business-center-client"
+    ]
+   }
+  },
+  "source-map": {
+   "0.7.3": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   }
+  },
+  "spdy-transport": {
+   "3.0.0": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "supercluster": {
+   "6.0.1": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "swagger-parser": {
+   "4.1.0": {
+    "quantity": 1,
+    "projects": [
+     "vendor-center"
+    ]
+   }
+  },
+  "sweetalert": {
+   "1.1.3": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "tdigest": {
+   "0.1.1": {
+    "quantity": 2,
+    "projects": [
+     "brand-analytics-client",
+     "business-center-client"
+    ]
+   }
+  },
+  "tether": {
+   "1.4.6": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "tinymce": {
+   "4.6.7": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   },
+   "4.9.2": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   }
+  },
+  "ts-jest": {
+   "24.0.2": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
+    ]
+   }
+  },
+  "ts-md5": {
+   "1.2.7": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "ts-node": {
+   "3.2.0": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "tslib": {
+   "1.10.0": {
+    "quantity": 7,
+    "projects": [
+     "invoice-client",
+     "codex-client",
+     "heimdall-client",
+     "business-center-client",
+     "sales-center-client",
+     "digital-ads-client",
+     "developer-center-client"
+    ]
+   },
+   "1.11.0": {
+    "quantity": 1,
+    "projects": [
+     "customer-voice-client"
+    ]
+   },
+   "1.9.0": {
+    "quantity": 8,
+    "projects": [
+     "iam-client",
+     "concierge-client",
+     "billing-client",
+     "wsp-portal-client",
+     "vendasta-center-client",
+     "sre-reporting-client",
+     "rd-center",
+     "web-crawler-client"
+    ]
+   }
+  },
+  "tslint": {
+   "5.10.0": {
+    "quantity": 1,
+    "projects": [
+     "reputation-client"
+    ]
+   }
+  },
+  "twitter-text": {
+   "2.0.4": {
+    "quantity": 1,
+    "projects": [
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "typescript": {
+   "3.7.5": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "update": {
+   "0.7.4": {
+    "quantity": 1,
+    "projects": [
+     "billing-client"
+    ]
+   }
+  },
+  "url-search-params-polyfill": {
+   "4.0.0": {
+    "quantity": 1,
+    "projects": [
+     "sales-center-client"
+    ]
+   }
+  },
+  "uuid": {
+   "3.3.2": {
+    "quantity": 2,
+    "projects": [
+     "reputation-client",
+     "business-center-client"
+    ]
+   },
+   "3.3.3": {
+    "quantity": 2,
+    "projects": [
+     "sre-reporting-client",
+     "angular-social-marketing"
+    ]
+   }
+  },
+  "web-animations-js": {
+   "2.3.1": {
+    "quantity": 7,
+    "projects": [
+     "customer-voice-client",
+     "iam-client",
+     "concierge-client",
+     "vstore-client",
+     "reputation-client",
+     "atlas",
+     "angular-social-marketing"
+    ]
+   },
+   "2.3.2": {
+    "quantity": 6,
+    "projects": []
+   }
+  },
+  "webpack-bundle-analyzer": {
+   "3.5.2": {
+    "quantity": 1,
+    "projects": [
+     "business-center-client"
+    ]
+   }
+  },
+  "webpack-dev-server": {
+   "3.7.2": {
+    "quantity": 1,
+    "projects": [
+     "wsp-portal-client"
+    ]
+   }
+  },
+  "zone.js": {
+   "0.10.2": {
+    "quantity": 6,
+    "projects": [
+     "developer-center-client"
+    ]
+   },
+   "0.8.14": {
+    "quantity": 3,
+    "projects": [
+     "salesforce-client",
+     "brand-analytics-client",
+     "medical-compare-client"
+    ]
+   },
+   "0.8.26": {
+    "quantity": 10,
+    "projects": [
+     "snapshot-client",
+     "vetl-client",
+     "godaddy-client",
+     "translation-manager",
+     "g-suite-client",
+     "employee-center-client",
+     "ms-office-client",
+     "rd-center",
+     "constant-contact-client",
+     "web-crawler-client"
+    ]
+   },
+   "0.8.29": {
+    "quantity": 8,
+    "projects": [
+     "iam-client",
+     "vstore-client",
+     "reputation-client",
+     "atlas",
+     "billing-client",
+     "vendasta-center-client",
+     "digital-ads-client",
+     "angular-social-marketing"
+    ]
+   },
+   "0.9.1": {
+    "quantity": 10,
+    "projects": []
+   }
   }
  }
 }

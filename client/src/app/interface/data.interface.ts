@@ -2,22 +2,14 @@ import { Repository } from './repository.interface';
 export interface Data  {
     projects: Array<Repository>;
     components: Array<Repository>;
+    componentsByVersions: any;
     graphData: GraphData;
+
 }
 
 export interface GraphData {
-    componentsByProject: StatsDataFrappe;
-    componentsByVersionAllProjects: StatsDataFrappe;
-    projectsByFilters: StatsDataFrappe;
-    componentsByFilters: StatsDataFrappe;
-}
+    componentsByFilters: [[string, any]];
+    projectsByFilters: [[string, any]];
 
-export interface StatsDataFrappe {
-    labels: Array<string>;
-    datasets: StatsDataset;
-}
-
-export interface StatsDataset {
-    values: Array<number>;
 }
 
