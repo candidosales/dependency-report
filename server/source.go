@@ -5,7 +5,7 @@ import "regexp"
 const (
 	TypeProject    = "project"
 	TypeComponent  = "component"
-	pathFileInput  = "./config-test.json"
+	pathFileInput  = "./config.json"
 	pathFileOutput = "../client/src/assets/config/data-test.json"
 )
 
@@ -73,19 +73,11 @@ func GetAlias(name string, version string) string {
 	return name + "_" + version
 }
 
-type StatsDataFrappe struct {
-	Labels   []string       `json:"labels"`
-	Datasets []StatsDataset `json:"datasets"`
-}
-
-type StatsDataset struct {
-	Values []int `json:"values"`
-}
-
 type ClientData struct {
-	Projects   *[]RepositoryClientData     `json:"projects"`
-	Components *[]RepositoryClientData     `json:"components"`
-	GraphData  map[string]*StatsDataFrappe `json:"graphData"`
+	Projects             *[]RepositoryClientData                     `json:"projects"`
+	Components           *[]RepositoryClientData                     `json:"components"`
+	GraphData            map[string][]interface{}                    `json:"graphData"`
+	ComponentsByVersions map[string]map[string]StatsComponentVersion `json:"componentsByVersions"`
 }
 
 type RepositoryClientData struct {
@@ -95,11 +87,11 @@ type RepositoryClientData struct {
 	URL     string `json:"url"`
 }
 
-// type StatsComponentsByVersion struct {
-// 	Repository RepositoryClientData  `json:"repository"`
-// 	Versions   StatsComponentVersion `json:"versions"`
-// }
 type StatsComponentVersion struct {
 	Quantity int      `json:"quantity"`
 	Projects []string `json:"projects"`
+}
+
+type Results struct {
+	Rows []interface{} `json:"results"`
 }
