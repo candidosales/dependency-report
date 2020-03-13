@@ -244,7 +244,7 @@
   },
   {
    "name": "@vendasta/core",
-   "version": "40.4.2",
+   "version": "40.5.1",
    "filter": "@angular/core_9",
    "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/core"
   },
@@ -2110,6 +2110,14 @@
     ]
    }
   },
+  "@ckeditor/ckeditor5-angular": {
+   "1.2.1": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
+    ]
+   }
+  },
   "@ctrl/ngx-codemirror": {
    "2.2.1": {
     "quantity": 2,
@@ -2639,16 +2647,16 @@
      "business-center-client"
     ]
    },
-   "1.44.0": {
-    "quantity": 1,
-    "projects": [
-     "partner-center"
-    ]
-   },
    "1.46.0": {
     "quantity": 1,
     "projects": [
      "billing-client"
+    ]
+   },
+   "1.46.1": {
+    "quantity": 1,
+    "projects": [
+     "partner-center"
     ]
    }
   },
@@ -2896,12 +2904,6 @@
      "snapshot-client"
     ]
    },
-   "38.0.1": {
-    "quantity": 1,
-    "projects": [
-     "partner-center"
-    ]
-   },
    "39.0.0": {
     "quantity": 3,
     "projects": []
@@ -2918,9 +2920,10 @@
      "sales-center-client"
     ]
    },
-   "40.3.0": {
-    "quantity": 1,
+   "40.5.1": {
+    "quantity": 2,
     "projects": [
+     "partner-center",
      "vendor-center"
     ]
    },
@@ -3249,7 +3252,7 @@
      "business-center-client"
     ]
    },
-   "0.5.0": {
+   "0.6.0": {
     "quantity": 1,
     "projects": [
      "partner-center"
@@ -5543,6 +5546,14 @@
     "quantity": 1,
     "projects": [
      "vendor-center"
+    ]
+   }
+  },
+  "showdown": {
+   "1.9.1": {
+    "quantity": 1,
+    "projects": [
+     "concierge-client"
     ]
    }
   },
