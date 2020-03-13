@@ -38,3 +38,11 @@
 .card__in-soon {
     opacity: 0.5;
 }
+
+.card-header {
+    background: none;
+    border: none;
+    h3 {
+        margin-bottom: 0;
+    }
+}

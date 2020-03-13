@@ -3,13 +3,16 @@ declare var google: any;
 
 @Component({
   selector: 'app-pie-chart',
-  template: `<div #pieChart style="height: 250px;"></div>`
+  templateUrl: './pie-chart.component.html',
 })
 export class PieChartComponent implements AfterViewInit{
 
   @ViewChild('pieChart') pieChart: ElementRef;
   @Input() data: any;
-  @Input() title: any;
+  @Input() title = '';
+  @Input() height = '250px';
+  @Input() width = '100%';
+
 
   drawChart = () => {
     const data = google.visualization.arrayToDataTable(this.data);
