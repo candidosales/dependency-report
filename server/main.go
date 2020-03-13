@@ -70,7 +70,6 @@ func main() {
 				app.log.Error("error[%#v]", err)
 			}
 
-			// now we can send the result struct through the resultsChan
 			packageJSON := app.fetchPackageJson(ctx, info)
 
 			if packageJSON != nil {
@@ -78,6 +77,7 @@ func main() {
 				config.Repositories[i].Topics = app.fetchTopics(ctx, info)
 			}
 
+			// now we can send the result struct through the resultsChan
 			resultsChan <- packageJSON
 
 			// once we're done it's we read from the semaphoreChan which
