@@ -21,3 +21,7 @@
 ```bash
 GITHUB_AUTH_TOKEN=<token> go run *.go
 ```
+
+
+INFO[2020-03-13T09:24:01-06:00] Get the package.json for the 58 repositories ...  
+INFO[2020-03-13T09:24:29-06:00] Generate data to graphs ...  

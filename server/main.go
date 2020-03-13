@@ -39,18 +39,65 @@ func main() {
 		log:          log,
 	}
 
+	// this buffered channel will block at the concurrency limit
+	semaphoreChan := make(chan struct{}, concurrentLimit)
+
+	// this channel will not block and collect the packageJSON results
+	resultsChan := make(chan *PackageJSON)
+
+	// make sure we close these channels when we're done with them
+	defer func() {
+		close(semaphoreChan)
+		close(resultsChan)
+	}()
+
 	app.log.Printf("Get the package.json for the %d repositories ... \n", len(config.Repositories))
 	for i := 0; i < len(config.Repositories); i++ {
-		info, err := splitRepositoryURL(config.Repositories[i])
-		if err != nil {
-			app.log.Error("error[%#v]", err)
-			continue
-		}
-		packageJSON := app.fetchPackageJson(ctx, info)
 
-		if packageJSON != nil {
-			config.Repositories[i].PackageJSON = packageJSON
-			config.Repositories[i].Topics = app.fetchTopics(ctx, info)
+		// start a go routine with the index and url in a closure
+		go func(i int, repository Repository) {
+
+			// this sends an empty struct into the semaphoreChan which
+			// is basically saying add one to the limit, but when the
+			// limit has been reached block until there is room
+			semaphoreChan <- struct{}{}
+
+			// send the request and put the response in a result struct
+			// along with the index so we can sort them later along with
+			// any error that might have occoured
+			info, err := splitRepositoryURL(repository)
+			if err != nil {
+				app.log.Error("error[%#v]", err)
+			}
+
+			// now we can send the result struct through the resultsChan
+			packageJSON := app.fetchPackageJson(ctx, info)
+
+			if packageJSON != nil {
+				config.Repositories[i].PackageJSON = packageJSON
+				config.Repositories[i].Topics = app.fetchTopics(ctx, info)
+			}
+
+			resultsChan <- packageJSON
+
+			// once we're done it's we read from the semaphoreChan which
+			// has the effect of removing one from the limit and allowing
+			// another goroutine to start
+			<-semaphoreChan
+
+		}(i, config.Repositories[i])
+	}
+
+	var results []PackageJSON
+	// start listening for any results over the resultsChan
+	// once we get a result append it to the result slice
+	for {
+		result := <-resultsChan
+		results = append(results, *result)
+
+		// if we've reached the expected amount of urls then stop
+		if len(results) == len(config.Repositories) {
+			break
 		}
 	}
 
