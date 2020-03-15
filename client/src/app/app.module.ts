@@ -6,12 +6,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { PieChartComponent } from './google-charts/pie-chart.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { TreemapChartComponent } from './google-charts/treemap-chart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PieChartComponent
+    PieChartComponent,
+    TreemapChartComponent
   ],
   imports: [
     BrowserModule,

@@ -18,6 +18,31 @@ export class AppComponent implements OnInit {
 
     componentsByVersions = {};
 
+    treemap = [
+        ['Location', 'Parent', 'Market trade volume (size)'],
+        ['@angular/core',    null,                 0],
+        ['@angular/core_9',    '@angular/core',             0],
+        ['@angular/core_8',    '@angular/core',             0],
+        ['@angular/core_7',    '@angular/core',             0],
+        ['Brazil',    '@angular/core_9',            11],
+        ['USA',       '@angular/core_9',            52],
+        ['Mexico',    '@angular/core_9',            24],
+        ['Canada',    '@angular/core_9',            16],
+        ['France',    '@angular/core_8',             42],
+        ['Germany',   '@angular/core_8',             31],
+        ['Sweden',    '@angular/core_8',             22],
+        ['Italy',     '@angular/core_8',             17],
+        ['UK',        '@angular/core_8',             21],
+        ['China',     '@angular/core_7',               36],
+        ['Japan',     '@angular/core_7',               20],
+        ['India',     '@angular/core_7',               40],
+        ['Laos',      '@angular/core_7',               4],
+        ['Mongolia',  '@angular/core_7',               1],
+        ['Israel',    '@angular/core_7',               12],
+        ['Iran',      '@angular/core_7',               18],
+        ['Pakistan',  '@angular/core_7',               11],
+      ];
+
     constructor(private dataService: DataService) {}
 
     ngOnInit() {
