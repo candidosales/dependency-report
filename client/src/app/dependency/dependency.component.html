@@ -1,0 +1,14 @@
+<div class="repository component" >
+<p class="repository__name">
+    <span class="repository__versions {{ getClassByDependenciesVersions(getCountObjectKeys(dependency)) }}">{{ getCountObjectKeys(dependency) }}</span>
+    <a href="" target="_blank">
+    {{ name }}
+    </a>
+</p>
+<ul class="component_versions">
+    <li *ngFor="let v of objectKeys(dependency)" matTooltip="{{getProjectsTooltip(dependency[v].projects)}}" >
+    <p class="component__frequency">{{ dependency[v].quantity }}</p>
+    <p class="component__version">{{ v }}v</p>
+    </li>
+</ul>
+</div>

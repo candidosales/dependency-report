@@ -1,5 +1,8 @@
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="#">Vendasta</a>
+  <a class="navbar-brand" href="#">
+    <img src="/assets/images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Vendasta
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -7,8 +10,14 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Adoption dashboard</a>
+    </ul>
+    <ul class="navbar-nav mr-auto d-flex justify-content-end">
+      <li class="nav-item">
+        <span class="generated">generated: {{ this.data?.generatedAt | date: 'medium' }}</span>
+        <button class="btn-outline" mat-raised-button color="primary" (click)="refresh()">
+          <mat-icon>refresh</mat-icon>
+          REFRESH
+        </button>
       </li>
     </ul>
   </div>
@@ -19,21 +28,21 @@
     <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card">
         <div class="card-header">
-          <h3>Current Global Adoption</h3>
+          <h3>Project X Library</h3>
         </div>
         <div class="card-body">
-          <app-pie-chart [data]="graphDataGoogle?.projectsByFilters"></app-pie-chart>
+          <app-pie-chart [data]="this.data?.graphData?.projectsByFilters"></app-pie-chart>
         </div>
       </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card card__repositories">
         <div class="card-header">
-          <h3>{{ projects.length }} Frontend projects</h3>
+          <h3>{{ this.data?.projects.length }} Frontend projects</h3>
         </div>
         <div class="card-body">
           <ul class="repositories">
-            <li class="repository" *ngFor="let p of projects">
+            <li class="repository" *ngFor="let p of this.data?.projects">
               <p class="repository__name">
                 <a href="{{ p.url }}" title="{{ p.name }}" target="_blank">
                   {{ p.name }}
@@ -59,21 +68,21 @@
     <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card">
         <div class="card-header">
-          <h3>Current Global Adoption</h3>
+          <h3>Component X Library</h3>
         </div>
         <div class="card-body">
-          <app-pie-chart [data]="graphDataGoogle?.componentsByFilters"></app-pie-chart>
+          <app-pie-chart [data]="this.data?.graphData?.componentsByFilters"></app-pie-chart>
         </div>
       </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card card__repositories">
         <div class="card-header">
-          <h3>{{ components.length }} Components</h3>
+          <h3>{{ this.data?.components.length }} Components</h3>
         </div>
         <div class="card-body">
           <ul class="repositories">
-            <li class="repository" *ngFor="let c of components">
+            <li class="repository" *ngFor="let c of this.data?.components">
               <p class="repository__name">
                 <a href="{{ c.url }}" title="{{ c.name }}" target="_blank">
                   {{ c.name }}
@@ -93,7 +102,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-12 col-md-12 col-sm-12" *ngIf="dependenciesByVersions" >
+    <div class="col-lg-12 col-md-12 col-sm-12" *ngIf="this.data?.dependenciesByVersions" >
       <div class="card">
         <div class="card-header">
           <h3>How often is the same dependency used in different versions?</h3>
@@ -107,20 +116,9 @@
         </div>
         
         <div class="card-body">
-          <div class="repository component" *ngFor="let key of objectKeys(dependenciesByVersions)" >
-            <p class="repository__name">
-              <span class="repository__versions {{ getClassByDependenciesVersions(getCountObjectKeys(dependenciesByVersions[key])) }}">{{ getCountObjectKeys(dependenciesByVersions[key]) }}</span>
-              <a href="" target="_blank">
-                {{ key }}
-              </a>
-            </p>
-            <ul class="component_versions">
-              <li *ngFor="let v of objectKeys(dependenciesByVersions[key])" matTooltip="{{getProjectsTooltip(dependenciesByVersions[key][v].projects)}}" >
-                <p class="component__frequency">{{ dependenciesByVersions[key][v].quantity }}</p>
-                <p class="component__version">{{ v }}v</p>
-              </li>
-            </ul>
-          </div>
+          <ng-container *ngFor="let key of objectKeys(this.data?.dependenciesByVersions)">
+            <app-dependency  [name]="key" [dependency]="this.data?.dependenciesByVersions[key]"></app-dependency>
+          </ng-container>
         </div>
       </div>
     </div>

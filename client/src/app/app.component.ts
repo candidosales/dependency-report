@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from './providers/data.service';
-import { GraphData } from './interface/data.interface';
+import { Data } from './interface/data.interface';
 
 @Component({
   selector: 'app-root',
@@ -9,39 +9,9 @@ import { GraphData } from './interface/data.interface';
 })
 export class AppComponent implements OnInit {
 
-    graphDataGoogle: GraphData;
-
-    projects = [];
-    components = [];
+    data: Data;
 
     objectKeys = Object.keys;
-
-    dependenciesByVersions = {};
-
-    treemap = [
-        ['Location', 'Parent', 'Market trade volume (size)'],
-        ['@angular/core',    null,                 0],
-        ['@angular/core_9',    '@angular/core',             0],
-        ['@angular/core_8',    '@angular/core',             0],
-        ['@angular/core_7',    '@angular/core',             0],
-        ['Brazil',    '@angular/core_9',            11],
-        ['USA',       '@angular/core_9',            52],
-        ['Mexico',    '@angular/core_9',            24],
-        ['Canada',    '@angular/core_9',            16],
-        ['France',    '@angular/core_8',             42],
-        ['Germany',   '@angular/core_8',             31],
-        ['Sweden',    '@angular/core_8',             22],
-        ['Italy',     '@angular/core_8',             17],
-        ['UK',        '@angular/core_8',             21],
-        ['China',     '@angular/core_7',               36],
-        ['Japan',     '@angular/core_7',               20],
-        ['India',     '@angular/core_7',               40],
-        ['Laos',      '@angular/core_7',               4],
-        ['Mongolia',  '@angular/core_7',               1],
-        ['Israel',    '@angular/core_7',               12],
-        ['Iran',      '@angular/core_7',               18],
-        ['Pakistan',  '@angular/core_7',               11],
-      ];
 
     constructor(private dataService: DataService) {}
 
@@ -51,18 +21,8 @@ export class AppComponent implements OnInit {
             value.graphData.projectsByFilters?.unshift(['Filter', 'Version']);
             value.graphData.componentsByFilters?.unshift(['Filter', 'Version']);
 
-            this.graphDataGoogle = value.graphData;
-
-            this.projects = value.projects;
-            this.components = value.components;
-
-            this.dependenciesByVersions = value.dependenciesByVersions;
+            this.data = value;
         });
-    }
-
-
-    getProjectsTooltip(projects: Array<string>): string {
-        return projects.join(' / ');
     }
 
     getVersionByFilter(filter: string): string {
@@ -77,23 +37,9 @@ export class AppComponent implements OnInit {
         return '';
     }
 
-    getCountObjectKeys(object: any): number {
-        return Object.keys(object).length;
-    }
-
-    getClassByDependenciesVersions(quantity: number): string {
-        if (quantity <= 2) {
-            return 'repository__versions--good';
-        }
-        if (quantity > 2 && quantity <= 5) {
-            return 'repository__versions--warning';
-        }
-        if (quantity > 5 && quantity <= 10) {
-            return 'repository__versions--bad';
-        }
-        if (quantity > 10) {
-            return 'repository__versions--terrible';
-        }
-        return '';
+    refresh() {
+        this.dataService.generateReport().subscribe(httpResponse => {
+            console.log('httpResponse', httpResponse);
+        });
     }
 }

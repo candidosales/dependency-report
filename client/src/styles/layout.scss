@@ -7,3 +7,22 @@
         margin-right: $global-gutter/2;
     }
 }
+
+.navbar-nav {
+    width: 100%;
+}
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        margin-right: $global-gutter/2;
+    }
+}
+
+.generated {
+    color: $color-white;
+    font-style: italic;
+    font-size: 12px;
+    margin-right: $global-gutter/2;
+}
