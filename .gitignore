@@ -29,3 +29,6 @@ client/e2e/*.map
 
 #System Files
 client/.DS_Store/
+
+.DS_Store
+.DS_Store/

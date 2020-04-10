@@ -1,6 +1,9 @@
 package main
 
-import "regexp"
+import (
+	"regexp"
+	"time"
+)
 
 const (
 	TypeProject     = "project"
@@ -47,6 +50,7 @@ func (p *PackageJSON) Prepare() {
 	p.clearDependenciesVersions()
 }
 
+// clearDependenciesVersions - remove special characters. Ex: ^6.0.2 => 6.0.2
 func (p *PackageJSON) clearDependenciesVersions() error {
 	r, err := regexp.Compile(`([\d\.\-\w]+)`)
 	if err != nil {
@@ -75,12 +79,14 @@ func GetAlias(name string, version string) string {
 }
 
 type ClientData struct {
-	Projects             *[]RepositoryClientData                     `json:"projects"`
-	Components           *[]RepositoryClientData                     `json:"components"`
-	GraphData            map[string][]interface{}                    `json:"graphData"`
-	ComponentsByVersions map[string]map[string]StatsComponentVersion `json:"componentsByVersions"`
+	GeneratedAt time.Time `json:"generatedAt"`
+	Projects             *[]RepositoryClientData                        `json:"projects"`
+	Components           *[]RepositoryClientData                        `json:"components"`
+	GraphData            map[string][]interface{}                       `json:"graphData"`
+	DependenciesByVersions map[string]map[string]StatsDependencyVersion `json:"dependenciesByVersions"`
 }
 
+// RepositoryClientData - simplest object to display in the UI
 type RepositoryClientData struct {
 	Name    string `json:"name"`
 	Version string `json:"version"`
@@ -88,7 +94,7 @@ type RepositoryClientData struct {
 	URL     string `json:"url"`
 }
 
-type StatsComponentVersion struct {
+type StatsDependencyVersion struct {
 	Quantity int      `json:"quantity"`
 	Projects []string `json:"projects"`
 }

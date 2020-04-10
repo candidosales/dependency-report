@@ -3,9 +3,12 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"github.com/gorilla/mux"
 	"io/ioutil"
+	"net/http"
 	"os"
 	"strings"
+	"time"
 
 	"github.com/google/go-github/v29/github"
 	"github.com/sirupsen/logrus"
@@ -13,6 +16,7 @@ import (
 )
 
 type App struct {
+	ctx context.Context
 	config       Config
 	githubClient *github.Client
 	log          *logrus.Logger
@@ -34,10 +38,53 @@ func main() {
 	}
 
 	app := &App{
+		ctx: ctx,
 		config:       config,
 		githubClient: githubClient(ctx),
 		log:          log,
 	}
+
+	router := mux.NewRouter().StrictSlash(true)
+	router.HandleFunc("/generate-report", app.GenerateReportHandler)
+	log.Fatal(http.ListenAndServe(":8080", router))
+
+}
+
+func (app *App) GenerateReportHandler(w http.ResponseWriter, r *http.Request) {
+	app.getPackageJSONs(app.ctx)
+	projects, components, projectsClientData, componentsClientData := app.splitProjectsComponents()
+
+	app.log.Info("Generate data to graphs ... \n")
+	countDependenciesByVersions := app.statsCountDependenciesByVersions(*projects)
+	countComponentsByFilters := app.statsCountComponentsByFilters(*components, *componentsClientData)
+	countProjectsByFilters := app.statsCountProjectsByFilters(*projects, *projectsClientData)
+
+	clientData := &ClientData{
+		GeneratedAt: time.Now(),
+		Projects:   projectsClientData,
+		Components: componentsClientData,
+		GraphData: map[string][]interface{}{
+			"projectsByFilters":   countProjectsByFilters,
+			"componentsByFilters": countComponentsByFilters,
+		},
+		DependenciesByVersions: countDependenciesByVersions,
+	}
+
+	clientDataJSON, _ := json.MarshalIndent(clientData, "", " ")
+	err := ioutil.WriteFile(pathFileOutput, clientDataJSON, 0644)
+
+	if err != nil {
+		app.log.Error("error[%#v]", err)
+		w.WriteHeader(http.StatusBadRequest)
+	} else {
+		app.log.Info("Output file generated and sent to " + pathFileOutput)
+		w.WriteHeader(http.StatusOK)
+	}
+}
+
+// getPackageJSONs - Get Package Json for each repository from config file
+func (app *App) getPackageJSONs(ctx context.Context) {
+	app.log.Printf("Get the package.json for the %d repositories ... \n", len(app.config.Repositories))
 
 	// this buffered channel will block at the concurrency limit
 	semaphoreChan := make(chan struct{}, concurrentLimit)
@@ -51,8 +98,7 @@ func main() {
 		close(resultsChan)
 	}()
 
-	app.log.Printf("Get the package.json for the %d repositories ... \n", len(config.Repositories))
-	for i := 0; i < len(config.Repositories); i++ {
+	for i := 0; i < len(app.config.Repositories); i++ {
 
 		// start a go routine with the index and url in a closure
 		go func(i int, repository Repository) {
@@ -73,8 +119,8 @@ func main() {
 			packageJSON := app.fetchPackageJson(ctx, info)
 
 			if packageJSON != nil {
-				config.Repositories[i].PackageJSON = packageJSON
-				config.Repositories[i].Topics = app.fetchTopics(ctx, info)
+				app.config.Repositories[i].PackageJSON = packageJSON
+				app.config.Repositories[i].Topics = app.fetchTopics(ctx, info)
 			}
 
 			// now we can send the result struct through the resultsChan
@@ -85,7 +131,7 @@ func main() {
 			// another goroutine to start
 			<-semaphoreChan
 
-		}(i, config.Repositories[i])
+		}(i, app.config.Repositories[i])
 	}
 
 	var results []PackageJSON
@@ -96,37 +142,9 @@ func main() {
 		results = append(results, *result)
 
 		// if we've reached the expected amount of urls then stop
-		if len(results) == len(config.Repositories) {
+		if len(results) == len(app.config.Repositories) {
 			break
 		}
-	}
-
-	projects, components, projectsClientData, componentsClientData := app.splitProjectsComponents(config.Repositories)
-
-	app.log.Info("Generate data to graphs ... \n")
-	// countComponentsByProject := statsCountComponentsByProject(*projects, *components)
-	// countComponentsByVersionAllProjects := statsCountComponentsByVersionAllProjects(*projects)
-	countComponentsByVersions := app.statsCountComponentsByVersions(*projects, *components)
-	countComponentsByFilters := app.statsCountComponentsByFilters(*components, *componentsClientData)
-	countProjectsByFilters := app.statsCountProjectsByFilters(*projects, *projectsClientData)
-
-	clientData := &ClientData{
-		Projects:   projectsClientData,
-		Components: componentsClientData,
-		GraphData: map[string][]interface{}{
-			"projectsByFilters":   countProjectsByFilters,
-			"componentsByFilters": countComponentsByFilters,
-		},
-		ComponentsByVersions: countComponentsByVersions,
-	}
-
-	clientDataJSON, _ := json.MarshalIndent(clientData, "", " ")
-	err = ioutil.WriteFile(pathFileOutput, clientDataJSON, 0644)
-
-	if err != nil {
-		app.log.Error("error[%#v]", err)
-	} else {
-		app.log.Info("Output file generated and sent to " + pathFileOutput)
 	}
 }
 
@@ -211,20 +229,19 @@ func (app *App) fetchTopics(ctx context.Context, info map[string]string) []strin
 	return topics
 }
 
-// Stats
-
-func (app *App) splitProjectsComponents(repositories []Repository) (*[]Repository, *[]Repository, *[]RepositoryClientData, *[]RepositoryClientData) {
+// splitProjectsComponents - split in different arrays the projects and components
+func (app *App) splitProjectsComponents() (*[]Repository, *[]Repository, *[]RepositoryClientData, *[]RepositoryClientData) {
 	projects := &[]Repository{}
 	components := &[]Repository{}
 
-	projectsClienteData := &[]RepositoryClientData{}
+	projectsClientData := &[]RepositoryClientData{}
 	componentsClientData := &[]RepositoryClientData{}
 
-	for _, r := range repositories {
+	for _, r := range app.config.Repositories {
 		if r.Type == TypeProject {
 			*projects = append(*projects, r)
 			projectClientData := r.getRepositoryClientData()
-			*projectsClienteData = append(*projectsClienteData, *projectClientData)
+			*projectsClientData = append(*projectsClientData, *projectClientData)
 
 		}
 
@@ -235,53 +252,10 @@ func (app *App) splitProjectsComponents(repositories []Repository) (*[]Repositor
 		}
 	}
 
-	return projects, components, projectsClienteData, componentsClientData
+	return projects, components, projectsClientData, componentsClientData
 }
 
-// func statsCountComponentsByProject(projects []Repository, components []Repository) *StatsDataFrappe {
-// 	statsData := &StatsDataFrappe{}
-
-// 	statsData.Datasets = append(statsData.Datasets, StatsDataset{
-// 		Values: make([]int, len(components)),
-// 	})
-
-// 	for i, c := range components {
-// 		statsData.Labels = append(statsData.Labels, c.PackageJSON.getAlias())
-// 		for _, p := range projects {
-// 			if p.PackageJSON.Dependencies[c.PackageJSON.Name] == c.PackageJSON.Version {
-// 				statsData.Datasets[0].Values[i] = statsData.Datasets[0].Values[i] + 1
-// 				continue
-// 			}
-// 		}
-// 	}
-// 	return statsData
-// }
-
-// func statsCountComponentsByVersionAllProjects(projects []Repository) *StatsDataFrappe {
-// 	dependencies := map[string]string{}
-// 	statsData := &StatsDataFrappe{}
-
-// 	statsData.Datasets = append(statsData.Datasets, StatsDataset{
-// 		Values: []int{},
-// 	})
-
-// 	for _, p := range projects {
-// 		index := 0
-// 		for name, version := range p.PackageJSON.Dependencies {
-// 			label := name + "_" + version
-// 			if dependencies[label] == "" {
-// 				dependencies[label] = version
-// 				statsData.Labels = append(statsData.Labels, label)
-// 				statsData.Datasets[0].Values = append(statsData.Datasets[0].Values, 1)
-// 				index = index + 1
-// 			} else {
-// 				statsData.Datasets[0].Values[index] = statsData.Datasets[0].Values[index] + 1
-// 			}
-// 		}
-// 	}
-// 	return statsData
-// }
-
+// statsCountProjectsByFilters - Count how many projects there are per filter
 func (app *App) statsCountProjectsByFilters(projects []Repository, projectsClientData []RepositoryClientData) []interface{} {
 	array := []interface{}{}
 	for i, f := range app.config.Filters {
@@ -299,15 +273,16 @@ func (app *App) statsCountProjectsByFilters(projects []Repository, projectsClien
 	return array
 }
 
+// statsCountComponentsByFilters - Count how many dependencies are used per version in different projects
 func (app *App) statsCountComponentsByFilters(components []Repository, componentsClientData []RepositoryClientData) []interface{} {
 	array := []interface{}{}
-	for i, f := range app.config.Filters {
-		array = append(array, []interface{}{f, 0})
+	for i, filter := range app.config.Filters {
+		array = append(array, []interface{}{filter, 0})
 		for j, c := range components {
 			for key, value := range c.PackageJSON.PeerDependencies {
-				if strings.Contains(GetAlias(key, value), f) {
+				if strings.Contains(GetAlias(key, value), filter) {
 					array[i].([]interface{})[1] = array[i].([]interface{})[1].(int) + 1
-					componentsClientData[j].Filter = f
+					componentsClientData[j].Filter = filter
 					continue
 				}
 			}
@@ -316,14 +291,15 @@ func (app *App) statsCountComponentsByFilters(components []Repository, component
 	return array
 }
 
-func (app *App) statsCountComponentsByVersions(projects []Repository, components []Repository) map[string]map[string]StatsComponentVersion {
-	var statsComponentsByVersion = map[string]map[string]StatsComponentVersion{}
+// statsCountDependenciesByVersions - Count how many components there are per filter
+func (app *App) statsCountDependenciesByVersions(projects []Repository) map[string]map[string]StatsDependencyVersion {
+	var statsComponentsByVersion = map[string]map[string]StatsDependencyVersion{}
 
 	for _, project := range projects {
 		for key, value := range project.PackageJSON.Dependencies {
 			if statsComponentsByVersion[key] == nil && len(statsComponentsByVersion[key][value].Projects) == 0 && statsComponentsByVersion[key][value].Quantity == 0 {
-				statsComponentsByVersion[key] = map[string]StatsComponentVersion{}
-				statsComponentsByVersion[key][value] = StatsComponentVersion{
+				statsComponentsByVersion[key] = map[string]StatsDependencyVersion{}
+				statsComponentsByVersion[key][value] = StatsDependencyVersion{
 					Quantity: 1,
 					Projects: []string{project.PackageJSON.Name},
 				}
@@ -338,7 +314,7 @@ func (app *App) statsCountComponentsByVersions(projects []Repository, components
 
 				quantity := statsComponentsByVersion[key][value].Quantity + 1
 
-				statsComponentsByVersion[key][value] = StatsComponentVersion{
+				statsComponentsByVersion[key][value] = StatsDependencyVersion{
 					Quantity: quantity,
 					Projects: projects,
 				}
@@ -349,6 +325,7 @@ func (app *App) statsCountComponentsByVersions(projects []Repository, components
 	return statsComponentsByVersion
 }
 
+// contains -  Checks whether a string exists in an array of string
 func contains(s []string, e string) bool {
 	for _, a := range s {
 		if a == e {

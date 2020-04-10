@@ -11,7 +11,7 @@
             "mode": "auto",
             "program": "${fileDirname}",
             "env": {
-                "GITHUB_AUTH_TOKEN": "49ecdd593042e8c3750968a260247a5cb7168496"
+                "GITHUB_AUTH_TOKEN": "<token>"
             },
             "args": ["go run *.go"]
         }
