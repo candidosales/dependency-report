@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild, Input } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild, Input, HostListener } from '@angular/core';
 declare var google: any;
 
 @Component({
@@ -13,6 +13,10 @@ export class PieChartComponent implements AfterViewInit{
   @Input() height = '250px';
   @Input() width = '100%';
 
+  @HostListener('window:resize', ['$event'])
+  onWindowResize(event: any) {
+    this.drawChart();
+  }
 
   drawChart = () => {
     const data = google.visualization.arrayToDataTable(this.data);
@@ -24,7 +28,6 @@ export class PieChartComponent implements AfterViewInit{
     };
 
     const chart = new google.visualization.PieChart(this.pieChart.nativeElement);
-
     chart.draw(data, options);
   }
 

@@ -10,6 +10,7 @@ import { NgModule } from '@angular/core';
 import { PieChartComponent } from './google-charts/pie-chart.component';
 import { TreemapChartComponent } from './google-charts/treemap-chart.component';
 import { DependencyComponent } from './dependency/dependency.component';
+import { RepositoryComponent } from './repository/repository.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { DependencyComponent } from './dependency/dependency.component';
     AppComponent,
     PieChartComponent,
     TreemapChartComponent,
-    DependencyComponent
+    DependencyComponent,
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,

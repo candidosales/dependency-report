@@ -1,0 +1,16 @@
+<div class="repository">
+    <p class="repository__name">
+      <a href="{{ repository.url }}" title="{{ repository.name }}" target="_blank">
+        {{ repository.name }}
+      </a>
+    </p>
+    <div class="repository__footer">
+      <p class="repository__badge">
+        <img src="{{ getIconByFilter(repository.filter) }}" alt="">
+        {{ getVersionByFilter(repository.filter) }}
+      </p>
+      <p class="repository__version">
+        {{ repository.version }}
+      </p>
+    </div>
+  </div>

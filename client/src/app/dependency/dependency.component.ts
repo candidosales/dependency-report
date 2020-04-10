@@ -1,9 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-dependency',
   templateUrl: './dependency.component.html',
-  styleUrls: ['./dependency.component.scss']
+  styleUrls: ['./dependency.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DependencyComponent {
 
