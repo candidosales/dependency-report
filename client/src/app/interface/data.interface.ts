@@ -2,7 +2,7 @@ import { Repository } from './repository.interface';
 export interface Data  {
     projects: Array<Repository>;
     components: Array<Repository>;
-    componentsByVersions: any;
+    dependenciesByVersions: any;
     graphData: GraphData;
 
 }

@@ -78,6 +78,30 @@
         margin-right: .5rem;
     }
     .component__version {
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+.repository__versions {
+    font-weight: bold;
+    background: $color-gray-400;
+    padding: 0px 4px;
+    border-radius: 5px;
+    margin: 0;
+    display: inline-block;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    &.repository__versions--good {
+        background: $color-green;
+    }
+    &.repository__versions--warning {
+        background: $color-yellow;
+    }
+    &.repository__versions--bad {
+        background: $color-red;
+    }
+    &.repository__versions--terrible {
+        background: $color-red-dark;
+        color: #fff;
     }
 }

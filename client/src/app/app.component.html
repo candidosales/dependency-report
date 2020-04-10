@@ -93,57 +93,36 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-12 col-md-12 col-sm-12" *ngIf="componentsByVersions" >
+    <div class="col-lg-12 col-md-12 col-sm-12" *ngIf="dependenciesByVersions" >
       <div class="card">
         <div class="card-header">
-          <h3>Treemap</h3>
+          <h3>How often is the same dependency used in different versions?</h3>
+          <h4>Tip: Reduce the number of different versions in your projects and maintain consistency</h4>
+          <div class="legend">
+            <span class="repository__versions repository__versions--good" matTooltip="Good"> 1 - 2 </span>
+            <span class="repository__versions repository__versions--warning" matTooltip="It requires attention"> 3 - 5 </span>
+            <span class="repository__versions repository__versions--bad" matTooltip="Bad"> 6 - 10 </span>
+            <span class="repository__versions repository__versions--terrible" matTooltip="Terrible"> 11+ </span>
+          </div>
         </div>
+        
         <div class="card-body">
-          <app-treemap-chart [data]="treemap"></app-treemap-chart>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="col-lg-12 col-md-12 col-sm-12" *ngIf="componentsByVersions" >
-      <div class="card">
-        <div class="card-header">
-          <h3>How often the same library and version is used in different projects?</h3>
-        </div>
-        <div class="card-body">
-          <div class="repository component" *ngFor="let key of objectKeys(componentsByVersions)" >
+          <div class="repository component" *ngFor="let key of objectKeys(dependenciesByVersions)" >
             <p class="repository__name">
+              <span class="repository__versions {{ getClassByDependenciesVersions(getCountObjectKeys(dependenciesByVersions[key])) }}">{{ getCountObjectKeys(dependenciesByVersions[key]) }}</span>
               <a href="" target="_blank">
                 {{ key }}
               </a>
             </p>
             <ul class="component_versions">
-              <li *ngFor="let v of objectKeys(componentsByVersions[key])" matTooltip="{{getProjectsTooltip(componentsByVersions[key][v].projects)}}" >
-                <p class="component__frequency">{{ componentsByVersions[key][v].quantity }}</p>
+              <li *ngFor="let v of objectKeys(dependenciesByVersions[key])" matTooltip="{{getProjectsTooltip(dependenciesByVersions[key][v].projects)}}" >
+                <p class="component__frequency">{{ dependenciesByVersions[key][v].quantity }}</p>
                 <p class="component__version">{{ v }}v</p>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </div> -->
-    <!-- <div class="col-lg-12 col-md-12 col-sm-12">
-      <div class="card">
-        <div class="card-header">
-          <h2>Current Version X Adoption</h2>
-        </div>
-        <div class="card-body">
-          <div appFrappe [title]="" [data]="graphData.componentsByProject" [type]="'bar'"></div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div class="col-12">
-      <div class="card card__in-soon">
-        <div class="card-header">
-          <h2>Libraries usage (bug)</h2>
-        </div>
-        <div class="card-body">
-          <div appFrappe [title]="" [data]="graphData.componentsByVersionAllProjects" [type]="'bar'"></div>
-        </div>
-      </div>
-    </div> -->
+    </div>
   </div>
 </div>

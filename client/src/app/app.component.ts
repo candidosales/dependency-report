@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
 
     objectKeys = Object.keys;
 
-    componentsByVersions = {};
+    dependenciesByVersions = {};
 
     treemap = [
         ['Location', 'Parent', 'Market trade volume (size)'],
@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
             this.projects = value.projects;
             this.components = value.components;
 
-            this.componentsByVersions = value.componentsByVersions;
+            this.dependenciesByVersions = value.dependenciesByVersions;
         });
     }
 
@@ -73,6 +73,26 @@ export class AppComponent implements OnInit {
     getIconByFilter(filter: string): string {
         if (filter.includes('angular')) {
             return 'https://coryrylan.com/assets/images/posts/types/angular.svg';
+        }
+        return '';
+    }
+
+    getCountObjectKeys(object: any): number {
+        return Object.keys(object).length;
+    }
+
+    getClassByDependenciesVersions(quantity: number): string {
+        if (quantity <= 2) {
+            return 'repository__versions--good';
+        }
+        if (quantity > 2 && quantity <= 5) {
+            return 'repository__versions--warning';
+        }
+        if (quantity > 5 && quantity <= 10) {
+            return 'repository__versions--bad';
+        }
+        if (quantity > 10) {
+            return 'repository__versions--terrible';
         }
         return '';
     }

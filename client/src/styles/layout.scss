@@ -1,3 +1,9 @@
 .main {
     padding: $global-gutter;
 }
+
+.legend {
+    span {
+        margin-right: $global-gutter/2;
+    }
+}
