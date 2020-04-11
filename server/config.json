@@ -1,6 +1,7 @@
 {
   "filters": [
     "@angular/core_4",
+    "@angular/core_5",
     "@angular/core_6",
     "@angular/core_7",
     "@angular/core_8",
