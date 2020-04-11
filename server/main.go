@@ -45,7 +45,8 @@ func main() {
 	}
 
 	router := mux.NewRouter().StrictSlash(true)
-	router.HandleFunc("/generate-report", app.GenerateReportHandler)
+	router.HandleFunc("/generate-report", app.GenerateReportHandler).Methods("GET")
+	router.HandleFunc("/", app.RootHandler).Methods("GET")
 	log.Fatal(http.ListenAndServe(":8080", router))
 
 }
@@ -79,7 +80,39 @@ func (app *App) GenerateReportHandler(w http.ResponseWriter, r *http.Request) {
 	} else {
 		app.log.Info("Output file generated and sent to " + pathFileOutput)
 		w.WriteHeader(http.StatusOK)
+		json.NewEncoder(w).Encode(map[string]bool{"generated": true})
 	}
+}
+
+func (app *App) RootHandler(w http.ResponseWriter, r *http.Request) {
+	//http.ServeFile(w, r, filepath.Join("/", "index.html"))
+	//// get the absolute path to prevent directory traversal
+	//path, err := filepath.Abs(r.URL.Path)
+	//if err != nil {
+	//	// if we failed to get the absolute path respond with a 400 bad request
+	//	// and stop
+	//	http.Error(w, err.Error(), http.StatusBadRequest)
+	//	return
+	//}
+	//
+	//// prepend the path with the path to the static directory
+	//path = filepath.Join("/", path)
+	//
+	////w.WriteHeader(http.StatusOK)
+	//
+	//_, err = os.Stat(path)
+	//if os.IsNotExist(err) {
+	//	// file does not exist, serve index.html
+	//	http.ServeFile(w, r, filepath.Join("/", "index.html"))
+	//	return
+	//} else if err != nil {
+	//	// if we got an error (that wasn't that the file doesn't exist) stating the
+	//	// file, return a 500 internal server error and stop
+	//	http.Error(w, err.Error(), http.StatusInternalServerError)
+	//	return
+	//}
+	//http.FileServer(http.Dir("./")).ServeHTTP(w, r)
+	http.ServeFile(w, r, "./index.html")
 }
 
 // getPackageJSONs - Get Package Json for each repository from config file

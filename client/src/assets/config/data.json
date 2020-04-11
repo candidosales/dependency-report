@@ -1,5 +1,5 @@
 {
- "generatedAt": "2020-04-10T22:18:37.590671-06:00",
+ "generatedAt": "2020-04-10T22:42:19.217419-06:00",
  "projects": [
   {
    "name": "listing-builder-client",
@@ -144,7 +144,7 @@
   {
    "name": "brand-analytics-client",
    "version": "0.0.0",
-   "filter": "",
+   "filter": "@angular/core_5",
    "url": "https://github.com/vendasta/brand-analytics-client",
    "documentationUrl": ""
   },
@@ -417,6 +417,10 @@
     0
    ],
    [
+    "@angular/core_5",
+    0
+   ],
+   [
     "@angular/core_6",
     0
    ],
@@ -437,6 +441,10 @@
    [
     "@angular/core_4",
     2
+   ],
+   [
+    "@angular/core_5",
+    1
    ],
    [
     "@angular/core_6",
