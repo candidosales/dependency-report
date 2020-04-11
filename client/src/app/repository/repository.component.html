@@ -9,6 +9,9 @@
         <img src="{{ getIconByFilter(repository.filter) }}" alt="">
         {{ getVersionByFilter(repository.filter) }}
       </p>
+      <a *ngIf="repository.documentationUrl" matTooltip="Documentation"  class="repository__documentation" href="{{ repository.documentationUrl }}" target="_blank">
+        <mat-icon>description</mat-icon>
+      </a>
       <p class="repository__version">
         {{ repository.version }}
       </p>

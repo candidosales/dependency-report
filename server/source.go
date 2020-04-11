@@ -19,19 +19,21 @@ type Config struct {
 }
 
 type Repository struct {
-	URL         string       `json:"url"`
-	Type        string       `json:"type"`
-	Topics      []string     `json:"topics"`
-	PackageJSON *PackageJSON `json:"packageJSON"`
-	Alias       string       `json:"alias"`
+	URL              string       `json:"url"`
+	Type             string       `json:"type"`
+	Topics           []string     `json:"topics"`
+	PackageJSON      *PackageJSON `json:"packageJSON"`
+	Alias            string       `json:"alias"`
+	DocumentationURL string       `json:"documentationUrl"`
 }
 
 func (r *Repository) getRepositoryClientData() *RepositoryClientData {
 	// TODO add filters
 	return &RepositoryClientData{
-		Name:    r.PackageJSON.Name,
-		Version: r.PackageJSON.Version,
-		URL:     r.URL,
+		Name:             r.PackageJSON.Name,
+		Version:          r.PackageJSON.Version,
+		URL:              r.URL,
+		DocumentationURL: r.DocumentationURL,
 	}
 }
 
@@ -88,10 +90,11 @@ type ClientData struct {
 
 // RepositoryClientData - simplest object to display in the UI
 type RepositoryClientData struct {
-	Name    string `json:"name"`
-	Version string `json:"version"`
-	Filter  string `json:"filter"`
-	URL     string `json:"url"`
+	Name             string `json:"name"`
+	Version          string `json:"version"`
+	Filter           string `json:"filter"`
+	URL              string `json:"url"`
+	DocumentationURL string `json:"documentationUrl"`
 }
 
 type StatsDependencyVersion struct {

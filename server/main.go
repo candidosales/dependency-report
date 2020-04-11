@@ -242,7 +242,6 @@ func (app *App) splitProjectsComponents() (*[]Repository, *[]Repository, *[]Repo
 			*projects = append(*projects, r)
 			projectClientData := r.getRepositoryClientData()
 			*projectsClientData = append(*projectsClientData, *projectClientData)
-
 		}
 
 		if r.Type == TypeComponent {

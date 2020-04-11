@@ -157,19 +157,23 @@
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/billing-ui",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/billing-ui/contact-info-dialog"
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/business-categories",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/business-categories"
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/businesses",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/business-categories"
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/core",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/core/account-group"
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/devtools",
@@ -177,11 +181,13 @@
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/forms",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/forms/examples"
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/global-brands",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/global-brands/readme"
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/hot-module-replacement",
@@ -197,15 +203,18 @@
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/sales-common",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/sales-common"
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/sales-ui",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/sales-ui/sales-orders-table"
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/smb-invoicing",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/smb-invoicing/invoice-table"
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/social-posts",
@@ -217,11 +226,13 @@
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/store",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/store/addon-details"
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/uikit",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/uikit/badge"
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/url-shortener",
@@ -229,15 +240,18 @@
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/va-filter2-table",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/uikit/badge"
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/va-filter2",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/va-filter2-table/readme"
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/vform",
-      "type": "component"
+      "type": "component",
+      "documentationUrl": "https://frontend.vendasta-internal.com/vform/readme"
     }
   ]
 }

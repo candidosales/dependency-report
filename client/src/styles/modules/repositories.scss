@@ -39,6 +39,14 @@
     }
 }
 
+.repository__documentation {
+    mat-icon {
+        width: 14px;
+        height: 16px;
+        font-size: 0.8rem;
+    }
+}
+
 .repository__footer {
     display: flex;
     justify-content: space-between;
