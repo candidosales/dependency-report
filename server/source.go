@@ -9,7 +9,7 @@ const (
 	TypeProject     = "project"
 	TypeComponent   = "component"
 	pathFileInput   = "./config.json"
-	pathFileOutput  = "../client/src/assets/config/data-test.json"
+	pathFileOutput  = "../client/src/assets/config/data.json"
 	concurrentLimit = 25
 )
 
@@ -79,10 +79,10 @@ func GetAlias(name string, version string) string {
 }
 
 type ClientData struct {
-	GeneratedAt time.Time `json:"generatedAt"`
-	Projects             *[]RepositoryClientData                        `json:"projects"`
-	Components           *[]RepositoryClientData                        `json:"components"`
-	GraphData            map[string][]interface{}                       `json:"graphData"`
+	GeneratedAt            time.Time                                    `json:"generatedAt"`
+	Projects               *[]RepositoryClientData                      `json:"projects"`
+	Components             *[]RepositoryClientData                      `json:"components"`
+	GraphData              map[string][]interface{}                     `json:"graphData"`
 	DependenciesByVersions map[string]map[string]StatsDependencyVersion `json:"dependenciesByVersions"`
 }
 

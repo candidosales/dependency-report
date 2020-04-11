@@ -25,7 +25,6 @@ export class AppComponent implements OnInit {
         .subscribe(value => {
             value.graphData.projectsByFilters?.unshift(['Filter', 'Version']);
             value.graphData.componentsByFilters?.unshift(['Filter', 'Version']);
-
             this.data = value;
         });
     }

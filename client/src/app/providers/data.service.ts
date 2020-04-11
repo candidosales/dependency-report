@@ -15,7 +15,7 @@ export class DataService {
   }
 
   public getDataInServer(): Observable<Data> {
-    return this.httpClient.get<Data>('/assets/config/data-test.json');
+    return this.httpClient.get<Data>('/assets/config/data.json');
   }
 
   public generateReport(): Observable<HttpResponse<any>> {
