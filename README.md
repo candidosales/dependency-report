@@ -89,10 +89,6 @@ Example:
 
 After configuring [server/config.json](./server/config.json) and initializing `server` and `client` you access `client` via [http://localhost:4200](http://localhost:4200) and click the button `REFRESH` on the top bar to generate the data you need.
 
-## Roadmap
-
-- Configure project to boot via Docker / Docker compose;
-
 ## Reference
 
 - [https://segment.com/blog/driving-adoption-of-a-design-system/](https://segment.com/blog/driving-adoption-of-a-design-system/)
