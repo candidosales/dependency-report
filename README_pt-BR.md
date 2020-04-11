@@ -35,7 +35,7 @@ Irá inicializar na porta `4200`. [http://localhost:4200](http://localhost:4200)
 
 ```bash
 cd server/
-GITHUB_AUTH_TOKEN=<personal-auth-token> go run *.go # Exemplo: GITHUB_AUTH_TOKEN=12321wqdd12e12321dse go run *.go
+GITHUB_AUTH_TOKEN=<personal-auth-token> APP_ENV=development go run *.go # Exemplo: GITHUB_AUTH_TOKEN=12321wqdd12e12321dse go run *.go
 ```
 
 Irá criar um servidor na porta `8080`. [http://localhost:8080](http://localhost:8080).

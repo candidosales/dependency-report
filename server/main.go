@@ -3,12 +3,13 @@ package main
 import (
 	"context"
 	"encoding/json"
-	"github.com/gorilla/mux"
 	"io/ioutil"
 	"net/http"
 	"os"
 	"strings"
 	"time"
+
+	"github.com/gorilla/mux"
 
 	"github.com/google/go-github/v29/github"
 	"github.com/sirupsen/logrus"
@@ -16,8 +17,8 @@ import (
 )
 
 type App struct {
-	ctx context.Context
-	environment string
+	ctx          context.Context
+	environment  string
 	config       Config
 	githubClient *github.Client
 	log          *logrus.Logger
@@ -39,10 +40,10 @@ func main() {
 	}
 
 	app := &App{
-		ctx: ctx,
+		ctx:         ctx,
 		environment: strings.TrimSpace(os.Getenv("APP_ENV")),
-		config:       config,
-		log:          log,
+		config:      config,
+		log:         log,
 	}
 
 	app.setUpGithubClient()
@@ -67,8 +68,8 @@ func (app *App) GenerateReportHandler(w http.ResponseWriter, r *http.Request) {
 
 	clientData := &ClientData{
 		GeneratedAt: time.Now(),
-		Projects:   projectsClientData,
-		Components: componentsClientData,
+		Projects:    projectsClientData,
+		Components:  componentsClientData,
 		GraphData: map[string][]interface{}{
 			"projectsByFilters":   countProjectsByFilters,
 			"componentsByFilters": countComponentsByFilters,

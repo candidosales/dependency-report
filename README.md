@@ -35,7 +35,7 @@ Will boot on the port `4200`. [http://localhost:4200](http://localhost:4200).
 
 ```bash
 cd server/
-GITHUB_AUTH_TOKEN=<personal-auth-token> go run *.go # Example: GITHUB_AUTH_TOKEN=12321wqdd12e12321dse go run *.go
+GITHUB_AUTH_TOKEN=<personal-auth-token> APP_ENV=development go run *.go # Example: GITHUB_AUTH_TOKEN=12321wqdd12e12321dse go run *.go
 ```
 
 Will create a server on the port `8080`. [http://localhost:8080](http://localhost:8080).
