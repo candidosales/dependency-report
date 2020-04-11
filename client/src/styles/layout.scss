@@ -10,6 +10,15 @@
 
 .navbar-nav {
     width: 100%;
+    .nav-link {
+        color: $color-white;
+    }
+    .navbar-nav-svg {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        vertical-align: text-top;
+    }
 }
 .navbar-brand {
     display: flex;

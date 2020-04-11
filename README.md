@@ -97,6 +97,10 @@ After configuring [server/config.json](./server/config.json) and initializing `s
 
 - [https://segment.com/blog/driving-adoption-of-a-design-system/](https://segment.com/blog/driving-adoption-of-a-design-system/)
 
-### Author
+## Author
 
 - Cândido Sales - [@candidosales](https://twitter.com/candidosales)
+
+## Copyright and license
+
+Code and documentation copyright 2020-2030 the [Authors](https://github.com/candidosales/dependency-report/graphs/contributors) and Code released under the [MIT License](https://github.com/candidosales/dependency-report/blob/master/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
