@@ -1,6 +1,6 @@
 # Dependencies report
 
-This project aims to help analyze the consistency of the dependencies in your company's frontend projects. See an example [https://dependency-report.firebaseapp.com/](https://dependency-report.firebaseapp.com/). [Em português](./README_pt-BR.md)
+This project aims to help analyze the consistency of the dependencies in your company's frontend projects. See an example [https://dependency-report.web.app/](https://dependency-report.web.app/). [Em português](./README_pt-BR.md)
 
 ## Features
 
