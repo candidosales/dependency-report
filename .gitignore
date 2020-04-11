@@ -5,6 +5,7 @@ client/dist/
 client/tmp/
 client/app/**/*.js
 client/app/**/*.js.map
+client/.firebase
 client/.firebase/
 
 # dependencies
