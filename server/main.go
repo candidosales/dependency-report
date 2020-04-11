@@ -17,6 +17,7 @@ import (
 
 type App struct {
 	ctx context.Context
+	environment string
 	config       Config
 	githubClient *github.Client
 	log          *logrus.Logger
@@ -29,7 +30,7 @@ func main() {
 		FullTimestamp: true,
 	})
 
-	log.Info("Start ... \n")
+	log.Info("Start server ... ")
 	ctx := context.Background()
 
 	config, err := readConfig(pathFileInput)
@@ -39,14 +40,17 @@ func main() {
 
 	app := &App{
 		ctx: ctx,
+		environment: strings.TrimSpace(os.Getenv("APP_ENV")),
 		config:       config,
-		githubClient: githubClient(ctx),
 		log:          log,
 	}
+
+	app.setUpGithubClient()
 
 	router := mux.NewRouter().StrictSlash(true)
 	router.HandleFunc("/generate-report", app.GenerateReportHandler).Methods("GET")
 	router.HandleFunc("/", app.RootHandler).Methods("GET")
+
 	log.Fatal(http.ListenAndServe(":3000", router))
 
 }
@@ -72,17 +76,15 @@ func (app *App) GenerateReportHandler(w http.ResponseWriter, r *http.Request) {
 		DependenciesByVersions: countDependenciesByVersions,
 	}
 
-	clientDataJSON, _ := json.MarshalIndent(clientData, "", " ")
-	err := ioutil.WriteFile(pathFileOutput, clientDataJSON, 0644)
+	if app.environment != "production" {
+		clientDataJSON, err := json.MarshalIndent(clientData, "", " ")
+		err = ioutil.WriteFile(pathFileOutput, clientDataJSON, 0644)
 
-	if err != nil {
-		app.log.Error("error: ", err)
-		w.WriteHeader(http.StatusBadRequest)
-	} else {
-		app.log.Info("Output file generated and sent to " + pathFileOutput)
-		w.WriteHeader(http.StatusOK)
-		json.NewEncoder(w).Encode(map[string]bool{"generated": true})
+		if err == nil {
+			app.log.Info("Output file generated and sent to " + pathFileOutput)
+		}
 	}
+	json.NewEncoder(w).Encode(clientData)
 }
 
 // RootHandler - Route to root
@@ -121,7 +123,7 @@ func (app *App) getPackageJSONs(ctx context.Context) {
 			// any error that might have occoured
 			info, err := splitRepositoryURL(repository)
 			if err != nil {
-				app.log.Error("error:", err)
+				app.log.Errorf("error[%#v]", err)
 			}
 
 			packageJSON := app.fetchPackageJson(ctx, info)
@@ -156,12 +158,18 @@ func (app *App) getPackageJSONs(ctx context.Context) {
 	}
 }
 
-func githubClient(ctx context.Context) *github.Client {
+func (app *App) setUpGithubClient() {
+	githubAuthToken := strings.TrimSpace(os.Getenv("GITHUB_AUTH_TOKEN"))
+	if githubAuthToken == "" {
+		app.log.Fatal("GITHUB_AUTH_TOKEN env is empty")
+	}
+
 	ts := oauth2.StaticTokenSource(
 		&oauth2.Token{AccessToken: os.Getenv("GITHUB_AUTH_TOKEN")},
 	)
-	tc := oauth2.NewClient(ctx, ts)
-	return github.NewClient(tc)
+	tc := oauth2.NewClient(app.ctx, ts)
+
+	app.githubClient = github.NewClient(tc)
 }
 
 func splitRepositoryURL(repository Repository) (map[string]string, error) {

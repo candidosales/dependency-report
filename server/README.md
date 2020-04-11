@@ -1,7 +1,7 @@
 # Server
 
 ```bash
-GITHUB_AUTH_TOKEN=<token> go run *.go
+GITHUB_AUTH_TOKEN=<token> APP_ENV=development go run *.go
 ```
 
 ## Build the image
