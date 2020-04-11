@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -52,8 +53,9 @@ func main() {
 	router.Use(commonMiddleware)
 	router.Use(mux.CORSMethodMiddleware(router))
 
-	router.HandleFunc("/generate-report", app.GenerateReportHandler).Methods("GET")
 	router.HandleFunc("/", app.RootHandler).Methods("GET")
+	router.HandleFunc("/generate-report", app.GenerateReportHandler).Methods("GET")
+	router.HandleFunc("/notification", app.NotificationHandler).Methods("GET")
 
 	log.Fatal(http.ListenAndServe(":3000", router))
 
@@ -102,6 +104,24 @@ func commonMiddleware(next http.Handler) http.Handler {
 // RootHandler - Route to root
 func (app *App) RootHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "./index.html")
+}
+
+// NotificationHandler - Route to root
+func (app *App) NotificationHandler(w http.ResponseWriter, r *http.Request) {
+	//http.ServeFile(w, r, "./index.html")
+	notifications, resp, err := app.githubClient.Activity.ListRepositoryNotifications(
+		app.ctx,
+		"vendasta",
+		"brand-analytics-client",
+		&github.NotificationListOptions{
+			All: false,
+			Participating: false,
+		},
+		)
+
+	fmt.Printf("notifications[%#v] \n", notifications)
+	fmt.Printf("resp[%#v] \n", resp)
+	fmt.Printf("err[%#v] \n", err)
 }
 
 // getPackageJSONs - Get Package Json for each repository from config file
