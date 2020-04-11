@@ -31,3 +31,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ```bash
 ng deploy
 ```
+
+## Docker
+
+### Build the image
+
+```bash
+docker build . -t dependency-report-client
+```
+
+### Run the image
+
+```bash
+docker run -p 4200:80 dependency-report-client
+```
