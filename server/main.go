@@ -47,10 +47,11 @@ func main() {
 	router := mux.NewRouter().StrictSlash(true)
 	router.HandleFunc("/generate-report", app.GenerateReportHandler).Methods("GET")
 	router.HandleFunc("/", app.RootHandler).Methods("GET")
-	log.Fatal(http.ListenAndServe(":8080", router))
+	log.Fatal(http.ListenAndServe(":3000", router))
 
 }
 
+// GenerateReportHandler - Route to generate report
 func (app *App) GenerateReportHandler(w http.ResponseWriter, r *http.Request) {
 	app.getPackageJSONs(app.ctx)
 	projects, components, projectsClientData, componentsClientData := app.splitProjectsComponents()
@@ -75,7 +76,7 @@ func (app *App) GenerateReportHandler(w http.ResponseWriter, r *http.Request) {
 	err := ioutil.WriteFile(pathFileOutput, clientDataJSON, 0644)
 
 	if err != nil {
-		app.log.Error("error[%#v]", err)
+		app.log.Error("error: ", err)
 		w.WriteHeader(http.StatusBadRequest)
 	} else {
 		app.log.Info("Output file generated and sent to " + pathFileOutput)
@@ -84,34 +85,8 @@ func (app *App) GenerateReportHandler(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+// RootHandler - Route to root
 func (app *App) RootHandler(w http.ResponseWriter, r *http.Request) {
-	//http.ServeFile(w, r, filepath.Join("/", "index.html"))
-	//// get the absolute path to prevent directory traversal
-	//path, err := filepath.Abs(r.URL.Path)
-	//if err != nil {
-	//	// if we failed to get the absolute path respond with a 400 bad request
-	//	// and stop
-	//	http.Error(w, err.Error(), http.StatusBadRequest)
-	//	return
-	//}
-	//
-	//// prepend the path with the path to the static directory
-	//path = filepath.Join("/", path)
-	//
-	////w.WriteHeader(http.StatusOK)
-	//
-	//_, err = os.Stat(path)
-	//if os.IsNotExist(err) {
-	//	// file does not exist, serve index.html
-	//	http.ServeFile(w, r, filepath.Join("/", "index.html"))
-	//	return
-	//} else if err != nil {
-	//	// if we got an error (that wasn't that the file doesn't exist) stating the
-	//	// file, return a 500 internal server error and stop
-	//	http.Error(w, err.Error(), http.StatusInternalServerError)
-	//	return
-	//}
-	//http.FileServer(http.Dir("./")).ServeHTTP(w, r)
 	http.ServeFile(w, r, "./index.html")
 }
 
@@ -146,7 +121,7 @@ func (app *App) getPackageJSONs(ctx context.Context) {
 			// any error that might have occoured
 			info, err := splitRepositoryURL(repository)
 			if err != nil {
-				app.log.Error("error[%#v]", err)
+				app.log.Error("error:", err)
 			}
 
 			packageJSON := app.fetchPackageJson(ctx, info)
@@ -234,7 +209,7 @@ func (app *App) fetchPackageJson(ctx context.Context, info map[string]string) *P
 		&github.RepositoryContentGetOptions{Ref: "master"},
 	)
 	if err != nil {
-		app.log.Error("error[%#v]", err)
+		app.log.Error("error: ", err)
 	}
 
 	if repContent == nil {
@@ -256,7 +231,7 @@ func (app *App) fetchTopics(ctx context.Context, info map[string]string) []strin
 		info["repo"],
 	)
 	if err != nil {
-		app.log.Error("error[%#v]", err)
+		app.log.Error("error: ", err)
 	}
 
 	return topics
