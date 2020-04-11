@@ -1,0 +1,17 @@
+{
+    "home": {
+        "navbar": {
+            "generated": "gerado",
+            "refresh": "ATUALIZAR"
+        },
+        "graph": {
+            "projectXLibrary": "Projeto X Biblioteca",
+            "frontendProjects" : "Projetos frontend",
+            "componentXLibrary" : "Componente X Library",
+            "howOftenDependencyDifferentVersions" : "Qual a frequência a mesma dependência é usada em versões diferentes?",
+            "tipReduce": "Dica: Reduza o número de versões diferentes em seus projetos e mantenha a consistência"
+        },
+        "projects": "Projetos",
+        "components": "Componentes" 
+    }
+}

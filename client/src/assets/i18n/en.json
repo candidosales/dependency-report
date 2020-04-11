@@ -1,0 +1,17 @@
+{
+    "home": {
+        "navbar": {
+            "generated": "generated",
+            "refresh": "REFRESH"
+        },
+        "graph": {
+            "projectXLibrary": "Project X Library",
+            "frontendProjects" : "Frontend projects",
+            "componentXLibrary" : "Component X Library",
+            "howOftenDependencyDifferentVersions" : "How often is the same dependency used in different versions?",
+            "tipReduce": "Tip: Reduce the number of different versions in your projects and maintain consistency"
+        },
+        "projects": "Projects",
+        "components": "Components" 
+    }
+}

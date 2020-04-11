@@ -13,22 +13,22 @@
     </ul>
     <ul class="navbar-nav mr-auto d-flex justify-content-end">
       <li class="nav-item">
-        <span class="generated">generated: {{ this.data?.generatedAt | date: 'medium' }}</span>
+        <span class="generated">{{ 'home.navbar.generated' | translate }}: {{ this.data?.generatedAt | date: 'medium' }}</span>
         <button class="btn-outline" mat-raised-button color="primary" (click)="refresh()">
           <mat-icon>refresh</mat-icon>
-          REFRESH
+          {{ 'home.navbar.refresh' | translate }}
         </button>
       </li>
     </ul>
   </div>
 </nav>
 <div class="main container-fluid">
-  <h2 class="mt-0">Projects</h2>
+  <h2 class="mt-0">{{ 'home.projects' | translate }}</h2>
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card">
         <div class="card-header">
-          <h3>Project X Library</h3>
+          <h3>{{ 'home.graph.projectXLibrary' | translate }}</h3>
         </div>
         <div class="card-body">
           <app-pie-chart [data]="this.data?.graphData?.projectsByFilters"></app-pie-chart>
@@ -38,7 +38,7 @@
     <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card card__repositories">
         <div class="card-header">
-          <h3>{{ this.data?.projects.length }} Frontend projects</h3>
+          <h3>{{ this.data?.projects.length }} {{ 'home.graph.frontendProjects' | translate }}</h3>
         </div>
         <div class="card-body">
           <div class="repositories">
@@ -48,12 +48,12 @@
       </div>
     </div>
   </div>
-  <h2>Components</h2>
+  <h2>{{ 'home.components' | translate }}</h2>
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card">
         <div class="card-header">
-          <h3>Component X Library</h3>
+          <h3>{{ 'home.graph.componentXLibrary' | translate }}</h3>
         </div>
         <div class="card-body">
           <app-pie-chart [data]="this.data?.graphData?.componentsByFilters"></app-pie-chart>
@@ -63,7 +63,7 @@
     <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card card__repositories">
         <div class="card-header">
-          <h3>{{ this.data?.components.length }} Components</h3>
+          <h3>{{ this.data?.components.length }} {{ 'home.components' | translate }}</h3>
         </div>
         <div class="card-body">
           <div class="repositories">
@@ -75,8 +75,8 @@
     <div class="col-lg-12 col-md-12 col-sm-12" *ngIf="this.data?.dependenciesByVersions" >
       <div class="card">
         <div class="card-header">
-          <h3>How often is the same dependency used in different versions?</h3>
-          <h4>Tip: Reduce the number of different versions in your projects and maintain consistency</h4>
+          <h3>{{ 'home.graph.howOftenDependencyDifferentVersions' | translate }}</h3>
+          <h4>{{ 'home.graph.tipReduce' | translate }}</h4>
           <div class="legend">
             <span class="repository__versions repository__versions--good" matTooltip="Good"> 1 - 2 </span>
             <span class="repository__versions repository__versions--warning" matTooltip="It requires attention"> 3 - 5 </span>
