@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from './providers/data.service';
 import { Data } from './interface/data.interface';
 import { TranslateService } from '@ngx-translate/core';
+import { Observable, of } from 'rxjs';
+import { Repository } from './interface/repository.interface';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +14,7 @@ export class AppComponent implements OnInit {
 
     data: Data;
     objectKeys = Object.keys;
+    showLoading = false;
 
     constructor(
         private dataService: DataService,
@@ -21,12 +24,7 @@ export class AppComponent implements OnInit {
         }
 
     ngOnInit() {
-        this.dataService.getDataInServer()
-        .subscribe(value => {
-            value.graphData.projectsByFilters?.unshift(['Filter', 'Version']);
-            value.graphData.componentsByFilters?.unshift(['Filter', 'Version']);
-            this.data = value;
-        });
+        this.getCache();
     }
 
     getVersionByFilter(filter: string): string {
@@ -42,8 +40,32 @@ export class AppComponent implements OnInit {
     }
 
     refresh() {
-        this.dataService.generateReport().subscribe(httpResponse => {
-            console.log('httpResponse', httpResponse);
+        this.showLoading = true;
+        this.dataService.generateReport()
+            .subscribe(value => {
+                this.showLoading = false;
+                this.prepareData(value);
+            }, error => {
+                this.getCache();
+                this.showLoading = false;
+            }
+        );
+    }
+
+    getCache() {
+        this.showLoading = true;
+        this.dataService.getCacheData()
+        .subscribe(value => {
+            this.showLoading = false;
+            this.prepareData(value);
+        }, error => {
+            this.showLoading = false;
         });
+    }
+
+    prepareData(value: Data) {
+        value.graphData.projectsByFilters?.unshift(['Filter', 'Version']);
+        value.graphData.componentsByFilters?.unshift(['Filter', 'Version']);
+        this.data = value;
     }
 }

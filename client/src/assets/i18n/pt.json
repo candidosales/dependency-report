@@ -12,6 +12,7 @@
             "tipReduce": "Dica: Reduza o número de versões diferentes em seus projetos e mantenha a consistência"
         },
         "projects": "Projetos",
-        "components": "Componentes" 
+        "components": "Componentes",
+        "loading": "Gerando os dados ..." 
     }
 }

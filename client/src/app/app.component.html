@@ -101,4 +101,8 @@
       </div>
     </div>
   </div>
+  <div class="loading" *ngIf="showLoading" >
+    <mat-spinner [diameter]="50"></mat-spinner>
+    <p>{{ 'home.loading' | translate }}</p>
+  </div>
 </div>

@@ -49,6 +49,9 @@ func main() {
 	app.setUpGithubClient()
 
 	router := mux.NewRouter().StrictSlash(true)
+	router.Use(commonMiddleware)
+	router.Use(mux.CORSMethodMiddleware(router))
+
 	router.HandleFunc("/generate-report", app.GenerateReportHandler).Methods("GET")
 	router.HandleFunc("/", app.RootHandler).Methods("GET")
 
@@ -77,15 +80,23 @@ func (app *App) GenerateReportHandler(w http.ResponseWriter, r *http.Request) {
 		DependenciesByVersions: countDependenciesByVersions,
 	}
 
-	if app.environment != "production" {
-		clientDataJSON, err := json.MarshalIndent(clientData, "", " ")
-		err = ioutil.WriteFile(pathFileOutput, clientDataJSON, 0644)
-
-		if err == nil {
-			app.log.Info("Output file generated and sent to " + pathFileOutput)
-		}
-	}
+	//if app.environment != "production" {
+	//	clientDataJSON, err := json.MarshalIndent(clientData, "", " ")
+	//	err = ioutil.WriteFile(pathFileOutput, clientDataJSON, 0644)
+	//
+	//	if err == nil {
+	//		app.log.Info("Output file generated and sent to " + pathFileOutput)
+	//	}
+	//}
 	json.NewEncoder(w).Encode(clientData)
+}
+
+func commonMiddleware(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Add("Content-Type", "application/json")
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		next.ServeHTTP(w, r)
+	})
 }
 
 // RootHandler - Route to root

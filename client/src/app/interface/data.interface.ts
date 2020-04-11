@@ -10,6 +10,5 @@ export interface Data  {
 export interface GraphData {
     componentsByFilters: [[string, any]];
     projectsByFilters: [[string, any]];
-
 }
 

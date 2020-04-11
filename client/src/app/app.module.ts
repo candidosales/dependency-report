@@ -2,17 +2,18 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { DataService } from './providers/data.service';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { DependencyComponent } from './dependency/dependency.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { NgModule } from '@angular/core';
 import { PieChartComponent } from './google-charts/pie-chart.component';
-import { TreemapChartComponent } from './google-charts/treemap-chart.component';
-import { DependencyComponent } from './dependency/dependency.component';
 import { RepositoryComponent } from './repository/repository.component';
-import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TreemapChartComponent } from './google-charts/treemap-chart.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -33,6 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatTooltipModule,
     MatButtonModule,
     MatIconModule,
+    MatProgressSpinnerModule,
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,

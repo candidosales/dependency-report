@@ -35,3 +35,21 @@
     font-size: 12px;
     margin-right: $global-gutter/2;
 }
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-top: $global-gutter;
+    }
+}
