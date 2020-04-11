@@ -34,7 +34,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatButtonModule,
     MatIconModule,
     TranslateModule.forRoot({
-        defaultLanguage: 'pt',
         loader: {
             provide: TranslateLoader,
             useFactory: HttpLoaderFactory,

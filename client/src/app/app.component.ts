@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from './providers/data.service';
 import { Data } from './interface/data.interface';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +11,14 @@ import { Data } from './interface/data.interface';
 export class AppComponent implements OnInit {
 
     data: Data;
-
     objectKeys = Object.keys;
 
-    constructor(private dataService: DataService) {}
+    constructor(
+        private dataService: DataService,
+        private translate: TranslateService) {
+            const browserLang = this.translate.getBrowserLang();
+            translate.setDefaultLang(browserLang.match(/en|pt/) ? browserLang : 'en');
+        }
 
     ngOnInit() {
         this.dataService.getDataInServer()
