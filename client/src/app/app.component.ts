@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DataService } from './providers/data.service';
 import { Data } from './interface/data.interface';
 import { TranslateService } from '@ngx-translate/core';
@@ -10,7 +10,7 @@ import { takeUntil } from 'rxjs/operators';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
     private destroy$ = new Subject<boolean>();
 
     data: Data;
@@ -69,5 +69,10 @@ export class AppComponent implements OnInit {
         value.graphData.projectsByFilters?.unshift(['Filter', 'Version']);
         value.graphData.componentsByFilters?.unshift(['Filter', 'Version']);
         this.data = value;
+    }
+
+    ngOnDestroy() {
+        this.destroy$.next(true);
+        this.destroy$.unsubscribe();
     }
 }
