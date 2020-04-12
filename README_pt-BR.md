@@ -38,7 +38,7 @@ cd server/
 GITHUB_AUTH_TOKEN=<personal-auth-token> APP_ENV=development go run *.go # Exemplo: GITHUB_AUTH_TOKEN=12321wqdd12e12321dse go run *.go
 ```
 
-Irá criar um servidor na porta `8080`. [http://localhost:8080](http://localhost:8080).
+Irá criar um servidor na porta `3000`. [http://localhost:3000](http://localhost:3000).
 
 ### Adaptando para seus projetos
 
