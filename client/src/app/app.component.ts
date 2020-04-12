@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from './providers/data.service';
 import { Data } from './interface/data.interface';
 import { TranslateService } from '@ngx-translate/core';
-import { Observable, of } from 'rxjs';
-import { Repository } from './interface/repository.interface';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,7 @@ import { Repository } from './interface/repository.interface';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+    private destroy$ = new Subject<boolean>();
 
     data: Data;
     objectKeys = Object.keys;
@@ -42,19 +43,20 @@ export class AppComponent implements OnInit {
     refresh() {
         this.showLoading = true;
         this.dataService.generateReport()
-            .subscribe(value => {
-                this.showLoading = false;
-                this.prepareData(value);
-            }, error => {
-                this.getCache();
-                this.showLoading = false;
-            }
-        );
+        .pipe(takeUntil(this.destroy$))
+        .subscribe(value => {
+            this.showLoading = false;
+            this.prepareData(value);
+        }, error => {
+            this.getCache();
+            this.showLoading = false;
+        });
     }
 
     getCache() {
         this.showLoading = true;
         this.dataService.getCacheData()
+        .pipe(takeUntil(this.destroy$))
         .subscribe(value => {
             this.showLoading = false;
             this.prepareData(value);
