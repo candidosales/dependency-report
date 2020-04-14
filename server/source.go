@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/google/go-github/v29/github"
 	"regexp"
 	"time"
 )
@@ -27,6 +28,7 @@ type Repository struct {
 	PackageJSON   *PackageJSON  `json:"packageJSON"`
 	Alias         string        `json:"alias"`
 	Documentation Documentation `json:"documentation"`
+	Notifications []*github.Notification `json:"notifications"`
 }
 
 func (r *Repository) getRepositoryClientData() *RepositoryClientData {
@@ -36,6 +38,7 @@ func (r *Repository) getRepositoryClientData() *RepositoryClientData {
 		Version:       r.PackageJSON.Version,
 		URL:           r.URL,
 		Documentation: r.Documentation,
+		Notifications: r.Notifications,
 	}
 }
 
@@ -51,7 +54,10 @@ type PackageJSON struct {
 }
 
 func (p *PackageJSON) Prepare() {
-	p.clearDependenciesVersions()
+	err := p.clearDependenciesVersions()
+	if err != nil {
+
+	}
 }
 
 // clearDependenciesVersions - remove special characters. Ex: ^6.0.2 => 6.0.2
@@ -97,6 +103,7 @@ type RepositoryClientData struct {
 	Filter        string        `json:"filter"`
 	URL           string        `json:"url"`
 	Documentation Documentation `json:"documentation"`
+	Notifications []*github.Notification `json:"notifications"`
 }
 
 type Documentation struct {
@@ -109,6 +116,7 @@ type StatsDependencyVersion struct {
 	Projects []string `json:"projects"`
 }
 
-type Results struct {
-	Rows []interface{} `json:"results"`
+type FilterNotificationsGetOptions struct {
+	Reason string
+	Unread bool
 }

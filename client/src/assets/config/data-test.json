@@ -1,0 +1,2190 @@
+{
+    "generatedAt": "2020-04-13T21:49:05.986388-06:00",
+    "projects": [
+      {
+        "name": "listing-builder-client",
+        "version": "1.0.0",
+        "filter": "@angular/core_8",
+        "url": "https://github.com/vendasta/listing-builder-client",
+        "documentation": {
+          "frontend": "",
+          "design": ""
+        },
+        "notifications": []
+      },
+      {
+        "name": "customer-voice-client",
+        "version": "0.0.0",
+        "filter": "@angular/core_8",
+        "url": "https://github.com/vendasta/customer-voice-client",
+        "documentation": {
+          "frontend": "",
+          "design": ""
+        },
+        "notifications": []
+      },
+      {
+        "name": "digital-ads-client",
+        "version": "0.0.0",
+        "filter": "@angular/core_9",
+        "url": "https://github.com/vendasta/digital-ads-client",
+        "documentation": {
+            "frontend": "",
+            "design": ""
+        },
+        "notifications": [
+          {
+            "id": "791438493",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Potential security vulnerability found in the Pillow dependency",
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop",
+              "type": "RepositoryVulnerabilityAlert"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-04-01T18:40:08Z",
+            "url": "https://api.github.com/notifications/threads/791438493"
+          },
+          {
+            "id": "791438017",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Potential security vulnerability found in the Pillow dependency",
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop",
+              "type": "RepositoryVulnerabilityAlert"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-04-01T18:39:59Z",
+            "url": "https://api.github.com/notifications/threads/791438017"
+          },
+          {
+            "id": "777697743",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Bump bleach from 3.0.2 to 3.1.2",
+              "url": "https://api.github.com/repos/candidosales/lending_loop/pulls/8",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop/pulls/8",
+              "type": "PullRequest"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-03-31T03:39:46Z",
+            "last_read_at": "2020-03-24T17:38:25Z",
+            "url": "https://api.github.com/notifications/threads/777697743"
+          },
+          {
+            "id": "786846149",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Bump bleach from 3.0.2 to 3.1.4",
+              "url": "https://api.github.com/repos/candidosales/lending_loop/pulls/9",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop/pulls/9",
+              "type": "PullRequest"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-03-31T03:39:43Z",
+            "url": "https://api.github.com/notifications/threads/786846149"
+          },
+          {
+            "id": "786249521",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Potential security vulnerability found in the bleach dependency",
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop",
+              "type": "RepositoryVulnerabilityAlert"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-03-30T20:38:32Z",
+            "url": "https://api.github.com/notifications/threads/786249521"
+          },
+          {
+            "id": "726621433",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Bump bleach from 3.0.2 to 3.1.1",
+              "url": "https://api.github.com/repos/candidosales/lending_loop/pulls/6",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop/pulls/6",
+              "type": "PullRequest"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-03-24T17:07:38Z",
+            "last_read_at": "2020-02-24T20:48:13Z",
+            "url": "https://api.github.com/notifications/threads/726621433"
+          },
+          {
+            "id": "777562658",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Potential security vulnerability found in the bleach dependency",
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop",
+              "type": "RepositoryVulnerabilityAlert"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-03-24T15:58:17Z",
+            "url": "https://api.github.com/notifications/threads/777562658"
+          },
+          {
+            "id": "751919524",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Potential security vulnerability found in the psutil dependency",
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop",
+              "type": "RepositoryVulnerabilityAlert"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-03-12T17:23:20Z",
+            "url": "https://api.github.com/notifications/threads/751919524"
+          },
+          {
+            "id": "726565342",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Potential security vulnerability found in the bleach dependency",
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop",
+              "type": "RepositoryVulnerabilityAlert"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-02-24T18:42:46Z",
+            "url": "https://api.github.com/notifications/threads/726565342"
+          },
+          {
+            "id": "649119979",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Bump django from 2.2.2 to 2.2.8",
+              "url": "https://api.github.com/repos/candidosales/lending_loop/pulls/2",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop/pulls/2",
+              "type": "PullRequest"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-02-12T00:29:32Z",
+            "url": "https://api.github.com/notifications/threads/649119979"
+          },
+          {
+            "id": "711887384",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Bump django from 2.2.2 to 2.2.10",
+              "url": "https://api.github.com/repos/candidosales/lending_loop/pulls/5",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop/pulls/5",
+              "type": "PullRequest"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-02-12T00:29:29Z",
+            "url": "https://api.github.com/notifications/threads/711887384"
+          },
+          {
+            "id": "711841771",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Potential security vulnerability found in the django dependency",
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop",
+              "type": "RepositoryVulnerabilityAlert"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-02-12T00:05:57Z",
+            "url": "https://api.github.com/notifications/threads/711841771"
+          },
+          {
+            "id": "661775037",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Bump tensorflow from 1.13.0rc2 to 1.15.0",
+              "url": "https://api.github.com/repos/candidosales/lending_loop/pulls/3",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop/pulls/3",
+              "type": "PullRequest"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-01-28T22:47:30Z",
+            "last_read_at": "2019-12-16T22:27:07Z",
+            "url": "https://api.github.com/notifications/threads/661775037"
+          },
+          {
+            "id": "698047687",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Bump tensorflow from 1.13.0rc2 to 1.15.2",
+              "url": "https://api.github.com/repos/candidosales/lending_loop/pulls/4",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop/pulls/4",
+              "type": "PullRequest"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-01-28T22:47:27Z",
+            "url": "https://api.github.com/notifications/threads/698047687"
+          },
+          {
+            "id": "698040292",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Potential security vulnerability found in the tensorflow dependency",
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop",
+              "type": "RepositoryVulnerabilityAlert"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-01-28T22:41:36Z",
+            "url": "https://api.github.com/notifications/threads/698040292"
+          },
+          {
+            "id": "687856684",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Potential security vulnerability found in the Django dependency",
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop",
+              "type": "RepositoryVulnerabilityAlert"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2020-01-17T01:45:01Z",
+            "url": "https://api.github.com/notifications/threads/687856684"
+          },
+          {
+            "id": "661762641",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Potential security vulnerability found in the tensorflow dependency",
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop",
+              "type": "RepositoryVulnerabilityAlert"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2019-12-16T21:45:07Z",
+            "url": "https://api.github.com/notifications/threads/661762641"
+          },
+          {
+            "id": "649062919",
+            "repository": {
+              "id": 190262226,
+              "node_id": "MDEwOlJlcG9zaXRvcnkxOTAyNjIyMjY=",
+              "owner": {
+                "login": "candidosales",
+                "id": 186637,
+                "node_id": "MDQ6VXNlcjE4NjYzNw==",
+                "avatar_url": "https://avatars2.githubusercontent.com/u/186637?v=4",
+                "html_url": "https://github.com/candidosales",
+                "gravatar_id": "",
+                "type": "User",
+                "site_admin": false,
+                "url": "https://api.github.com/users/candidosales",
+                "events_url": "https://api.github.com/users/candidosales/events{/privacy}",
+                "following_url": "https://api.github.com/users/candidosales/following{/other_user}",
+                "followers_url": "https://api.github.com/users/candidosales/followers",
+                "gists_url": "https://api.github.com/users/candidosales/gists{/gist_id}",
+                "organizations_url": "https://api.github.com/users/candidosales/orgs",
+                "received_events_url": "https://api.github.com/users/candidosales/received_events",
+                "repos_url": "https://api.github.com/users/candidosales/repos",
+                "starred_url": "https://api.github.com/users/candidosales/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/candidosales/subscriptions"
+              },
+              "name": "lending_loop",
+              "full_name": "candidosales/lending_loop",
+              "html_url": "https://github.com/candidosales/lending_loop",
+              "fork": false,
+              "private": false,
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "archive_url": "https://api.github.com/repos/candidosales/lending_loop/{archive_format}{/ref}",
+              "assignees_url": "https://api.github.com/repos/candidosales/lending_loop/assignees{/user}",
+              "blobs_url": "https://api.github.com/repos/candidosales/lending_loop/git/blobs{/sha}",
+              "branches_url": "https://api.github.com/repos/candidosales/lending_loop/branches{/branch}",
+              "collaborators_url": "https://api.github.com/repos/candidosales/lending_loop/collaborators{/collaborator}",
+              "comments_url": "https://api.github.com/repos/candidosales/lending_loop/comments{/number}",
+              "commits_url": "https://api.github.com/repos/candidosales/lending_loop/commits{/sha}",
+              "compare_url": "https://api.github.com/repos/candidosales/lending_loop/compare/{base}...{head}",
+              "contents_url": "https://api.github.com/repos/candidosales/lending_loop/contents/{+path}",
+              "contributors_url": "https://api.github.com/repos/candidosales/lending_loop/contributors",
+              "deployments_url": "https://api.github.com/repos/candidosales/lending_loop/deployments",
+              "downloads_url": "https://api.github.com/repos/candidosales/lending_loop/downloads",
+              "events_url": "https://api.github.com/repos/candidosales/lending_loop/events",
+              "forks_url": "https://api.github.com/repos/candidosales/lending_loop/forks",
+              "git_commits_url": "https://api.github.com/repos/candidosales/lending_loop/git/commits{/sha}",
+              "git_refs_url": "https://api.github.com/repos/candidosales/lending_loop/git/refs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/candidosales/lending_loop/git/tags{/sha}",
+              "hooks_url": "https://api.github.com/repos/candidosales/lending_loop/hooks",
+              "issue_comment_url": "https://api.github.com/repos/candidosales/lending_loop/issues/comments{/number}",
+              "issue_events_url": "https://api.github.com/repos/candidosales/lending_loop/issues/events{/number}",
+              "issues_url": "https://api.github.com/repos/candidosales/lending_loop/issues{/number}",
+              "keys_url": "https://api.github.com/repos/candidosales/lending_loop/keys{/key_id}",
+              "labels_url": "https://api.github.com/repos/candidosales/lending_loop/labels{/name}",
+              "languages_url": "https://api.github.com/repos/candidosales/lending_loop/languages",
+              "merges_url": "https://api.github.com/repos/candidosales/lending_loop/merges",
+              "milestones_url": "https://api.github.com/repos/candidosales/lending_loop/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/candidosales/lending_loop/notifications{?since,all,participating}",
+              "pulls_url": "https://api.github.com/repos/candidosales/lending_loop/pulls{/number}",
+              "releases_url": "https://api.github.com/repos/candidosales/lending_loop/releases{/id}",
+              "stargazers_url": "https://api.github.com/repos/candidosales/lending_loop/stargazers",
+              "statuses_url": "https://api.github.com/repos/candidosales/lending_loop/statuses/{sha}",
+              "subscribers_url": "https://api.github.com/repos/candidosales/lending_loop/subscribers",
+              "subscription_url": "https://api.github.com/repos/candidosales/lending_loop/subscription",
+              "tags_url": "https://api.github.com/repos/candidosales/lending_loop/tags",
+              "trees_url": "https://api.github.com/repos/candidosales/lending_loop/git/trees{/sha}",
+              "teams_url": "https://api.github.com/repos/candidosales/lending_loop/teams"
+            },
+            "subject": {
+              "title": "Potential security vulnerability found in the django dependency",
+              "url": "https://api.github.com/repos/candidosales/lending_loop",
+              "latest_comment_url": "https://api.github.com/repos/candidosales/lending_loop",
+              "type": "RepositoryVulnerabilityAlert"
+            },
+            "reason": "security_alert",
+            "unread": true,
+            "updated_at": "2019-12-04T22:15:40Z",
+            "url": "https://api.github.com/notifications/threads/649062919"
+          }
+        ]
+      }
+    ],
+    "components": [
+      {
+        "name": "@vendasta/forms",
+        "version": "6.4.2",
+        "filter": "@angular/core_9",
+        "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/forms",
+        "documentation": {
+          "frontend": "https://frontend.vendasta-internal.com/uikit/badge",
+          "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/grid"
+        },
+        "notifications": []
+      },
+      {
+        "name": "@vendasta/uikit",
+        "version": "17.1.0",
+        "filter": "@angular/core_9",
+        "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/uikit",
+        "documentation": {
+          "frontend": "",
+          "design": ""
+        },
+        "notifications": []
+      }
+    ],
+    "graphData": {
+      "componentsByFilters": [
+        [
+          "@angular/core_4",
+          0
+        ],
+        [
+          "@angular/core_6",
+          0
+        ],
+        [
+          "@angular/core_7",
+          0
+        ],
+        [
+          "@angular/core_8",
+          0
+        ],
+        [
+          "@angular/core_9",
+          2
+        ]
+      ],
+      "projectsByFilters": [
+        [
+          "@angular/core_4",
+          0
+        ],
+        [
+          "@angular/core_6",
+          0
+        ],
+        [
+          "@angular/core_7",
+          0
+        ],
+        [
+          "@angular/core_8",
+          2
+        ],
+        [
+          "@angular/core_9",
+          0
+        ]
+      ]
+    },
+    "dependenciesByVersions": {
+      "@agm/core": {
+        "1.0.0-beta.3": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "@angular/animations": {
+        "8.2.14": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@angular/cdk": {
+        "8.2.3": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@angular/common": {
+        "8.2.14": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@angular/compiler": {
+        "8.2.14": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@angular/core": {
+        "8.2.14": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@angular/elements": {
+        "8.2.14": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@angular/fire": {
+        "5.1.2": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        },
+        "5.4.2": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "@angular/flex-layout": {
+        "8.0.0-beta.27": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@angular/forms": {
+        "8.2.14": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@angular/http": {
+        "7.2.0": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@angular/material": {
+        "8.2.3": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@angular/material-moment-adapter": {
+        "8.2.3": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@angular/platform-browser": {
+        "8.2.14": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@angular/platform-browser-dynamic": {
+        "8.2.14": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@angular/router": {
+        "8.2.14": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@ngx-translate/core": {
+        "11.0.1": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@swimlane/ngx-charts": {
+        "12.0.1": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@tinymce/tinymce-angular": {
+        "2.4.1": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@types/jest": {
+        "23.3.12": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@types/lodash": {
+        "4.14.119": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        },
+        "4.14.149": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "@types/node": {
+        "10.12.30": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@types/papaparse": {
+        "4.5.6": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@vendasta/address": {
+        "1.1.0": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        },
+        "1.1.1": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@vendasta/atlas": {
+        "1.31.1": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        },
+        "3.1.0": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@vendasta/business-nav": {
+        "1.26.4": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        },
+        "3.2.2": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@vendasta/businesses": {
+        "4.19.2": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        },
+        "6.7.0": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "@vendasta/core": {
+        "31.0.1": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        },
+        "39.0.0": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "@vendasta/devtools": {
+        "0.5.0": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        },
+        "1.0.0": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "@vendasta/forms": {
+        "4.10.1": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        },
+        "4.3.0": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@vendasta/heimdall": {
+        "1.14.0": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "@vendasta/marketplace-apps": {
+        "0.14.0": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@vendasta/partner": {
+        "0.6.0": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        },
+        "0.8.0": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@vendasta/rx-utils": {
+        "1.4.0": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@vendasta/sales": {
+        "3.2.1": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "@vendasta/sales-orders": {
+        "1.59.0": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "@vendasta/uikit": {
+        "17.0.0": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@vendasta/va-filter2": {
+        "2.1.0": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "@vendasta/va-filter2-table": {
+        "2.1.0": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "brace": {
+        "0.11.1": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "classlist.js": {
+        "1.1.20150312": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "core-js": {
+        "2.6.1": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        },
+        "3.3.3": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "cross-env": {
+        "5.2.0": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "css-vars-ponyfill": {
+        "2.1.2": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "document-register-element": {
+        "1.8.1": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "elements-zone-strategy": {
+        "7.0.0": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        },
+        "8.0.0": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "fingerprintjs2": {
+        "2.0.6": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "firebase": {
+        "5.8.6": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        },
+        "7.9.3": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "google-libphonenumber": {
+        "3.2.6": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        },
+        "3.2.7": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "highcharts": {
+        "7.2.0": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "jsonfile": {
+        "5.0.0": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "libphonenumber-js": {
+        "1.7.44": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        },
+        "1.7.7": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "lodash": {
+        "4.17.11": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        },
+        "4.17.15": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "moment": {
+        "2.24.0": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "ngx-clipboard": {
+        "12.2.1": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "ngx-color-picker": {
+        "8.1.0": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "ngx-markdown": {
+        "9.0.0": {
+          "quantity": 2,
+          "projects": [
+            "listing-builder-client",
+            "customer-voice-client"
+          ]
+        }
+      },
+      "papaparse": {
+        "4.6.3": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "rxjs": {
+        "6.4.0": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        },
+        "6.5.4": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "rxjs-compat": {
+        "6.3.3": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "source-map": {
+        "0.7.3": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "tinymce": {
+        "4.9.2": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "tslib": {
+        "1.11.0": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      },
+      "web-animations-js": {
+        "2.3.1": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        },
+        "2.3.2": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        }
+      },
+      "zone.js": {
+        "0.10.2": {
+          "quantity": 1,
+          "projects": [
+            "listing-builder-client"
+          ]
+        },
+        "0.9.1": {
+          "quantity": 1,
+          "projects": [
+            "customer-voice-client"
+          ]
+        }
+      }
+    }
+  }

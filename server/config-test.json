@@ -16,6 +16,10 @@
       "type": "project"
     },
     {
+      "url": "https://github.com/candidosales/lending_loop",
+      "type": "project"
+    },
+    {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/forms",
       "type": "component",
       "documentation": {

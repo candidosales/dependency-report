@@ -15,6 +15,9 @@
       <a *ngIf="repository.documentation.design" matTooltip="Design Doc"  class="repository__documentation" href="{{ repository.documentation.design }}" target="_blank">
         <img class="repository__icon-design" src="{{ repository.documentation.design | iconDesign }}" alt="">
       </a>
+      <a *ngIf="repository.notifications.length > 0" matTooltip="Vulnerability alert" class="repository__warning" (click)="showNotifications(repository.notifications)">
+        <mat-icon>warning</mat-icon>
+      </a>
       <p class="repository__version">
         {{ repository.version }}
       </p>

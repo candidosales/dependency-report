@@ -56,7 +56,7 @@ func main() {
 }
 
 // getPackageJSONs - Get Package Json for each repository from config file
-func (app *App) getPackageJSONs(ctx context.Context) {
+func (app *App) getPackageJSONs() {
 	app.log.Printf("Get the package.json for the %d repositories ... \n", len(app.config.Repositories))
 
 	// this buffered channel will block at the concurrency limit
@@ -89,11 +89,16 @@ func (app *App) getPackageJSONs(ctx context.Context) {
 				app.log.Errorf("error[%#v]", err)
 			}
 
-			packageJSON := app.fetchPackageJson(ctx, info)
+			packageJSON := app.fetchPackageJson(info)
+			notifications := app.fetchNotifications(info, &FilterNotificationsGetOptions{
+				Reason: "security_alert",
+				Unread: true,
+			})
 
 			if packageJSON != nil {
 				app.config.Repositories[i].PackageJSON = packageJSON
-				app.config.Repositories[i].Topics = app.fetchTopics(ctx, info)
+				app.config.Repositories[i].Topics = app.fetchTopics(info)
+				app.config.Repositories[i].Notifications = notifications
 			}
 
 			// now we can send the result struct through the resultsChan
@@ -164,16 +169,19 @@ func readConfig(filePath string) (Config, error) {
 		return config, err
 	}
 
-	json.Unmarshal(bytes, &config)
+	err = json.Unmarshal(bytes, &config)
+	if err != nil {
+		return config, err
+	}
 
 	return config, err
 }
 
-func (app *App) fetchPackageJson(ctx context.Context, info map[string]string) *PackageJSON {
+func (app *App) fetchPackageJson(info map[string]string) *PackageJSON {
 	var packageJSON PackageJSON
 
 	repContent, _, _, err := app.githubClient.Repositories.GetContents(
-		ctx,
+		app.ctx,
 		info["owner"],
 		info["repo"],
 		info["packageJSON"],
@@ -187,17 +195,51 @@ func (app *App) fetchPackageJson(ctx context.Context, info map[string]string) *P
 		return &packageJSON
 	}
 
-	content, _ := repContent.GetContent()
+	content, err := repContent.GetContent()
+	if err != nil {
+		app.log.Error("error: ", err)
+	}
 
-	json.Unmarshal([]byte(content), &packageJSON)
+	err = json.Unmarshal([]byte(content), &packageJSON)
+	if err != nil {
+		app.log.Error("error: ", err)
+	}
 	packageJSON.Prepare()
 
 	return &packageJSON
 }
 
-func (app *App) fetchTopics(ctx context.Context, info map[string]string) []string {
+func (app *App) fetchNotifications(info map[string]string, opts *FilterNotificationsGetOptions) []*github.Notification {
+
+	notifications, _, err := app.githubClient.Activity.ListRepositoryNotifications(
+		app.ctx,
+		info["owner"],
+		info["repo"],
+		&github.NotificationListOptions{
+			All: false,
+			Participating: false,
+		},
+	)
+	if err != nil {
+		app.log.Error("error: ", err)
+	}
+
+	if opts.Reason != "" {
+		notificationsFiltered := []*github.Notification{}
+		for _, notification := range notifications {
+			if opts.Reason == *notification.Reason && opts.Unread == *notification.Unread {
+				notificationsFiltered = append(notificationsFiltered, notification)
+			}
+		}
+		return notificationsFiltered
+	}
+
+	return notifications
+}
+
+func (app *App) fetchTopics(info map[string]string) []string {
 	topics, _, err := app.githubClient.Repositories.ListAllTopics(
-		ctx,
+		app.ctx,
 		info["owner"],
 		info["repo"],
 	)

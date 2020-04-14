@@ -20,7 +20,7 @@ func (app *App) PingHandler(w http.ResponseWriter, r *http.Request) {
 
 // GenerateReportHandler - Route to generate report
 func (app *App) GenerateReportHandler(w http.ResponseWriter, r *http.Request) {
-	app.getPackageJSONs(app.ctx)
+	app.getPackageJSONs()
 	projects, components, projectsClientData, componentsClientData := app.splitProjectsComponents()
 
 	app.log.Info("Generate data to graphs ... \n")

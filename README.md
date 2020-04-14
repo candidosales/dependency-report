@@ -7,6 +7,10 @@ This project aims to help analyze the consistency of the dependencies in your co
 - View what percentage of projects are in a given version;
 - View what percentage of components are in a given version;
 - View all the dependencies of your projects and how many different versions are used by projects;
+- View link to frontend and design documentation for each project/component;
+- View Github notifications related to security vulnerabilities for each project/component;
+
+![Github Notifications](https://media.giphy.com/media/ZXZVoM96xQ0l9VfMbn/giphy.gif)
 
 ## How to setup
 
