@@ -7,6 +7,10 @@ Este projeto visa ajudar a analisar a consistência das dependências em seus pr
 - Visualizar qual a porcentagem de projetos estão em uma determinada versão;
 - Visualizar qual a porcentagem de componentes estão em uma determinada versão;
 - Visualizar todas as dependências de seus projetos e quantas diferentes versões são usadas por projetos;
+- Visualizar link para documentacão de frontend e design para cada projeto/componente;
+- Visualizar notificacões do Github relacionados a vulnerabilidades de seguranca para cada projeto/componente;
+
+![Github Notifications](https://media.giphy.com/media/ZXZVoM96xQ0l9VfMbn/giphy.gif)
 
 ## Como configurar
 
