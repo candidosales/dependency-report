@@ -378,28 +378,37 @@
       "version": "3.5.0",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/billing-ui",
-      "documentationUrl": "https://frontend.vendasta-internal.com/billing-ui/contact-info-dialog"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/billing-ui/contact-info-dialog",
+        "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/grid"
+      }
     },
     {
       "name": "@vendasta/business-categories",
       "version": "3.0.1",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/business-categories",
-      "documentationUrl": "https://frontend.vendasta-internal.com/business-categories"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/business-categories"
+      }
     },
     {
       "name": "@vendasta/businesses",
       "version": "7.3.0",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/businesses",
-      "documentationUrl": "https://frontend.vendasta-internal.com/business-categories"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/business-categories"
+      }
     },
     {
       "name": "@vendasta/core",
       "version": "43.0.0",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/core",
-      "documentationUrl": "https://frontend.vendasta-internal.com/core/account-group"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/core/account-group"
+      }
     },
     {
       "name": "@vendasta/devtools",
@@ -416,14 +425,19 @@
       "version": "6.2.1",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/forms",
-      "documentationUrl": "https://frontend.vendasta-internal.com/forms/examples"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/forms/examples",
+        "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/screen/478b409a-2d87-422a-a6e7-8f4de118921a/Forms-Behaviour"
+      }
     },
     {
       "name": "@vendasta/global-brands",
       "version": "4.0.2",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/global-brands",
-      "documentationUrl": "https://frontend.vendasta-internal.com/global-brands/readme"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/global-brands/readme"
+      }
     },
     {
       "name": "@vendasta/hot-module-replacement",
@@ -460,21 +474,27 @@
       "version": "2.3.1",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/sales-common",
-      "documentationUrl": "https://frontend.vendasta-internal.com/sales-common"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/sales-common"
+      }
     },
     {
       "name": "@vendasta/sales-ui",
       "version": "9.3.0",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/sales-ui",
-      "documentationUrl": "https://frontend.vendasta-internal.com/sales-ui/sales-orders-table"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/sales-ui/sales-orders-table"
+      }
     },
     {
       "name": "@vendasta/smb-invoicing",
       "version": "2.1.1",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/smb-invoicing",
-      "documentationUrl": "https://frontend.vendasta-internal.com/smb-invoicing/invoice-table"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/smb-invoicing/invoice-table"
+      }
     },
     {
       "name": "@vendasta/social-posts",
@@ -501,14 +521,19 @@
       "version": "18.4.3",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/store",
-      "documentationUrl": "https://frontend.vendasta-internal.com/store/addon-details"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/store/addon-details"
+      }
     },
     {
       "name": "@vendasta/uikit",
       "version": "17.1.0",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/uikit",
-      "documentationUrl": "https://frontend.vendasta-internal.com/uikit/badge"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/uikit/badge",
+        "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/grid"
+      }
     },
     {
       "name": "@vendasta/url-shortener",
@@ -525,21 +550,30 @@
       "version": "2.2.1",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/va-filter2-table",
-      "documentationUrl": "https://frontend.vendasta-internal.com/uikit/badge"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/va-filter2-table/readme",
+        "design":"https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/screen/81b96983-3932-40d0-b187-f72dfbeb7188/Buttons-Toggles-Chips-Toasts-Badges-etc-"
+      }  
     },
     {
       "name": "@vendasta/va-filter2",
       "version": "3.1.0",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/va-filter2",
-      "documentationUrl": "https://frontend.vendasta-internal.com/va-filter2-table/readme"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/va-filter2/readme",
+        "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/screen/a0617402-c172-43c4-912a-e1bb5e4c2a5a/Table-Filters-Open"
+      } 
     },
     {
       "name": "@vendasta/vform",
       "version": "3.3.0",
       "filter": "@angular/core_9",
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/vform",
-      "documentationUrl": "https://frontend.vendasta-internal.com/vform/readme"
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/vform/readme",
+        "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/screen/94f0f453-49d4-48dd-99a2-9827d5e7d6fa/Forms-Common-Components"
+      }
     }
   ],
   "graphData": {
