@@ -23,7 +23,7 @@
 <div class="main container-fluid">
   <div class="main-header d-flex justify-content-between">
     <h2 class="mt-0">{{ 'home.projects' | translate }}</h2>
-    <div class="info-generated">
+    <div class="info-generated" *ngIf="showRefreshButton" >
       <span class="generated">{{ 'home.navbar.generated' | translate }}: {{ this.data?.generatedAt | date: 'medium' }}</span>
       <button class="btn-outline" mat-raised-button color="primary" (click)="refresh()">
         <mat-icon>refresh</mat-icon>

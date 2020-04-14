@@ -3,7 +3,7 @@ import { DataService } from './providers/data.service';
 import { Data } from './interface/data.interface';
 import { TranslateService } from '@ngx-translate/core';
 import { Subject } from 'rxjs';
-import { takeUntil } from 'rxjs/operators';
+import { takeUntil, take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +16,7 @@ export class AppComponent implements OnInit, OnDestroy {
     data: Data;
     objectKeys = Object.keys;
     showLoading = false;
+    showRefreshButton = false;
 
     constructor(
         private dataService: DataService,
@@ -26,6 +27,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
     ngOnInit() {
         this.getCache();
+        this.checkServerIsOn();
     }
 
     getVersionByFilter(filter: string): string {
@@ -69,6 +71,19 @@ export class AppComponent implements OnInit, OnDestroy {
         value.graphData.projectsByFilters?.unshift(['Filter', 'Version']);
         value.graphData.componentsByFilters?.unshift(['Filter', 'Version']);
         this.data = value;
+    }
+
+    checkServerIsOn() {
+        this.dataService.ping()
+        .pipe(
+            take(1),
+            takeUntil(this.destroy$)
+        )
+        .subscribe(value => {
+          if (value.ok === true) {
+            this.showRefreshButton = true;
+          }
+        });
     }
 
     ngOnDestroy() {

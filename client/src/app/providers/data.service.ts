@@ -21,4 +21,8 @@ export class DataService {
   public generateReport(): Observable<Data> {
     return this.httpClient.get<Data>(`${this.apiUrl}/generate-report`);
   }
+
+  public ping() {
+    return this.httpClient.get<any>(`${this.apiUrl}/ping`);
+  }
 }
