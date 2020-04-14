@@ -16,6 +16,12 @@ export class IconDesignPipe implements PipeTransform {
     if (url.includes('figma')) {
       return 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg';
     }
+    if (url.includes('sketch')) {
+      return 'https://upload.wikimedia.org/wikipedia/commons/5/59/Sketch_Logo.svg';
+    }
+    if (url.includes('zeplin')) {
+      return 'https://zeplin.io/img/icZeplin.svg';
+    }
     return '';
   }
 }
