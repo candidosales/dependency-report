@@ -11,7 +11,6 @@ func  (app *App) routes() http.Handler {
 	router.Use(mux.CORSMethodMiddleware(router))
 
 	router.HandleFunc("/generate-report", app.GenerateReportHandler).Methods("GET")
-	router.HandleFunc("/notification", app.NotificationHandler).Methods("GET")
 	router.HandleFunc("/ping", app.PingHandler).Methods("GET")
 	router.HandleFunc("/", app.RootHandler).Methods("GET")
 	return router
