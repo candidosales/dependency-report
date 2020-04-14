@@ -1,6 +1,6 @@
 # Relatório de dependências
 
-Este projeto visa ajudar a analisar a consistência das dependências em seus projetos frontend de sua empresa. Veja um exemplo [https://dependency-report.web.app/](https://dependency-report.web.app/).
+Este projeto visa ajudar a analisar a consistência das dependências em seus projetos frontend de sua empresa. Veja um exemplo [https://dependency-report.web.app/](https://dependency-report.web.app/). [In English](./README.md)
 
 ## Recursos
 
