@@ -1,20 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DataService } from './providers/data.service';
 import { Data } from './interface/data.interface';
 import { TranslateService } from '@ngx-translate/core';
-import { Observable, of } from 'rxjs';
-import { Repository } from './interface/repository.interface';
+import { Subject } from 'rxjs';
+import { takeUntil, take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
+    private destroy$ = new Subject<boolean>();
 
     data: Data;
     objectKeys = Object.keys;
     showLoading = false;
+    showRefreshButton = false;
 
     constructor(
         private dataService: DataService,
@@ -25,36 +27,26 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
         this.getCache();
-    }
-
-    getVersionByFilter(filter: string): string {
-        const values = filter.split('_');
-        return values[1];
-    }
-
-    getIconByFilter(filter: string): string {
-        if (filter.includes('angular')) {
-            return 'https://coryrylan.com/assets/images/posts/types/angular.svg';
-        }
-        return '';
+        this.checkServerIsOn();
     }
 
     refresh() {
         this.showLoading = true;
         this.dataService.generateReport()
-            .subscribe(value => {
-                this.showLoading = false;
-                this.prepareData(value);
-            }, error => {
-                this.getCache();
-                this.showLoading = false;
-            }
-        );
+        .pipe(takeUntil(this.destroy$))
+        .subscribe(value => {
+            this.showLoading = false;
+            this.prepareData(value);
+        }, error => {
+            this.getCache();
+            this.showLoading = false;
+        });
     }
 
     getCache() {
         this.showLoading = true;
         this.dataService.getCacheData()
+        .pipe(takeUntil(this.destroy$))
         .subscribe(value => {
             this.showLoading = false;
             this.prepareData(value);
@@ -67,5 +59,23 @@ export class AppComponent implements OnInit {
         value.graphData.projectsByFilters?.unshift(['Filter', 'Version']);
         value.graphData.componentsByFilters?.unshift(['Filter', 'Version']);
         this.data = value;
+    }
+
+    checkServerIsOn() {
+        this.dataService.ping()
+        .pipe(
+            take(1),
+            takeUntil(this.destroy$)
+        )
+        .subscribe(value => {
+          if (value.ok === true) {
+            this.showRefreshButton = true;
+          }
+        });
+    }
+
+    ngOnDestroy() {
+        this.destroy$.next(true);
+        this.destroy$.unsubscribe();
     }
 }

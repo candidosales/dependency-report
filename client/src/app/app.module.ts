@@ -14,6 +14,9 @@ import { RepositoryComponent } from './repository/repository.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TreemapChartComponent } from './google-charts/treemap-chart.component';
+import { IconDesignPipe } from './pipes/icon-design.pipe';
+import { VersionPipe } from './pipes/version.pipe';
+import { IconLibraryPipe } from './pipes/icon-library.pipe';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -25,7 +28,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     PieChartComponent,
     TreemapChartComponent,
     DependencyComponent,
-    RepositoryComponent
+    RepositoryComponent,
+    IconDesignPipe,
+    IconLibraryPipe,
+    VersionPipe
   ],
   imports: [
     BrowserModule,

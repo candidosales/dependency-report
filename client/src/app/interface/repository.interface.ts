@@ -3,5 +3,10 @@ export interface Repository {
     version: string;
     filter: string;
     url: string;
-    documentationUrl: string;
+    documentation: Documentation;
+}
+
+export interface Documentation {
+    frontend: string;
+    design: string;
 }

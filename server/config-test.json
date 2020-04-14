@@ -17,7 +17,11 @@
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/forms",
-      "type": "component"
+      "type": "component",
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/uikit/badge",
+        "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/grid"
+      }
     },
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/uikit",

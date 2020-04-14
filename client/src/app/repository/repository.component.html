@@ -6,11 +6,14 @@
     </p>
     <div class="repository__footer">
       <p class="repository__badge">
-        <img src="{{ getIconByFilter(repository.filter) }}" alt="">
-        {{ getVersionByFilter(repository.filter) }}
+        <img src="{{ repository.filter | iconLibrary }}" alt="">
+        {{ repository.filter | version }}
       </p>
-      <a *ngIf="repository.documentationUrl" matTooltip="Documentation"  class="repository__documentation" href="{{ repository.documentationUrl }}" target="_blank">
+      <a *ngIf="repository.documentation.frontend" matTooltip="Frontend Doc"  class="repository__documentation" href="{{ repository.documentation.frontend }}" target="_blank">
         <mat-icon>description</mat-icon>
+      </a>
+      <a *ngIf="repository.documentation.design" matTooltip="Design Doc"  class="repository__documentation" href="{{ repository.documentation.design }}" target="_blank">
+        <img class="repository__icon-design" src="{{ repository.documentation.design | iconDesign }}" alt="">
       </a>
       <p class="repository__version">
         {{ repository.version }}

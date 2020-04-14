@@ -1,4 +1,4 @@
-# Server
+# Dependency Report - Server
 
 ```bash
 GITHUB_AUTH_TOKEN=<token> APP_ENV=development go run *.go

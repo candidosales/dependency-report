@@ -8,32 +8,34 @@ import (
 const (
 	TypeProject     = "project"
 	TypeComponent   = "component"
-	pathFileInput   = "./config.json"
-	pathFileOutput  = "../client/src/assets/config/data.json"
+	pathFileInput   = "./config-test.json"
+	pathOutput  = "../client/src/assets/config/"
+	fileOutput = "data.json"
 	concurrentLimit = 25
 )
 
 type Config struct {
 	Filters      []string     `json:"filters"`
 	Repositories []Repository `json:"repositories"`
+	OutputFile string `json:"outputFile"`
 }
 
 type Repository struct {
-	URL              string       `json:"url"`
-	Type             string       `json:"type"`
-	Topics           []string     `json:"topics"`
-	PackageJSON      *PackageJSON `json:"packageJSON"`
-	Alias            string       `json:"alias"`
-	DocumentationURL string       `json:"documentationUrl"`
+	URL           string        `json:"url"`
+	Type          string        `json:"type"`
+	Topics        []string      `json:"topics"`
+	PackageJSON   *PackageJSON  `json:"packageJSON"`
+	Alias         string        `json:"alias"`
+	Documentation Documentation `json:"documentation"`
 }
 
 func (r *Repository) getRepositoryClientData() *RepositoryClientData {
 	// TODO add filters
 	return &RepositoryClientData{
-		Name:             r.PackageJSON.Name,
-		Version:          r.PackageJSON.Version,
-		URL:              r.URL,
-		DocumentationURL: r.DocumentationURL,
+		Name:          r.PackageJSON.Name,
+		Version:       r.PackageJSON.Version,
+		URL:           r.URL,
+		Documentation: r.Documentation,
 	}
 }
 
@@ -49,7 +51,10 @@ type PackageJSON struct {
 }
 
 func (p *PackageJSON) Prepare() {
-	p.clearDependenciesVersions()
+	err := p.clearDependenciesVersions()
+	if err != nil {
+
+	}
 }
 
 // clearDependenciesVersions - remove special characters. Ex: ^6.0.2 => 6.0.2
@@ -90,11 +95,16 @@ type ClientData struct {
 
 // RepositoryClientData - simplest object to display in the UI
 type RepositoryClientData struct {
-	Name             string `json:"name"`
-	Version          string `json:"version"`
-	Filter           string `json:"filter"`
-	URL              string `json:"url"`
-	DocumentationURL string `json:"documentationUrl"`
+	Name          string        `json:"name"`
+	Version       string        `json:"version"`
+	Filter        string        `json:"filter"`
+	URL           string        `json:"url"`
+	Documentation Documentation `json:"documentation"`
+}
+
+type Documentation struct {
+	Frontend string `json:"frontend"`
+	Design   string `json:"design"`
 }
 
 type StatsDependencyVersion struct {
