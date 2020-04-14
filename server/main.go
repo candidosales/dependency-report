@@ -16,7 +16,6 @@ import (
 
 type App struct {
 	ctx          context.Context
-	environment  string
 	config       Config
 	githubClient *github.Client
 	log          *logrus.Logger
@@ -44,7 +43,6 @@ func main() {
 
 	app := &App{
 		ctx:         ctx,
-		environment: strings.TrimSpace(os.Getenv("APP_ENV")),
 		config:      config,
 		log:         log,
 	}

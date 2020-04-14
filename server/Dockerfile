@@ -40,8 +40,7 @@ RUN cp /build/main .
 COPY ./config.json /dist/config.json
 COPY ./index.html /dist/index.html
 
-ENV GITHUB_AUTH_TOKEN=<token> \
-    APP_ENV=production
+ENV GITHUB_AUTH_TOKEN=<token>
 
 # Command to run the executable
 ENTRYPOINT ["/dist/main"]
