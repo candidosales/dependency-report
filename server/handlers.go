@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/google/go-github/v29/github"
-	"io/ioutil"
 	"net/http"
 	"time"
 )
@@ -22,7 +21,7 @@ func (app *App) PingHandler(w http.ResponseWriter, r *http.Request) {
 
 // GenerateReportHandler - Route to generate report
 func (app *App) GenerateReportHandler(w http.ResponseWriter, r *http.Request) {
-	app.getPackageJSONs(app.ctx)
+	app.getPackageJSONs()
 	projects, components, projectsClientData, componentsClientData := app.splitProjectsComponents()
 
 	app.log.Info("Generate data to graphs ... \n")
@@ -41,21 +40,20 @@ func (app *App) GenerateReportHandler(w http.ResponseWriter, r *http.Request) {
 		DependenciesByVersions: countDependenciesByVersions,
 	}
 
-	if app.config.OutputFile != "" {
-		clientDataJSON, err := json.MarshalIndent(clientData, "", " ")
-		err = ioutil.WriteFile(app.config.OutputFile + fileOutput, clientDataJSON, 0644)
-
-		if err == nil {
-			app.log.Info("Output file generated and sent to " + app.config.OutputFile + fileOutput)
-		}
-	}
+	//if app.config.OutputFile != "" {
+	//	clientDataJSON, err := json.MarshalIndent(clientData, "", " ")
+	//	err = ioutil.WriteFile(app.config.OutputFile + fileOutput, clientDataJSON, 0644)
+	//
+	//	if err == nil {
+	//		app.log.Info("Output file generated and sent to " + app.config.OutputFile + fileOutput)
+	//	}
+	//}
 
 	json.NewEncoder(w).Encode(clientData)
 }
 
 // NotificationHandler - Route to root
 func (app *App) NotificationHandler(w http.ResponseWriter, r *http.Request) {
-	//http.ServeFile(w, r, "./index.html")
 	notifications, resp, err := app.githubClient.Activity.ListRepositoryNotifications(
 		app.ctx,
 		"candidosales",
@@ -66,7 +64,13 @@ func (app *App) NotificationHandler(w http.ResponseWriter, r *http.Request) {
 		},
 	)
 
-	fmt.Printf("notifications[%#v] \n", notifications)
+	//fmt.Printf("notifications[%#v] \n", notifications)
 	fmt.Printf("resp[%#v] \n", resp)
 	fmt.Printf("err[%#v] \n", err)
+
+	for _, notification := range notifications {
+		fmt.Printf("notification[%#v] \n", notification)
+	}
+	json.NewEncoder(w).Encode(notifications)
+
 }

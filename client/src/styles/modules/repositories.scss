@@ -3,6 +3,7 @@
     float: left;
     margin: 0;
     padding: 0;
+    margin-bottom: $global-gutter * 2;
 }
 
 .repository{
@@ -39,12 +40,19 @@
     }
 }
 
-.repository__documentation {
+.repository__documentation, .repository__warning {
     mat-icon {
         width: 14px;
         height: 12px;
         font-size: 14px;
         line-height: 1rem;
+    }
+}
+
+.repository__warning {
+    cursor: pointer;
+    mat-icon {
+        color: $color-orange;
     }
 }
 

@@ -4,19 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { DataService } from './providers/data.service';
 import { DependencyComponent } from './dependency/dependency.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { IconDesignPipe } from './pipes/icon-design.pipe';
+import { IconLibraryPipe } from './pipes/icon-library.pipe';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { NgModule } from '@angular/core';
+import { NotificationsDialogComponent } from './repository/notifications-dialog/notifications-dialog.component';
 import { PieChartComponent } from './google-charts/pie-chart.component';
 import { RepositoryComponent } from './repository/repository.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TreemapChartComponent } from './google-charts/treemap-chart.component';
-import { IconDesignPipe } from './pipes/icon-design.pipe';
 import { VersionPipe } from './pipes/version.pipe';
-import { IconLibraryPipe } from './pipes/icon-library.pipe';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -31,7 +33,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     RepositoryComponent,
     IconDesignPipe,
     IconLibraryPipe,
-    VersionPipe
+    VersionPipe,
+    NotificationsDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatButtonModule,
     MatIconModule,
     MatProgressSpinnerModule,
+    MatDialogModule,
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,
