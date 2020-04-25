@@ -37,19 +37,22 @@
         <div class="card-header">
           <h3>{{ 'home.summary' | translate }}</h3>
         </div>
-        <div class="card-body row">
-          <div class="summary-card col-lg-4 col-md-4 col-sm-6">
-            <p class="summary-card__title">{{ 'home.updated' | translate }}</p>
-            <p class="summary-card__value"  matTooltip="{{ data.summary.updated.join(', ')  }}">👍 {{ data.summary.updated.length }}</p>
+        <div class="card-body">
+          <div class="row">
+            <div class="summary-card col-lg-3 col-md-4 col-sm-6">
+              <p class="summary-card__title">{{ 'home.updated' | translate }}</p>
+              <p class="summary-card__value"  matTooltip="{{ data.summary.updated.join(', ')  }}">👍 {{ data.summary.updated.length }}</p>
+            </div>
+            <div class="summary-card col-lg-3 col-md-4 col-sm-6">
+              <p class="summary-card__title">{{ 'home.inconsistent' | translate }}</p>
+              <p class="summary-card__value" matTooltip="{{ data.summary.inconsistent.join(', ') }}" >🚧 {{ data.summary.inconsistent.length }}</p>
+            </div>
+            <div class="summary-card col-lg-3 col-md-4 col-sm-6">
+              <p class="summary-card__title">{{ 'home.withVulnerability' | translate }}</p>
+              <p class="summary-card__value" matTooltip="{{ data.summary.vulnerable.join(', ')  }}">⚠️ {{ data.summary.vulnerable.length }}</p>
+            </div>
           </div>
-          <div class="summary-card col-lg-4 col-md-4 col-sm-6">
-            <p class="summary-card__title">{{ 'home.inconsistent' | translate }}</p>
-            <p class="summary-card__value" matTooltip="{{ data.summary.inconsistent.join(', ') }}" >🚧 {{ data.summary.inconsistent.length }}</p>
-          </div>
-          <div class="summary-card col-lg-4 col-md-4 col-sm-6">
-            <p class="summary-card__title">{{ 'home.withVulnerability' | translate }}</p>
-            <p class="summary-card__value" matTooltip="{{ data.summary.vulnerable.join(', ')  }}">⚠️ {{ data.summary.vulnerable.length }}</p>
-          </div>
+          
         </div>
       </div>
     </div>
