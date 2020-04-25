@@ -16,6 +16,10 @@
       "type": "project"
     },
     {
+      "url": "https://github.com/vendasta/billing-client",
+      "type": "project"
+    },
+    {
       "url": "https://github.com/candidosales/lending_loop",
       "type": "project"
     },
@@ -30,6 +34,14 @@
     {
       "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/uikit",
       "type": "component"
+    },
+    {
+      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/billing-ui",
+      "type": "component",
+      "documentation": {
+        "frontend": "https://frontend.vendasta-internal.com/billing-ui/contact-info-dialog",
+        "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/grid"
+      }
     }
   ]
 }

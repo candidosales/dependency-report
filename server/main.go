@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"flag"
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -341,6 +342,58 @@ func (app *App) statsCountDependenciesByVersions(projects []Repository) map[stri
 		}
 	}
 	return statsComponentsByVersion
+}
+
+// statusProjectsByComponents - Count how many projects there are per filter
+func (app *App) statusProjectsByComponents(projects []Repository, projectsClientData []RepositoryClientData, components []RepositoryClientData) {
+	for i, p := range projects {
+		for key, value := range p.PackageJSON.Dependencies {
+			for _, c := range components {
+				fmt.Printf("key[%#v] value[%#v] \n", key, value)
+				fmt.Printf("c[%#v] \n", c)
+
+				if key == c.Name && value != c.Version {
+					projectsClientData[i].Updates = append(projectsClientData[i].Updates, &UpdateComponent{
+						Name: c.Name,
+						Current: value,
+						Update: c.Version,
+					})
+				}
+			}
+		}
+	}
+}
+
+func (app *App) generateSummary(projectsClientData []RepositoryClientData) SummaryData {
+	summaryData := SummaryData{
+		Updated:      []string{},
+		Inconsistent: []string{},
+		Vulnerable:   []string{},
+	}
+
+	for _, p := range projectsClientData {
+		if !isVulnerable(&p) && !isInconsistent(&p) {
+			summaryData.Updated = append(summaryData.Updated, p.Name)
+			continue
+		}
+
+		if isVulnerable(&p) {
+			summaryData.Vulnerable = append(summaryData.Vulnerable, p.Name)
+		}
+		if isInconsistent(&p) {
+			summaryData.Inconsistent = append(summaryData.Inconsistent, p.Name)
+		}
+
+	}
+	return summaryData
+}
+
+func isInconsistent(repository *RepositoryClientData) bool {
+	return repository.Updates != nil && len(repository.Updates) > 0
+}
+
+func isVulnerable(repository *RepositoryClientData) bool {
+	return repository.Notifications != nil && len(repository.Notifications) > 0
 }
 
 // contains -  Checks whether a string exists in an array of string

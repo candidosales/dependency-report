@@ -39,6 +39,8 @@ func (r *Repository) getRepositoryClientData() *RepositoryClientData {
 		URL:           r.URL,
 		Documentation: r.Documentation,
 		Notifications: r.Notifications,
+		Updates: []*UpdateComponent{},
+		Tags: []string{},
 	}
 }
 
@@ -90,6 +92,7 @@ func GetAlias(name string, version string) string {
 
 type ClientData struct {
 	GeneratedAt            time.Time                                    `json:"generatedAt"`
+	Summary SummaryData `json:"summary"`
 	Projects               *[]RepositoryClientData                      `json:"projects"`
 	Components             *[]RepositoryClientData                      `json:"components"`
 	GraphData              map[string][]interface{}                     `json:"graphData"`
@@ -104,6 +107,20 @@ type RepositoryClientData struct {
 	URL           string        `json:"url"`
 	Documentation Documentation `json:"documentation"`
 	Notifications []*github.Notification `json:"notifications"`
+	Updates []*UpdateComponent `json:"updates"`
+	Tags []string `json:"tags"`
+}
+
+type UpdateComponent struct {
+	Name string `json:"name"`
+	Current string `json:"current"`
+	Update string `json:"update"`
+}
+
+type SummaryData struct {
+	Updated []string `json:"updated"`
+	Inconsistent  []string  `json:"inconsistent"`
+	Vulnerable  []string  `json:"vulnerable"`
 }
 
 type Documentation struct {

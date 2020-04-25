@@ -19,6 +19,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TreemapChartComponent } from './google-charts/treemap-chart.component';
 import { VersionPipe } from './pipes/version.pipe';
+import { WithLoadingPipe } from './pipes/with-loading.pipe';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -34,6 +35,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     IconDesignPipe,
     IconLibraryPipe,
     VersionPipe,
+    WithLoadingPipe,
     NotificationsDialogComponent
   ],
   imports: [

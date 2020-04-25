@@ -51,3 +51,19 @@
         margin-bottom: 0;
     }
 }
+
+.summary-card {
+    display: flex;
+    flex-direction: column;
+    p {
+        padding: 0 0 8px 0;
+    }
+}
+.summary-card__title {
+    font-size: 18px;
+}
+
+.summary-card__value {
+    font-size: 36px;
+    width: 20%;
+}

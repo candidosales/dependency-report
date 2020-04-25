@@ -28,8 +28,13 @@ func (app *App) GenerateReportHandler(w http.ResponseWriter, r *http.Request) {
 	countComponentsByFilters := app.statsCountComponentsByFilters(*components, *componentsClientData)
 	countProjectsByFilters := app.statsCountProjectsByFilters(*projects, *projectsClientData)
 
+	app.statusProjectsByComponents(*projects, *projectsClientData, *componentsClientData)
+
+	summary := app.generateSummary(*projectsClientData)
+
 	clientData := &ClientData{
 		GeneratedAt: time.Now(),
+		Summary: summary,
 		Projects:    projectsClientData,
 		Components:  componentsClientData,
 		GraphData: map[string][]interface{}{
