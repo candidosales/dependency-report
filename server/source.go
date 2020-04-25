@@ -9,7 +9,7 @@ import (
 const (
 	TypeProject     = "project"
 	TypeComponent   = "component"
-	pathFileInput   = "./config-test.json"
+	pathFileInput   = "./config.json"
 	pathOutput  = "../client/src/assets/config/"
 	fileOutput = "data.json"
 	concurrentLimit = 25

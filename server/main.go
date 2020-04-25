@@ -4,7 +4,6 @@ import (
 	"context"
 	"encoding/json"
 	"flag"
-	"fmt"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -349,9 +348,6 @@ func (app *App) statusProjectsByComponents(projects []Repository, projectsClient
 	for i, p := range projects {
 		for key, value := range p.PackageJSON.Dependencies {
 			for _, c := range components {
-				fmt.Printf("key[%#v] value[%#v] \n", key, value)
-				fmt.Printf("c[%#v] \n", c)
-
 				if key == c.Name && value != c.Version {
 					projectsClientData[i].Updates = append(projectsClientData[i].Updates, &UpdateComponent{
 						Name: c.Name,
