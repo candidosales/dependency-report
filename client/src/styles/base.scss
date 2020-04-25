@@ -7,8 +7,11 @@
     --color-code-white: $color-white;
 }
 
-body {
+body, h1, h2, h3, p, a, .mat-h3, .mat-subheading-2, .mat-typography h3 {
     font-family: $font-family;
+}
+
+body {
     font-size: $font-size;
     color: $color-gray-700;
     background-color: $color-gray-light;

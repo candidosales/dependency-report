@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Dependencies to update</h1>
+<div mat-dialog-content>
+  <ul>
+      <li *ngFor="let update of data.updates" >
+          {{update.name}}: {{ update.current }} → {{update.update}}
+      </li>
+  </ul>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-raised-button color="primary" (click)="close()" >CLOSE</button>
+</div>

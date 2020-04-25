@@ -1,25 +1,37 @@
 <div class="repository">
+  <div class="repository__body">
     <p class="repository__name">
       <a href="{{ repository.url }}" title="{{ repository.name }}" target="_blank">
         {{ repository.name }}
       </a>
     </p>
-    <div class="repository__footer">
+    <div class="repository__info">
       <p class="repository__badge">
         <img src="{{ repository.filter | iconLibrary }}" alt="">
         {{ repository.filter | version }}
       </p>
-      <a *ngIf="repository.documentation.frontend" matTooltip="Frontend Doc"  class="repository__documentation" href="{{ repository.documentation.frontend }}" target="_blank">
-        <mat-icon>description</mat-icon>
-      </a>
-      <a *ngIf="repository.documentation.design" matTooltip="Design Doc"  class="repository__documentation" href="{{ repository.documentation.design }}" target="_blank">
-        <img class="repository__icon-design" src="{{ repository.documentation.design | iconDesign }}" alt="">
-      </a>
-      <a *ngIf="repository.notifications.length > 0" matTooltip="Vulnerability alert" class="repository__warning" (click)="showNotifications(repository.notifications)">
-        <mat-icon>warning</mat-icon>
-      </a>
       <p class="repository__version">
         {{ repository.version }}
       </p>
     </div>
   </div>
+
+  <div class="repository__actions">
+    <a *ngIf="repository.documentation.frontend" matTooltip="Frontend Doc" class="repository__documentation"
+      href="{{ repository.documentation.frontend }}" target="_blank">
+      <mat-icon>description</mat-icon>
+    </a>
+    <a *ngIf="repository.documentation.design" matTooltip="Design Doc" class="repository__documentation"
+      href="{{ repository.documentation.design }}" target="_blank">
+      <img class="repository__icon-design" src="{{ repository.documentation.design | iconDesign }}" alt="">
+    </a>
+    <a *ngIf="repository.updates.length > 0" matTooltip="Vulnerability alert" class="repository__warning"
+      (click)="showUpdates(repository.updates)">
+      🚧
+    </a>
+    <a *ngIf="repository.notifications.length > 0" matTooltip="Vulnerability alert" class="repository__warning"
+      (click)="showNotifications(repository.notifications)">
+      <mat-icon>warning</mat-icon>
+    </a>
+  </div>
+</div>

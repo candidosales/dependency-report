@@ -4,18 +4,18 @@
     margin: 0;
     padding: 0;
     margin-bottom: $global-gutter * 2;
+    width: 100%;
 }
 
 .repository{
     border-radius: .5rem;
-    border: 1px solid $color-gray-400;
+    background: #f5f9fd;
     float: left;
     display: flex;
     flex-direction: column;
-    padding: .5rem;
     margin-bottom: .5rem;
     margin-right: .5rem;
-    width: 140px;
+    width: 22%;
     transition: .18s ease all;
     p {
         transition: .18s ease all;
@@ -26,6 +26,9 @@
         transform: translateY(-1px);
         box-shadow: 0 1px 4px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.12), 0 1px 3px rgba(0,0,0,.14)
     }
+}
+.repository__body {
+    padding: .5rem;
 }
 .repository__name {
     padding-right: .5rem;
@@ -56,7 +59,7 @@
     }
 }
 
-.repository__footer {
+.repository__info {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -67,9 +70,21 @@
     }
 }
 
+.repository__actions {
+    display: flex;
+    background: #c8def382;
+    justify-content: space-around;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    a {
+        padding: .5rem 0;
+    }
+}
+
 .component {
     width: 12%;
     min-width: 220px;
+    padding: .5rem;
 }
 
 .component_versions {

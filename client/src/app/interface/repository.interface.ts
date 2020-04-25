@@ -5,11 +5,18 @@ export interface Repository {
     url: string;
     documentation: Documentation;
     notifications: Array<GithubNotification>;
+    updates: Array<Update>;
 }
 
 export interface Documentation {
     frontend: string;
     design: string;
+}
+
+export interface Update {
+    name: string;
+    current: string;
+    update: string;
 }
 
 

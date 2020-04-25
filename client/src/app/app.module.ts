@@ -18,6 +18,7 @@ import { RepositoryComponent } from './repository/repository.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TreemapChartComponent } from './google-charts/treemap-chart.component';
+import { UpdatesDialogComponent } from './repository/updates-dialog/updates-dialog.component';
 import { VersionPipe } from './pipes/version.pipe';
 import { WithLoadingPipe } from './pipes/with-loading.pipe';
 
@@ -36,7 +37,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     IconLibraryPipe,
     VersionPipe,
     WithLoadingPipe,
-    NotificationsDialogComponent
+    NotificationsDialogComponent,
+    UpdatesDialogComponent
   ],
   imports: [
     BrowserModule,

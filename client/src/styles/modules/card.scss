@@ -1,7 +1,8 @@
 .card {
-    border: 1px solid $color-gray-400;
+    border: none;
     border-radius: .6rem;
     margin-bottom: 1rem;
+    box-shadow: 1px 3px 5px #cccccc38;
 }
 
 .card__repositories {
@@ -61,9 +62,11 @@
 }
 .summary-card__title {
     font-size: 18px;
+    color: $color-gray-600;
 }
 
 .summary-card__value {
     font-size: 36px;
     width: 20%;
+    font-family: $font-family-2;
 }

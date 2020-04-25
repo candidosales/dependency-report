@@ -1,7 +1,8 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
-import { Repository, GithubNotification } from '../interface/repository.interface';
+import { Repository, GithubNotification, Update } from '../interface/repository.interface';
 import { MatDialog } from '@angular/material/dialog';
 import { NotificationsDialogComponent } from './notifications-dialog/notifications-dialog.component';
+import { UpdatesDialogComponent } from './updates-dialog/updates-dialog.component';
 
 @Component({
   selector: 'app-repository',
@@ -14,11 +15,19 @@ export class RepositoryComponent {
     constructor(public dialog: MatDialog) {}
 
     showNotifications(notifications: Array<GithubNotification>) {
-      console.log('notifications', notifications);
       if (notifications.length > 0) {
         const dialogRef = this.dialog.open(NotificationsDialogComponent, {
           width: '500px',
           data: { notifications }
+        });
+      }
+    }
+
+    showUpdates(updates: Array<Update>) {
+      if (updates.length > 0) {
+        const dialogRef = this.dialog.open(UpdatesDialogComponent, {
+          width: '500px',
+          data: { updates }
         });
       }
     }
