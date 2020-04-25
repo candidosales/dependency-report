@@ -1,5 +1,9 @@
 {
     "home": {
+        "summary": "Summary",
+        "updated": "Updated",
+        "inconsistent": "Inconsistent",
+        "withVulnerability" : "With vulnerability",
         "navbar": {
             "generated": "generated",
             "refresh": "REFRESH"
@@ -14,5 +18,10 @@
         "projects": "Projects",
         "components": "Components",
         "loading": "Generation the data ..." 
+    },
+    "dialog": {
+        "close": "CLOSE",
+        "dependenciesToUpdate": "Dependencies to update",
+        "githubNotifications": "Github Notifications"
     }
 }

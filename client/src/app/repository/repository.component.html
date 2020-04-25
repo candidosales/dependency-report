@@ -25,13 +25,13 @@
       href="{{ repository.documentation.design }}" target="_blank">
       <img class="repository__icon-design" src="{{ repository.documentation.design | iconDesign }}" alt="">
     </a>
-    <a *ngIf="repository.updates.length > 0" matTooltip="Vulnerability alert" class="repository__warning"
+    <a *ngIf="repository.updates.length > 0" matTooltip="{{ 'dialog.dependenciesToUpdate' | translate }}" class="repository__warning"
       (click)="showUpdates(repository.updates)">
       🚧
     </a>
     <a *ngIf="repository.notifications.length > 0" matTooltip="Vulnerability alert" class="repository__warning"
       (click)="showNotifications(repository.notifications)">
-      <mat-icon>warning</mat-icon>
+      ⚠️
     </a>
   </div>
 </div>
