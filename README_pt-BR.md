@@ -9,8 +9,9 @@ Este projeto visa ajudar a analisar a consistência das dependências em seus pr
 - Visualizar todas as dependências de seus projetos e quantas diferentes versões são usadas por projetos;
 - Visualizar link para documentacão de frontend e design para cada projeto/componente;
 - Visualizar notificacões do Github relacionados a vulnerabilidades de seguranca para cada projeto/componente;
+- Visualizar quais dependências precisam ser atualizadas por projetos;
 
-![Github Notifications](https://media.giphy.com/media/ZXZVoM96xQ0l9VfMbn/giphy.gif)
+![Github Notifications](https://media.giphy.com/media/kfFGCtQ8m1M8hF8qKN/giphy.gif)
 
 ## Como configurar
 

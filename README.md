@@ -9,8 +9,9 @@ This project aims to help analyze the consistency of the dependencies in your co
 - View all the dependencies of your projects and how many different versions are used by projects;
 - View link to frontend and design documentation for each project/component;
 - View Github notifications related to security vulnerabilities for each project/component;
+- View which dependencies need to be updated by projects;
 
-![Github Notifications](https://media.giphy.com/media/ZXZVoM96xQ0l9VfMbn/giphy.gif)
+![Github Notifications](https://media.giphy.com/media/kfFGCtQ8m1M8hF8qKN/giphy.gif)
 
 ## How to setup
 
