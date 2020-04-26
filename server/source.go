@@ -96,7 +96,7 @@ type ClientData struct {
 	Projects               *[]RepositoryClientData                      `json:"projects"`
 	Components             *[]RepositoryClientData                      `json:"components"`
 	GraphData              map[string][]interface{}                     `json:"graphData"`
-	DependenciesByVersions map[string]map[string]StatsDependencyVersion `json:"dependenciesByVersions"`
+	DependenciesByVersions map[string]*DependencyVersion `json:"dependenciesByVersions"`
 }
 
 // RepositoryClientData - simplest object to display in the UI
@@ -126,6 +126,11 @@ type SummaryData struct {
 type Documentation struct {
 	Frontend string `json:"frontend"`
 	Design   string `json:"design"`
+}
+
+type DependencyVersion struct {
+	Type string      `json:"type"`
+	Versions map[string]StatsDependencyVersion `json:"versions"`
 }
 
 type StatsDependencyVersion struct {
