@@ -98,6 +98,10 @@ After configuring [server/config.json](./server/config.json) and initializing `s
 
 - [https://segment.com/blog/driving-adoption-of-a-design-system/](https://segment.com/blog/driving-adoption-of-a-design-system/)
 
+## Acknowledgment
+
+Joel Kesler
+
 ## Author
 
 - Cândido Sales - [@candidosales](https://twitter.com/candidosales)
