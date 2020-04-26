@@ -2,7 +2,8 @@
 <div mat-dialog-content>
   <ul>
       <li *ngFor="let update of data.updates" >
-          {{update.name}}: {{ update.current }} → {{update.update}}
+          <span class="dependency-name">{{update.name}}</span>
+          <span class="dependency-versions">{{ update.current }} → {{update.update}}</span>
       </li>
   </ul>
 </div>

@@ -7,5 +7,15 @@ ul {
         list-style: none;
         padding: 8px 0;
         border-bottom: 1px solid $color-gray-400;
+        display: flex;
+        flex-direction: column;
+        .dependency-name {
+            margin-bottom: $global-gutter/2;
+            font-size: 16px;
+        }
+        .dependency-versions {
+            font-size: 14px;
+            color: $color-gray-600;
+        }
     }
 }
