@@ -100,7 +100,7 @@ After configuring [server/config.json](./server/config.json) and initializing `s
 
 ## Acknowledgment
 
-Joel Kesler, Rafael Lins
+Joel Kesler, [Rafael Lins](https://github.com/g0dkar)
 
 ## Author
 
