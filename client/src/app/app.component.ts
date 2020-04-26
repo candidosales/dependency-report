@@ -52,7 +52,12 @@ export class AppComponent {
   }
 
   refresh() {
-    this.data$ = this.dataService.data$;
+    this.data$ = this.dataService.data$.pipe(
+      catchError(err => {
+        console.error(err);
+        return this.dataService.cacheData$;
+      })
+    );
   }
 
   filterDependencies(type: string) {

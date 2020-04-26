@@ -16,7 +16,7 @@ export class RepositoryComponent {
 
     showNotifications(notifications: Array<GithubNotification>) {
       if (notifications.length > 0) {
-        const dialogRef = this.dialog.open(NotificationsDialogComponent, {
+        this.dialog.open(NotificationsDialogComponent, {
           width: '500px',
           data: { notifications }
         });
@@ -25,7 +25,7 @@ export class RepositoryComponent {
 
     showUpdates(updates: Array<Update>) {
       if (updates.length > 0) {
-        const dialogRef = this.dialog.open(UpdatesDialogComponent, {
+        this.dialog.open(UpdatesDialogComponent, {
           width: '500px',
           data: { updates }
         });

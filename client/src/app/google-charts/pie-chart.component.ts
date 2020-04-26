@@ -1,9 +1,10 @@
-import { AfterViewInit, Component, ElementRef, ViewChild, Input, HostListener, OnChanges, SimpleChanges } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild, Input, HostListener, OnChanges, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
 declare var google: any;
 
 @Component({
   selector: 'app-pie-chart',
   templateUrl: './pie-chart.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PieChartComponent implements AfterViewInit, OnChanges {
 

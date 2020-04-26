@@ -8,7 +8,7 @@
         },
         "updated": "Atualizados",
         "inconsistent": "Inconsistentes",
-        "withVulnerability" : "Com vulnerabilidade",
+        "vulnerable" : "Vulneráveis",
         "navbar": {
             "generated": "gerado",
             "refresh": "ATUALIZAR"

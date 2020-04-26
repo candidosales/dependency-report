@@ -100,7 +100,7 @@ Após a configuracão do [server/config.json](./server/config.json) e inicializa
 
 ## Agradecimentos
 
-Joel Kesler
+Joel Kesler, Rafael Lins
 
 ## Autor
 

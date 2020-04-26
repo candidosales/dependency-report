@@ -20,7 +20,7 @@ export class DataService {
       this.prepareData(value);
       return value;
     }),
-    // shareReplay(1)
+    shareReplay(1)
   );
 
   data$ = this.httpClient.get<Data>(`${environment.apiUrl}/generate-report`).pipe(

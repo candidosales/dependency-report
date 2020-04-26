@@ -30,9 +30,9 @@
 <div class="main container-fluid" *ngIf="data$ | async as data">
   <div class="main-header d-flex justify-content-between">
     <h2 class="mt-0">{{ 'home.projects' | translate }}</h2>
-    <div class="info-generated" *ngIf="serverIsOn$ | async">
+    <div class="info-generated">
       <span class="generated">{{ 'home.navbar.generated' | translate }}: {{ data?.generatedAt | date: 'medium' }}</span>
-      <button class="btn-outline" mat-raised-button color="primary" (click)="refresh()">
+      <button class="btn-outline" mat-raised-button color="primary" disabled="serverIsOn$ | async" (click)="refresh()" >
         <mat-icon>refresh</mat-icon>
         {{ 'home.navbar.refresh' | translate }}
       </button>
@@ -61,8 +61,8 @@
                 {{ data.summary.inconsistent.length }}</p>
             </div>
             <div class="summary-card col-6 col-md-4 col-lg-12">
-              <p class="summary-card__title">{{ 'home.withVulnerability' | translate }} <mat-icon matTooltip="{{ 'home.summary.infoWithVulnerability' | translate }}">info</mat-icon></p>
-              <p class="summary-card__value" matTooltip="{{ data.summary.vulnerable.join(' / ')  }}">⚠️
+              <p class="summary-card__title">{{ 'home.vulnerable' | translate }} <mat-icon matTooltip="{{ 'home.summary.infoWithVulnerability' | translate }}">info</mat-icon></p>
+              <p class="summary-card__value" matTooltip="{{ data.summary.vulnerable.join(' / ')  }}"> <span *ngIf="(data.summary.vulnerable.length > 0); else lock" >🔓</span><ng-template #lock>🔒</ng-template>
                 {{ data.summary.vulnerable.length }}</p>
             </div>
           </div>
