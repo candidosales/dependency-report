@@ -61,6 +61,14 @@
     margin-bottom: 10px;
     p {
         padding: 0 0 $global-gutter/4 0;
+        display: flex;
+        align-items: center;
+    }
+    mat-icon {
+        font-size: 14px;
+        height: 14px;
+        width: 14px;
+        margin-left: 4px;
     }
 }
 .summary-card__title {
