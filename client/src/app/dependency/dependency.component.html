@@ -7,7 +7,7 @@
         <ng-container *ngFor="let v of objectKeys(dependency.versions)">
             <li matTooltip="{{ dependency.versions[v]?.projects.join(' / ') }}">
                 <p class="component__frequency">{{ dependency.versions[v].quantity }}</p>
-                <p class="component__version">{{ v }}v</p>
+                <p class="component__version">{{ v }}</p>
             </li>
         </ng-container>
     </ul>
