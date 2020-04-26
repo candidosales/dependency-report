@@ -4,14 +4,13 @@ import (
 	"context"
 	"encoding/json"
 	"flag"
+	"github.com/google/go-github/v29/github"
+	"github.com/sirupsen/logrus"
+	"golang.org/x/oauth2"
 	"io/ioutil"
 	"net/http"
 	"os"
 	"strings"
-
-	"github.com/google/go-github/v29/github"
-	"github.com/sirupsen/logrus"
-	"golang.org/x/oauth2"
 )
 
 type App struct {
@@ -310,29 +309,36 @@ func (app *App) statsCountComponentsByFilters(components []Repository, component
 }
 
 // statsCountDependenciesByVersions - Count how many components there are per filter
-func (app *App) statsCountDependenciesByVersions(projects []Repository) map[string]map[string]StatsDependencyVersion {
-	var statsComponentsByVersion = map[string]map[string]StatsDependencyVersion{}
+func (app *App) statsCountDependenciesByVersions(projects []Repository) map[string]*DependencyVersion {
+	var statsDependenciesByVersion = map[string]*DependencyVersion{}
 
 	for _, project := range projects {
 		for key, value := range project.PackageJSON.Dependencies {
-			if statsComponentsByVersion[key] == nil && len(statsComponentsByVersion[key][value].Projects) == 0 && statsComponentsByVersion[key][value].Quantity == 0 {
-				statsComponentsByVersion[key] = map[string]StatsDependencyVersion{}
-				statsComponentsByVersion[key][value] = StatsDependencyVersion{
-					Quantity: 1,
-					Projects: []string{project.PackageJSON.Name},
-				}
+			if statsDependenciesByVersion[key] == nil {
+				//if (len(statsDependenciesByVersion[key].Versions[value].Projects) == 0 && statsDependenciesByVersion[key].Versions[value].Quantity == 0) {
+					statsDependenciesByVersion[key] = &DependencyVersion{
+						Type: "good",
+						Versions: map[string]StatsDependencyVersion{},
+					}
+					statsDependenciesByVersion[key].Versions[value] = StatsDependencyVersion{
+						Quantity: 1,
+						Projects: []string{project.PackageJSON.Name},
+					}
+				//}
+
 			} else {
 				projects := []string{}
-				if !contains(statsComponentsByVersion[key][value].Projects, project.PackageJSON.Name) {
-					for _, p := range statsComponentsByVersion[key][value].Projects {
+				if !contains(statsDependenciesByVersion[key].Versions[value].Projects, project.PackageJSON.Name) {
+					for _, p := range statsDependenciesByVersion[key].Versions[value].Projects {
 						projects = append(projects, p)
 					}
 					projects = append(projects, project.PackageJSON.Name)
 				}
 
-				quantity := statsComponentsByVersion[key][value].Quantity + 1
+				statsDependenciesByVersion[key].Type = getTypeDependency(len(statsDependenciesByVersion[key].Versions))
+				quantity := statsDependenciesByVersion[key].Versions[value].Quantity + 1
 
-				statsComponentsByVersion[key][value] = StatsDependencyVersion{
+				statsDependenciesByVersion[key].Versions[value] = StatsDependencyVersion{
 					Quantity: quantity,
 					Projects: projects,
 				}
@@ -340,8 +346,37 @@ func (app *App) statsCountDependenciesByVersions(projects []Repository) map[stri
 
 		}
 	}
-	return statsComponentsByVersion
+	return statsDependenciesByVersion
 }
+
+func getTypeDependency(quantity int) string {
+	switch {
+		case quantity <= 2:
+			return "good"
+		case quantity > 2 && quantity <= 5:
+			return "warning"
+		case quantity > 5 && quantity <= 10:
+			return "bad"
+		case quantity > 10:
+			return "terrible"
+		default:
+			return ""
+	}
+}
+
+//if (quantity <= 2) {
+//return 'good';
+//}
+//if (quantity > 2 && quantity <= 5) {
+//return 'warning';
+//}
+//if (quantity > 5 && quantity <= 10) {
+//return 'bad';
+//}
+//if (quantity > 10) {
+//return 'terrible';
+//}
+//return '';
 
 // statusProjectsByComponents - Count how many projects there are per filter
 func (app *App) statusProjectsByComponents(projects []Repository, projectsClientData []RepositoryClientData, components []RepositoryClientData) {
