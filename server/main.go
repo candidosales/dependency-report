@@ -364,20 +364,6 @@ func getTypeDependency(quantity int) string {
 	}
 }
 
-//if (quantity <= 2) {
-//return 'good';
-//}
-//if (quantity > 2 && quantity <= 5) {
-//return 'warning';
-//}
-//if (quantity > 5 && quantity <= 10) {
-//return 'bad';
-//}
-//if (quantity > 10) {
-//return 'terrible';
-//}
-//return '';
-
 // statusProjectsByComponents - Count how many projects there are per filter
 func (app *App) statusProjectsByComponents(projects []Repository, projectsClientData []RepositoryClientData, components []RepositoryClientData) {
 	for i, p := range projects {
