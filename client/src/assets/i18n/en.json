@@ -1,6 +1,11 @@
 {
     "home": {
-        "summary": "Summary",
+        "summary": {
+            "title": "Summary",
+            "infoUpdated": "Number of projects containing all updated components",
+            "infoInconsistent": "Number of projects that contain any component that needs to be updated",
+            "infoWithVulnerability": "Number of projects that contain Github vulnerability notifications"
+        },
         "updated": "Updated",
         "inconsistent": "Inconsistent",
         "withVulnerability" : "With vulnerability",
