@@ -1,7 +1,28 @@
 .navbar {
-    background: $color-blue-dark;
+    background-color: $color-gray-light;
     border-bottom: 1px solid $color-gray-400;
     a.navbar-brand, a {
-        color: $color-white;
+        color: $color-gray-800;
+    }
+}
+
+.navbar-nav {
+    width: 100%;
+    .nav-link {
+        color: $color-gray-800;
+    }
+    .navbar-nav-svg {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        vertical-align: text-top;
+    }
+}
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        margin-right: $global-gutter/2;
     }
 }

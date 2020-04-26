@@ -20,20 +20,4 @@ export class DependencyComponent {
     getCountObjectKeys(object: any): number {
         return Object.keys(object).length;
     }
-
-    getClassByDependenciesVersions(quantity: number): string {
-        if (quantity <= 2) {
-            return 'repository__versions--good';
-        }
-        if (quantity > 2 && quantity <= 5) {
-            return 'repository__versions--warning';
-        }
-        if (quantity > 5 && quantity <= 10) {
-            return 'repository__versions--bad';
-        }
-        if (quantity > 10) {
-            return 'repository__versions--terrible';
-        }
-        return '';
-    }
 }

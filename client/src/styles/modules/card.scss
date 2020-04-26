@@ -4,13 +4,14 @@
     margin-bottom: 1rem;
     box-shadow: 1px 3px 5px #cccccc38;
 }
-
+.card-body {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+}
 .card__repositories {
     .card-body {
         max-height: 290px;
         overflow: auto;
         position: relative;
-        padding: 0 1.25rem 1.25rem 1.25rem;
     }
     
     &:after {
@@ -57,17 +58,17 @@
 .summary-card {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
     p {
-        padding: 0 0 8px 0;
+        padding: 0 0 $global-gutter/4 0;
     }
 }
 .summary-card__title {
-    font-size: 18px;
+    font-size: 14px;
     color: $color-gray-600;
 }
 
 .summary-card__value {
-    font-size: 36px;
-    width: 40%;
+    font-size: $global-gutter * 2;
     font-family: $font-family-2;
 }

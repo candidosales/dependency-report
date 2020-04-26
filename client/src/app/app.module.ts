@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { NgModule } from '@angular/core';
 import { NotificationsDialogComponent } from './repository/notifications-dialog/notifications-dialog.component';
@@ -49,6 +50,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatIconModule,
     MatProgressSpinnerModule,
     MatDialogModule,
+    MatSnackBarModule,
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,

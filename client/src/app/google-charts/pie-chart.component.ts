@@ -25,7 +25,7 @@ export class PieChartComponent implements AfterViewInit, OnChanges {
         const options = {
           title: this.title,
           legend: {position: 'right'},
-          colors: ['#28a744', '#98d85b', '#7cd6fd', '#743ee2', '#5e64ff',  '#ff5858', '#ffa00a'],
+          colors: ['#D53F8C', '#805AD5', '#5A67D8', '#3182CE', '#319795',  '#38A169', '#D69E2E'],
         };
 
         const chart = new google.visualization.PieChart(this.pieChart.nativeElement);
