@@ -49,28 +49,7 @@ export class DataService {
   }
 
   prepareData(data: Data) {
-    console.log('data', data);
     data.graphData.projectsByFilters?.unshift(['Filter', 'Version']);
     data.graphData.componentsByFilters?.unshift(['Filter', 'Version']);
-    Object.keys(data.dependenciesByVersions).filter(key => {
-      const quantity = Object.keys(data.dependenciesByVersions[key]).length;
-      data.dependenciesByVersions[key].type = this.getDependencyClassification(quantity);
-    });
-  }
-
-  getDependencyClassification(quantity: number): string {
-    if (quantity <= 2) {
-      return 'good';
-    }
-    if (quantity > 2 && quantity <= 5) {
-      return 'warning';
-    }
-    if (quantity > 5 && quantity <= 10) {
-      return 'bad';
-    }
-    if (quantity > 10) {
-      return 'terrible';
-    }
-    return '';
   }
 }
