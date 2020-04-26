@@ -13,10 +13,6 @@ export class DependencyComponent {
 
     objectKeys = Object.keys;
 
-    getProjectsTooltip(projects: Array<string>): string {
-        return projects.join(' / ');
-    }
-
     getCountObjectKeys(object: any): number {
         return Object.keys(object).length;
     }
