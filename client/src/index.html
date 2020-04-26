@@ -14,8 +14,28 @@
   <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+  
 </head>
 <body class="mat-typography">
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyBsEHnJbe0nSM9auBS0JjU-Va9uzKsxndg",
+      authDomain: "dependency-report.firebaseapp.com",
+      databaseURL: "https://dependency-report.firebaseio.com",
+      projectId: "dependency-report",
+      storageBucket: "dependency-report.appspot.com",
+      messagingSenderId: "155537327430",
+      appId: "1:155537327430:web:d10d79f7f3321c41a85147",
+      measurementId: "G-SGFJ74Y4QW"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
   <app-root></app-root>
 </body>
 </html>
