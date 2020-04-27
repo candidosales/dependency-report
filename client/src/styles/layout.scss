@@ -38,3 +38,12 @@
         max-height: 322px;
     }
 }
+
+.mat-tooltip {
+    background-color: #424242;
+    border-color: 1px solid #424242;
+    font-size: 12px;
+    color: rgba(255,255,255,0.9);
+    letter-spacing: .2px;
+    padding: $global-gutter/2;
+}
