@@ -3,7 +3,7 @@ import { DataService } from './providers/data.service';
 import { Data } from './interface/data.interface';
 import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject, combineLatest, EMPTY, of } from 'rxjs';
-import { map, catchError, tap } from 'rxjs/operators';
+import { map, catchError, tap, filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -38,7 +38,11 @@ export class AppComponent {
       return data;
     })
   );
-  public serverIsOn$ = this.dataService.serverIsOn$;
+  public disableRefreshButton$ = this.dataService.serverIsOn$.pipe(
+    map(value => {
+      return !value;
+    })
+  );
 
   objectKeys = Object.keys;
   showLoading = false;
@@ -52,7 +56,10 @@ export class AppComponent {
   }
 
   refresh() {
+    this.showLoading = true;
     this.data$ = this.dataService.data$.pipe(
+      filter((value) => !!value),
+      tap(value => this.showLoading = false),
       catchError(err => {
         console.error(err);
         return this.dataService.cacheData$;

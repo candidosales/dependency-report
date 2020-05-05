@@ -20,7 +20,7 @@ export class PieChartComponent implements AfterViewInit, OnChanges {
   }
 
   drawChart = () => {
-    if (this.data && google.visualization !== undefined) {
+    if (this.data && google.visualization !== undefined && this.pieChart !== undefined) {
       try {
         const data = google.visualization.arrayToDataTable(this.data);
         const options = {

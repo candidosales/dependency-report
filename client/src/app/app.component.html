@@ -32,7 +32,7 @@
     <h2 class="mt-0">{{ 'home.projects' | translate }}</h2>
     <div class="info-generated">
       <span class="generated">{{ 'home.navbar.generated' | translate }}: {{ data?.generatedAt | date: 'medium' }}</span>
-      <button class="btn-outline" mat-raised-button color="primary" disabled="serverIsOn$ | async" (click)="refresh()" >
+      <button class="btn-outline" mat-raised-button color="primary" disabled="{{ disableRefreshButton$ | async }}" (click)="refresh()" >
         <mat-icon>refresh</mat-icon>
         {{ 'home.navbar.refresh' | translate }}
       </button>

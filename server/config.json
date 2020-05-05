@@ -287,6 +287,9 @@
         "frontend": "https://frontend.vendasta-internal.com/vform/readme",
         "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/screen/94f0f453-49d4-48dd-99a2-9827d5e7d6fa/Forms-Common-Components"
       }
+    }, {
+      "url": "https://github.com/vendasta/atlas-client/tree/master/projects/business-nav",
+      "type": "component"
     }
   ]
 }
