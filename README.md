@@ -1,8 +1,8 @@
 # Dependencies report
 
-This project aims to help analyze the consistency of the dependencies in your company's frontend projects. See an example [https://dependency-report.web.app/](https://dependency-report.web.app/). [Em português](./README_pt-BR.md)
+Dependencies report aims to help analyze the consistency of the dependencies in your company's frontend projects. See an example [https://dependency-report.web.app/](https://dependency-report.web.app/). [Em português](./README_pt-BR.md)
 
-## Features
+## 🎯 Features
 
 - View what percentage of projects are in a given version;
 - View what percentage of components are in a given version;
@@ -13,7 +13,7 @@ This project aims to help analyze the consistency of the dependencies in your co
 
 ![Github Notifications](https://media.giphy.com/media/kfFGCtQ8m1M8hF8qKN/giphy.gif)
 
-## How to setup
+## ⚙️ How to setup
 
 The project is divided into two folders:
 
@@ -94,11 +94,24 @@ Example:
 
 After configuring [server/config.json](./server/config.json) and initializing `server` and `client` you access `client` via [http://localhost:4200](http://localhost:4200) and click the button `REFRESH` on the top bar to generate the data you need.
 
-## Reference
+## 📚 Reference
 
 - [https://segment.com/blog/driving-adoption-of-a-design-system/](https://segment.com/blog/driving-adoption-of-a-design-system/)
 
-## Acknowledgment
+## 👍 Contribute
+
+If you want to say thank you and/or support the active development of Fiber:
+
+1. Add a [GitHub Star](https://github.com/candidosales/dependency-report/stargazers) to the project.
+2. Tweet about the project [on your Twitter](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fcandidosales%2Fdependency-report&text=Dependencies%20report%20aims%20to%20help%20analyze%20the%20consistency%20of%20the%20dependencies%20in%20your%20company%27s%20frontend%20projects).
+3. Write a review or tutorial on [Medium](https://medium.com/), [Dev.to](https://dev.to/) or personal blog.
+4. Support the project by donating a [cup of coffee](https://buymeacoff.ee/candidosales).
+
+## ☕ Supporters
+
+If you want to support Dependency Report, you can ☕ [**buy a coffee here**](https://buymeacoff.ee/candidosales)
+
+## ✨ Acknowledgment
 
 [Joel Kesler](https://github.com/joelkesler), [Rafael Lins](https://github.com/g0dkar)
 
@@ -106,6 +119,6 @@ After configuring [server/config.json](./server/config.json) and initializing `s
 
 - Cândido Sales - [@candidosales](https://twitter.com/candidosales)
 
-## Copyright and license
+## ⚠️ Copyright and license
 
 Code and documentation copyright 2020-2030 the [Authors](https://github.com/candidosales/dependency-report/graphs/contributors) and Code released under the [MIT License](https://github.com/candidosales/dependency-report/blob/master/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).

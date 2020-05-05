@@ -1,8 +1,8 @@
-# Relatório de dependências
+# 📊 Relatório de dependências
 
-Este projeto visa ajudar a analisar a consistência das dependências em seus projetos frontend de sua empresa. Veja um exemplo [https://dependency-report.web.app/](https://dependency-report.web.app/). [In English](./README.md)
+Relatório de dependências visa ajudar a analisar a consistência das dependências em seus projetos frontend de sua empresa. Veja um exemplo [https://dependency-report.web.app/](https://dependency-report.web.app/). [In English](./README.md)
 
-## Recursos
+## 🎯 Recursos
 
 - Visualizar qual a porcentagem de projetos estão em uma determinada versão;
 - Visualizar qual a porcentagem de componentes estão em uma determinada versão;
@@ -13,7 +13,7 @@ Este projeto visa ajudar a analisar a consistência das dependências em seus pr
 
 ![Github Notifications](https://media.giphy.com/media/kfFGCtQ8m1M8hF8qKN/giphy.gif)
 
-## Como configurar
+## ⚙️ Como configurar
 
 O projeto é dividido em duas pastas:
 
@@ -94,11 +94,24 @@ Exemplo:
 
 Após a configuracão do [server/config.json](./server/config.json) e inicializacão do `server` e `client` você acessa o `client` via [http://localhost:4200](http://localhost:4200) e clica no botão de `REFRESH` na barra do topo para gerar os dados que você precisa.
 
-## Referência
+## 📚 Referência
 
 - [https://segment.com/blog/driving-adoption-of-a-design-system/](https://segment.com/blog/driving-adoption-of-a-design-system/)
 
-## Agradecimentos
+## 👍 Contribuir
+
+Se você quer agradecer e/ou apoiar o desenvolvimento deste projeto:
+
+1. Adicione uma [GitHub Star](https://github.com/candidosales/dependency-report/stargazers) para o projeto.
+2. Tweet sobre o projeto [em seu Twitter](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fcandidosales%2Fdependency-report&text=Dependencies%20report%20aims%20to%20help%20analyze%20the%20consistency%20of%20the%20dependencies%20in%20your%20company%27s%20frontend%20projects).
+3. Escreva um review ou tutorial no [Medium](https://medium.com/), [Dev.to](https://dev.to/) ou no blog pessoal.
+4. Apoie o projeto doando um [cafézinho](https://buymeacoff.ee/candidosales).
+
+## ☕ Apoiadores
+
+Se você quer apoiar o Relatório de dependência, você pode ☕ [**comprar um café aqui**](https://buymeacoff.ee/candidosales)
+
+## ✨ Agradecimentos
 
 [Joel Kesler](https://github.com/joelkesler), [Rafael Lins](https://github.com/g0dkar)
 
@@ -106,6 +119,6 @@ Após a configuracão do [server/config.json](./server/config.json) e inicializa
 
 - Cândido Sales - [@candidosales](https://twitter.com/candidosales)
 
-## Direitos autorais e licenca
+## ⚠️ Direitos autorais e licenca
 
 Direitos autorais de código e documentação 2020-2030, os [Autores](https://github.com/candidosales/dependency-report/graphs/contributors) e o Código liberado sob a [MIT License](https://github.com/candidosales/dependency-report/blob/master/LICENSE). Documentos publicados sob [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
