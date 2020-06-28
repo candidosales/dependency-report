@@ -1,6 +1,6 @@
 <div class="repository component">
     <p class="repository__name">
-        <span class="repository__versions repository__versions--{{ dependency.type }}">{{ getCountObjectKeys(dependency.versions) }}</span>
+        <span class="repository__versions repository__versions--{{ dependency.type }}" matTooltip="{{ getCountObjectKeys(dependency.versions) }} {{ 'home.dependencies.info' | translate }}">{{ getCountObjectKeys(dependency.versions) }}</span>
         {{ name }}
     </p>
     <ul class="component_versions">

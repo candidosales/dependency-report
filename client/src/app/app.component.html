@@ -69,16 +69,6 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="card">
-        <div class="card-header">
-          <h3>{{ 'home.graph.projectXLibrary' | translate }}</h3>
-        </div>
-        <div class="card-body">
-          <app-pie-chart [data]="data.graphData?.projectsByFilters"></app-pie-chart>
-        </div>
-      </div>
-    </div>
     <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card card__repositories">
         <div class="card-header">
@@ -91,19 +81,19 @@
         </div>
       </div>
     </div>
-  </div>
-  <h2>{{ 'home.components' | translate }}</h2>
-  <div class="row row-wrap">
-    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="col-lg-4 col-md-6 col-sm-12">
       <div class="card">
         <div class="card-header">
-          <h3>{{ 'home.graph.componentXLibrary' | translate }}</h3>
+          <h3>{{ 'home.graph.projectXLibrary' | translate }}</h3>
         </div>
         <div class="card-body">
-          <app-pie-chart [data]="data?.graphData?.componentsByFilters"></app-pie-chart>
+          <app-pie-chart [data]="data.graphData?.projectsByFilters"></app-pie-chart>
         </div>
       </div>
     </div>
+  </div>
+  <h2>{{ 'home.components' | translate }}</h2>
+  <div class="row row-wrap">
     <div class="col-lg-6 col-md-6 col-sm-12">
       <div class="card card__repositories">
         <div class="card-header">
@@ -116,13 +106,23 @@
         </div>
       </div>
     </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="card">
+        <div class="card-header">
+          <h3>{{ 'home.graph.componentXLibrary' | translate }}</h3>
+        </div>
+        <div class="card-body">
+          <app-pie-chart [data]="data?.graphData?.componentsByFilters"></app-pie-chart>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12" *ngIf="dependenciesByVersions$ | async as dependenciesByVersions">
       <div class="card">
         <div class="card-header">
-          <h3>{{ 'home.graph.howOftenDependencyDifferentVersions' | translate }}</h3>
-          <h4>{{ 'home.graph.tipReduce' | translate }}</h4>
+          <h3>{{ 'home.dependencies.howOftenDependencyDifferentVersions' | translate }}</h3>
+          <h4>{{ 'home.dependencies.tipReduce' | translate }}</h4>
           <div class="legend">
             <span class="repository__versions repository__versions--good" matTooltip="Good" (click)="filterDependencies('good')"> 1 - 2 </span>
             <span class="repository__versions repository__versions--warning" matTooltip="It requires attention" (click)="filterDependencies('warning')"> 3 - 5

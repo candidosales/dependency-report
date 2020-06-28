@@ -16,13 +16,16 @@
         "graph": {
             "projectXLibrary": "Project vs Library",
             "frontendProjects" : "Frontend projects",
-            "componentXLibrary" : "Component vs Library",
-            "howOftenDependencyDifferentVersions" : "How often is the same dependency used in different versions?",
-            "tipReduce": "Tip: Reduce the number of different versions in your projects and maintain consistency"
+            "componentXLibrary" : "Component vs Library"
         },
         "projects": "Projects",
         "components": "Components",
-        "loading": "Generation the data ..." 
+        "loading": "Generation the data ...",
+        "dependencies": {
+            "howOftenDependencyDifferentVersions" : "How often is the same dependency used in different versions?",
+            "tipReduce": "Tip: Reduce the number of different versions in your projects and maintain consistency",
+            "info": "different versions of the same library"
+        } 
     },
     "dialog": {
         "close": "CLOSE",

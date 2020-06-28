@@ -11,7 +11,7 @@ Dependencies report aims to help analyze the consistency of the dependencies in 
 - View Github notifications related to security vulnerabilities for each project/component;
 - View which dependencies need to be updated by projects;
 
-![Github Notifications](https://media.giphy.com/media/kfFGCtQ8m1M8hF8qKN/giphy.gif)
+![Github Notifications](https://i.imgur.com/zazY53M.gif)
 
 ## ⚙️ How to setup
 
