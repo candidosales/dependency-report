@@ -1,6 +1,7 @@
 package main
 
 import (
+	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/google/go-github/v29/github"
 	"regexp"
 	"time"
@@ -61,6 +62,14 @@ func (p *PackageJSON) Prepare() {
 
 	}
 }
+
+func (p PackageJSON) Validate() error {
+	return validation.ValidateStruct(&p,
+		// Name cannot be empty, and the length must between 5 and 50
+		validation.Field(&p.Name, validation.Required),
+	)
+}
+
 
 // clearDependenciesVersions - remove special characters. Ex: ^6.0.2 => 6.0.2
 func (p *PackageJSON) clearDependenciesVersions() error {

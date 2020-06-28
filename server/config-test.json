@@ -4,7 +4,8 @@
     "@angular/core_6",
     "@angular/core_7",
     "@angular/core_8",
-    "@angular/core_9"
+    "@angular/core_9",
+    "@angular/core_10"
   ],
   "repositories": [
     {
@@ -12,15 +13,19 @@
       "type": "project"
     },
     {
-      "url": "https://github.com/vendasta/customer-voice-client",
+      "url": "https://github.com/vendasta/digital-ads-client",
       "type": "project"
     },
     {
-      "url": "https://github.com/vendasta/billing-client",
+      "url": "https://github.com/vendasta/reputation-client",
       "type": "project"
     },
     {
-      "url": "https://github.com/candidosales/lending_loop",
+      "url": "https://github.com/vendasta/wsp-portal-client",
+      "type": "project"
+    },
+    {
+      "url": "https://github.com/vendasta/sales-center-client",
       "type": "project"
     },
     {

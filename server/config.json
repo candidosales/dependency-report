@@ -5,9 +5,14 @@
     "@angular/core_6",
     "@angular/core_7",
     "@angular/core_8",
-    "@angular/core_9"
+    "@angular/core_9",
+    "@angular/core_10"
   ],
   "repositories": [
+    {
+      "url": "https://github.com/vendasta/galaxy",
+      "type": "project"
+    },
     {
       "url": "https://github.com/vendasta/listing-builder-client",
       "type": "project"
@@ -62,10 +67,6 @@
     },
     {
       "url": "https://github.com/vendasta/atlas-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/cms-client",
       "type": "project"
     },
     {

@@ -81,10 +81,15 @@ func (app *App) getPackageJSONs() {
 			// any error that might have occoured
 			info, err := splitRepositoryURL(repository)
 			if err != nil {
-				app.log.Errorf("error[%#v]", err)
+				app.log.Errorf("error[%#v] to info[%#v]", err, info)
 			}
 
 			packageJSON := app.fetchPackageJson(info)
+			err = packageJSON.Validate()
+			if err != nil {
+				app.log.Errorf("validate - error[%s] to info[%#v]", err, info)
+			}
+
 			notifications := app.fetchNotifications(info, &FilterNotificationsGetOptions{
 				Reason: "security_alert",
 				Unread: true,
@@ -325,13 +330,7 @@ func (app *App) statsCountDependenciesByVersions(projects []Repository) map[stri
 				//}
 
 			} else {
-				projects := []string{}
-				if !contains(statsDependenciesByVersion[key].Versions[value].Projects, project.PackageJSON.Name) {
-					for _, p := range statsDependenciesByVersion[key].Versions[value].Projects {
-						projects = append(projects, p)
-					}
-					projects = append(projects, project.PackageJSON.Name)
-				}
+				projects := append(statsDependenciesByVersion[key].Versions[value].Projects, project.PackageJSON.Name)
 
 				statsDependenciesByVersion[key].Type = getTypeDependency(len(statsDependenciesByVersion[key].Versions))
 				quantity := statsDependenciesByVersion[key].Versions[value].Quantity + 1
@@ -409,14 +408,4 @@ func isInconsistent(repository *RepositoryClientData) bool {
 
 func isVulnerable(repository *RepositoryClientData) bool {
 	return repository.Notifications != nil && len(repository.Notifications) > 0
-}
-
-// contains -  Checks whether a string exists in an array of string
-func contains(s []string, e string) bool {
-	for _, a := range s {
-		if a == e {
-			return true
-		}
-	}
-	return false
 }
