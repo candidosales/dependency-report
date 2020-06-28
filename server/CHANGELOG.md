@@ -5,6 +5,7 @@
 ### Added
 
 - Add validation show when there is an unnamend package json
+- Add filter to Angular 10
 
 ### Fixed
 

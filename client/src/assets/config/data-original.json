@@ -1,12 +1,11 @@
 {
- "generatedAt": "2020-06-28T16:23:54.822036-06:00",
+ "generatedAt": "2020-06-28T15:14:47.123746-06:00",
  "summary": {
   "updated": [
    "salesforce-client",
    "employee-center-client"
   ],
   "inconsistent": [
-   "galaxy",
    "listing-builder-client",
    "customer-voice-client",
    "snapshot-client",
@@ -46,30 +45,6 @@
  },
  "projects": [
   {
-   "name": "galaxy",
-   "version": "0.0.0",
-   "filter": "@angular/core_9",
-   "url": "https://github.com/vendasta/galaxy",
-   "documentation": {
-    "frontend": "",
-    "design": ""
-   },
-   "notifications": [],
-   "updates": [
-    {
-     "name": "@vendasta/core",
-     "current": "44.10.0",
-     "update": "44.16.0"
-    },
-    {
-     "name": "@vendasta/uikit",
-     "current": "18.7.1",
-     "update": "18.13.2"
-    }
-   ],
-   "tags": []
-  },
-  {
    "name": "listing-builder-client",
    "version": "1.0.0",
    "filter": "@angular/core_8",
@@ -81,14 +56,9 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/core",
-     "current": "44.15.1",
-     "update": "44.16.0"
-    },
-    {
-     "name": "@vendasta/forms",
-     "current": "7.1.4",
-     "update": "7.2.0"
+     "name": "@vendasta/business-nav",
+     "current": "3.4.3",
+     "update": "5.0.0"
     },
     {
      "name": "@vendasta/devtools",
@@ -96,14 +66,19 @@
      "update": "3.1.0"
     },
     {
+     "name": "@vendasta/core",
+     "current": "44.15.1",
+     "update": "44.16.0"
+    },
+    {
      "name": "@vendasta/businesses",
      "current": "8.1.4",
      "update": "8.3.0"
     },
     {
-     "name": "@vendasta/business-nav",
-     "current": "3.4.3",
-     "update": "5.0.0"
+     "name": "@vendasta/forms",
+     "current": "7.1.4",
+     "update": "7.2.0"
     }
    ],
    "tags": []
@@ -120,9 +95,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/va-filter2",
+     "name": "@vendasta/va-filter2-table",
      "current": "2.1.0",
-     "update": "3.2.1"
+     "update": "3.2.3"
+    },
+    {
+     "name": "@vendasta/businesses",
+     "current": "4.19.2",
+     "update": "8.3.0"
     },
     {
      "name": "@vendasta/devtools",
@@ -130,9 +110,9 @@
      "update": "3.1.0"
     },
     {
-     "name": "@vendasta/forms",
-     "current": "4.3.0",
-     "update": "7.2.0"
+     "name": "@vendasta/core",
+     "current": "32.2.2",
+     "update": "44.16.0"
     },
     {
      "name": "@vendasta/uikit",
@@ -145,24 +125,19 @@
      "update": "5.0.0"
     },
     {
-     "name": "@vendasta/businesses",
-     "current": "4.19.2",
-     "update": "8.3.0"
-    },
-    {
-     "name": "@vendasta/core",
-     "current": "32.2.2",
-     "update": "44.16.0"
-    },
-    {
      "name": "@vendasta/rx-utils",
      "current": "1.4.0",
      "update": "3.3.0"
     },
     {
-     "name": "@vendasta/va-filter2-table",
+     "name": "@vendasta/forms",
+     "current": "4.3.0",
+     "update": "7.2.0"
+    },
+    {
+     "name": "@vendasta/va-filter2",
      "current": "2.1.0",
-     "update": "3.2.3"
+     "update": "3.2.1"
     }
    ],
    "tags": []
@@ -179,19 +154,19 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/businesses",
-     "current": "6.3.0",
-     "update": "8.3.0"
-    },
-    {
-     "name": "@vendasta/vform",
-     "current": "0.7.3",
-     "update": "3.9.1"
-    },
-    {
      "name": "@vendasta/core",
      "current": "37.0.0",
      "update": "44.16.0"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "7.50.0",
+     "update": "18.13.2"
+    },
+    {
+     "name": "@vendasta/businesses",
+     "current": "6.3.0",
+     "update": "8.3.0"
     },
     {
      "name": "@vendasta/forms",
@@ -199,9 +174,9 @@
      "update": "7.2.0"
     },
     {
-     "name": "@vendasta/uikit",
-     "current": "7.50.0",
-     "update": "18.13.2"
+     "name": "@vendasta/vform",
+     "current": "0.7.3",
+     "update": "3.9.1"
     }
    ],
    "tags": []
@@ -218,14 +193,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/uikit",
-     "current": "7.45.0",
-     "update": "18.13.2"
-    },
-    {
      "name": "@vendasta/core",
      "current": "32.2.0",
      "update": "44.16.0"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "7.45.0",
+     "update": "18.13.2"
     }
    ],
    "tags": []
@@ -261,14 +236,9 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/businesses",
-     "current": "7.1.2",
-     "update": "8.3.0"
-    },
-    {
-     "name": "@vendasta/forms",
-     "current": "7.1.2",
-     "update": "7.2.0"
+     "name": "@vendasta/uikit",
+     "current": "16.0.1",
+     "update": "18.13.2"
     },
     {
      "name": "@vendasta/core",
@@ -276,14 +246,14 @@
      "update": "44.16.0"
     },
     {
+     "name": "@vendasta/rx-utils",
+     "current": "3.2.1",
+     "update": "3.3.0"
+    },
+    {
      "name": "@vendasta/va-filter2",
      "current": "3.2.0",
      "update": "3.2.1"
-    },
-    {
-     "name": "@vendasta/uikit",
-     "current": "16.0.1",
-     "update": "18.13.2"
     },
     {
      "name": "@vendasta/va-filter2-table",
@@ -291,9 +261,14 @@
      "update": "3.2.3"
     },
     {
-     "name": "@vendasta/rx-utils",
-     "current": "3.2.1",
-     "update": "3.3.0"
+     "name": "@vendasta/forms",
+     "current": "7.1.2",
+     "update": "7.2.0"
+    },
+    {
+     "name": "@vendasta/businesses",
+     "current": "7.1.2",
+     "update": "8.3.0"
     }
    ],
    "tags": []
@@ -400,24 +375,24 @@
      "update": "5.0.0"
     },
     {
-     "name": "@vendasta/businesses",
-     "current": "8.1.4",
-     "update": "8.3.0"
-    },
-    {
      "name": "@vendasta/forms",
      "current": "7.1.4",
      "update": "7.2.0"
     },
     {
-     "name": "@vendasta/devtools",
-     "current": "0.2.0",
-     "update": "3.1.0"
+     "name": "@vendasta/businesses",
+     "current": "8.1.4",
+     "update": "8.3.0"
     },
     {
      "name": "@vendasta/core",
      "current": "44.15.1",
      "update": "44.16.0"
+    },
+    {
+     "name": "@vendasta/devtools",
+     "current": "0.2.0",
+     "update": "3.1.0"
     }
    ],
    "tags": []
@@ -458,14 +433,14 @@
      "update": "44.16.0"
     },
     {
-     "name": "@vendasta/forms",
-     "current": "4.2.0",
-     "update": "7.2.0"
-    },
-    {
      "name": "@vendasta/uikit",
      "current": "4.8.0",
      "update": "18.13.2"
+    },
+    {
+     "name": "@vendasta/forms",
+     "current": "4.2.0",
+     "update": "7.2.0"
     }
    ],
    "tags": []
@@ -487,14 +462,14 @@
      "update": "18.13.2"
     },
     {
-     "name": "@vendasta/core",
-     "current": "41.1.1",
-     "update": "44.16.0"
-    },
-    {
      "name": "@vendasta/rx-utils",
      "current": "3.1.0",
      "update": "3.3.0"
+    },
+    {
+     "name": "@vendasta/core",
+     "current": "41.1.1",
+     "update": "44.16.0"
     }
    ],
    "tags": []
@@ -511,14 +486,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/rx-utils",
-     "current": "3.1.0",
-     "update": "3.3.0"
-    },
-    {
      "name": "@vendasta/core",
      "current": "42.3.0",
      "update": "44.16.0"
+    },
+    {
+     "name": "@vendasta/rx-utils",
+     "current": "3.1.0",
+     "update": "3.3.0"
     },
     {
      "name": "@vendasta/uikit",
@@ -545,11 +520,6 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/core",
-     "current": "44.15.1",
-     "update": "44.16.0"
-    },
-    {
      "name": "@vendasta/business-nav",
      "current": "3.4.3",
      "update": "5.0.0"
@@ -558,6 +528,11 @@
      "name": "@vendasta/va-filter2",
      "current": "3.0.1",
      "update": "3.2.1"
+    },
+    {
+     "name": "@vendasta/core",
+     "current": "44.15.1",
+     "update": "44.16.0"
     }
    ],
    "tags": []
@@ -574,14 +549,9 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/forms",
-     "current": "2.10.0",
-     "update": "7.2.0"
-    },
-    {
-     "name": "@vendasta/store",
-     "current": "8.18.0",
-     "update": "19.8.3"
+     "name": "@vendasta/uikit",
+     "current": "4.8.0",
+     "update": "18.13.2"
     },
     {
      "name": "@vendasta/core",
@@ -594,9 +564,14 @@
      "update": "3.1.0"
     },
     {
-     "name": "@vendasta/uikit",
-     "current": "4.8.0",
-     "update": "18.13.2"
+     "name": "@vendasta/forms",
+     "current": "2.10.0",
+     "update": "7.2.0"
+    },
+    {
+     "name": "@vendasta/store",
+     "current": "8.18.0",
+     "update": "19.8.3"
     }
    ],
    "tags": []
@@ -613,46 +588,6 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/store",
-     "current": "19.7.0",
-     "update": "19.8.3"
-    },
-    {
-     "name": "@vendasta/sales-common",
-     "current": "5.0.0",
-     "update": "5.0.1"
-    },
-    {
-     "name": "@vendasta/forms",
-     "current": "7.1.3",
-     "update": "7.2.0"
-    },
-    {
-     "name": "@vendasta/businesses",
-     "current": "8.1.1",
-     "update": "8.3.0"
-    },
-    {
-     "name": "@vendasta/uikit",
-     "current": "18.10.1",
-     "update": "18.13.2"
-    },
-    {
-     "name": "@vendasta/core",
-     "current": "44.15.0",
-     "update": "44.16.0"
-    },
-    {
-     "name": "@vendasta/global-brands",
-     "current": "4.0.1",
-     "update": "4.0.2"
-    },
-    {
-     "name": "@vendasta/vform",
-     "current": "3.8.2",
-     "update": "3.9.1"
-    },
-    {
      "name": "@vendasta/sales-ui",
      "current": "12.4.1",
      "update": "12.6.0"
@@ -661,6 +596,46 @@
      "name": "@vendasta/va-filter2-table",
      "current": "3.1.0",
      "update": "3.2.3"
+    },
+    {
+     "name": "@vendasta/store",
+     "current": "19.7.0",
+     "update": "19.8.3"
+    },
+    {
+     "name": "@vendasta/vform",
+     "current": "3.8.2",
+     "update": "3.9.1"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "18.10.1",
+     "update": "18.13.2"
+    },
+    {
+     "name": "@vendasta/sales-common",
+     "current": "5.0.0",
+     "update": "5.0.1"
+    },
+    {
+     "name": "@vendasta/businesses",
+     "current": "8.1.1",
+     "update": "8.3.0"
+    },
+    {
+     "name": "@vendasta/global-brands",
+     "current": "4.0.1",
+     "update": "4.0.2"
+    },
+    {
+     "name": "@vendasta/core",
+     "current": "44.15.0",
+     "update": "44.16.0"
+    },
+    {
+     "name": "@vendasta/forms",
+     "current": "7.1.3",
+     "update": "7.2.0"
     }
    ],
    "tags": []
@@ -690,14 +665,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/uikit",
-     "current": "4.1.0",
-     "update": "18.13.2"
-    },
-    {
      "name": "@vendasta/core",
      "current": "8.5.0",
      "update": "44.16.0"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "4.1.0",
+     "update": "18.13.2"
     }
    ],
    "tags": []
@@ -714,9 +689,9 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/business-nav",
-     "current": "1.0.0",
-     "update": "5.0.0"
+     "name": "@vendasta/uikit",
+     "current": "14.4.0",
+     "update": "18.13.2"
     },
     {
      "name": "@vendasta/core",
@@ -724,9 +699,9 @@
      "update": "44.16.0"
     },
     {
-     "name": "@vendasta/uikit",
-     "current": "14.4.0",
-     "update": "18.13.2"
+     "name": "@vendasta/business-nav",
+     "current": "1.0.0",
+     "update": "5.0.0"
     }
    ],
    "tags": []
@@ -767,14 +742,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/uikit",
-     "current": "11.1.0",
-     "update": "18.13.2"
-    },
-    {
      "name": "@vendasta/core",
      "current": "24.15.1",
      "update": "44.16.0"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "11.1.0",
+     "update": "18.13.2"
     },
     {
      "name": "@vendasta/forms",
@@ -801,29 +776,19 @@
      "update": "7.2.0"
     },
     {
-     "name": "@vendasta/sales-ui",
-     "current": "12.5.2",
-     "update": "12.6.0"
-    },
-    {
-     "name": "@vendasta/social-posts",
-     "current": "1.8.1",
-     "update": "3.0.1"
-    },
-    {
-     "name": "@vendasta/businesses",
-     "current": "8.2.0",
-     "update": "8.3.0"
-    },
-    {
      "name": "@vendasta/rx-utils",
      "current": "1.5.0",
      "update": "3.3.0"
     },
     {
-     "name": "@vendasta/va-filter2-table",
-     "current": "3.2.2",
-     "update": "3.2.3"
+     "name": "@vendasta/store",
+     "current": "19.8.2",
+     "update": "19.8.3"
+    },
+    {
+     "name": "@vendasta/sales-ui",
+     "current": "12.5.2",
+     "update": "12.6.0"
     },
     {
      "name": "@vendasta/smb-invoicing",
@@ -831,9 +796,19 @@
      "update": "2.10.0"
     },
     {
-     "name": "@vendasta/store",
-     "current": "19.8.2",
-     "update": "19.8.3"
+     "name": "@vendasta/va-filter2-table",
+     "current": "3.2.2",
+     "update": "3.2.3"
+    },
+    {
+     "name": "@vendasta/businesses",
+     "current": "8.2.0",
+     "update": "8.3.0"
+    },
+    {
+     "name": "@vendasta/social-posts",
+     "current": "1.8.1",
+     "update": "3.0.1"
     }
    ],
    "tags": []
@@ -850,24 +825,9 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/businesses",
-     "current": "8.1.4",
-     "update": "8.3.0"
-    },
-    {
      "name": "@vendasta/forms",
      "current": "7.1.4",
      "update": "7.2.0"
-    },
-    {
-     "name": "@vendasta/billing-ui",
-     "current": "3.0.2",
-     "update": "3.10.0"
-    },
-    {
-     "name": "@vendasta/core",
-     "current": "44.15.1",
-     "update": "44.16.0"
     },
     {
      "name": "@vendasta/store",
@@ -878,6 +838,21 @@
      "name": "@vendasta/vform",
      "current": "3.1.0",
      "update": "3.9.1"
+    },
+    {
+     "name": "@vendasta/billing-ui",
+     "current": "3.0.2",
+     "update": "3.10.0"
+    },
+    {
+     "name": "@vendasta/businesses",
+     "current": "8.1.4",
+     "update": "8.3.0"
+    },
+    {
+     "name": "@vendasta/core",
+     "current": "44.15.1",
+     "update": "44.16.0"
     }
    ],
    "tags": []
@@ -961,9 +936,9 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/core",
-     "current": "44.15.1",
-     "update": "44.16.0"
+     "name": "@vendasta/businesses",
+     "current": "8.1.4",
+     "update": "8.3.0"
     },
     {
      "name": "@vendasta/forms",
@@ -971,9 +946,9 @@
      "update": "7.2.0"
     },
     {
-     "name": "@vendasta/businesses",
-     "current": "8.1.4",
-     "update": "8.3.0"
+     "name": "@vendasta/core",
+     "current": "44.15.1",
+     "update": "44.16.0"
     }
    ],
    "tags": []
@@ -990,9 +965,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/businesses",
-     "current": "8.1.4",
-     "update": "8.3.0"
+     "name": "@vendasta/forms",
+     "current": "7.1.4",
+     "update": "7.2.0"
+    },
+    {
+     "name": "@vendasta/devtools",
+     "current": "1.0.0",
+     "update": "3.1.0"
     },
     {
      "name": "@vendasta/core",
@@ -1000,19 +980,14 @@
      "update": "44.16.0"
     },
     {
-     "name": "@vendasta/forms",
-     "current": "7.1.4",
-     "update": "7.2.0"
+     "name": "@vendasta/businesses",
+     "current": "8.1.4",
+     "update": "8.3.0"
     },
     {
      "name": "@vendasta/business-nav",
      "current": "3.4.3",
      "update": "5.0.0"
-    },
-    {
-     "name": "@vendasta/devtools",
-     "current": "1.0.0",
-     "update": "3.1.0"
     }
    ],
    "tags": []
@@ -1029,14 +1004,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/core",
-     "current": "24.31.0",
-     "update": "44.16.0"
-    },
-    {
      "name": "@vendasta/uikit",
      "current": "7.50.0",
      "update": "18.13.2"
+    },
+    {
+     "name": "@vendasta/core",
+     "current": "24.31.0",
+     "update": "44.16.0"
     }
    ],
    "tags": []
@@ -1044,7 +1019,7 @@
   {
    "name": "developer-center-client",
    "version": "0.0.0",
-   "filter": "@angular/core_10",
+   "filter": "",
    "url": "https://github.com/vendasta/developer-center-client",
    "documentation": {
     "frontend": "",
@@ -1125,31 +1100,6 @@
      "update": "44.16.0"
     },
     {
-     "name": "@vendasta/business-nav",
-     "current": "3.4.3",
-     "update": "5.0.0"
-    },
-    {
-     "name": "@vendasta/forms",
-     "current": "4.17.0",
-     "update": "7.2.0"
-    },
-    {
-     "name": "@vendasta/url-shortener",
-     "current": "2.0.0",
-     "update": "4.0.1"
-    },
-    {
-     "name": "@vendasta/devtools",
-     "current": "1.0.1",
-     "update": "3.1.0"
-    },
-    {
-     "name": "@vendasta/businesses",
-     "current": "6.6.0",
-     "update": "8.3.0"
-    },
-    {
      "name": "@vendasta/social-posts",
      "current": "1.9.2",
      "update": "3.0.1"
@@ -1158,6 +1108,31 @@
      "name": "@vendasta/uikit",
      "current": "18.5.0",
      "update": "18.13.2"
+    },
+    {
+     "name": "@vendasta/businesses",
+     "current": "6.6.0",
+     "update": "8.3.0"
+    },
+    {
+     "name": "@vendasta/devtools",
+     "current": "1.0.1",
+     "update": "3.1.0"
+    },
+    {
+     "name": "@vendasta/url-shortener",
+     "current": "2.0.0",
+     "update": "4.0.1"
+    },
+    {
+     "name": "@vendasta/business-nav",
+     "current": "3.4.3",
+     "update": "5.0.0"
+    },
+    {
+     "name": "@vendasta/forms",
+     "current": "4.17.0",
+     "update": "7.2.0"
     }
    ],
    "tags": []
@@ -1174,14 +1149,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/core",
-     "current": "4.0.1",
-     "update": "44.16.0"
-    },
-    {
      "name": "@vendasta/uikit",
      "current": "3.5.3",
      "update": "18.13.2"
+    },
+    {
+     "name": "@vendasta/core",
+     "current": "4.0.1",
+     "update": "44.16.0"
     }
    ],
    "tags": []
@@ -1500,10 +1475,6 @@
    [
     "@angular/core_9",
     20
-   ],
-   [
-    "@angular/core_10",
-    0
    ]
   ],
   "projectsByFilters": [
@@ -1529,11 +1500,7 @@
    ],
    [
     "@angular/core_9",
-    13
-   ],
-   [
-    "@angular/core_10",
-    1
+    12
    ]
   ]
  },
@@ -1556,8 +1523,6 @@
     "1.0.0-beta.3": {
      "quantity": 3,
      "projects": [
-      "listing-builder-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -1771,14 +1736,6 @@
     "8.2.14": {
      "quantity": 9,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "codex-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "ms-office-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -1818,12 +1775,8 @@
      ]
     },
     "9.1.9": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -1903,13 +1856,6 @@
     "8.2.3": {
      "quantity": 8,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "ms-office-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -1942,14 +1888,8 @@
      ]
     },
     "9.2.4": {
-     "quantity": 5,
-     "projects": [
-      "galaxy",
-      "concierge-client",
-      "business-center-client",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 4,
+     "projects": []
     }
    }
   },
@@ -1958,10 +1898,7 @@
    "versions": {
     "9.1.7": {
      "quantity": 2,
-     "projects": [
-      "mission-control",
-      "mission-control"
-     ]
+     "projects": []
     }
    }
   },
@@ -2051,14 +1988,6 @@
     "8.2.14": {
      "quantity": 9,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "codex-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "ms-office-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -2098,12 +2027,8 @@
      ]
     },
     "9.1.9": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -2193,14 +2118,6 @@
     "8.2.14": {
      "quantity": 9,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "codex-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "ms-office-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -2240,12 +2157,8 @@
      ]
     },
     "9.1.9": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -2335,14 +2248,6 @@
     "8.2.14": {
      "quantity": 9,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "codex-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "ms-office-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -2382,12 +2287,8 @@
      ]
     },
     "9.1.9": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -2421,12 +2322,6 @@
     "8.2.14": {
      "quantity": 7,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "codex-client",
-      "reputation-client",
-      "vendor-center",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -2460,12 +2355,8 @@
      ]
     },
     "9.1.9": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -2510,27 +2401,12 @@
     "5.4.2": {
      "quantity": 11,
      "projects": [
-      "listing-builder-client",
-      "codex-client",
-      "atlas",
-      "billing-client",
-      "wsp-portal-client",
-      "partner-center",
-      "sales-center-client",
-      "ms-office-client",
-      "digital-ads-client",
-      "listing-builder-client",
       "web-crawler-client"
      ]
     },
     "6.0.0": {
-     "quantity": 4,
-     "projects": [
-      "galaxy",
-      "concierge-client",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 3,
+     "projects": []
     }
    }
   },
@@ -2586,13 +2462,6 @@
     "8.0.0-beta.27": {
      "quantity": 8,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "ms-office-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -2609,14 +2478,8 @@
      ]
     },
     "9.0.0-beta.31": {
-     "quantity": 5,
-     "projects": [
-      "galaxy",
-      "business-center-client",
-      "sales-center-client",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 4,
+     "projects": []
     }
    }
   },
@@ -2706,14 +2569,6 @@
     "8.2.14": {
      "quantity": 9,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "codex-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "ms-office-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -2753,12 +2608,8 @@
      ]
     },
     "9.1.9": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -2944,13 +2795,6 @@
     "8.2.3": {
      "quantity": 8,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "ms-office-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -2983,14 +2827,8 @@
      ]
     },
     "9.2.4": {
-     "quantity": 5,
-     "projects": [
-      "galaxy",
-      "concierge-client",
-      "business-center-client",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 4,
+     "projects": []
     }
    }
   },
@@ -3049,13 +2887,6 @@
     "8.2.3": {
      "quantity": 8,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "ms-office-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -3081,14 +2912,8 @@
      ]
     },
     "9.2.4": {
-     "quantity": 5,
-     "projects": [
-      "galaxy",
-      "concierge-client",
-      "business-center-client",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 4,
+     "projects": []
     }
    }
   },
@@ -3178,14 +3003,6 @@
     "8.2.14": {
      "quantity": 9,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "codex-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "ms-office-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -3225,12 +3042,8 @@
      ]
     },
     "9.1.9": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -3320,14 +3133,6 @@
     "8.2.14": {
      "quantity": 9,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "codex-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "ms-office-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -3367,12 +3172,8 @@
      ]
     },
     "9.1.9": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -3473,14 +3274,6 @@
     "8.2.14": {
      "quantity": 9,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "codex-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "ms-office-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -3520,12 +3313,8 @@
      ]
     },
     "9.1.9": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -3639,12 +3428,8 @@
    "type": "good",
    "versions": {
     "3.1.3": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -3787,19 +3572,6 @@
     "11.0.1": {
      "quantity": 14,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "iam-client",
-      "invoice-client",
-      "concierge-client",
-      "vstore-client",
-      "codex-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendasta-center-client",
-      "sre-reporting-client",
-      "digital-ads-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -3811,15 +3583,8 @@
      ]
     },
     "12.1.2": {
-     "quantity": 8,
+     "quantity": 7,
      "projects": [
-      "galaxy",
-      "atlas",
-      "partner-center",
-      "sales-center-client",
-      "mission-control",
-      "developer-center-client",
-      "mission-control",
       "web-crawler-client"
      ]
     },
@@ -3860,28 +3625,6 @@
     }
    }
   },
-  "@nrwl/angular": {
-   "type": "good",
-   "versions": {
-    "9.3.0": {
-     "quantity": 1,
-     "projects": [
-      "galaxy"
-     ]
-    }
-   }
-  },
-  "@nrwl/nx-cloud": {
-   "type": "good",
-   "versions": {
-    "9.2.4": {
-     "quantity": 1,
-     "projects": [
-      "galaxy"
-     ]
-    }
-   }
-  },
   "@swimlane/ngx-charts": {
    "type": "warning",
    "versions": {
@@ -3899,12 +3642,7 @@
     },
     "12.0.1": {
      "quantity": 4,
-     "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "wsp-portal-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "14.0.0": {
      "quantity": 2,
@@ -4037,10 +3775,7 @@
     },
     "2.0.1": {
      "quantity": 2,
-     "projects": [
-      "mission-control",
-      "mission-control"
-     ]
+     "projects": []
     }
    }
   },
@@ -4132,10 +3867,7 @@
     },
     "4.14.149": {
      "quantity": 2,
-     "projects": [
-      "listing-builder-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     }
    }
   },
@@ -4233,12 +3965,6 @@
     "1.2.1": {
      "quantity": 7,
      "projects": [
-      "listing-builder-client",
-      "partner-center",
-      "business-center-client",
-      "sales-center-client",
-      "digital-ads-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     }
@@ -4308,18 +4034,11 @@
     },
     "3.3.0": {
      "quantity": 2,
-     "projects": [
-      "listing-builder-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "3.4.1": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     },
     "4.0.0": {
      "quantity": 3,
@@ -4425,11 +4144,6 @@
     "3.4.3": {
      "quantity": 6,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -4476,13 +4190,7 @@
     },
     "8.1.4": {
      "quantity": 5,
-     "projects": [
-      "listing-builder-client",
-      "reputation-client",
-      "sales-center-client",
-      "digital-ads-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "8.2.0": {
      "quantity": 1,
@@ -4638,12 +4346,6 @@
       "web-crawler-client"
      ]
     },
-    "44.10.0": {
-     "quantity": 1,
-     "projects": [
-      "galaxy"
-     ]
-    },
     "44.13.0": {
      "quantity": 1,
      "projects": [
@@ -4658,14 +4360,7 @@
     },
     "44.15.1": {
      "quantity": 6,
-     "projects": [
-      "listing-builder-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "sales-center-client",
-      "digital-ads-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "44.16.0": {
      "quantity": 2,
@@ -4682,10 +4377,7 @@
     },
     "44.9.0": {
      "quantity": 2,
-     "projects": [
-      "mission-control",
-      "mission-control"
-     ]
+     "projects": []
     },
     "8.5.0": {
      "quantity": 1,
@@ -4718,10 +4410,7 @@
     },
     "1.0.0": {
      "quantity": 2,
-     "projects": [
-      "listing-builder-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "1.0.1": {
      "quantity": 1,
@@ -4824,15 +4513,7 @@
     },
     "7.1.4": {
      "quantity": 7,
-     "projects": [
-      "listing-builder-client",
-      "reputation-client",
-      "vendor-center",
-      "business-center-client",
-      "sales-center-client",
-      "digital-ads-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     }
    }
   },
@@ -4894,19 +4575,8 @@
      ]
     },
     "1.20.1": {
-     "quantity": 13,
+     "quantity": 12,
      "projects": [
-      "galaxy",
-      "listing-builder-client",
-      "customer-voice-client",
-      "wsp-portal-client",
-      "partner-center",
-      "vendor-center",
-      "sre-reporting-client",
-      "business-center-client",
-      "sales-center-client",
-      "mission-control",
-      "listing-builder-client",
       "mission-control",
       "web-crawler-client"
      ]
@@ -5007,12 +4677,6 @@
     "0.15.0": {
      "quantity": 7,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "digital-ads-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -5057,12 +4721,8 @@
    "type": "good",
    "versions": {
     "1.12.0": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -5179,13 +4839,7 @@
     },
     "0.6.0": {
      "quantity": 5,
-     "projects": [
-      "listing-builder-client",
-      "billing-client",
-      "vendor-center",
-      "digital-ads-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "0.7.0": {
      "quantity": 2,
@@ -5279,11 +4933,7 @@
    "versions": {
     "3.2.1": {
      "quantity": 3,
-     "projects": [
-      "listing-builder-client",
-      "business-center-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "5.0.0": {
      "quantity": 1,
@@ -5350,14 +5000,7 @@
     },
     "1.74.1": {
      "quantity": 6,
-     "projects": [
-      "listing-builder-client",
-      "reputation-client",
-      "business-center-client",
-      "sales-center-client",
-      "digital-ads-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     }
    }
   },
@@ -5573,13 +5216,7 @@
     },
     "1.0.4": {
      "quantity": 5,
-     "projects": [
-      "listing-builder-client",
-      "business-center-client",
-      "sales-center-client",
-      "digital-ads-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     }
    }
   },
@@ -5678,16 +5315,7 @@
     },
     "18.13.2": {
      "quantity": 8,
-     "projects": [
-      "listing-builder-client",
-      "reputation-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "business-center-client",
-      "sales-center-client",
-      "digital-ads-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "18.5.0": {
      "quantity": 2,
@@ -5698,16 +5326,7 @@
     },
     "18.7.0": {
      "quantity": 2,
-     "projects": [
-      "mission-control",
-      "mission-control"
-     ]
-    },
-    "18.7.1": {
-     "quantity": 1,
-     "projects": [
-      "galaxy"
-     ]
+     "projects": []
     },
     "3.5.3": {
      "quantity": 1,
@@ -5885,13 +5504,8 @@
      ]
     },
     "2.4.3": {
-     "quantity": 4,
-     "projects": [
-      "galaxy",
-      "atlas",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 3,
+     "projects": []
     }
    }
   },
@@ -6131,12 +5745,8 @@
    "type": "good",
    "versions": {
     "3.19.2": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     },
     "3.8.2": {
      "quantity": 1,
@@ -6279,19 +5889,6 @@
     "1.1.20150312": {
      "quantity": 15,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "snapshot-client",
-      "iam-client",
-      "invoice-client",
-      "concierge-client",
-      "vstore-client",
-      "reputation-client",
-      "atlas",
-      "vendor-center",
-      "sales-center-client",
-      "mission-control",
-      "listing-builder-client",
       "mission-control",
       "angular-social-marketing"
      ]
@@ -6309,12 +5906,8 @@
    "type": "good",
    "versions": {
     "5.54.0": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -6396,10 +5989,7 @@
     },
     "3.3.3": {
      "quantity": 2,
-     "projects": [
-      "listing-builder-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "3.5.0": {
      "quantity": 1,
@@ -6408,12 +5998,8 @@
      ]
     },
     "3.6.5": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -6452,11 +6038,7 @@
     },
     "5.2.0": {
      "quantity": 3,
-     "projects": [
-      "listing-builder-client",
-      "concierge-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     }
    }
   },
@@ -6719,17 +6301,6 @@
     "7.0.0": {
      "quantity": 12,
      "projects": [
-      "listing-builder-client",
-      "iam-client",
-      "concierge-client",
-      "vstore-client",
-      "codex-client",
-      "reputation-client",
-      "vendasta-center-client",
-      "vendor-center",
-      "business-center-client",
-      "sales-center-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     },
@@ -6741,16 +6312,8 @@
      ]
     },
     "9.0.0": {
-     "quantity": 9,
+     "quantity": 8,
      "projects": [
-      "galaxy",
-      "atlas",
-      "billing-client",
-      "wsp-portal-client",
-      "partner-center",
-      "mission-control",
-      "digital-ads-client",
-      "mission-control",
       "web-crawler-client"
      ]
     }
@@ -6828,12 +6391,8 @@
      ]
     },
     "2.0.2": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -6853,13 +6412,8 @@
      ]
     },
     "2.1.0": {
-     "quantity": 4,
-     "projects": [
-      "galaxy",
-      "sre-reporting-client",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 3,
+     "projects": []
     }
    }
   },
@@ -6922,12 +6476,8 @@
      ]
     },
     "7.14.5": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     },
     "7.15.4": {
      "quantity": 1,
@@ -6961,10 +6511,7 @@
     },
     "7.9.3": {
      "quantity": 2,
-     "projects": [
-      "listing-builder-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     }
    }
   },
@@ -7019,10 +6566,7 @@
     },
     "3.2.7": {
      "quantity": 2,
-     "projects": [
-      "listing-builder-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "3.2.8": {
      "quantity": 2,
@@ -7084,10 +6628,7 @@
     },
     "7.2.0": {
      "quantity": 2,
-     "projects": [
-      "listing-builder-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "8.0.0": {
      "quantity": 1,
@@ -7221,20 +6762,8 @@
    "type": "good",
    "versions": {
     "2.2.0": {
-     "quantity": 13,
+     "quantity": 12,
      "projects": [
-      "galaxy",
-      "codex-client",
-      "godaddy-client",
-      "g-suite-client",
-      "partner-center",
-      "sre-reporting-client",
-      "business-center-client",
-      "mission-control",
-      "ms-office-client",
-      "digital-ads-client",
-      "constant-contact-client",
-      "mission-control",
       "angular-social-marketing"
      ]
     }
@@ -7324,11 +6853,7 @@
     },
     "1.7.44": {
      "quantity": 3,
-     "projects": [
-      "listing-builder-client",
-      "sales-center-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "1.7.46": {
      "quantity": 1,
@@ -7351,16 +6876,7 @@
     },
     "1.7.51": {
      "quantity": 2,
-     "projects": [
-      "mission-control",
-      "mission-control"
-     ]
-    },
-    "1.7.52": {
-     "quantity": 1,
-     "projects": [
-      "galaxy"
-     ]
+     "projects": []
     },
     "1.7.7": {
      "quantity": 5,
@@ -7386,10 +6902,7 @@
     },
     "4.17.15": {
      "quantity": 2,
-     "projects": [
-      "listing-builder-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     }
    }
   },
@@ -7546,21 +7059,6 @@
     "2.24.0": {
      "quantity": 17,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "iam-client",
-      "concierge-client",
-      "vstore-client",
-      "codex-client",
-      "reputation-client",
-      "heimdall-client",
-      "atlas",
-      "billing-client",
-      "wsp-portal-client",
-      "vendor-center",
-      "sre-reporting-client",
-      "digital-ads-client",
-      "listing-builder-client",
       "developer-center-client",
       "web-crawler-client"
      ]
@@ -7572,13 +7070,8 @@
      ]
     },
     "2.26.0": {
-     "quantity": 4,
-     "projects": [
-      "galaxy",
-      "sales-center-client",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 3,
+     "projects": []
     }
    }
   },
@@ -7632,12 +7125,8 @@
      ]
     },
     "1.2.3": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -7813,10 +7302,7 @@
     },
     "12.2.1": {
      "quantity": 2,
-     "projects": [
-      "listing-builder-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "12.3.0": {
      "quantity": 1,
@@ -7934,28 +7420,13 @@
     "9.0.0": {
      "quantity": 12,
      "projects": [
-      "listing-builder-client",
-      "customer-voice-client",
-      "reputation-client",
-      "atlas",
-      "billing-client",
-      "partner-center",
-      "vendor-center",
-      "business-center-client",
-      "digital-ads-client",
-      "listing-builder-client",
       "web-crawler-client",
       "angular-social-marketing"
      ]
     },
     "9.1.1": {
-     "quantity": 4,
-     "projects": [
-      "galaxy",
-      "wsp-portal-client",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 3,
+     "projects": []
     }
    }
   },
@@ -8161,12 +7632,8 @@
    "type": "good",
    "versions": {
     "7.0.0": {
-     "quantity": 3,
-     "projects": [
-      "galaxy",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 2,
+     "projects": []
     }
    }
   },
@@ -8207,20 +7674,8 @@
    "type": "good",
    "versions": {
     "3.27.2": {
-     "quantity": 11,
-     "projects": [
-      "galaxy",
-      "concierge-client",
-      "reputation-client",
-      "heimdall-client",
-      "wsp-portal-client",
-      "partner-center",
-      "vendor-center",
-      "sre-reporting-client",
-      "business-center-client",
-      "mission-control",
-      "mission-control"
-     ]
+     "quantity": 10,
+     "projects": []
     }
    }
   },
@@ -8287,12 +7742,7 @@
     },
     "6.4.0": {
      "quantity": 4,
-     "projects": [
-      "listing-builder-client",
-      "vstore-client",
-      "sre-reporting-client",
-      "listing-builder-client"
-     ]
+     "projects": []
     },
     "6.5.2": {
      "quantity": 3,
@@ -8325,16 +7775,8 @@
      ]
     },
     "6.5.5": {
-     "quantity": 7,
-     "projects": [
-      "galaxy",
-      "heimdall-client",
-      "vendasta-center-client",
-      "business-center-client",
-      "mission-control",
-      "ms-office-client",
-      "mission-control"
-     ]
+     "quantity": 6,
+     "projects": []
     },
     "7.0.0-alpha.0": {
      "quantity": 1,
@@ -8391,11 +7833,7 @@
    "versions": {
     "0.1.8": {
      "quantity": 3,
-     "projects": [
-      "partner-center",
-      "mission-control",
-      "mission-control"
-     ]
+     "projects": []
     }
    }
   },
@@ -8612,14 +8050,8 @@
      ]
     },
     "2.0.0": {
-     "quantity": 5,
-     "projects": [
-      "galaxy",
-      "business-center-client",
-      "mission-control",
-      "developer-center-client",
-      "mission-control"
-     ]
+     "quantity": 4,
+     "projects": []
     }
    }
   },
@@ -8702,9 +8134,8 @@
      ]
     },
     "8.1.0": {
-     "quantity": 2,
+     "quantity": 1,
      "projects": [
-      "galaxy",
       "business-center-client"
      ]
     }
@@ -8725,15 +8156,6 @@
     "2.3.2": {
      "quantity": 10,
      "projects": [
-      "listing-builder-client",
-      "concierge-client",
-      "atlas",
-      "billing-client",
-      "wsp-portal-client",
-      "partner-center",
-      "vendor-center",
-      "sales-center-client",
-      "listing-builder-client",
       "angular-social-marketing"
      ]
     }
@@ -8765,24 +8187,8 @@
    "type": "bad",
    "versions": {
     "0.10.2": {
-     "quantity": 18,
+     "quantity": 17,
      "projects": [
-      "galaxy",
-      "listing-builder-client",
-      "customer-voice-client",
-      "invoice-client",
-      "concierge-client",
-      "reputation-client",
-      "heimdall-client",
-      "atlas",
-      "billing-client",
-      "partner-center",
-      "vendor-center",
-      "business-center-client",
-      "sales-center-client",
-      "mission-control",
-      "digital-ads-client",
-      "listing-builder-client",
       "mission-control",
       "web-crawler-client"
      ]
