@@ -1,5 +1,5 @@
 {
- "generatedAt": "2020-06-28T16:23:54.822036-06:00",
+ "generatedAt": "2020-07-05T01:08:30.683916-06:00",
  "summary": {
   "updated": [
    "salesforce-client",
@@ -57,14 +57,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/core",
-     "current": "44.10.0",
-     "update": "44.16.0"
-    },
-    {
      "name": "@vendasta/uikit",
      "current": "18.7.1",
-     "update": "18.13.2"
+     "update": "18.13.3"
+    },
+    {
+     "name": "@vendasta/core",
+     "current": "44.10.0",
+     "update": "44.17.0"
     }
    ],
    "tags": []
@@ -81,29 +81,34 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/core",
-     "current": "44.15.1",
-     "update": "44.16.0"
-    },
-    {
      "name": "@vendasta/forms",
      "current": "7.1.4",
      "update": "7.2.0"
     },
     {
-     "name": "@vendasta/devtools",
-     "current": "1.0.0",
-     "update": "3.1.0"
-    },
-    {
-     "name": "@vendasta/businesses",
-     "current": "8.1.4",
-     "update": "8.3.0"
+     "name": "@vendasta/uikit",
+     "current": "18.13.2",
+     "update": "18.13.3"
     },
     {
      "name": "@vendasta/business-nav",
      "current": "3.4.3",
      "update": "5.0.0"
+    },
+    {
+     "name": "@vendasta/businesses",
+     "current": "8.1.4",
+     "update": "8.4.0"
+    },
+    {
+     "name": "@vendasta/core",
+     "current": "44.15.1",
+     "update": "44.17.0"
+    },
+    {
+     "name": "@vendasta/devtools",
+     "current": "1.0.0",
+     "update": "3.1.0"
     }
    ],
    "tags": []
@@ -120,24 +125,9 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/va-filter2",
-     "current": "2.1.0",
-     "update": "3.2.1"
-    },
-    {
      "name": "@vendasta/devtools",
      "current": "0.5.0",
      "update": "3.1.0"
-    },
-    {
-     "name": "@vendasta/forms",
-     "current": "4.3.0",
-     "update": "7.2.0"
-    },
-    {
-     "name": "@vendasta/uikit",
-     "current": "18.5.0",
-     "update": "18.13.2"
     },
     {
      "name": "@vendasta/business-nav",
@@ -145,14 +135,9 @@
      "update": "5.0.0"
     },
     {
-     "name": "@vendasta/businesses",
-     "current": "4.19.2",
-     "update": "8.3.0"
-    },
-    {
      "name": "@vendasta/core",
      "current": "32.2.2",
-     "update": "44.16.0"
+     "update": "44.17.0"
     },
     {
      "name": "@vendasta/rx-utils",
@@ -160,9 +145,29 @@
      "update": "3.3.0"
     },
     {
+     "name": "@vendasta/forms",
+     "current": "4.3.0",
+     "update": "7.2.0"
+    },
+    {
      "name": "@vendasta/va-filter2-table",
      "current": "2.1.0",
      "update": "3.2.3"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "18.5.0",
+     "update": "18.13.3"
+    },
+    {
+     "name": "@vendasta/va-filter2",
+     "current": "2.1.0",
+     "update": "3.2.1"
+    },
+    {
+     "name": "@vendasta/businesses",
+     "current": "4.19.2",
+     "update": "8.4.0"
     }
    ],
    "tags": []
@@ -181,17 +186,7 @@
     {
      "name": "@vendasta/businesses",
      "current": "6.3.0",
-     "update": "8.3.0"
-    },
-    {
-     "name": "@vendasta/vform",
-     "current": "0.7.3",
-     "update": "3.9.1"
-    },
-    {
-     "name": "@vendasta/core",
-     "current": "37.0.0",
-     "update": "44.16.0"
+     "update": "8.4.0"
     },
     {
      "name": "@vendasta/forms",
@@ -199,9 +194,19 @@
      "update": "7.2.0"
     },
     {
+     "name": "@vendasta/core",
+     "current": "37.0.0",
+     "update": "44.17.0"
+    },
+    {
      "name": "@vendasta/uikit",
      "current": "7.50.0",
-     "update": "18.13.2"
+     "update": "18.13.3"
+    },
+    {
+     "name": "@vendasta/vform",
+     "current": "0.7.3",
+     "update": "3.9.1"
     }
    ],
    "tags": []
@@ -218,14 +223,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/uikit",
-     "current": "7.45.0",
-     "update": "18.13.2"
-    },
-    {
      "name": "@vendasta/core",
      "current": "32.2.0",
-     "update": "44.16.0"
+     "update": "44.17.0"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "7.45.0",
+     "update": "18.13.3"
     }
    ],
    "tags": []
@@ -244,7 +249,7 @@
     {
      "name": "@vendasta/core",
      "current": "32.9.1",
-     "update": "44.16.0"
+     "update": "44.17.0"
     }
    ],
    "tags": []
@@ -261,19 +266,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/businesses",
-     "current": "7.1.2",
-     "update": "8.3.0"
+     "name": "@vendasta/rx-utils",
+     "current": "3.2.1",
+     "update": "3.3.0"
     },
     {
-     "name": "@vendasta/forms",
-     "current": "7.1.2",
-     "update": "7.2.0"
-    },
-    {
-     "name": "@vendasta/core",
-     "current": "44.13.0",
-     "update": "44.16.0"
+     "name": "@vendasta/uikit",
+     "current": "16.0.1",
+     "update": "18.13.3"
     },
     {
      "name": "@vendasta/va-filter2",
@@ -281,9 +281,14 @@
      "update": "3.2.1"
     },
     {
-     "name": "@vendasta/uikit",
-     "current": "16.0.1",
-     "update": "18.13.2"
+     "name": "@vendasta/forms",
+     "current": "7.1.2",
+     "update": "7.2.0"
+    },
+    {
+     "name": "@vendasta/businesses",
+     "current": "7.1.2",
+     "update": "8.4.0"
     },
     {
      "name": "@vendasta/va-filter2-table",
@@ -291,9 +296,9 @@
      "update": "3.2.3"
     },
     {
-     "name": "@vendasta/rx-utils",
-     "current": "3.2.1",
-     "update": "3.3.0"
+     "name": "@vendasta/core",
+     "current": "44.13.0",
+     "update": "44.17.0"
     }
    ],
    "tags": []
@@ -325,12 +330,12 @@
     {
      "name": "@vendasta/core",
      "current": "18.57.1",
-     "update": "44.16.0"
+     "update": "44.17.0"
     },
     {
      "name": "@vendasta/uikit",
      "current": "7.45.0",
-     "update": "18.13.2"
+     "update": "18.13.3"
     }
    ],
    "tags": []
@@ -349,12 +354,12 @@
     {
      "name": "@vendasta/uikit",
      "current": "8.26.1",
-     "update": "18.13.2"
+     "update": "18.13.3"
     },
     {
      "name": "@vendasta/core",
      "current": "35.2.0",
-     "update": "44.16.0"
+     "update": "44.17.0"
     }
    ],
    "tags": []
@@ -371,14 +376,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/core",
-     "current": "16.5.1",
-     "update": "44.16.0"
-    },
-    {
      "name": "@vendasta/uikit",
      "current": "7.0.0",
-     "update": "18.13.2"
+     "update": "18.13.3"
+    },
+    {
+     "name": "@vendasta/core",
+     "current": "16.5.1",
+     "update": "44.17.0"
     }
    ],
    "tags": []
@@ -395,14 +400,9 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/business-nav",
-     "current": "3.4.3",
-     "update": "5.0.0"
-    },
-    {
-     "name": "@vendasta/businesses",
-     "current": "8.1.4",
-     "update": "8.3.0"
+     "name": "@vendasta/devtools",
+     "current": "0.2.0",
+     "update": "3.1.0"
     },
     {
      "name": "@vendasta/forms",
@@ -410,14 +410,19 @@
      "update": "7.2.0"
     },
     {
-     "name": "@vendasta/devtools",
-     "current": "0.2.0",
-     "update": "3.1.0"
+     "name": "@vendasta/businesses",
+     "current": "8.1.4",
+     "update": "8.4.0"
+    },
+    {
+     "name": "@vendasta/business-nav",
+     "current": "3.4.3",
+     "update": "5.0.0"
     },
     {
      "name": "@vendasta/core",
      "current": "44.15.1",
-     "update": "44.16.0"
+     "update": "44.17.0"
     }
    ],
    "tags": []
@@ -436,7 +441,7 @@
     {
      "name": "@vendasta/core",
      "current": "43.0.0",
-     "update": "44.16.0"
+     "update": "44.17.0"
     }
    ],
    "tags": []
@@ -455,17 +460,17 @@
     {
      "name": "@vendasta/core",
      "current": "18.12.0",
-     "update": "44.16.0"
+     "update": "44.17.0"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "4.8.0",
+     "update": "18.13.3"
     },
     {
      "name": "@vendasta/forms",
      "current": "4.2.0",
      "update": "7.2.0"
-    },
-    {
-     "name": "@vendasta/uikit",
-     "current": "4.8.0",
-     "update": "18.13.2"
     }
    ],
    "tags": []
@@ -484,12 +489,12 @@
     {
      "name": "@vendasta/uikit",
      "current": "16.5.0",
-     "update": "18.13.2"
+     "update": "18.13.3"
     },
     {
      "name": "@vendasta/core",
      "current": "41.1.1",
-     "update": "44.16.0"
+     "update": "44.17.0"
     },
     {
      "name": "@vendasta/rx-utils",
@@ -511,19 +516,19 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/rx-utils",
-     "current": "3.1.0",
-     "update": "3.3.0"
-    },
-    {
      "name": "@vendasta/core",
      "current": "42.3.0",
-     "update": "44.16.0"
+     "update": "44.17.0"
     },
     {
      "name": "@vendasta/uikit",
      "current": "16.5.0",
-     "update": "18.13.2"
+     "update": "18.13.3"
+    },
+    {
+     "name": "@vendasta/rx-utils",
+     "current": "3.1.0",
+     "update": "3.3.0"
     },
     {
      "name": "@vendasta/va-filter2",
@@ -545,19 +550,24 @@
    "notifications": [],
    "updates": [
     {
+     "name": "@vendasta/va-filter2",
+     "current": "3.0.1",
+     "update": "3.2.1"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "18.13.2",
+     "update": "18.13.3"
+    },
+    {
      "name": "@vendasta/core",
      "current": "44.15.1",
-     "update": "44.16.0"
+     "update": "44.17.0"
     },
     {
      "name": "@vendasta/business-nav",
      "current": "3.4.3",
      "update": "5.0.0"
-    },
-    {
-     "name": "@vendasta/va-filter2",
-     "current": "3.0.1",
-     "update": "3.2.1"
     }
    ],
    "tags": []
@@ -579,14 +589,9 @@
      "update": "7.2.0"
     },
     {
-     "name": "@vendasta/store",
-     "current": "8.18.0",
-     "update": "19.8.3"
-    },
-    {
-     "name": "@vendasta/core",
-     "current": "15.11.0",
-     "update": "44.16.0"
+     "name": "@vendasta/uikit",
+     "current": "4.8.0",
+     "update": "18.13.3"
     },
     {
      "name": "@vendasta/devtools",
@@ -594,9 +599,14 @@
      "update": "3.1.0"
     },
     {
-     "name": "@vendasta/uikit",
-     "current": "4.8.0",
-     "update": "18.13.2"
+     "name": "@vendasta/store",
+     "current": "8.18.0",
+     "update": "19.9.0"
+    },
+    {
+     "name": "@vendasta/core",
+     "current": "15.11.0",
+     "update": "44.17.0"
     }
    ],
    "tags": []
@@ -613,34 +623,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/store",
-     "current": "19.7.0",
-     "update": "19.8.3"
-    },
-    {
-     "name": "@vendasta/sales-common",
-     "current": "5.0.0",
-     "update": "5.0.1"
-    },
-    {
-     "name": "@vendasta/forms",
-     "current": "7.1.3",
-     "update": "7.2.0"
-    },
-    {
-     "name": "@vendasta/businesses",
-     "current": "8.1.1",
-     "update": "8.3.0"
+     "name": "@vendasta/core",
+     "current": "44.16.0",
+     "update": "44.17.0"
     },
     {
      "name": "@vendasta/uikit",
-     "current": "18.10.1",
-     "update": "18.13.2"
-    },
-    {
-     "name": "@vendasta/core",
-     "current": "44.15.0",
-     "update": "44.16.0"
+     "current": "18.13.2",
+     "update": "18.13.3"
     },
     {
      "name": "@vendasta/global-brands",
@@ -651,16 +641,6 @@
      "name": "@vendasta/vform",
      "current": "3.8.2",
      "update": "3.9.1"
-    },
-    {
-     "name": "@vendasta/sales-ui",
-     "current": "12.4.1",
-     "update": "12.6.0"
-    },
-    {
-     "name": "@vendasta/va-filter2-table",
-     "current": "3.1.0",
-     "update": "3.2.3"
     }
    ],
    "tags": []
@@ -690,14 +670,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/uikit",
-     "current": "4.1.0",
-     "update": "18.13.2"
-    },
-    {
      "name": "@vendasta/core",
      "current": "8.5.0",
-     "update": "44.16.0"
+     "update": "44.17.0"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "4.1.0",
+     "update": "18.13.3"
     }
    ],
    "tags": []
@@ -714,19 +694,19 @@
    "notifications": [],
    "updates": [
     {
+     "name": "@vendasta/core",
+     "current": "32.10.0",
+     "update": "44.17.0"
+    },
+    {
      "name": "@vendasta/business-nav",
      "current": "1.0.0",
      "update": "5.0.0"
     },
     {
-     "name": "@vendasta/core",
-     "current": "32.10.0",
-     "update": "44.16.0"
-    },
-    {
      "name": "@vendasta/uikit",
      "current": "14.4.0",
-     "update": "18.13.2"
+     "update": "18.13.3"
     }
    ],
    "tags": []
@@ -743,14 +723,19 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/store",
-     "current": "19.8.2",
-     "update": "19.8.3"
+     "name": "@vendasta/core",
+     "current": "44.16.0",
+     "update": "44.17.0"
     },
     {
-     "name": "@vendasta/forms",
-     "current": "7.1.4",
-     "update": "7.2.0"
+     "name": "@vendasta/store",
+     "current": "19.8.2",
+     "update": "19.9.0"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "18.13.2",
+     "update": "18.13.3"
     }
    ],
    "tags": []
@@ -767,14 +752,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/uikit",
-     "current": "11.1.0",
-     "update": "18.13.2"
-    },
-    {
      "name": "@vendasta/core",
      "current": "24.15.1",
-     "update": "44.16.0"
+     "update": "44.17.0"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "11.1.0",
+     "update": "18.13.3"
     },
     {
      "name": "@vendasta/forms",
@@ -796,34 +781,9 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/forms",
-     "current": "7.1.4",
-     "update": "7.2.0"
-    },
-    {
-     "name": "@vendasta/sales-ui",
-     "current": "12.5.2",
-     "update": "12.6.0"
-    },
-    {
-     "name": "@vendasta/social-posts",
-     "current": "1.8.1",
-     "update": "3.0.1"
-    },
-    {
-     "name": "@vendasta/businesses",
-     "current": "8.2.0",
-     "update": "8.3.0"
-    },
-    {
      "name": "@vendasta/rx-utils",
      "current": "1.5.0",
      "update": "3.3.0"
-    },
-    {
-     "name": "@vendasta/va-filter2-table",
-     "current": "3.2.2",
-     "update": "3.2.3"
     },
     {
      "name": "@vendasta/smb-invoicing",
@@ -831,9 +791,39 @@
      "update": "2.10.0"
     },
     {
-     "name": "@vendasta/store",
-     "current": "19.8.2",
-     "update": "19.8.3"
+     "name": "@vendasta/forms",
+     "current": "7.1.4",
+     "update": "7.2.0"
+    },
+    {
+     "name": "@vendasta/businesses",
+     "current": "8.2.0",
+     "update": "8.4.0"
+    },
+    {
+     "name": "@vendasta/reviews",
+     "current": "6.7.0",
+     "update": "6.7.1"
+    },
+    {
+     "name": "@vendasta/va-filter2-table",
+     "current": "3.2.2",
+     "update": "3.2.3"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "18.13.2",
+     "update": "18.13.3"
+    },
+    {
+     "name": "@vendasta/core",
+     "current": "44.16.0",
+     "update": "44.17.0"
+    },
+    {
+     "name": "@vendasta/social-posts",
+     "current": "1.8.1",
+     "update": "3.0.1"
     }
    ],
    "tags": []
@@ -850,14 +840,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/businesses",
-     "current": "8.1.4",
-     "update": "8.3.0"
-    },
-    {
      "name": "@vendasta/forms",
      "current": "7.1.4",
      "update": "7.2.0"
+    },
+    {
+     "name": "@vendasta/vform",
+     "current": "3.1.0",
+     "update": "3.9.1"
     },
     {
      "name": "@vendasta/billing-ui",
@@ -867,17 +857,17 @@
     {
      "name": "@vendasta/core",
      "current": "44.15.1",
-     "update": "44.16.0"
+     "update": "44.17.0"
     },
     {
-     "name": "@vendasta/store",
-     "current": "19.8.2",
-     "update": "19.8.3"
+     "name": "@vendasta/uikit",
+     "current": "18.13.2",
+     "update": "18.13.3"
     },
     {
-     "name": "@vendasta/vform",
-     "current": "3.1.0",
-     "update": "3.9.1"
+     "name": "@vendasta/businesses",
+     "current": "8.1.4",
+     "update": "8.4.0"
     }
    ],
    "tags": []
@@ -896,12 +886,12 @@
     {
      "name": "@vendasta/core",
      "current": "44.9.0",
-     "update": "44.16.0"
+     "update": "44.17.0"
     },
     {
      "name": "@vendasta/uikit",
      "current": "18.7.0",
-     "update": "18.13.2"
+     "update": "18.13.3"
     }
    ],
    "tags": []
@@ -918,14 +908,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/uikit",
-     "current": "11.2.6",
-     "update": "18.13.2"
-    },
-    {
      "name": "@vendasta/core",
      "current": "21.23.0",
-     "update": "44.16.0"
+     "update": "44.17.0"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "11.2.6",
+     "update": "18.13.3"
     }
    ],
    "tags": []
@@ -944,7 +934,7 @@
     {
      "name": "@vendasta/core",
      "current": "20.3.0",
-     "update": "44.16.0"
+     "update": "44.17.0"
     }
    ],
    "tags": []
@@ -961,9 +951,14 @@
    "notifications": [],
    "updates": [
     {
+     "name": "@vendasta/businesses",
+     "current": "8.1.4",
+     "update": "8.4.0"
+    },
+    {
      "name": "@vendasta/core",
      "current": "44.15.1",
-     "update": "44.16.0"
+     "update": "44.17.0"
     },
     {
      "name": "@vendasta/forms",
@@ -971,9 +966,9 @@
      "update": "7.2.0"
     },
     {
-     "name": "@vendasta/businesses",
-     "current": "8.1.4",
-     "update": "8.3.0"
+     "name": "@vendasta/uikit",
+     "current": "18.13.2",
+     "update": "18.13.3"
     }
    ],
    "tags": []
@@ -990,14 +985,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/businesses",
-     "current": "8.1.4",
-     "update": "8.3.0"
+     "name": "@vendasta/devtools",
+     "current": "1.0.0",
+     "update": "3.1.0"
     },
     {
      "name": "@vendasta/core",
      "current": "44.15.1",
-     "update": "44.16.0"
+     "update": "44.17.0"
     },
     {
      "name": "@vendasta/forms",
@@ -1005,14 +1000,19 @@
      "update": "7.2.0"
     },
     {
+     "name": "@vendasta/businesses",
+     "current": "8.1.4",
+     "update": "8.4.0"
+    },
+    {
+     "name": "@vendasta/uikit",
+     "current": "18.13.2",
+     "update": "18.13.3"
+    },
+    {
      "name": "@vendasta/business-nav",
      "current": "3.4.3",
      "update": "5.0.0"
-    },
-    {
-     "name": "@vendasta/devtools",
-     "current": "1.0.0",
-     "update": "3.1.0"
     }
    ],
    "tags": []
@@ -1029,14 +1029,14 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/core",
-     "current": "24.31.0",
-     "update": "44.16.0"
-    },
-    {
      "name": "@vendasta/uikit",
      "current": "7.50.0",
-     "update": "18.13.2"
+     "update": "18.13.3"
+    },
+    {
+     "name": "@vendasta/core",
+     "current": "24.31.0",
+     "update": "44.17.0"
     }
    ],
    "tags": []
@@ -1055,7 +1055,7 @@
     {
      "name": "@vendasta/core",
      "current": "33.0.0",
-     "update": "44.16.0"
+     "update": "44.17.0"
     }
    ],
    "tags": []
@@ -1074,12 +1074,12 @@
     {
      "name": "@vendasta/uikit",
      "current": "18.7.0",
-     "update": "18.13.2"
+     "update": "18.13.3"
     },
     {
      "name": "@vendasta/core",
      "current": "44.9.0",
-     "update": "44.16.0"
+     "update": "44.17.0"
     }
    ],
    "tags": []
@@ -1098,12 +1098,12 @@
     {
      "name": "@vendasta/uikit",
      "current": "17.1.0",
-     "update": "18.13.2"
+     "update": "18.13.3"
     },
     {
      "name": "@vendasta/core",
      "current": "43.0.0",
-     "update": "44.16.0"
+     "update": "44.17.0"
     }
    ],
    "tags": []
@@ -1120,14 +1120,9 @@
    "notifications": [],
    "updates": [
     {
-     "name": "@vendasta/core",
-     "current": "44.3.0",
-     "update": "44.16.0"
-    },
-    {
-     "name": "@vendasta/business-nav",
-     "current": "3.4.3",
-     "update": "5.0.0"
+     "name": "@vendasta/businesses",
+     "current": "6.6.0",
+     "update": "8.4.0"
     },
     {
      "name": "@vendasta/forms",
@@ -1140,14 +1135,9 @@
      "update": "4.0.1"
     },
     {
-     "name": "@vendasta/devtools",
-     "current": "1.0.1",
-     "update": "3.1.0"
-    },
-    {
-     "name": "@vendasta/businesses",
-     "current": "6.6.0",
-     "update": "8.3.0"
+     "name": "@vendasta/business-nav",
+     "current": "3.4.3",
+     "update": "5.0.0"
     },
     {
      "name": "@vendasta/social-posts",
@@ -1157,7 +1147,12 @@
     {
      "name": "@vendasta/uikit",
      "current": "18.5.0",
-     "update": "18.13.2"
+     "update": "18.13.3"
+    },
+    {
+     "name": "@vendasta/devtools",
+     "current": "1.0.1",
+     "update": "3.1.0"
     }
    ],
    "tags": []
@@ -1176,12 +1171,12 @@
     {
      "name": "@vendasta/core",
      "current": "4.0.1",
-     "update": "44.16.0"
+     "update": "44.17.0"
     },
     {
      "name": "@vendasta/uikit",
      "current": "3.5.3",
-     "update": "18.13.2"
+     "update": "18.13.3"
     }
    ],
    "tags": []
@@ -1216,7 +1211,7 @@
   },
   {
    "name": "@vendasta/businesses",
-   "version": "8.3.0",
+   "version": "8.4.0",
    "filter": "@angular/core_9",
    "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/businesses",
    "documentation": {
@@ -1229,7 +1224,7 @@
   },
   {
    "name": "@vendasta/core",
-   "version": "44.16.0",
+   "version": "44.17.0",
    "filter": "@angular/core_9",
    "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/core",
    "documentation": {
@@ -1294,7 +1289,7 @@
   },
   {
    "name": "@vendasta/reviews",
-   "version": "6.5.4",
+   "version": "6.7.1",
    "filter": "@angular/core_9",
    "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/reviews",
    "documentation": {
@@ -1333,7 +1328,7 @@
   },
   {
    "name": "@vendasta/sales-ui",
-   "version": "12.6.0",
+   "version": "12.17.2",
    "filter": "@angular/core_9",
    "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/sales-ui",
    "documentation": {
@@ -1385,7 +1380,7 @@
   },
   {
    "name": "@vendasta/store",
-   "version": "19.8.3",
+   "version": "19.9.0",
    "filter": "@angular/core_9",
    "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/store",
    "documentation": {
@@ -1398,7 +1393,7 @@
   },
   {
    "name": "@vendasta/uikit",
-   "version": "18.13.2",
+   "version": "18.13.3",
    "filter": "@angular/core_9",
    "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/uikit",
    "documentation": {
@@ -3882,6 +3877,18 @@
     }
    }
   },
+  "@sentry/browser": {
+   "type": "good",
+   "versions": {
+    "5.19.0": {
+     "quantity": 2,
+     "projects": [
+      "listing-builder-client",
+      "listing-builder-client"
+     ]
+    }
+   }
+  },
   "@swimlane/ngx-charts": {
    "type": "warning",
    "versions": {
@@ -4231,10 +4238,11 @@
      ]
     },
     "1.2.1": {
-     "quantity": 7,
+     "quantity": 8,
      "projects": [
       "listing-builder-client",
       "partner-center",
+      "vendor-center",
       "business-center-client",
       "sales-center-client",
       "digital-ads-client",
@@ -4365,7 +4373,7 @@
       "sales-center-client"
      ]
     },
-    "1.95.2": {
+    "1.97.0": {
      "quantity": 1,
      "projects": [
       "partner-center"
@@ -4468,12 +4476,6 @@
       "concierge-client"
      ]
     },
-    "8.1.1": {
-     "quantity": 1,
-     "projects": [
-      "partner-center"
-     ]
-    },
     "8.1.4": {
      "quantity": 5,
      "projects": [
@@ -4488,6 +4490,13 @@
      "quantity": 1,
      "projects": [
       "business-center-client"
+     ]
+    },
+    "8.4.0": {
+     "quantity": 2,
+     "projects": [
+      "partner-center",
+      "vendor-center"
      ]
     }
    }
@@ -4650,12 +4659,6 @@
       "concierge-client"
      ]
     },
-    "44.15.0": {
-     "quantity": 1,
-     "projects": [
-      "partner-center"
-     ]
-    },
     "44.15.1": {
      "quantity": 6,
      "projects": [
@@ -4668,13 +4671,14 @@
      ]
     },
     "44.16.0": {
-     "quantity": 2,
+     "quantity": 3,
      "projects": [
+      "partner-center",
       "vendor-center",
       "business-center-client"
      ]
     },
-    "44.3.0": {
+    "44.17.0": {
      "quantity": 1,
      "projects": [
       "angular-social-marketing"
@@ -4816,22 +4820,22 @@
       "concierge-client"
      ]
     },
-    "7.1.3": {
-     "quantity": 1,
-     "projects": [
-      "partner-center"
-     ]
-    },
     "7.1.4": {
-     "quantity": 7,
+     "quantity": 6,
      "projects": [
       "listing-builder-client",
       "reputation-client",
-      "vendor-center",
       "business-center-client",
       "sales-center-client",
       "digital-ads-client",
       "listing-builder-client"
+     ]
+    },
+    "7.2.0": {
+     "quantity": 2,
+     "projects": [
+      "partner-center",
+      "vendor-center"
      ]
     }
    }
@@ -5045,7 +5049,7 @@
       "concierge-client"
      ]
     },
-    "0.27.1": {
+    "0.28.1": {
      "quantity": 1,
      "projects": [
       "sales-center-client"
@@ -5228,11 +5232,16 @@
   "@vendasta/reviews": {
    "type": "good",
    "versions": {
-    "6.5.4": {
-     "quantity": 2,
+    "6.7.0": {
+     "quantity": 1,
      "projects": [
-      "reputation-client",
       "business-center-client"
+     ]
+    },
+    "6.7.1": {
+     "quantity": 1,
+     "projects": [
+      "reputation-client"
      ]
     }
    }
@@ -5302,15 +5311,10 @@
   "@vendasta/sales-common": {
    "type": "good",
    "versions": {
-    "5.0.0": {
-     "quantity": 1,
-     "projects": [
-      "partner-center"
-     ]
-    },
     "5.0.1": {
-     "quantity": 1,
+     "quantity": 2,
      "projects": [
+      "partner-center",
       "sales-center-client"
      ]
     }
@@ -5364,7 +5368,7 @@
   "@vendasta/sales-shared-components": {
    "type": "good",
    "versions": {
-    "https": {
+    "0.0.1-alpha.4": {
      "quantity": 1,
      "projects": [
       "partner-center"
@@ -5375,21 +5379,11 @@
   "@vendasta/sales-ui": {
    "type": "good",
    "versions": {
-    "12.4.1": {
-     "quantity": 1,
+    "12.17.2": {
+     "quantity": 3,
      "projects": [
-      "partner-center"
-     ]
-    },
-    "12.5.2": {
-     "quantity": 1,
-     "projects": [
-      "business-center-client"
-     ]
-    },
-    "12.6.0": {
-     "quantity": 1,
-     "projects": [
+      "partner-center",
+      "business-center-client",
       "sales-center-client"
      ]
     }
@@ -5504,16 +5498,16 @@
   "@vendasta/store": {
    "type": "warning",
    "versions": {
-    "19.7.0": {
+    "19.8.2": {
      "quantity": 1,
      "projects": [
-      "partner-center"
+      "vendor-center"
      ]
     },
-    "19.8.2": {
+    "19.9.0": {
      "quantity": 3,
      "projects": [
-      "vendor-center",
+      "partner-center",
       "business-center-client",
       "sales-center-client"
      ]
@@ -5565,16 +5559,12 @@
   "@vendasta/taxonomy-i18n": {
    "type": "good",
    "versions": {
-    "1.0.3": {
-     "quantity": 1,
-     "projects": [
-      "partner-center"
-     ]
-    },
     "1.0.4": {
-     "quantity": 5,
+     "quantity": 7,
      "projects": [
       "listing-builder-client",
+      "partner-center",
+      "vendor-center",
       "business-center-client",
       "sales-center-client",
       "digital-ads-client",
@@ -5670,23 +5660,23 @@
       "web-crawler-client"
      ]
     },
-    "18.10.1": {
-     "quantity": 1,
-     "projects": [
-      "partner-center"
-     ]
-    },
     "18.13.2": {
      "quantity": 8,
      "projects": [
       "listing-builder-client",
-      "reputation-client",
       "wsp-portal-client",
+      "partner-center",
       "vendor-center",
       "business-center-client",
       "sales-center-client",
       "digital-ads-client",
       "listing-builder-client"
+     ]
+    },
+    "18.13.3": {
+     "quantity": 1,
+     "projects": [
+      "reputation-client"
      ]
     },
     "18.5.0": {
@@ -5820,12 +5810,6 @@
       "concierge-client"
      ]
     },
-    "3.1.0": {
-     "quantity": 1,
-     "projects": [
-      "partner-center"
-     ]
-    },
     "3.2.2": {
      "quantity": 1,
      "projects": [
@@ -5833,8 +5817,9 @@
      ]
     },
     "3.2.3": {
-     "quantity": 1,
+     "quantity": 2,
      "projects": [
+      "partner-center",
       "sales-center-client"
      ]
     }
@@ -7108,6 +7093,17 @@
     }
    }
   },
+  "install": {
+   "type": "good",
+   "versions": {
+    "0.13.0": {
+     "quantity": 1,
+     "projects": [
+      "partner-center"
+     ]
+    }
+   }
+  },
   "intersection-observer": {
    "type": "good",
    "versions": {
@@ -8104,6 +8100,12 @@
      "projects": [
       "vendor-center"
      ]
+    },
+    "6.14.5": {
+     "quantity": 1,
+     "projects": [
+      "partner-center"
+     ]
     }
    }
   },
@@ -8414,8 +8416,9 @@
    "type": "good",
    "versions": {
     "8.0.5": {
-     "quantity": 1,
+     "quantity": 2,
      "projects": [
+      "partner-center",
       "sales-center-client"
      ]
     }
@@ -8542,7 +8545,7 @@
   "ts-jest": {
    "type": "good",
    "versions": {
-    "24.0.2": {
+    "26.1.1": {
      "quantity": 1,
      "projects": [
       "partner-center"

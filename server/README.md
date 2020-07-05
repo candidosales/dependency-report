@@ -15,7 +15,7 @@ docker build . -t dependency-report-server
 ### Run the image
 
 ```bash
-docker run -p 3000:3000 dependency-report-server
+docker run -p 8080:8080 dependency-report-server
 ```
 
 ## Routes
