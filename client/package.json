@@ -1,6 +1,6 @@
 {
   "name": "dependency-report",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -29,7 +29,7 @@
     "bootstrap": "^4.5.0",
     "firebase": "~7",
     "memo-decorator": "^2.0.1",
-    "rxjs": "~6.5.5",
+    "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },

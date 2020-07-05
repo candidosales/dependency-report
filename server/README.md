@@ -18,14 +18,32 @@ docker build . -t dependency-report-server
 docker run -p 8080:8080 dependency-report-server
 ```
 
+## Cloud Run
+
+### Submit new image
+
+```bash
+gcloud builds submit --tag gcr.io/dependency-report/server
+```
+
+### Deploy the new image
+
+```bash
+gcloud run deploy --image gcr.io/dependency-report/server --platform managed
+```
+
+### Server production
+
+https://server-u2g5mawisa-uw.a.run.app/ping
+
 ## Routes
 
 ```bash
-GET http://localhost:3000/generate-report
+GET http://localhost:8080/generate-report
 ```
 
 ```bash
-GET http://localhost:3000/ping
+GET http://localhost:8080/ping
 ```
 
 ### Test
