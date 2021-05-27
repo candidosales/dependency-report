@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"time"
 
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v2"
 )
 
 func (app *AppConfig) setupRoutes() {
@@ -14,7 +14,7 @@ func (app *AppConfig) setupRoutes() {
 	app.fiber.Get("/", app.root)
 }
 
-func (app *AppConfig) generateReport(c *fiber.Ctx) {
+func (app *AppConfig) generateReport(c *fiber.Ctx) error {
 	app.getPackageJSONs()
 	projects, components, projectsClientData, componentsClientData := app.splitProjectsComponents()
 
@@ -48,17 +48,13 @@ func (app *AppConfig) generateReport(c *fiber.Ctx) {
 		}
 	}
 
-	c.JSON(clientData)
+	return c.JSON(clientData)
 }
 
-func (app *AppConfig) ping(c *fiber.Ctx) {
-	if err := c.JSON(fiber.Map{"pong": "ok"}); err != nil {
-		c.Next(err)
-	}
+func (app *AppConfig) ping(c *fiber.Ctx) error {
+	return c.JSON(fiber.Map{"pong": "ok"})
 }
 
-func (app *AppConfig) root(c *fiber.Ctx) {
-	if err := c.SendFile("./index.html", true); err != nil {
-		c.Next(err)
-	}
+func (app *AppConfig) root(c *fiber.Ctx) error {
+	return c.SendFile("./index.html", true)
 }

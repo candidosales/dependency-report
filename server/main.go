@@ -8,12 +8,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gofiber/cors"
-	"github.com/gofiber/fiber"
-	"github.com/gofiber/logger"
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
+	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/google/go-github/v29/github"
-	"golang.org/x/oauth2"
 	"go.uber.org/zap"
+	"golang.org/x/oauth2"
 )
 
 type AppConfig struct {
@@ -55,11 +55,14 @@ func main() {
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8080"
+		port = ":8080"
 	}
 
 	appConfig.setupRoutes()
-	appConfig.fiber.Listen(port)
+	err = appConfig.fiber.Listen(port)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 // getPackageJSONs - Get Package Json for each repository from config file

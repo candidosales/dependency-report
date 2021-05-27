@@ -45,3 +45,16 @@ GET http://localhost:8080/generate-report
 ```bash
 GET http://localhost:8080/ping
 ```
+
+## Libraries
+
+- https://github.com/gofiber/fiber
+- https://github.com/awslabs/git-secrets
+
+### Upgrade Go Fiber
+
+```bash
+go get -u github.com/gofiber/fiber/v2
+go get -u github.com/gofiber/fiber/v2/middleware/cors
+go get -u github.com/gofiber/fiber/v2/middleware/logger
+```
