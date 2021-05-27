@@ -17,8 +17,8 @@ Relatório de dependências visa ajudar a analisar a consistência das dependên
 
 O projeto é dividido em duas pastas:
 
-- `client`: Frontend desenvolvido em Angular para apresentacão dos gráficos. Angular 9+ - [Como instalar Node?](https://nodejs.org/en/download/package-manager/);
-- `server`: Backend desenvolvido em Go para geracão dos dados para os relatórios. Go 1.14 - [Como instalar Go?](https://golang.org/doc/install);
+- `client`: Frontend desenvolvido em Angular para apresentacão dos gráficos. Angular 12+ - [Como instalar Node?](https://nodejs.org/en/download/package-manager/);
+- `server`: Backend desenvolvido em Go para geracão dos dados para os relatórios. Go 1.15 - [Como instalar Go?](https://golang.org/doc/install);
 
 ### Criando seu personal Github Auth Token
 

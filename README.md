@@ -17,8 +17,8 @@ Dependencies report aims to help analyze the consistency of the dependencies in 
 
 The project is divided into two folders:
 
-- `client`: Frontend developed in Angular for presentation of graphics. Angular 9+ - [How to install Node?](https://nodejs.org/en/download/package-manager/);
-- `server`: Backend developed in Go to generate data for reports. Go 1.14 - [How to install Go?](https://golang.org/doc/install);
+- `client`: Frontend developed in Angular for presentation of graphics. Angular 12+ - [How to install Node?](https://nodejs.org/en/download/package-manager/);
+- `server`: Backend developed in Go to generate data for reports. Go 1.15 - [How to install Go?](https://golang.org/doc/install);
 
 ### Creating your personal Github Auth Token
 
