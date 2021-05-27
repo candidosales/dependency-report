@@ -1,11 +1,10 @@
 module candidosales/dependency-report
 
-go 1.14
+go 1.15
 
 require (
 	github.com/andybalholm/brotli v1.0.3 // indirect
 	github.com/go-ozzo/ozzo-validation/v4 v4.2.1
-	github.com/gofiber/fiber v1.12.4
 	github.com/gofiber/fiber/v2 v2.10.0
 	github.com/google/go-github/v29 v29.0.3
 	github.com/klauspost/compress v1.12.3 // indirect
