@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0] - 2021-05-27
+
+### Changed
+
+- Upgrade GoFiber to 2.10.0
+- Update the README
+
 ## [1.1.0] - 2020-07-05
 
 ### Added
