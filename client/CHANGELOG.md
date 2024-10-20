@@ -6,6 +6,8 @@
 
 - Upgrade to Angular and Angular Material 17;
 - Upgrade other libraries;
+- Control flow syntax `ng generate @angular/core:control-flow`;
+- 
 
 ## [1.6.0] - 2024-10-19
 
