@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.7.0] - 2024-10-19
+
+### Changed
+
+- Upgrade to Angular and Angular Material 17;
+- Upgrade other libraries;
+- Control flow syntax `ng generate @angular/core:control-flow`;
+- Standalone `ng generate @angular/core:standalone`;
+
 ## [1.6.0] - 2024-10-19
 
 ### Changed

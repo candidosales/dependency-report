@@ -1,7 +1,10 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import memo from 'memo-decorator';
 
-@Pipe({ name: 'version' })
+@Pipe({
+    name: 'version',
+    standalone: true
+})
 export class VersionPipe implements PipeTransform {
 
   @memo()

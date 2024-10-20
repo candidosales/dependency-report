@@ -2,8 +2,9 @@ import { AfterViewInit, Component, ElementRef, ViewChild, Input } from '@angular
 declare var google: any;
 
 @Component({
-  selector: 'app-treemap-chart',
-  templateUrl: './treemap-chart.component.html',
+    selector: 'app-treemap-chart',
+    templateUrl: './treemap-chart.component.html',
+    standalone: true,
 })
 export class TreemapChartComponent implements AfterViewInit{
 

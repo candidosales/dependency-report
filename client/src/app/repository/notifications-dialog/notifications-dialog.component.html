@@ -1,9 +1,11 @@
 <h1 mat-dialog-title>🔓 {{ 'dialog.githubNotifications' | translate }}</h1>
 <div mat-dialog-content>
   <ul>
-      <li *ngFor="let notification of data.notifications" >
-          <a href="{{notification.repository.html_url}}/network/alerts" target="blank">{{notification.subject.title}}</a> <br/> <span class="notification__updated">{{notification.updated_at | date: 'medium' }}</span>
+    @for (notification of data.notifications; track notification) {
+      <li >
+        <a href="{{notification.repository.html_url}}/network/alerts" target="blank">{{notification.subject.title}}</a> <br/> <span class="notification__updated">{{notification.updated_at | date: 'medium' }}</span>
       </li>
+    }
   </ul>
 </div>
 <div mat-dialog-actions align="end">

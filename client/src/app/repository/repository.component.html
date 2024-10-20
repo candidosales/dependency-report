@@ -17,21 +17,29 @@
   </div>
 
   <div class="repository__actions">
-    <a *ngIf="repository.documentation.frontend" matTooltip="Frontend Doc" class="repository__documentation"
-      href="{{ repository.documentation.frontend }}" target="_blank">
-      <mat-icon>description</mat-icon>
-    </a>
-    <a *ngIf="repository.documentation.design" matTooltip="Design Doc" class="repository__documentation"
-      href="{{ repository.documentation.design }}" target="_blank">
-      <img class="repository__icon-design" src="{{ repository.documentation.design | iconDesign }}" alt="">
-    </a>
-    <a *ngIf="repository.updates.length > 0" matTooltip="{{ 'dialog.dependenciesToUpdate' | translate }}" class="repository__warning"
-      (click)="showUpdates(repository.updates)">
-      🚧
-    </a>
-    <a *ngIf="repository.notifications.length > 0" matTooltip="Vulnerability alert" class="repository__warning"
-      (click)="showNotifications(repository.notifications)">
-      🔓
-    </a>
+    @if (repository.documentation.frontend) {
+      <a matTooltip="Frontend Doc" class="repository__documentation"
+        href="{{ repository.documentation.frontend }}" target="_blank">
+        <mat-icon>description</mat-icon>
+      </a>
+    }
+    @if (repository.documentation.design) {
+      <a matTooltip="Design Doc" class="repository__documentation"
+        href="{{ repository.documentation.design }}" target="_blank">
+        <img class="repository__icon-design" src="{{ repository.documentation.design | iconDesign }}" alt="">
+      </a>
+    }
+    @if (repository.updates.length > 0) {
+      <a matTooltip="{{ 'dialog.dependenciesToUpdate' | translate }}" class="repository__warning"
+        (click)="showUpdates(repository.updates)">
+        🚧
+      </a>
+    }
+    @if (repository.notifications.length > 0) {
+      <a matTooltip="Vulnerability alert" class="repository__warning"
+        (click)="showNotifications(repository.notifications)">
+        🔓
+      </a>
+    }
   </div>
 </div>

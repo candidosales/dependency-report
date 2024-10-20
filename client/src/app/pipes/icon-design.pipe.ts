@@ -1,7 +1,10 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import memo from 'memo-decorator';
 
-@Pipe({ name: 'iconDesign' })
+@Pipe({
+    name: 'iconDesign',
+    standalone: true
+})
 export class IconDesignPipe implements PipeTransform {
 
   @memo()

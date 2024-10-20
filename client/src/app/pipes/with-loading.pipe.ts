@@ -3,7 +3,8 @@ import { isObservable, of } from 'rxjs';
 import { map, startWith, catchError } from 'rxjs/operators';
 
 @Pipe({
-  name: 'withLoading',
+    name: 'withLoading',
+    standalone: true,
 })
 export class WithLoadingPipe implements PipeTransform {
   transform(val) {
