@@ -10,7 +10,7 @@ ul {
         display: flex;
         flex-direction: column;
         .dependency-name {
-            margin-bottom: $global-gutter/2;
+            margin-bottom: calc($global-gutter/2);
             font-size: 16px;
         }
         .dependency-versions {

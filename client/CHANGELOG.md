@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0] - 2024-10-19
+
+### Changed
+
+- Upgrade to Angular 13;
+- Upgrade to Angular Material 13;
+- Upgrade other libraries;
+
 ## [1.2.0] - 2021-05-27
 
 ### Changed

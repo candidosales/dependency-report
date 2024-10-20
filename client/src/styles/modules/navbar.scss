@@ -23,6 +23,6 @@
     justify-content: center;
     align-items: center;
     img {
-        margin-right: $global-gutter/2;
+        margin-right: calc($global-gutter/2);
     }
 }
