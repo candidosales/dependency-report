@@ -1,16 +1,14 @@
-FROM node:20 AS compile-image
-
-RUN npm install -g yarn
+FROM node:21-alpine AS compile-image
 
 WORKDIR /opt/ng
 COPY package.json ./
-RUN yarn install
+RUN npm install
 
 ENV PATH="./node_modules/.bin:$PATH" 
 
 COPY . ./
-RUN ng build --prod
+RUN ng build --configuration=production
 
-FROM nginx
+FROM nginx:alpine
 # COPY docker/nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=compile-image /opt/ng/dist/dependency-report /usr/share/nginx/html

@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "serve:prod": "http-server dist/dependency-report -p 8081",
-    "deploy": "ng build --prod && firebase deploy"
+    "deploy": "ng build --configuration=production && firebase deploy"
   },
   "private": true,
   "dependencies": {
