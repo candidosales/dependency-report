@@ -1,6 +1,7 @@
 package fasthttp
 
 import (
+	"errors"
 	"net"
 	"runtime"
 	"strings"
@@ -46,7 +47,7 @@ type workerChan struct {
 
 func (wp *workerPool) Start() {
 	if wp.stopCh != nil {
-		panic("BUG: workerPool already started")
+		return
 	}
 	wp.stopCh = make(chan struct{})
 	stopCh := wp.stopCh
@@ -71,7 +72,7 @@ func (wp *workerPool) Start() {
 
 func (wp *workerPool) Stop() {
 	if wp.stopCh == nil {
-		panic("BUG: workerPool wasn't started")
+		return
 	}
 	close(wp.stopCh)
 	wp.stopCh = nil
@@ -226,8 +227,9 @@ func (wp *workerPool) workerFunc(ch *workerChan) {
 				strings.Contains(errStr, "reset by peer") ||
 				strings.Contains(errStr, "request headers: small read buffer") ||
 				strings.Contains(errStr, "unexpected EOF") ||
-				strings.Contains(errStr, "i/o timeout")) {
-				wp.Logger.Printf("error when serving connection %q<->%q: %s", c.LocalAddr(), c.RemoteAddr(), err)
+				strings.Contains(errStr, "i/o timeout") ||
+				errors.Is(err, ErrBadTrailer)) {
+				wp.Logger.Printf("error when serving connection %q<->%q: %v", c.LocalAddr(), c.RemoteAddr(), err)
 			}
 		}
 		if err == errHijacked {
