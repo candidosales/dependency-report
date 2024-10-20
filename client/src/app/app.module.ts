@@ -28,38 +28,36 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PieChartComponent,
-    TreemapChartComponent,
-    DependencyComponent,
-    RepositoryComponent,
-    IconDesignPipe,
-    IconLibraryPipe,
-    VersionPipe,
-    WithLoadingPipe,
-    NotificationsDialogComponent,
-    UpdatesDialogComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    MatTooltipModule,
-    MatButtonModule,
-    MatIconModule,
-    MatProgressSpinnerModule,
-    MatDialogModule,
-    MatSnackBarModule,
-    TranslateModule.forRoot({
-        loader: {
-            provide: TranslateLoader,
-            useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-        }
-    })
-  ],
-  providers: [DataService],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        MatTooltipModule,
+        MatButtonModule,
+        MatIconModule,
+        MatProgressSpinnerModule,
+        MatDialogModule,
+        MatSnackBarModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }),
+        PieChartComponent,
+        TreemapChartComponent,
+        DependencyComponent,
+        RepositoryComponent,
+        IconDesignPipe,
+        IconLibraryPipe,
+        VersionPipe,
+        WithLoadingPipe,
+        NotificationsDialogComponent,
+        UpdatesDialogComponent
+    ],
+    providers: [DataService],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

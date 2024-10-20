@@ -2,9 +2,10 @@ import { AfterViewInit, Component, ElementRef, ViewChild, Input, HostListener, O
 declare var google: any;
 
 @Component({
-  selector: 'app-pie-chart',
-  templateUrl: './pie-chart.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-pie-chart',
+    templateUrl: './pie-chart.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true
 })
 export class PieChartComponent implements AfterViewInit, OnChanges {
 
