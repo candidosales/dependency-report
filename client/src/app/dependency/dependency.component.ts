@@ -1,4 +1,4 @@
-import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, input } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { MatTooltip } from '@angular/material/tooltip';
 
@@ -12,8 +12,8 @@ import { MatTooltip } from '@angular/material/tooltip';
 })
 export class DependencyComponent {
 
-    @Input() name: string;
-    @Input() dependency: any;
+    name = input<string>();
+    dependency = input<any>();
 
     objectKeys = Object.keys;
 
