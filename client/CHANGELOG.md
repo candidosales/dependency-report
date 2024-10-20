@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.0] - 2024-10-19
+
+### Changed
+
+- Upgrade to Angular 14;
+- Upgrade to Angular Material 14;
+- Upgrade other libraries;
+
 ## [1.3.0] - 2024-10-19
 
 ### Changed
