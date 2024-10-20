@@ -17,7 +17,7 @@ Relatório de dependências visa ajudar a analisar a consistência das dependên
 
 O projeto é dividido em duas pastas:
 
-- `client`: Frontend desenvolvido em Angular para apresentacão dos gráficos. Angular 12+ - [Como instalar Node?](https://nodejs.org/en/download/package-manager/);
+- `client`: Frontend desenvolvido em Angular para apresentacão dos gráficos. Angular 18+ - [Como instalar Node?](https://nodejs.org/en/download/package-manager/);
 - `server`: Backend desenvolvido em Go para geracão dos dados para os relatórios. Go 1.15 - [Como instalar Go?](https://golang.org/doc/install);
 
 ### Criando seu personal Github Auth Token
@@ -26,7 +26,7 @@ O projeto é dividido em duas pastas:
 
 ### Inicializando o cliente
 
-O projeto usa Angular 9+ e requer versão do Node 12+. Você pode usar o [NVM](https://github.com/nvm-sh/nvm) para controlar as versões node de sua máquina.
+O projeto usa Angular 18+ e requer versão do Node 20+. Você pode usar o [NVM](https://github.com/nvm-sh/nvm) para controlar as versões node de sua máquina.
 
 ```bash
 cd client/
@@ -121,4 +121,4 @@ Se você quer apoiar o Relatório de dependência, você pode ☕ [**comprar um 
 
 ## ⚠️ Direitos autorais e licenca
 
-Direitos autorais de código e documentação 2020-2030, os [Autores](https://github.com/candidosales/dependency-report/graphs/contributors) e o Código liberado sob a [MIT License](https://github.com/candidosales/dependency-report/blob/master/LICENSE). Documentos publicados sob [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
+Direitos autorais de código e documentação 2024-2034, os [Autores](https://github.com/candidosales/dependency-report/graphs/contributors) e o Código liberado sob a [MIT License](https://github.com/candidosales/dependency-report/blob/master/LICENSE). Documentos publicados sob [Creative Commons](https://creativecommons.org/licenses/by/3.0/).

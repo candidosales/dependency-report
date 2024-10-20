@@ -17,7 +17,7 @@ Dependencies report aims to help analyze the consistency of the dependencies in 
 
 The project is divided into two folders:
 
-- `client`: Frontend developed in Angular for presentation of graphics. Angular 12+ - [How to install Node?](https://nodejs.org/en/download/package-manager/);
+- `client`: Frontend developed in Angular for presentation of graphics. Angular 18+ - [How to install Node?](https://nodejs.org/en/download/package-manager/);
 - `server`: Backend developed in Go to generate data for reports. Go 1.15 - [How to install Go?](https://golang.org/doc/install);
 
 ### Creating your personal Github Auth Token
@@ -26,7 +26,7 @@ It is necessary to create your `Personal Access Token` for the server to be allo
 
 ### Initializing the client
 
-The project uses Angular 9+ and requires version of Node 12+. You can use the [NVM](https://github.com/nvm-sh/nvm) to control the node versions of your machine.
+The project uses Angular 18+ and requires version of Node 20+. You can use the [NVM](https://github.com/nvm-sh/nvm) to control the node versions of your machine.
 
 ```bash
 cd client/
@@ -121,4 +121,4 @@ If you want to support Dependency Report, you can ☕ [**buy a coffee here**](ht
 
 ## ⚠️ Copyright and license
 
-Code and documentation copyright 2020-2030 the [Authors](https://github.com/candidosales/dependency-report/graphs/contributors) and Code released under the [MIT License](https://github.com/candidosales/dependency-report/blob/master/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
+Code and documentation copyright 2024-2034 the [Authors](https://github.com/candidosales/dependency-report/graphs/contributors) and Code released under the [MIT License](https://github.com/candidosales/dependency-report/blob/master/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
