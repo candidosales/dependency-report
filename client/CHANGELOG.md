@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0] - 2024-10-19
+
+### Changed
+
+- Upgrade to Angular and Angular Material 17;
+- Upgrade other libraries;
+
 ## [1.6.0] - 2024-10-19
 
 ### Changed

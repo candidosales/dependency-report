@@ -70,18 +70,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "dependency-report:build"
+            "buildTarget": "dependency-report:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "dependency-report:build:production"
+              "buildTarget": "dependency-report:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "dependency-report:build"
+            "buildTarget": "dependency-report:build"
           }
         },
         "test": {
