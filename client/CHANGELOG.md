@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.0] - 2024-10-19
+
+### Changed
+
+- Upgrade to Angular and Angular Material 18;
+- Upgrade other libraries;
+- Inject `ng generate @angular/core:inject`;
+
 ## [1.7.0] - 2024-10-19
 
 ### Changed
