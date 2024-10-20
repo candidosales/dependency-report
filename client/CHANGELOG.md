@@ -8,6 +8,7 @@
 - Upgrade other libraries;
 - Inject `ng generate @angular/core:inject`;
 - Signal inputs `ng g ngxtension:convert-signal-inputs`;
+- Queries `ng g ngxtension:convert-queries`;
 - Replaced npm by pnpm;
 
 ## [1.7.0] - 2024-10-19

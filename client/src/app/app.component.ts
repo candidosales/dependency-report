@@ -1,8 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { DataService } from './providers/data.service';
-import { Data } from './interface/data.interface';
 import { TranslateService } from '@ngx-translate/core';
-import { BehaviorSubject, combineLatest, EMPTY, of } from 'rxjs';
+import { BehaviorSubject, combineLatest } from 'rxjs';
 import { map, catchError, tap, filter } from 'rxjs/operators';
 
 @Component({
