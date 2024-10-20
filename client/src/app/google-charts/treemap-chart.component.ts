@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild, Input } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, input, viewChild } from '@angular/core';
 declare var google: any;
 
 @Component({
@@ -8,15 +8,15 @@ declare var google: any;
 })
 export class TreemapChartComponent implements AfterViewInit{
 
-  @ViewChild('treemapChart') treemapChart: ElementRef;
-  @Input() data: any;
-  @Input() title = '';
-  @Input() height = '250px';
-  @Input() width = '100%';
+  treemapChart = viewChild<ElementRef>('treemapChart');
+  data = input<any>();
+  title = input('');
+  height = input('250px');
+  width = input('100%');
 
 
   drawChart = () => {
-    const data = google.visualization.arrayToDataTable(this.data);
+    const data = google.visualization.arrayToDataTable(this.data());
 
     const options = {
         highlightOnMouseOver: true,
@@ -32,7 +32,7 @@ export class TreemapChartComponent implements AfterViewInit{
         useWeightedAverageForAggregation: true
     };
 
-    const chart = new google.visualization.TreeMap(this.treemapChart.nativeElement);
+    const chart = new google.visualization.TreeMap(this.treemapChart().nativeElement);
     // const chart = new google.visualization.TreeMap(document.getElementById('chart_div'));
 
 

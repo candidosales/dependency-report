@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { DataService } from './providers/data.service';
 import { DependencyComponent } from './dependency/dependency.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { IconDesignPipe } from './pipes/icon-design.pipe';
 import { IconLibraryPipe } from './pipes/icon-library.pipe';
 import { MatIconModule } from '@angular/material/icon';
@@ -27,11 +27,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
-@NgModule({
-    declarations: [AppComponent],
-    imports: [
-        BrowserModule,
-        HttpClientModule,
+@NgModule({ declarations: [AppComponent],
+    bootstrap: [AppComponent], imports: [BrowserModule,
         BrowserAnimationsModule,
         MatTooltipModule,
         MatButtonModule,
@@ -55,9 +52,5 @@ export function HttpLoaderFactory(http: HttpClient) {
         VersionPipe,
         WithLoadingPipe,
         NotificationsDialogComponent,
-        UpdatesDialogComponent
-    ],
-    providers: [DataService],
-    bootstrap: [AppComponent]
-})
+        UpdatesDialogComponent], providers: [DataService, provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }

@@ -1,7 +1,7 @@
 import { Data } from '../interface/data.interface';
 import { environment } from '../../environments/environment';
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { of } from 'rxjs';
 import { shareReplay, map, catchError } from 'rxjs/operators';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -14,6 +14,9 @@ export interface PingData {
   providedIn: 'root'
 })
 export class DataService {
+  private httpClient = inject(HttpClient);
+  private snackBar = inject(MatSnackBar);
+
 
   cacheData$ = this.httpClient.get<Data>('/assets/config/data.json').pipe(
     map(value => {
@@ -44,9 +47,6 @@ export class DataService {
     }),
     shareReplay(1)
   );
-
-  constructor(private httpClient: HttpClient, private snackBar: MatSnackBar) {
-  }
 
   prepareData(data: Data) {
     data.graphData.projectsByFilters?.unshift(['Filter', 'Version']);
