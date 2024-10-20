@@ -5,28 +5,12 @@
 package utils
 
 import (
+	"fmt"
 	"reflect"
 	"strconv"
 	"strings"
-	"unsafe"
+	"time"
 )
-
-// #nosec G103
-// GetString returns a string pointer without allocation
-func UnsafeString(b []byte) string {
-	return *(*string)(unsafe.Pointer(&b))
-}
-
-// #nosec G103
-// GetBytes returns a byte pointer without allocation
-func UnsafeBytes(s string) (bs []byte) {
-	sh := (*reflect.StringHeader)(unsafe.Pointer(&s))
-	bh := (*reflect.SliceHeader)(unsafe.Pointer(&bs))
-	bh.Data = sh.Data
-	bh.Len = sh.Len
-	bh.Cap = sh.Len
-	return
-}
 
 // CopyString copies a string to make it immutable
 func CopyString(s string) string {
@@ -41,7 +25,7 @@ func CopyBytes(b []byte) []byte {
 }
 
 const (
-	uByte = 1 << (10 * iota)
+	uByte = 1 << (10 * iota) // 1 << 10 == 1024
 	uKilobyte
 	uMegabyte
 	uGigabyte
@@ -58,22 +42,22 @@ func ByteSize(bytes uint64) string {
 	switch {
 	case bytes >= uExabyte:
 		unit = "EB"
-		value = value / uExabyte
+		value /= uExabyte
 	case bytes >= uPetabyte:
 		unit = "PB"
-		value = value / uPetabyte
+		value /= uPetabyte
 	case bytes >= uTerabyte:
 		unit = "TB"
-		value = value / uTerabyte
+		value /= uTerabyte
 	case bytes >= uGigabyte:
 		unit = "GB"
-		value = value / uGigabyte
+		value /= uGigabyte
 	case bytes >= uMegabyte:
 		unit = "MB"
-		value = value / uMegabyte
+		value /= uMegabyte
 	case bytes >= uKilobyte:
 		unit = "KB"
-		value = value / uKilobyte
+		value /= uKilobyte
 	case bytes >= uByte:
 		unit = "B"
 	default:
@@ -82,4 +66,52 @@ func ByteSize(bytes uint64) string {
 	result := strconv.FormatFloat(value, 'f', 1, 64)
 	result = strings.TrimSuffix(result, ".0")
 	return result + unit
+}
+
+// ToString Change arg to string
+func ToString(arg interface{}, timeFormat ...string) string {
+	tmp := reflect.Indirect(reflect.ValueOf(arg)).Interface()
+	switch v := tmp.(type) {
+	case int:
+		return strconv.Itoa(v)
+	case int8:
+		return strconv.FormatInt(int64(v), 10)
+	case int16:
+		return strconv.FormatInt(int64(v), 10)
+	case int32:
+		return strconv.FormatInt(int64(v), 10)
+	case int64:
+		return strconv.FormatInt(v, 10)
+	case uint:
+		return strconv.Itoa(int(v))
+	case uint8:
+		return strconv.FormatInt(int64(v), 10)
+	case uint16:
+		return strconv.FormatInt(int64(v), 10)
+	case uint32:
+		return strconv.FormatInt(int64(v), 10)
+	case uint64:
+		return strconv.FormatInt(int64(v), 10)
+	case string:
+		return v
+	case []byte:
+		return string(v)
+	case bool:
+		return strconv.FormatBool(v)
+	case float32:
+		return strconv.FormatFloat(float64(v), 'f', -1, 32)
+	case float64:
+		return strconv.FormatFloat(v, 'f', -1, 64)
+	case time.Time:
+		if len(timeFormat) > 0 {
+			return v.Format(timeFormat[0])
+		}
+		return v.Format("2006-01-02 15:04:05")
+	case reflect.Value:
+		return ToString(v.Interface(), timeFormat...)
+	case fmt.Stringer:
+		return v.String()
+	default:
+		return ""
+	}
 }

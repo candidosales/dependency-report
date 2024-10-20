@@ -74,19 +74,19 @@ func (d *Decoder) Decode(dst interface{}, src map[string][]string) error {
 	}
 	v = v.Elem()
 	t := v.Type()
-	errors := MultiError{}
+	multiError := MultiError{}
 	for path, values := range src {
 		if parts, err := d.cache.parsePath(path, t); err == nil {
 			if err = d.decode(v, path, parts, values); err != nil {
-				errors[path] = err
+				multiError[path] = err
 			}
 		} else if !d.ignoreUnknownKeys {
-			errors[path] = UnknownKeyError{Key: path}
+			multiError[path] = UnknownKeyError{Key: path}
 		}
 	}
-	errors.merge(d.checkRequired(t, src))
-	if len(errors) > 0 {
-		return errors
+	multiError.merge(d.checkRequired(t, src))
+	if len(multiError) > 0 {
+		return multiError
 	}
 	return nil
 }
@@ -157,7 +157,20 @@ func isEmptyFields(fields []fieldWithPrefix, src map[string][]string) bool {
 				return false
 			}
 			for key := range src {
-				if !isEmpty(f.typ, src[key]) && strings.HasPrefix(key, path) {
+				// issue references:
+				// https://github.com/gofiber/fiber/issues/1414
+				// https://github.com/gorilla/schema/issues/176
+				nested := strings.IndexByte(key, '.') != -1
+
+				// for non required nested structs
+				c1 := strings.HasSuffix(f.prefix, ".") && key == path
+
+				// for required nested structs
+				c2 := f.prefix == "" && nested && strings.HasPrefix(key, path)
+
+				// for non nested fields
+				c3 := f.prefix == "" && !nested && key == path
+				if !isEmpty(f.typ, src[key]) && (c1 || c2 || c3) {
 					return false
 				}
 			}
