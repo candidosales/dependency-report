@@ -11,5 +11,5 @@ require (
 	github.com/valyala/fasthttp v1.25.0 // indirect
 	go.uber.org/zap v1.15.0
 	golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be
-	golang.org/x/sys v0.0.0-20210525143221-35b2ab0089ea // indirect
+	golang.org/x/sys v0.1.0 // indirect
 )
