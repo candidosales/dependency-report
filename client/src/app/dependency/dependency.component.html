@@ -1,14 +1,14 @@
 <div class="repository component">
-    <p class="repository__name">
-        <span class="repository__versions repository__versions--{{ dependency.type }}" matTooltip="{{ getCountObjectKeys(dependency.versions) }} {{ 'home.dependencies.info' | translate }}">{{ getCountObjectKeys(dependency.versions) }}</span>
-        {{ name }}
-    </p>
-    <ul class="component_versions">
-        <ng-container *ngFor="let v of objectKeys(dependency.versions)">
-            <li matTooltip="{{ dependency.versions[v]?.projects.join(' / ') }}">
-                <p class="component__frequency">{{ dependency.versions[v].quantity }}</p>
-                <p class="component__version">{{ v }}</p>
-            </li>
-        </ng-container>
-    </ul>
+  <p class="repository__name">
+    <span class="repository__versions repository__versions--{{ dependency.type }}" matTooltip="{{ getCountObjectKeys(dependency.versions) }} {{ 'home.dependencies.info' | translate }}">{{ getCountObjectKeys(dependency.versions) }}</span>
+    {{ name }}
+  </p>
+  <ul class="component_versions">
+    @for (v of objectKeys(dependency.versions); track v) {
+      <li matTooltip="{{ dependency.versions[v]?.projects.join(' / ') }}">
+        <p class="component__frequency">{{ dependency.versions[v].quantity }}</p>
+        <p class="component__version">{{ v }}</p>
+      </li>
+    }
+  </ul>
 </div>
