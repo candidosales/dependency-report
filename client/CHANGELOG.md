@@ -7,6 +7,7 @@
 - Upgrade to Angular and Angular Material 18;
 - Upgrade other libraries;
 - Inject `ng generate @angular/core:inject`;
+- Replaced npm by pnpm;
 
 ## [1.7.0] - 2024-10-19
 
