@@ -6,11 +6,8 @@ import { DependencyComponent } from './dependency/dependency.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { IconDesignPipe } from './pipes/icon-design.pipe';
 import { IconLibraryPipe } from './pipes/icon-library.pipe';
-import { MatButtonModule } from '@angular/material/button';
-import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { NgModule } from '@angular/core';
 import { NotificationsDialogComponent } from './repository/notifications-dialog/notifications-dialog.component';
@@ -22,6 +19,9 @@ import { TreemapChartComponent } from './google-charts/treemap-chart.component';
 import { UpdatesDialogComponent } from './repository/updates-dialog/updates-dialog.component';
 import { VersionPipe } from './pipes/version.pipe';
 import { WithLoadingPipe } from './pipes/with-loading.pipe';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
