@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import { Repository, GithubNotification, Update } from '../interface/repository.interface';
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { NotificationsDialogComponent } from './notifications-dialog/notifications-dialog.component';
 import { UpdatesDialogComponent } from './updates-dialog/updates-dialog.component';
 
