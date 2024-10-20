@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef, MatDialogTitle, MatDialogContent, MatDialogActions } from '@angular/material/dialog';
 
 import { GithubNotification } from '../../interface/repository.interface';
@@ -18,10 +18,9 @@ export interface DataDialog {
     imports: [MatDialogTitle, MatDialogContent, MatDialogActions, MatButton, DatePipe, TranslateModule]
 })
 export class NotificationsDialogComponent {
-  constructor(
-    public dialogRef: MatDialogRef<NotificationsDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any
-  ) {}
+  dialogRef = inject<MatDialogRef<NotificationsDialogComponent>>(MatDialogRef);
+  data = inject(MAT_DIALOG_DATA);
+
 
   close(): void {
     this.dialogRef.close();

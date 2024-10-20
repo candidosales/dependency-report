@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { DataService } from './providers/data.service';
 import { Data } from './interface/data.interface';
 import { TranslateService } from '@ngx-translate/core';
@@ -11,6 +11,9 @@ import { map, catchError, tap, filter } from 'rxjs/operators';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  private dataService = inject(DataService);
+  private translate = inject(TranslateService);
+
 
   private filterDependenciesSelectedSubject = new BehaviorSubject<string>('*');
   filterDependenciesSelectedAction$ = this.filterDependenciesSelectedSubject.asObservable();
@@ -47,10 +50,9 @@ export class AppComponent {
   objectKeys = Object.keys;
   showLoading = false;
 
-  constructor(
-    private dataService: DataService,
-    private translate: TranslateService
-  ) {
+  constructor() {
+    const translate = this.translate;
+
     const browserLang = this.translate.getBrowserLang();
     translate.setDefaultLang(browserLang.match(/en|pt/) ? browserLang : 'en');
   }

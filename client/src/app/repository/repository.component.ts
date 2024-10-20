@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, inject } from '@angular/core';
 import { Repository, GithubNotification, Update } from '../interface/repository.interface';
 import { MatDialog } from '@angular/material/dialog';
 import { NotificationsDialogComponent } from './notifications-dialog/notifications-dialog.component';
@@ -18,9 +18,9 @@ import { MatTooltip } from '@angular/material/tooltip';
     imports: [MatTooltip, MatIcon, TranslateModule, IconDesignPipe, IconLibraryPipe, VersionPipe]
 })
 export class RepositoryComponent {
-    @Input() repository: Repository;
+    dialog = inject(MatDialog);
 
-    constructor(public dialog: MatDialog) {}
+    @Input() repository: Repository;
 
     showNotifications(notifications: Array<GithubNotification>) {
       if (notifications.length > 0) {
