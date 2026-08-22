@@ -28,6 +28,7 @@ export default function Header() {
           <Button
             variant="ghost"
             size="icon"
+            nativeButton={false}
             render={
               <a
                 href="https://github.com/candidosales/dependency-report"

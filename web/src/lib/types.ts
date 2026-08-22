@@ -9,21 +9,11 @@ export interface Update {
   update: string
 }
 
-export interface GithubNotificationSubject {
+export interface GithubNotification {
+  reason: string
   title: string
   url: string
-  latest_comment_url: string
-  type: string
-}
-
-export interface GithubNotificationRepository {
-  html_url: string
-}
-
-export interface GithubNotification {
-  subject: GithubNotificationSubject
-  updated_at: string
-  repository: GithubNotificationRepository
+  updatedAt: string
 }
 
 export interface Repository {

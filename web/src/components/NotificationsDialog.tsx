@@ -11,12 +11,14 @@ import type { GithubNotification } from '@/lib/types'
 
 interface NotificationsDialogProps {
   notifications: Array<GithubNotification>
+  repositoryUrl: string
   open: boolean
   onOpenChange: (open: boolean) => void
 }
 
 export default function NotificationsDialog({
   notifications,
+  repositoryUrl,
   open,
   onOpenChange,
 }: NotificationsDialogProps) {
@@ -31,17 +33,17 @@ export default function NotificationsDialog({
 
         <ul className="flex flex-col gap-3">
           {notifications.map((notification) => (
-            <li key={notification.subject.url}>
+            <li key={notification.url}>
               <a
-                href={`${notification.repository.html_url}/network/alerts`}
+                href={`${repositoryUrl}/network/alerts`}
                 target="_blank"
                 rel="noreferrer"
                 className="text-sm font-medium text-primary underline-offset-4 hover:underline"
               >
-                {notification.subject.title}
+                {notification.title}
               </a>
               <p className="mt-0.5 text-xs text-muted-foreground">
-                {new Date(notification.updated_at).toLocaleString()}
+                {new Date(notification.updatedAt).toLocaleString()}
               </p>
             </li>
           ))}

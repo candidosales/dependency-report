@@ -135,7 +135,7 @@ function App() {
           <h3 className="mb-3 text-sm font-semibold">
             {data.projects.length} {t('home.graph.frontendProjects')}
           </h3>
-          <div className="flex flex-col">
+          <div className="grid max-h-96 grid-cols-1 gap-2 overflow-y-auto pr-1 sm:grid-cols-2 xl:grid-cols-3">
             {data.projects.map((project) => (
               <RepositoryCard key={project.name} repository={project} />
             ))}
@@ -156,7 +156,7 @@ function App() {
           <h3 className="mb-3 text-sm font-semibold">
             {data.components.length} {t('home.components')}
           </h3>
-          <div className="flex flex-col">
+          <div className="grid max-h-96 grid-cols-1 gap-2 overflow-y-auto pr-1 sm:grid-cols-2 xl:grid-cols-3">
             {data.components.map((component) => (
               <RepositoryCard key={component.name} repository={component} />
             ))}
@@ -210,7 +210,7 @@ function App() {
           </LegendButton>
         </div>
 
-        <div className="mt-4 flex flex-col">
+        <div className="mt-4 grid max-h-96 grid-cols-1 gap-2 overflow-y-auto pr-1 sm:grid-cols-2 xl:grid-cols-3">
           {Object.entries(dependenciesByVersions).map(([name, dependency]) => (
             <DependencyRow key={name} name={name} dependency={dependency} />
           ))}

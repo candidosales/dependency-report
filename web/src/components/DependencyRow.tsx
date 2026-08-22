@@ -25,8 +25,8 @@ export default function DependencyRow({ name, dependency }: DependencyRowProps) 
   const versionCount = versionEntries.length
 
   return (
-    <div className="flex flex-wrap items-center gap-3 border-b border-border py-2.5 last:border-b-0">
-      <p className="m-0 flex min-w-48 items-center gap-2 text-sm font-medium">
+    <div className="flex flex-col gap-2 rounded-lg bg-muted/60 p-3">
+      <p className="m-0 flex items-center gap-2 text-sm font-medium">
         <Tooltip>
           <TooltipTrigger
             render={
@@ -39,10 +39,10 @@ export default function DependencyRow({ name, dependency }: DependencyRowProps) 
             {versionCount} {t('home.dependencies.info')}
           </TooltipContent>
         </Tooltip>
-        {name}
+        <span className="truncate">{name}</span>
       </p>
 
-      <ul className="flex flex-1 flex-wrap gap-4">
+      <ul className="flex flex-wrap gap-3">
         {versionEntries.map(([version, info]) => (
           <Tooltip key={version}>
             <TooltipTrigger
