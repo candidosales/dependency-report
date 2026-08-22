@@ -2,10 +2,10 @@ package main
 
 import (
 	"encoding/json"
-	"io/ioutil"
+	"os"
 	"time"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v3"
 )
 
 func (app *AppConfig) setupRoutes() {
@@ -14,7 +14,7 @@ func (app *AppConfig) setupRoutes() {
 	app.fiber.Get("/", app.root)
 }
 
-func (app *AppConfig) generateReport(c *fiber.Ctx) error {
+func (app *AppConfig) generateReport(c fiber.Ctx) error {
 	app.getPackageJSONs()
 	projects, components, projectsClientData, componentsClientData := app.splitProjectsComponents()
 
@@ -32,7 +32,7 @@ func (app *AppConfig) generateReport(c *fiber.Ctx) error {
 		Summary:     summary,
 		Projects:    projectsClientData,
 		Components:  componentsClientData,
-		GraphData: map[string][]interface{}{
+		GraphData: map[string][]FilterCount{
 			"projectsByFilters":   countProjectsByFilters,
 			"componentsByFilters": countComponentsByFilters,
 		},
@@ -41,7 +41,7 @@ func (app *AppConfig) generateReport(c *fiber.Ctx) error {
 
 	if app.config.OutputFile != "" {
 		clientDataJSON, err := json.MarshalIndent(clientData, "", " ")
-		err = ioutil.WriteFile(app.config.OutputFile+fileOutput, clientDataJSON, 0644)
+		err = os.WriteFile(app.config.OutputFile+fileOutput, clientDataJSON, 0644)
 
 		if err == nil {
 			app.log.Info("Output file generated and sent to " + app.config.OutputFile + fileOutput)
@@ -51,10 +51,10 @@ func (app *AppConfig) generateReport(c *fiber.Ctx) error {
 	return c.JSON(clientData)
 }
 
-func (app *AppConfig) ping(c *fiber.Ctx) error {
+func (app *AppConfig) ping(c fiber.Ctx) error {
 	return c.JSON(fiber.Map{"pong": "ok"})
 }
 
-func (app *AppConfig) root(c *fiber.Ctx) error {
-	return c.SendFile("./index.html", true)
+func (app *AppConfig) root(c fiber.Ctx) error {
+	return c.SendFile("./index.html", fiber.SendFile{Compress: true})
 }

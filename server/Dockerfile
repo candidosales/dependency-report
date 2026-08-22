@@ -1,4 +1,4 @@
-FROM golang:alpine
+FROM golang:1.27-alpine
 
 ############################
 # STEP 1 ca-certificates: https://github.com/google/go-github/issues/1049
@@ -40,7 +40,8 @@ RUN cp /build/main .
 COPY ./config.json /dist/config.json
 COPY ./index.html /dist/index.html
 
-ENV GITHUB_AUTH_TOKEN=<token>
+# GITHUB_AUTH_TOKEN must be supplied at runtime (docker run -e / --env-file / secret),
+# never baked into the image.
 
 # Command to run the executable
 ENTRYPOINT ["/dist/main"]
