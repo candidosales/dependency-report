@@ -17,7 +17,7 @@ Dependencies report aims to help analyze the consistency of the dependencies in 
 
 The project is divided into two folders:
 
-- `web`: Frontend developed in React (TanStack Start) for presentation of graphics. Node 20+ - [How to install Node?](https://nodejs.org/en/download/package-manager/). (`client`, the previous Angular frontend, is deprecated and kept only for reference.)
+- `web`: Frontend developed in React (TanStack Start) for presentation of graphics. Node 20+ - [How to install Node?](https://nodejs.org/en/download/package-manager/).
 - `server`: Backend developed in Go to generate data for reports. Go 1.27+ - [How to install Go?](https://golang.org/doc/install);
 
 ### Creating your personal Github Auth Token

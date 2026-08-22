@@ -17,7 +17,7 @@ Relatório de dependências visa ajudar a analisar a consistência das dependên
 
 O projeto é dividido em duas pastas:
 
-- `web`: Frontend desenvolvido em React (TanStack Start) para apresentacão dos gráficos. Node 20+ - [Como instalar Node?](https://nodejs.org/en/download/package-manager/). (`client`, o antigo frontend em Angular, está descontinuado e mantido apenas como referência.)
+- `web`: Frontend desenvolvido em React (TanStack Start) para apresentacão dos gráficos. Node 20+ - [Como instalar Node?](https://nodejs.org/en/download/package-manager/).
 - `server`: Backend desenvolvido em Go para geracão dos dados para os relatórios. Go 1.27+ - [Como instalar Go?](https://golang.org/doc/install);
 
 ### Criando seu personal Github Auth Token
