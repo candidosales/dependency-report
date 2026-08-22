@@ -216,7 +216,7 @@ func (app *AppConfig) fetchPackageJson(info map[string]string) *PackageJSON {
 		info["owner"],
 		info["repo"],
 		info["packageJSON"],
-		&github.RepositoryContentGetOptions{Ref: "master"},
+		nil,
 	)
 	if err != nil {
 		app.log.Error("error: ", err)

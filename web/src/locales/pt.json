@@ -22,8 +22,8 @@
         "components": "Componentes",
         "loading": "Gerando os dados ...",
         "dependencies": {
-            "howOftenDependencyDifferentVersions" : "How often is the same dependency used in different versions?",
-            "tipReduce": "Tip: Reduce the number of different versions in your projects and maintain consistency",
+            "howOftenDependencyDifferentVersions" : "Com que frequência a mesma dependência é usada em versões diferentes?",
+            "tipReduce": "Dica: Reduza o número de versões diferentes em seus projetos e mantenha a consistência",
             "info": "diferentes versões da mesma biblioteca"
         }  
     },

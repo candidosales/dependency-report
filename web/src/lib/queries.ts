@@ -1,7 +1,7 @@
 import { queryOptions } from '@tanstack/react-query'
 import type { ReportData } from './types'
 
-const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8080'
+const API_URL = import.meta.env.VITE_API_URL ?? 'http://127.0.0.1:8080'
 
 async function fetchJson<T>(url: string): Promise<T> {
   const res = await fetch(url)
@@ -33,7 +33,7 @@ export const liveReportQuery = queryOptions({
 
 export const serverStatusQuery = queryOptions({
   queryKey: ['server-status'] as const,
-  queryFn: () => fetchJson<{ ok: boolean }>(`${API_URL}/ping`).then((r) => r.ok),
+  queryFn: () => fetchJson(`${API_URL}/ping`).then(() => true),
   retry: false,
   refetchInterval: 30_000,
   refetchOnWindowFocus: false,

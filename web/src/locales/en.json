@@ -20,7 +20,7 @@
         },
         "projects": "Projects",
         "components": "Components",
-        "loading": "Generation the data ...",
+        "loading": "Generating the data ...",
         "dependencies": {
             "howOftenDependencyDifferentVersions" : "How often is the same dependency used in different versions?",
             "tipReduce": "Tip: Reduce the number of different versions in your projects and maintain consistency",

@@ -17,33 +17,33 @@ Relatório de dependências visa ajudar a analisar a consistência das dependên
 
 O projeto é dividido em duas pastas:
 
-- `client`: Frontend desenvolvido em Angular para apresentacão dos gráficos. Angular 18+ - [Como instalar Node?](https://nodejs.org/en/download/package-manager/);
-- `server`: Backend desenvolvido em Go para geracão dos dados para os relatórios. Go 1.15 - [Como instalar Go?](https://golang.org/doc/install);
+- `web`: Frontend desenvolvido em React (TanStack Start) para apresentacão dos gráficos. Node 20+ - [Como instalar Node?](https://nodejs.org/en/download/package-manager/). (`client`, o antigo frontend em Angular, está descontinuado e mantido apenas como referência.)
+- `server`: Backend desenvolvido em Go para geracão dos dados para os relatórios. Go 1.27+ - [Como instalar Go?](https://golang.org/doc/install);
 
 ### Criando seu personal Github Auth Token
 
 É necessário criar seu `Personal Access Token` para que o servidor tenha permissão de usar a API do Github. Para mais instrucões [acesse](https://docs.cachethq.io/docs/github-oauth-token) ou [aqui](https://github.com/settings/tokens).
 
-### Inicializando o cliente
-
-O projeto usa Angular 18+ e requer versão do Node 20+. Você pode usar o [NVM](https://github.com/nvm-sh/nvm) para controlar as versões node de sua máquina.
+### Inicializando o web app
 
 ```bash
-cd client/
-npm install # Instalar dependências
-ng serve
+cd web/
+pnpm install # Instalar dependências
+pnpm dev
 ```
 
-Irá inicializar na porta `4200`. [http://localhost:4200](http://localhost:4200).
+Irá inicializar na porta `3000`. [http://localhost:3000](http://localhost:3000).
+
+O web app lê a URL do servidor em `web/.env` (`VITE_API_URL`, padrão `http://127.0.0.1:8080`). Ajuste caso seu servidor rode em outro host/porta.
 
 ### Inicializando o servidor
 
 ```bash
 cd server/
-GITHUB_AUTH_TOKEN=<personal-auth-token> go run *.go # Exemplo: GITHUB_AUTH_TOKEN=12321wqdd12e12321dse go run *.go
+GITHUB_AUTH_TOKEN=<personal-auth-token> go run . # Exemplo: GITHUB_AUTH_TOKEN=12321wqdd12e12321dse go run .
 ```
 
-Irá criar um servidor na porta `3000`. [http://localhost:3000](http://localhost:3000).
+Irá criar um servidor na porta `8080`. [http://localhost:8080](http://localhost:8080).
 
 ### Adaptando para seus projetos
 
@@ -58,41 +58,40 @@ Exemplo:
 {
     "repositories": [
         {
-            "url": "https://github.com/vendasta/listing-builder-client",
+            "url": "https://github.com/candidosales/guide-mental-health",
             "type": "project"
         },
         {
-            "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/business-categories",
+            "url": "https://github.com/candidosales/dependency-report/tree/main/web",
             "type": "component"
         },
     ]
 }
 ```
 
-O filtro é usado para analisar as dependências de seus repositórios e assim gerar as estatísticas. O formato do filtro é o nome da biblioteca e a versão: `<nome-biblioteca>_<versão>`. Você ver sua dependência no seu `package.json` nesse formato `"@angular/core": "~9.1.1"` então você cria seu filtro dessa forma: `@angular/core_9.1.1`.
+O filtro é usado para analisar as dependências de seus repositórios e assim gerar as estatísticas. O formato do filtro é o nome da biblioteca e a versão: `<nome-biblioteca>_<versão>`. Você ver sua dependência no seu `package.json` nesse formato `"react":"~19.1.1"` então você cria seu filtro dessa forma: `react_19.1.1`.
 
 Dessa forma, você criar qualquer filtro para qualquer dependência ou versão.
 
 Exemplo:
 
-- `"@angular/core": "~9.0.0"` mude para `@angular/core_9.0.0` ou `@angular/core_9`;
-- `"react": "^16.12.0"` mude para `react_16.12.0` ou `react_16`;
+- `"react": "^19.0.0"` mude para `react_19.0.0` ou `react_19`;
+- `"next": "^16.12.0"` mude para `next_16.12.0` ou `next_16`;
 
 ```json
 {
     "filters": [
-        "@angular/core_4",
-        "@angular/core_6",
-        "@angular/core_7",
-        "@angular/core_8",
-        "@angular/core_9"
+        "react_16",
+        "react_17",
+        "react_18",
+        "react_19"
     ],
 }
 ```
 
 ### Inicializando
 
-Após a configuracão do [server/config.json](./server/config.json) e inicializacão do `server` e `client` você acessa o `client` via [http://localhost:4200](http://localhost:4200) e clica no botão de `REFRESH` na barra do topo para gerar os dados que você precisa.
+Após a configuracão do [server/config.json](./server/config.json) e inicializacão do `server` e `web` você acessa o `web` via [http://localhost:3000](http://localhost:3000) e clica no botão de `REFRESH` na barra do topo para gerar os dados que você precisa.
 
 ## 📚 Referência
 

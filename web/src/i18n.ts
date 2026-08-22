@@ -14,6 +14,7 @@ if (!i18next.isInitialized) {
         pt: { translation: pt },
       },
       supportedLngs: ['en', 'pt'],
+      lng: 'en',
       fallbackLng: 'en',
       interpolation: {
         escapeValue: false,

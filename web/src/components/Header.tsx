@@ -18,7 +18,6 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 px-4 backdrop-blur-lg">
       <nav className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-3 gap-y-2 py-3 sm:py-4">
         <Link to="/" className="flex shrink-0 items-center gap-2 no-underline">
-          <img src="/images/logo.svg" alt="" className="size-7" />
           <span className="text-base font-semibold tracking-tight text-foreground">
             Dependency Report
           </span>

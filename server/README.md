@@ -3,7 +3,8 @@
 Requires Go 1.27+.
 
 ```bash
-GITHUB_AUTH_TOKEN=<token> go run *.go
+GITHUB_AUTH_TOKEN=<token> go run .
+GITHUB_AUTH_TOKEN=$(gh auth token) go run .
 ```
 
 ## Tests
