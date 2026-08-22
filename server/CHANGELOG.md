@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.3.0] - 2026-08-22
+
+### Added
+
+- Table-driven unit tests for core functions (alias/version parsing, repository URL splitting, config loading, dependency stats, filter counts, summary generation, notification mapping)
+- Typed `FilterCount` stats and `NotificationData` DTO to decouple API responses from go-github types
+
+### Changed
+
+- Upgrade to Go 1.27
+- Migrate GoFiber v2 to v3
+- Upgrade go-github v29 to v90 (drops `golang.org/x/oauth2`, uses `github.WithAuthToken`)
+- Upgrade zap to 1.28.0
+- Drop vendored dependencies in favor of go.sum-only resolution
+
+### Removed
+
+- Dead code in `handlers.go` (duplicated routes.go)
+- Baked-in `GITHUB_AUTH_TOKEN` from the Dockerfile; must be supplied at runtime
+
 ## [1.2.0] - 2021-05-27
 
 ### Changed
