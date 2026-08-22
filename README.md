@@ -17,33 +17,33 @@ Dependencies report aims to help analyze the consistency of the dependencies in 
 
 The project is divided into two folders:
 
-- `client`: Frontend developed in Angular for presentation of graphics. Angular 18+ - [How to install Node?](https://nodejs.org/en/download/package-manager/);
-- `server`: Backend developed in Go to generate data for reports. Go 1.15 - [How to install Go?](https://golang.org/doc/install);
+- `web`: Frontend developed in React (TanStack Start) for presentation of graphics. Node 20+ - [How to install Node?](https://nodejs.org/en/download/package-manager/). (`client`, the previous Angular frontend, is deprecated and kept only for reference.)
+- `server`: Backend developed in Go to generate data for reports. Go 1.27+ - [How to install Go?](https://golang.org/doc/install);
 
 ### Creating your personal Github Auth Token
 
 It is necessary to create your `Personal Access Token` for the server to be allowed to use the Github API. For further instructions [visit](https://docs.cachethq.io/docs/github-oauth-token) or [here](https://github.com/settings/tokens).
 
-### Initializing the client
-
-The project uses Angular 18+ and requires version of Node 20+. You can use the [NVM](https://github.com/nvm-sh/nvm) to control the node versions of your machine.
+### Initializing the web app
 
 ```bash
-cd client/
-npm install # Install dependencies
-ng serve
+cd web/
+pnpm install # Install dependencies
+pnpm dev
 ```
 
-Will boot on the port `4200`. [http://localhost:4200](http://localhost:4200).
+Will boot on the port `3000`. [http://localhost:3000](http://localhost:3000).
+
+The web app reads the server URL from `web/.env` (`VITE_API_URL`, default `http://127.0.0.1:8080`). Adjust it if your server runs on a different host/port.
 
 ### Initializing the server
 
 ```bash
 cd server/
-GITHUB_AUTH_TOKEN=<personal-auth-token> go run *.go # Example: GITHUB_AUTH_TOKEN=12321wqdd12e12321dse go run *.go
+GITHUB_AUTH_TOKEN=<personal-auth-token> go run . # Example: GITHUB_AUTH_TOKEN=12321wqdd12e12321dse go run .
 ```
 
-Will create a server on the port `3000`. [http://localhost:3000](http://localhost:3000).
+Will create a server on the port `8080`. [http://localhost:8080](http://localhost:8080).
 
 ### Adapting to your projects
 
@@ -58,41 +58,40 @@ Example:
 {
     "repositories": [
         {
-            "url": "https://github.com/vendasta/listing-builder-client",
+            "url": "https://github.com/candidosales/guide-mental-health",
             "type": "project"
         },
         {
-            "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/business-categories",
+            "url": "https://github.com/candidosales/dependency-report/tree/main/web",
             "type": "component"
         },
     ]
 }
 ```
 
-The filter is used to analyze the dependencies of your repositories and thus generate the statistics. The filter format is the name of the library and the version: `<library-name>_<version>`. You see your dependency on your `package.json` in this format `"@angular/core":"~9.1.1"` then you create your filter this way: `@angular/core_9.1.1`.
+The filter is used to analyze the dependencies of your repositories and thus generate the statistics. The filter format is the name of the library and the version: `<library-name>_<version>`. You see your dependency on your `package.json` in this format `"react":"~19.1.1"` then you create your filter this way: `react_19.1.1`.
 
 That way, you can create any filter for any dependency or version..
 
 Example:
 
-- `"@angular/core": "~9.0.0"` switch to `@angular/core_9.0.0` or `@angular/core_9`;
-- `"react": "^16.12.0"` switch to `react_16.12.0` or `react_16`;
+- `"react": "^19.0.0"` switch to `react_19.0.0` or `react_19`;
+- `"next": "^16.12.0"` switch to `next_16.12.0` or `next_16`;
 
 ```json
 {
     "filters": [
-        "@angular/core_4",
-        "@angular/core_6",
-        "@angular/core_7",
-        "@angular/core_8",
-        "@angular/core_9"
+        "react_16",
+        "react_17",
+        "react_18",
+        "react_19"
     ],
 }
 ```
 
 ### Initializing
 
-After configuring [server/config.json](./server/config.json) and initializing `server` and `client` you access `client` via [http://localhost:4200](http://localhost:4200) and click the button `REFRESH` on the top bar to generate the data you need.
+After configuring [server/config.json](./server/config.json) and initializing `server` and `web` you access `web` via [http://localhost:3000](http://localhost:3000) and click the button `REFRESH` on the top bar to generate the data you need.
 
 ## 📚 Reference
 

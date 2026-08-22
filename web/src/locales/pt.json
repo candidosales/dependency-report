@@ -1,0 +1,35 @@
+{
+    "home": {
+        "summary": {
+            "title": "Resumo",
+            "infoUpdated": "Quantidade de projetos contendo todos os componentes atualizados",
+            "infoInconsistent": "Quantidade de projetos que contêm qualquer componente que precisa ser atualizado",
+            "infoWithVulnerability": "Quantidade de projetos que contêm notificações de vulnerabilidade do Github"
+        },
+        "updated": "Atualizados",
+        "inconsistent": "Inconsistentes",
+        "vulnerable" : "Vulneráveis",
+        "navbar": {
+            "generated": "gerado",
+            "refresh": "ATUALIZAR"
+        },
+        "graph": {
+            "projectXLibrary": "Projeto vs Biblioteca",
+            "frontendProjects" : "Projetos frontend",
+            "componentXLibrary" : "Componente vs Biblioteca"
+        },
+        "projects": "Projetos",
+        "components": "Componentes",
+        "loading": "Gerando os dados ...",
+        "dependencies": {
+            "howOftenDependencyDifferentVersions" : "Com que frequência a mesma dependência é usada em versões diferentes?",
+            "tipReduce": "Dica: Reduza o número de versões diferentes em seus projetos e mantenha a consistência",
+            "info": "diferentes versões da mesma biblioteca"
+        }  
+    },
+    "dialog": {
+        "close": "FECHAR",
+        "dependenciesToUpdate": "Dependências para atualizar",
+        "githubNotifications": "Notificacões do Github"
+    }
+}

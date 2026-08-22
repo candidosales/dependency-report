@@ -1,296 +1,45 @@
 {
   "filters": [
-    "@angular/core_4",
-    "@angular/core_5",
-    "@angular/core_6",
-    "@angular/core_7",
-    "@angular/core_8",
-    "@angular/core_9",
-    "@angular/core_10"
+    "react_16",
+    "react_17",
+    "react_18",
+    "react_19",
+    "next_14",
+    "next_15",
+    "next_16"
   ],
   "repositories": [
     {
-      "url": "https://github.com/vendasta/galaxy",
+      "url": "https://github.com/candidosales/personal-blog-2v",
       "type": "project"
     },
     {
-      "url": "https://github.com/vendasta/listing-builder-client",
+      "url": "https://github.com/candidosales/celpip-countdown-timer",
       "type": "project"
     },
     {
-      "url": "https://github.com/vendasta/customer-voice-client",
+      "url": "https://github.com/candidosales/home-tracker",
       "type": "project"
     },
     {
-      "url": "https://github.com/vendasta/snapshot-client",
+      "url": "https://github.com/candidosales/landing-page-book-astro-tailwind",
       "type": "project"
     },
     {
-      "url": "https://github.com/vendasta/iam-client",
+      "url": "https://github.com/candidosales/personal-blog-cms",
       "type": "project"
     },
     {
-      "url": "https://github.com/vendasta/invoice-client",
+      "url": "https://github.com/candidosales/material-time-picker",
       "type": "project"
     },
     {
-      "url": "https://github.com/vendasta/concierge-client",
+      "url": "https://github.com/candidosales/svelte-shopify-polaris-icons",
       "type": "project"
     },
     {
-      "url": "https://github.com/vendasta/salesforce-client",
+      "url": "https://github.com/candidosales/figma-format-code",
       "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/vstore-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/codex-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/vetl-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/reputation-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/heimdall-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/godaddy-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/atlas-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/billing-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/wsp-portal-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/g-suite-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/partner-center-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/employee-center-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/brand-analytics-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/vendasta-center-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/vendor-center-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/sre-reporting-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/business-center-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/sales-center-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/mission-control-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/ms-office-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/rd-center-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/digital-ads-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/listing-builder-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/constant-contact-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/developer-center-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/mission-control-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/web-crawler-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/social-marketing-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/medical-compare-client",
-      "type": "project"
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/billing-ui",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/billing-ui/contact-info-dialog",
-        "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/grid"
-      }
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/business-categories",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/business-categories"
-      }
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/businesses",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/business-categories"
-      }
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/core",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/core/account-group"
-      }
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/devtools",
-      "type": "component"
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/forms",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/forms/examples",
-        "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/screen/478b409a-2d87-422a-a6e7-8f4de118921a/Forms-Behaviour"
-      }
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/global-brands",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/global-brands/readme"
-      }
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/hot-module-replacement",
-      "type": "component"
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/reviews",
-      "type": "component"
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/rx-utils",
-      "type": "component"
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/sales-common",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/sales-common"
-      }
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/sales-ui",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/sales-ui/sales-orders-table"
-      }
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/smb-invoicing",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/smb-invoicing/invoice-table"
-      }
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/social-posts",
-      "type": "component"
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/spinner-tracking",
-      "type": "component"
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/store",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/store/addon-details"
-      }
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/uikit",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/uikit/badge",
-        "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/grid"
-      }
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/url-shortener",
-      "type": "component"
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/va-filter2-table",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/va-filter2-table/readme",
-        "design":"https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/screen/81b96983-3932-40d0-b187-f72dfbeb7188/Buttons-Toggles-Chips-Toasts-Badges-etc-"
-      }  
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/va-filter2",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/va-filter2/readme",
-        "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/screen/a0617402-c172-43c4-912a-e1bb5e4c2a5a/Table-Filters-Open"
-      }
-    },
-    {
-      "url": "https://github.com/vendasta/frontend/tree/master/angular/projects/vform",
-      "type": "component",
-      "documentation": {
-        "frontend": "https://frontend.vendasta-internal.com/vform/readme",
-        "design": "https://xd.adobe.com/view/874c5313-07a6-4946-4958-0d398c697bcf-f17d/screen/94f0f453-49d4-48dd-99a2-9827d5e7d6fa/Forms-Common-Components"
-      }
-    }, {
-      "url": "https://github.com/vendasta/atlas-client/tree/master/projects/business-nav",
-      "type": "component"
     }
   ]
 }

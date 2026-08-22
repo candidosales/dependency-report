@@ -1,0 +1,5 @@
+node_modules
+.output
+.vite
+dist
+.git

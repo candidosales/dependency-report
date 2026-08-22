@@ -1,0 +1,1995 @@
+{
+ "generatedAt": "2026-08-22T10:28:50.981972-04:00",
+ "summary": {
+  "updated": [
+   "megui",
+   "personal-blog-2v",
+   "celpip",
+   "home-tracker",
+   "landing-page-book-astro-svelte-tailwind",
+   "personal-blog-cms",
+   "svelte-shopify-polaris-icons",
+   "Format-Code"
+  ],
+  "inconsistent": [],
+  "vulnerable": [
+   "@candidosales/material-time-picker"
+  ]
+ },
+ "projects": [
+  {
+   "name": "megui",
+   "version": "1.9.0",
+   "filter": "react_19",
+   "url": "https://github.com/candidosales/guide-mental-health",
+   "documentation": {
+    "frontend": "",
+    "design": ""
+   },
+   "notifications": [],
+   "updates": [],
+   "tags": []
+  },
+  {
+   "name": "personal-blog-2v",
+   "version": "1.0.0",
+   "filter": "react_19",
+   "url": "https://github.com/candidosales/personal-blog-2v",
+   "documentation": {
+    "frontend": "",
+    "design": ""
+   },
+   "notifications": [],
+   "updates": [],
+   "tags": []
+  },
+  {
+   "name": "celpip",
+   "version": "0.2.0",
+   "filter": "next_16",
+   "url": "https://github.com/candidosales/celpip-countdown-timer",
+   "documentation": {
+    "frontend": "",
+    "design": ""
+   },
+   "notifications": [],
+   "updates": [],
+   "tags": []
+  },
+  {
+   "name": "home-tracker",
+   "version": "0.0.0",
+   "filter": "react_19",
+   "url": "https://github.com/candidosales/home-tracker",
+   "documentation": {
+    "frontend": "",
+    "design": ""
+   },
+   "notifications": [],
+   "updates": [],
+   "tags": []
+  },
+  {
+   "name": "landing-page-book-astro-svelte-tailwind",
+   "version": "1.0.0",
+   "filter": "",
+   "url": "https://github.com/candidosales/landing-page-book-astro-tailwind",
+   "documentation": {
+    "frontend": "",
+    "design": ""
+   },
+   "notifications": [],
+   "updates": [],
+   "tags": []
+  },
+  {
+   "name": "personal-blog-cms",
+   "version": "1.0.0",
+   "filter": "next_16",
+   "url": "https://github.com/candidosales/personal-blog-cms",
+   "documentation": {
+    "frontend": "",
+    "design": ""
+   },
+   "notifications": [],
+   "updates": [],
+   "tags": []
+  },
+  {
+   "name": "@candidosales/material-time-picker",
+   "version": "2.14.0",
+   "filter": "",
+   "url": "https://github.com/candidosales/material-time-picker",
+   "documentation": {
+    "frontend": "",
+    "design": ""
+   },
+   "notifications": [
+    {
+     "reason": "security_alert",
+     "title": "Your repository has dependencies with security vulnerabilities",
+     "url": "https://api.github.com/notifications/threads/24713270222",
+     "updatedAt": "2026-08-10T23:20:37Z"
+    }
+   ],
+   "updates": [],
+   "tags": []
+  },
+  {
+   "name": "svelte-shopify-polaris-icons",
+   "version": "0.0.18",
+   "filter": "",
+   "url": "https://github.com/candidosales/svelte-shopify-polaris-icons",
+   "documentation": {
+    "frontend": "",
+    "design": ""
+   },
+   "notifications": [],
+   "updates": [],
+   "tags": []
+  },
+  {
+   "name": "Format-Code",
+   "version": "2.2.2",
+   "filter": "",
+   "url": "https://github.com/candidosales/figma-format-code",
+   "documentation": {
+    "frontend": "",
+    "design": ""
+   },
+   "notifications": [],
+   "updates": [],
+   "tags": []
+  }
+ ],
+ "components": [],
+ "graphData": {
+  "componentsByFilters": [
+   {
+    "filter": "react_16",
+    "count": 0
+   },
+   {
+    "filter": "react_17",
+    "count": 0
+   },
+   {
+    "filter": "react_18",
+    "count": 0
+   },
+   {
+    "filter": "react_19",
+    "count": 0
+   },
+   {
+    "filter": "next_14",
+    "count": 0
+   },
+   {
+    "filter": "next_15",
+    "count": 0
+   },
+   {
+    "filter": "next_16",
+    "count": 0
+   }
+  ],
+  "projectsByFilters": [
+   {
+    "filter": "react_16",
+    "count": 0
+   },
+   {
+    "filter": "react_17",
+    "count": 0
+   },
+   {
+    "filter": "react_18",
+    "count": 0
+   },
+   {
+    "filter": "react_19",
+    "count": 5
+   },
+   {
+    "filter": "next_14",
+    "count": 0
+   },
+   {
+    "filter": "next_15",
+    "count": 0
+   },
+   {
+    "filter": "next_16",
+    "count": 2
+   }
+  ]
+ },
+ "dependenciesByVersions": {
+  "@angular/animations": {
+   "type": "good",
+   "versions": {
+    "21.1.4": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  },
+  "@angular/cdk": {
+   "type": "good",
+   "versions": {
+    "21.1.4": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  },
+  "@angular/common": {
+   "type": "good",
+   "versions": {
+    "21.1.4": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  },
+  "@angular/compiler": {
+   "type": "good",
+   "versions": {
+    "21.2.4": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  },
+  "@angular/core": {
+   "type": "good",
+   "versions": {
+    "21.1.6": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  },
+  "@angular/forms": {
+   "type": "good",
+   "versions": {
+    "21.1.4": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  },
+  "@angular/material": {
+   "type": "good",
+   "versions": {
+    "21.1.4": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  },
+  "@angular/platform-browser": {
+   "type": "good",
+   "versions": {
+    "21.1.4": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  },
+  "@angular/platform-browser-dynamic": {
+   "type": "good",
+   "versions": {
+    "21.1.4": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  },
+  "@angular/router": {
+   "type": "good",
+   "versions": {
+    "21.1.4": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  },
+  "@astrojs/markdown-satteri": {
+   "type": "good",
+   "versions": {
+    "0.3.7": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@astrojs/mdx": {
+   "type": "good",
+   "versions": {
+    "7.0.7": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@astrojs/partytown": {
+   "type": "good",
+   "versions": {
+    "2.1.5": {
+     "quantity": 1,
+     "projects": [
+      "landing-page-book-astro-svelte-tailwind"
+     ]
+    },
+    "2.1.7": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@astrojs/react": {
+   "type": "good",
+   "versions": {
+    "6.0.4": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@astrojs/sitemap": {
+   "type": "good",
+   "versions": {
+    "3.7.1": {
+     "quantity": 1,
+     "projects": [
+      "landing-page-book-astro-svelte-tailwind"
+     ]
+    },
+    "3.7.3": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@astrojs/svelte": {
+   "type": "good",
+   "versions": {
+    "9.0.1": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@astrojs/vercel": {
+   "type": "good",
+   "versions": {
+    "11.0.7": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@base-ui/react": {
+   "type": "good",
+   "versions": {
+    "1.7.0": {
+     "quantity": 1,
+     "projects": [
+      "celpip"
+     ]
+    }
+   }
+  },
+  "@expo-google-fonts/fraunces": {
+   "type": "good",
+   "versions": {
+    "0.4.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "@expo-google-fonts/inter": {
+   "type": "good",
+   "versions": {
+    "0.4.2": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "@expo-google-fonts/lato": {
+   "type": "good",
+   "versions": {
+    "0.4.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "@expo-google-fonts/poppins": {
+   "type": "good",
+   "versions": {
+    "0.4.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "@expo/metro-runtime": {
+   "type": "good",
+   "versions": {
+    "57.0.8": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "@expo/vector-icons": {
+   "type": "good",
+   "versions": {
+    "15.1.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "@expressive-code/plugin-line-numbers": {
+   "type": "good",
+   "versions": {
+    "0.44.1": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@floating-ui/dom": {
+   "type": "good",
+   "versions": {
+    "1.7.3": {
+     "quantity": 1,
+     "projects": [
+      "svelte-shopify-polaris-icons"
+     ]
+    }
+   }
+  },
+  "@fontsource-variable/newsreader": {
+   "type": "good",
+   "versions": {
+    "5.2.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@fontsource/inclusive-sans": {
+   "type": "good",
+   "versions": {
+    "5.2.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@fontsource/pt-serif": {
+   "type": "good",
+   "versions": {
+    "5.2.8": {
+     "quantity": 1,
+     "projects": [
+      "landing-page-book-astro-svelte-tailwind"
+     ]
+    }
+   }
+  },
+  "@number-flow/react": {
+   "type": "good",
+   "versions": {
+    "0.6.2": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@payloadcms/admin-bar": {
+   "type": "good",
+   "versions": {
+    "3.73.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@payloadcms/db-sqlite": {
+   "type": "good",
+   "versions": {
+    "3.73.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@payloadcms/live-preview-react": {
+   "type": "good",
+   "versions": {
+    "3.73.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@payloadcms/next": {
+   "type": "good",
+   "versions": {
+    "3.73.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@payloadcms/plugin-form-builder": {
+   "type": "good",
+   "versions": {
+    "3.73.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@payloadcms/plugin-nested-docs": {
+   "type": "good",
+   "versions": {
+    "3.73.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@payloadcms/plugin-redirects": {
+   "type": "good",
+   "versions": {
+    "3.73.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@payloadcms/plugin-search": {
+   "type": "good",
+   "versions": {
+    "3.73.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@payloadcms/plugin-seo": {
+   "type": "good",
+   "versions": {
+    "3.73.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@payloadcms/richtext-lexical": {
+   "type": "good",
+   "versions": {
+    "3.73.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@payloadcms/ui": {
+   "type": "good",
+   "versions": {
+    "3.73.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@popperjs/core": {
+   "type": "good",
+   "versions": {
+    "2.11.8": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@radix-ui/react-checkbox": {
+   "type": "good",
+   "versions": {
+    "1.0.4": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@radix-ui/react-label": {
+   "type": "good",
+   "versions": {
+    "2.0.2": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@radix-ui/react-select": {
+   "type": "good",
+   "versions": {
+    "2.0.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@radix-ui/react-slot": {
+   "type": "good",
+   "versions": {
+    "1.0.2": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "@react-native-community/cli": {
+   "type": "good",
+   "versions": {
+    "20.1.3": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "@sentry/react-native": {
+   "type": "good",
+   "versions": {
+    "7.11.0": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "@shopify/flash-list": {
+   "type": "good",
+   "versions": {
+    "2.0.2": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "@tailwindcss/postcss": {
+   "type": "good",
+   "versions": {
+    "4.1.12": {
+     "quantity": 1,
+     "projects": [
+      "svelte-shopify-polaris-icons"
+     ]
+    }
+   }
+  },
+  "@tailwindcss/typography": {
+   "type": "good",
+   "versions": {
+    "0.5.20": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@tailwindcss/vite": {
+   "type": "warning",
+   "versions": {
+    "4.1.12": {
+     "quantity": 1,
+     "projects": [
+      "svelte-shopify-polaris-icons"
+     ]
+    },
+    "4.2.1": {
+     "quantity": 1,
+     "projects": [
+      "landing-page-book-astro-svelte-tailwind"
+     ]
+    },
+    "4.2.2": {
+     "quantity": 1,
+     "projects": [
+      "home-tracker"
+     ]
+    },
+    "4.3.2": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@tanstack/react-form": {
+   "type": "good",
+   "versions": {
+    "1.28.6": {
+     "quantity": 1,
+     "projects": [
+      "home-tracker"
+     ]
+    }
+   }
+  },
+  "@tanstack/react-query": {
+   "type": "good",
+   "versions": {
+    "5.100.5": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    },
+    "5.96.2": {
+     "quantity": 1,
+     "projects": [
+      "home-tracker"
+     ]
+    }
+   }
+  },
+  "@tanstack/react-table": {
+   "type": "good",
+   "versions": {
+    "8.21.3": {
+     "quantity": 1,
+     "projects": [
+      "home-tracker"
+     ]
+    }
+   }
+  },
+  "@types/react-dom": {
+   "type": "good",
+   "versions": {
+    "19.2.3": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@upstash/redis": {
+   "type": "good",
+   "versions": {
+    "1.38.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "@xt0rted/expressive-code-file-icons": {
+   "type": "good",
+   "versions": {
+    "1.0.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "astro": {
+   "type": "good",
+   "versions": {
+    "6.0.4": {
+     "quantity": 1,
+     "projects": [
+      "landing-page-book-astro-svelte-tailwind"
+     ]
+    },
+    "7.2.4": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "astro-compress": {
+   "type": "good",
+   "versions": {
+    "2.4.3": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "astro-embed": {
+   "type": "good",
+   "versions": {
+    "0.13.1": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "astro-expressive-code": {
+   "type": "good",
+   "versions": {
+    "0.44.1": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "astro-seo": {
+   "type": "good",
+   "versions": {
+    "1.1.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "better-sqlite3": {
+   "type": "good",
+   "versions": {
+    "12.8.0": {
+     "quantity": 1,
+     "projects": [
+      "home-tracker"
+     ]
+    }
+   }
+  },
+  "class-variance-authority": {
+   "type": "good",
+   "versions": {
+    "0.7.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    },
+    "0.7.1": {
+     "quantity": 1,
+     "projects": [
+      "celpip"
+     ]
+    }
+   }
+  },
+  "clsx": {
+   "type": "good",
+   "versions": {
+    "2.1.1": {
+     "quantity": 3,
+     "projects": [
+      "personal-blog-2v",
+      "celpip",
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "core-js": {
+   "type": "good",
+   "versions": {
+    "3.48.0": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  },
+  "cross-env": {
+   "type": "good",
+   "versions": {
+    "7.0.3": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "dotenv": {
+   "type": "good",
+   "versions": {
+    "16.4.7": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "expo": {
+   "type": "good",
+   "versions": {
+    "57.0.11": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-application": {
+   "type": "good",
+   "versions": {
+    "57.0.2": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-asset": {
+   "type": "good",
+   "versions": {
+    "57.0.9": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-audio": {
+   "type": "good",
+   "versions": {
+    "57.0.3": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-blur": {
+   "type": "good",
+   "versions": {
+    "57.0.2": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-build-properties": {
+   "type": "good",
+   "versions": {
+    "57.0.9": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-constants": {
+   "type": "good",
+   "versions": {
+    "57.0.9": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-crypto": {
+   "type": "good",
+   "versions": {
+    "57.0.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-dev-client": {
+   "type": "good",
+   "versions": {
+    "57.0.10": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-device": {
+   "type": "good",
+   "versions": {
+    "57.0.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-file-system": {
+   "type": "good",
+   "versions": {
+    "57.0.2": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-font": {
+   "type": "good",
+   "versions": {
+    "57.0.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-glass-effect": {
+   "type": "good",
+   "versions": {
+    "57.0.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-haptics": {
+   "type": "good",
+   "versions": {
+    "57.0.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-image": {
+   "type": "good",
+   "versions": {
+    "57.0.2": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-linear-gradient": {
+   "type": "good",
+   "versions": {
+    "57.0.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-linking": {
+   "type": "good",
+   "versions": {
+    "57.0.5": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-localization": {
+   "type": "good",
+   "versions": {
+    "57.0.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-router": {
+   "type": "good",
+   "versions": {
+    "57.0.11": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-secure-store": {
+   "type": "good",
+   "versions": {
+    "57.0.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-splash-screen": {
+   "type": "good",
+   "versions": {
+    "57.0.5": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-sqlite": {
+   "type": "good",
+   "versions": {
+    "57.0.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-status-bar": {
+   "type": "good",
+   "versions": {
+    "57.0.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-system-ui": {
+   "type": "good",
+   "versions": {
+    "57.0.2": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-updates": {
+   "type": "good",
+   "versions": {
+    "57.0.12": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "expo-web-browser": {
+   "type": "good",
+   "versions": {
+    "57.0.2": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "flourite": {
+   "type": "good",
+   "versions": {
+    "1.3.0": {
+     "quantity": 1,
+     "projects": [
+      "Format-Code"
+     ]
+    }
+   }
+  },
+  "flowbite": {
+   "type": "good",
+   "versions": {
+    "3.1.2": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "flowbite-svelte": {
+   "type": "good",
+   "versions": {
+    "1.9.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "flowbite-svelte-icons": {
+   "type": "good",
+   "versions": {
+    "2.3.0": {
+     "quantity": 1,
+     "projects": [
+      "svelte-shopify-polaris-icons"
+     ]
+    }
+   }
+  },
+  "geist": {
+   "type": "good",
+   "versions": {
+    "1.3.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "graphql": {
+   "type": "good",
+   "versions": {
+    "16.8.2": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "i18n-js": {
+   "type": "good",
+   "versions": {
+    "4.5.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "lucide-react": {
+   "type": "good",
+   "versions": {
+    "0.378.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    },
+    "0.479.0": {
+     "quantity": 1,
+     "projects": [
+      "celpip"
+     ]
+    }
+   }
+  },
+  "motion": {
+   "type": "good",
+   "versions": {
+    "12.42.2": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "next": {
+   "type": "good",
+   "versions": {
+    "16.1.4": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    },
+    "16.3.1": {
+     "quantity": 1,
+     "projects": [
+      "celpip"
+     ]
+    }
+   }
+  },
+  "next-sitemap": {
+   "type": "good",
+   "versions": {
+    "4.2.3": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "node-sqlite3-wasm": {
+   "type": "good",
+   "versions": {
+    "0.8.55": {
+     "quantity": 1,
+     "projects": [
+      "home-tracker"
+     ]
+    }
+   }
+  },
+  "payload": {
+   "type": "good",
+   "versions": {
+    "3.73.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "posthog-react-native": {
+   "type": "good",
+   "versions": {
+    "4.45.6": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "prettier": {
+   "type": "good",
+   "versions": {
+    "3.9.6": {
+     "quantity": 1,
+     "projects": [
+      "Format-Code"
+     ]
+    }
+   }
+  },
+  "prism-react-renderer": {
+   "type": "good",
+   "versions": {
+    "2.3.1": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "qs-esm": {
+   "type": "good",
+   "versions": {
+    "7.0.2": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react": {
+   "type": "warning",
+   "versions": {
+    "19.2.1": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    },
+    "19.2.3": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    },
+    "19.2.4": {
+     "quantity": 1,
+     "projects": [
+      "home-tracker"
+     ]
+    },
+    "19.2.7": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    },
+    "19.2.8": {
+     "quantity": 1,
+     "projects": [
+      "celpip"
+     ]
+    }
+   }
+  },
+  "react-content-loader": {
+   "type": "good",
+   "versions": {
+    "7.1.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-dom": {
+   "type": "warning",
+   "versions": {
+    "19.2.1": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    },
+    "19.2.3": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    },
+    "19.2.4": {
+     "quantity": 1,
+     "projects": [
+      "home-tracker"
+     ]
+    },
+    "19.2.7": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    },
+    "19.2.8": {
+     "quantity": 1,
+     "projects": [
+      "celpip"
+     ]
+    }
+   }
+  },
+  "react-hook-form": {
+   "type": "good",
+   "versions": {
+    "7.45.4": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    }
+   }
+  },
+  "react-native": {
+   "type": "good",
+   "versions": {
+    "0.86.2": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-device-info": {
+   "type": "good",
+   "versions": {
+    "14.1.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-gesture-handler": {
+   "type": "good",
+   "versions": {
+    "2.32.0": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-gifted-charts": {
+   "type": "good",
+   "versions": {
+    "1.4.76": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-marked": {
+   "type": "good",
+   "versions": {
+    "8.1.0": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-mmkv": {
+   "type": "good",
+   "versions": {
+    "4.3.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-nitro-modules": {
+   "type": "good",
+   "versions": {
+    "0.35.5": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-onboarding-swiper": {
+   "type": "good",
+   "versions": {
+    "1.4.0": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-reanimated": {
+   "type": "good",
+   "versions": {
+    "4.5.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-reanimated-carousel": {
+   "type": "good",
+   "versions": {
+    "4.0.3": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-safe-area-context": {
+   "type": "good",
+   "versions": {
+    "5.7.0": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-screens": {
+   "type": "good",
+   "versions": {
+    "4.26.0": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-svg": {
+   "type": "good",
+   "versions": {
+    "15.15.4": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-toast-message": {
+   "type": "good",
+   "versions": {
+    "2.3.3": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-web": {
+   "type": "good",
+   "versions": {
+    "0.21.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "react-native-worklets": {
+   "type": "good",
+   "versions": {
+    "0.10.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "rxjs": {
+   "type": "good",
+   "versions": {
+    "7.8.2": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  },
+  "sass": {
+   "type": "good",
+   "versions": {
+    "1.101.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "satori": {
+   "type": "good",
+   "versions": {
+    "0.33.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "sharp": {
+   "type": "good",
+   "versions": {
+    "0.34.2": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    },
+    "0.34.5": {
+     "quantity": 1,
+     "projects": [
+      "landing-page-book-astro-svelte-tailwind"
+     ]
+    },
+    "0.35.3": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "shiki": {
+   "type": "good",
+   "versions": {
+    "4.4.2": {
+     "quantity": 1,
+     "projects": [
+      "Format-Code"
+     ]
+    }
+   }
+  },
+  "sql.js": {
+   "type": "good",
+   "versions": {
+    "1.14.1": {
+     "quantity": 1,
+     "projects": [
+      "home-tracker"
+     ]
+    }
+   }
+  },
+  "svelte": {
+   "type": "good",
+   "versions": {
+    "5.56.10": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "svelte-meta-tags": {
+   "type": "good",
+   "versions": {
+    "4.4.0": {
+     "quantity": 1,
+     "projects": [
+      "svelte-shopify-polaris-icons"
+     ]
+    }
+   }
+  },
+  "svelte-sonner": {
+   "type": "good",
+   "versions": {
+    "1.2.1": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "tailwind-merge": {
+   "type": "good",
+   "versions": {
+    "3.0.2": {
+     "quantity": 1,
+     "projects": [
+      "celpip"
+     ]
+    },
+    "3.4.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-cms"
+     ]
+    },
+    "3.6.0": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "tailwindcss": {
+   "type": "good",
+   "versions": {
+    "4.2.1": {
+     "quantity": 1,
+     "projects": [
+      "landing-page-book-astro-svelte-tailwind"
+     ]
+    },
+    "4.2.2": {
+     "quantity": 1,
+     "projects": [
+      "home-tracker"
+     ]
+    },
+    "4.3.2": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "tailwindcss-animate": {
+   "type": "good",
+   "versions": {
+    "1.0.7": {
+     "quantity": 1,
+     "projects": [
+      "celpip"
+     ]
+    }
+   }
+  },
+  "tslib": {
+   "type": "good",
+   "versions": {
+    "2.8.1": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  },
+  "use-debounce": {
+   "type": "good",
+   "versions": {
+    "10.1.1": {
+     "quantity": 1,
+     "projects": [
+      "megui"
+     ]
+    }
+   }
+  },
+  "usehooks-ts": {
+   "type": "good",
+   "versions": {
+    "3.1.1": {
+     "quantity": 1,
+     "projects": [
+      "personal-blog-2v"
+     ]
+    }
+   }
+  },
+  "zod": {
+   "type": "good",
+   "versions": {
+    "4.3.6": {
+     "quantity": 1,
+     "projects": [
+      "home-tracker"
+     ]
+    }
+   }
+  },
+  "zone.js": {
+   "type": "good",
+   "versions": {
+    "0.16.0": {
+     "quantity": 1,
+     "projects": [
+      "@candidosales/material-time-picker"
+     ]
+    }
+   }
+  }
+ }
+}

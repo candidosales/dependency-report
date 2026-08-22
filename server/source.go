@@ -10,7 +10,7 @@ const (
 	TypeProject     = "project"
 	TypeComponent   = "component"
 	pathFileInput   = "./config.json"
-	pathOutput      = "../client/src/assets/config/"
+	pathOutput      = "../web/public/"
 	fileOutput      = "data.json"
 	concurrentLimit = 25
 )
