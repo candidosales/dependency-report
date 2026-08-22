@@ -4,17 +4,20 @@ import (
 	"context"
 	"encoding/json"
 	"flag"
-	"io/ioutil"
+	"fmt"
 	"os"
 	"strings"
+	"time"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/cors"
-	"github.com/gofiber/fiber/v2/middleware/logger"
-	"github.com/google/go-github/v29/github"
+	"github.com/gofiber/fiber/v3"
+	"github.com/gofiber/fiber/v3/middleware/cors"
+	"github.com/gofiber/fiber/v3/middleware/logger"
+	"github.com/gofiber/fiber/v3/middleware/recover"
+	"github.com/google/go-github/v90/github"
 	"go.uber.org/zap"
-	"golang.org/x/oauth2"
 )
+
+const githubRequestTimeout = 30 * time.Second
 
 type AppConfig struct {
 	ctx          context.Context
@@ -35,27 +38,33 @@ func main() {
 	ctx := context.Background()
 
 	appFiber := fiber.New()
+	appFiber.Use(recover.New())
 	appFiber.Use(logger.New())
 	appFiber.Use(cors.New())
 
 	config, err := readConfig(pathFileInput)
-	config.OutputFile = *outputFile
 	if err != nil {
-		log.Error("error", err)
+		log.Fatal("failed to read config: ", err)
 	}
+	config.OutputFile = *outputFile
 
 	appConfig := &AppConfig{
 		ctx:    ctx,
 		config: config,
 		fiber:  appFiber,
-		log: log,
+		log:    log,
 	}
 
-	appConfig.setUpGithubClient()
+	if err := appConfig.setUpGithubClient(); err != nil {
+		log.Fatal("failed to set up github client: ", err)
+	}
 
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = ":8080"
+		port = "8080"
+	}
+	if !strings.HasPrefix(port, ":") {
+		port = ":" + port
 	}
 
 	appConfig.setupRoutes()
@@ -96,7 +105,10 @@ func (app *AppConfig) getPackageJSONs() {
 			// any error that might have occoured
 			info, err := splitRepositoryURL(repository)
 			if err != nil {
-				app.log.Errorf("error[%#v] to info[%#v]", err, info)
+				app.log.Errorf("error[%s] for repository[%s]", err, repository.URL)
+				resultsChan <- &PackageJSON{}
+				<-semaphoreChan
+				return
 			}
 
 			packageJSON := app.fetchPackageJson(info)
@@ -141,23 +153,31 @@ func (app *AppConfig) getPackageJSONs() {
 	}
 }
 
-func (app *AppConfig) setUpGithubClient() {
+func (app *AppConfig) setUpGithubClient() error {
 	githubAuthToken := strings.TrimSpace(os.Getenv("GITHUB_AUTH_TOKEN"))
 	if githubAuthToken == "" {
-		app.log.Fatal("GITHUB_AUTH_TOKEN env is empty")
+		return fmt.Errorf("GITHUB_AUTH_TOKEN env is empty")
 	}
 
-	ts := oauth2.StaticTokenSource(
-		&oauth2.Token{AccessToken: os.Getenv("GITHUB_AUTH_TOKEN")},
+	client, err := github.NewClient(
+		github.WithAuthToken(githubAuthToken),
+		github.WithTimeout(githubRequestTimeout),
 	)
-	tc := oauth2.NewClient(app.ctx, ts)
+	if err != nil {
+		return err
+	}
 
-	app.githubClient = github.NewClient(tc)
+	app.githubClient = client
+	return nil
 }
 
 func splitRepositoryURL(repository Repository) (map[string]string, error) {
 
 	values := strings.Split(repository.URL, "/")
+	if len(values) < 5 || (repository.Type == TypeComponent && len(values) < 8) {
+		return nil, fmt.Errorf("malformed repository url: %q", repository.URL)
+	}
+
 	packageJSON := "package.json"
 
 	if repository.Type == TypeComponent {
@@ -174,12 +194,8 @@ func splitRepositoryURL(repository Repository) (map[string]string, error) {
 
 func readConfig(filePath string) (Config, error) {
 	var config Config
-	jsonFile, err := os.Open(filePath)
-	if err != nil {
-		return config, err
-	}
 
-	bytes, err := ioutil.ReadAll(jsonFile)
+	bytes, err := os.ReadFile(filePath)
 	if err != nil {
 		return config, err
 	}
@@ -224,7 +240,7 @@ func (app *AppConfig) fetchPackageJson(info map[string]string) *PackageJSON {
 	return &packageJSON
 }
 
-func (app *AppConfig) fetchNotifications(info map[string]string, opts *FilterNotificationsGetOptions) []*github.Notification {
+func (app *AppConfig) fetchNotifications(info map[string]string, opts *FilterNotificationsGetOptions) []NotificationData {
 
 	notifications, _, err := app.githubClient.Activity.ListRepositoryNotifications(
 		app.ctx,
@@ -239,17 +255,37 @@ func (app *AppConfig) fetchNotifications(info map[string]string, opts *FilterNot
 		app.log.Error("error: ", err)
 	}
 
-	if opts.Reason != "" {
-		notificationsFiltered := []*github.Notification{}
-		for _, notification := range notifications {
-			if opts.Reason == *notification.Reason && opts.Unread == *notification.Unread {
-				notificationsFiltered = append(notificationsFiltered, notification)
+	result := []NotificationData{}
+	for _, notification := range notifications {
+		if opts.Reason != "" {
+			if notification.Reason == nil || notification.Unread == nil {
+				continue
+			}
+			if opts.Reason != *notification.Reason || opts.Unread != *notification.Unread {
+				continue
 			}
 		}
-		return notificationsFiltered
+		result = append(result, toNotificationData(notification))
 	}
 
-	return notifications
+	return result
+}
+
+func toNotificationData(n *github.Notification) NotificationData {
+	var data NotificationData
+	if n.Reason != nil {
+		data.Reason = *n.Reason
+	}
+	if n.Subject != nil && n.Subject.Title != nil {
+		data.Title = *n.Subject.Title
+	}
+	if n.URL != nil {
+		data.URL = *n.URL
+	}
+	if n.UpdatedAt != nil {
+		data.UpdatedAt = n.UpdatedAt.Time
+	}
+	return data
 }
 
 func (app *AppConfig) fetchTopics(info map[string]string) []string {
@@ -257,6 +293,7 @@ func (app *AppConfig) fetchTopics(info map[string]string) []string {
 		app.ctx,
 		info["owner"],
 		info["repo"],
+		nil,
 	)
 	if err != nil {
 		app.log.Error("error: ", err)
@@ -291,39 +328,39 @@ func (app *AppConfig) splitProjectsComponents() (*[]Repository, *[]Repository, *
 }
 
 // statsCountProjectsByFilters - Count how many projects there are per filter
-func (app *AppConfig) statsCountProjectsByFilters(projects []Repository, projectsClientData []RepositoryClientData) []interface{} {
-	array := []interface{}{}
+func (app *AppConfig) statsCountProjectsByFilters(projects []Repository, projectsClientData []RepositoryClientData) []FilterCount {
+	counts := make([]FilterCount, len(app.config.Filters))
 	for i, f := range app.config.Filters {
-		array = append(array, []interface{}{f, 0})
+		counts[i] = FilterCount{Filter: f}
 		for j, p := range projects {
 			for key, value := range p.PackageJSON.Dependencies {
 				if strings.Contains(GetAlias(key, value), f) {
-					array[i].([]interface{})[1] = array[i].([]interface{})[1].(int) + 1
+					counts[i].Count++
 					projectsClientData[j].Filter = f
 					continue
 				}
 			}
 		}
 	}
-	return array
+	return counts
 }
 
 // statsCountComponentsByFilters - Count how many dependencies are used per version in different projects
-func (app *AppConfig) statsCountComponentsByFilters(components []Repository, componentsClientData []RepositoryClientData) []interface{} {
-	array := []interface{}{}
+func (app *AppConfig) statsCountComponentsByFilters(components []Repository, componentsClientData []RepositoryClientData) []FilterCount {
+	counts := make([]FilterCount, len(app.config.Filters))
 	for i, filter := range app.config.Filters {
-		array = append(array, []interface{}{filter, 0})
+		counts[i] = FilterCount{Filter: filter}
 		for j, c := range components {
 			for key, value := range c.PackageJSON.PeerDependencies {
 				if strings.Contains(GetAlias(key, value), filter) {
-					array[i].([]interface{})[1] = array[i].([]interface{})[1].(int) + 1
+					counts[i].Count++
 					componentsClientData[j].Filter = filter
 					continue
 				}
 			}
 		}
 	}
-	return array
+	return counts
 }
 
 // statsCountDependenciesByVersions - Count how many components there are per filter
